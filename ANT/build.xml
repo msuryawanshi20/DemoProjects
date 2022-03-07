@@ -16,10 +16,10 @@
 						resultsPath="${testproject.results}" 
 						resultsPathDisposition="Increment" 
 						testEnvironment="${TestEnv}" 
-						webBrowser="" 
-						webBrowserConfiguration="LINUX Chrome"
-						webBrowserProviderName="SeleniumGrid"
-						webBrowserDeviceName="LINUX Chrome" 
+						webBrowser="Chrome" 
+						webBrowserConfiguration="Full Screen"
+						webBrowserProviderName="Desktop"
+						webBrowserDeviceName="Full Screen" 
 						excludeCallableTestCases="false" 
 						salesforceMetadataCache="Reuse" 
 						projectCachePath="../../.provarCaches"
@@ -27,7 +27,7 @@
 						pluginOutputlevel="WARNING"
 						stopTestRunOnError="false"
 						invokeTestRunMonitor="true"
-			       			dontFailBuild="true"
+			       		dontFailBuild="true"
 						>
 
 			<fileset id="testplan" dir="../plans/${TestPlan}">
