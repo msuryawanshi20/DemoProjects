@@ -54,7 +54,7 @@
           <value class="value" valueClass="string">SFConnection</value>
         </argument>
         <argument id="target">
-          <value class="uiTarget" uri="sf:ui:target?object=rstk__rtrouthdr__c&amp;action=New&amp;noOverride=true"/>
+          <value class="uiTarget" uri="sf:ui:target?object=rstk__rtrouthdr__c&amp;action=New"/>
         </argument>
         <argument id="targetDescription">
           <value class="value" valueClass="string">On SF Routing Master New screen</value>

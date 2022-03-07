@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase id="3">
+<testCase id="24">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="79" title="Salesforce Connect: SFConnection (Test)">
@@ -1365,7 +1365,7 @@
                   <value class="value" valueClass="string">SFConnection</value>
                 </argument>
                 <argument id="target">
-                  <value class="uiTarget" uri="sf:ui:target?object=rstk__rtrouthdr__c&amp;action=View&amp;noOverride=true"/>
+                  <value class="uiTarget" uri="sf:ui:target?object=rstk__rtrouthdr__c&amp;action=View"/>
                 </argument>
                 <argument id="navigate">
                   <value class="value" valueClass="string">Always</value>
