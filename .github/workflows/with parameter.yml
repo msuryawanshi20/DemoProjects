@@ -8,7 +8,7 @@ on:
     inputs:
       plan:
         type: choice
-        description: select Plan to for execution
+        description: Please select Test Plan For the execution
         options: 
         - API-Inventory
         - API-Work Order
@@ -18,7 +18,12 @@ on:
         - Recurring Billing
         - Shop Floor
         - Work Order
-    
+      TestEnv:
+        type: choice
+        description: Please select environment
+        options: 
+        - default
+        - Automation 
   
 jobs:
   build:
@@ -48,14 +53,15 @@ jobs:
         echo $PROVAR_HOME
         cd $GITHUB_WORKSPACE/ANT
         echo "Selected Plan Name="${{ github.event.inputs.plan }}
-        xvfb-run ant -file build.xml -DTestEnv=Automation "-DTestPlan=${{ github.event.inputs.plan }}" runtests
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=${{ github.event.inputs.plan }}" runtests
     
     - uses: actions/upload-artifact@v2
       with:
-        name: Execution Report
+        name: Execution Report for ${{ github.event.inputs.plan }}- $(date +'%Y-%m-%d')
         path: ${{ github.workspace }}/ANT/Results/*
     - uses: actions/upload-artifact@v2
       if: failure()
       with:
-        name: Execution Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        name: Execution Report for ${{ github.event.inputs.plan }}- $(date +'%Y-%m-%d')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         path: ${{ github.workspace }}/ANT/Results/*
