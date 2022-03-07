@@ -47,7 +47,8 @@ jobs:
         sudo apt-get -y install google-chrome-stable
         echo $PROVAR_HOME
         cd $GITHUB_WORKSPACE/ANT
-        xvfb-run ant -file build.xml -DTestEnv=Automation -DTestPlan=${{ github.event.inputs.plan }}  runtests
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        xvfb-run ant -file build.xml -DTestEnv=Automation "-DTestPlan=${{ github.event.inputs.plan }}"
     
     - uses: actions/upload-artifact@v2
       with:
