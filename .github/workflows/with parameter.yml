@@ -48,7 +48,7 @@ jobs:
         echo $PROVAR_HOME
         cd $GITHUB_WORKSPACE/ANT
         echo "Selected Plan Name="${{ github.event.inputs.plan }}
-        xvfb-run ant -file build.xml -DTestEnv=Automation "-DTestPlan=${{ github.event.inputs.plan }}"
+        xvfb-run ant -file build.xml -DTestEnv=Automation "-DTestPlan=${{ github.event.inputs.plan }}" runtests
     
     - uses: actions/upload-artifact@v2
       with:
