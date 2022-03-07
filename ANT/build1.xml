@@ -12,32 +12,32 @@
 	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
 	
 	<target name="runtests">
-	
-		<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
-	
-		<Run-Test-Case provarHome="${provar.home}" 
-				projectPath="${testproject.home}" 
-				resultsPath="${testproject.results}" 
-				resultsPathDisposition="Increment" 
-				testEnvironment="Automation" 
-				webBrowser="Chrome" 
-				webBrowserConfiguration="Full Screen"
-				webBrowserProviderName="Desktop"
-				webBrowserDeviceName="Full Screen" 
-				excludeCallableTestCases="false" 
-				salesforceMetadataCache="Reuse" 
-				projectCachePath="../../.provarCaches"
-				testOutputlevel="BASIC" 
-				pluginOutputlevel="WARNING"
-				stopTestRunOnError="false"
-				secretsPassword="${secrets.password}"
-				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
-				invokeTestRunMonitor="true"
-				>
 		
-			<fileset dir="../tests/Shop Floor"></fileset>
+			<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
+		
+			<Run-Test-Case provarHome="${provar.home}" 
+					projectPath="${testproject.home}" 
+					resultsPath="${testproject.results}" 
+					resultsPathDisposition="Increment" 
+					testEnvironment="Automation" 
+					webBrowser="Chrome" 
+					webBrowserConfiguration="Full Screen"
+					webBrowserProviderName="Desktop"
+					webBrowserDeviceName="Full Screen" 
+					excludeCallableTestCases="false" 
+					salesforceMetadataCache="Reuse" 
+					projectCachePath="../../.provarCaches"
+					testOutputlevel="BASIC" 
+					pluginOutputlevel="WARNING"
+					stopTestRunOnError="false"
+					secretsPassword="${secrets.password}"
+					testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
+					invokeTestRunMonitor="true"
+					>
+			
+				<fileset dir="../tests/Shop Floor"><include name="RSTK-9676-CRUD operation on Routing Master.testcase"/></fileset><fileset dir="../tests/Shop Floor"><include name="RSTK-9677-Clone Routing Master.testcase"/></fileset><fileset dir="../tests/Shop Floor"><include name="RSTK-9691-CRUD Operation on Manufacturing Department.testcase"/></fileset>
 
-		</Run-Test-Case>
+			</Run-Test-Case>
 
-	</target>
-</project>
+		</target>
+	</project>
