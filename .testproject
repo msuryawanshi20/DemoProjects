@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedEnvironment="Automation">
+<testProject selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
   <title>/TestProje/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
@@ -55,6 +55,7 @@
           <summary/>
           <connectionUrls>
             <connectionUrl secureStorageNodeId="ef72e2ba-6de7-4486-a8a0-6f805967f325" url="sf:environment=PROD_DEV;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000004wFvnAAE;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+            <connectionUrl envName="Automation" secureStorageNodeId="305306ca-0c5c-4eb6-94d9-f9123946c388" url="sf:environment=PROD_DEV;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000004wFvnAAE;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
           </connectionUrls>
         </connection>
       </connections>
