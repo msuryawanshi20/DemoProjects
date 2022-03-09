@@ -27,7 +27,6 @@
 						pluginOutputlevel="WARNING"
 						stopTestRunOnError="false"
 						invokeTestRunMonitor="true"
-			       		dontFailBuild="true"
 						>
 
 			<fileset id="testplan" dir="../plans/${TestPlan}">
