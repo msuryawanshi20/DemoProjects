@@ -15,7 +15,9 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
+    env: 
+     PROVAR_HOME: ${{ github.workspace }}/ProvarHome
     strategy:
       matrix:
         Plan: ["API-Inventory","API-Work Order", "Engg to WO Close","Inventory Transactions","RMA","Recurring Billing","Shop Floor","Work Order"]
