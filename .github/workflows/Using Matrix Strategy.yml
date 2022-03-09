@@ -19,6 +19,7 @@ jobs:
     env: 
      PROVAR_HOME: ${{ github.workspace }}/ProvarHome
     strategy:
+      fail-fast: false
       matrix:
         Plan: ["API-Inventory","API-Work Order", "Engg to WO Close","Inventory Transactions","RMA","Recurring Billing","Shop Floor","Work Order"]
     
