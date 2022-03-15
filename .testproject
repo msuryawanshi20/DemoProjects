@@ -54,8 +54,8 @@
         <connection id="462c15b0-e1f9-486b-969e-7dea55e2f298" name="QARSF_Admin">
           <summary/>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="ef72e2ba-6de7-4486-a8a0-6f805967f325" url="sf:environment=PROD_DEV;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000004wFvnAAE;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
-            <connectionUrl envName="Automation" secureStorageNodeId="305306ca-0c5c-4eb6-94d9-f9123946c388" url="sf:environment=PROD_DEV;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000004wFvnAAE;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+            <connectionUrl secureStorageNodeId="ef72e2ba-6de7-4486-a8a0-6f805967f325" url="sf:environment=PRERELEASE;apiLoginUrl=https://rstk-qa-rsf.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D410000011HE0EAM/0051K000008fKKFQA2;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+            <connectionUrl envName="Automation" secureStorageNodeId="13cdf313-dacc-4856-b305-3125005e6f7e" url="sf:environment=PRERELEASE;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000008Hn0WAAS;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
           </connectionUrls>
         </connection>
       </connections>
