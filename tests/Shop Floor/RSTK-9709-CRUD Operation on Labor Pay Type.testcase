@@ -78,12 +78,12 @@
         </clause>
         <clause name="else" testItemId="906">
           <steps>
-            <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="918" title="If: {GetSelectedEnvironment() = &quot;Automation&quot;}">
+            <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="918" title="If: {GetSelectedEnvironment() = &quot;AutomationOrg&quot;}">
               <arguments>
                 <argument id="condition">
                   <value class="eq">
                     <lhs class="funcCall" id="GetSelectedEnvironment"/>
-                    <rhs class="value" valueClass="string">Automation</rhs>
+                    <rhs class="value" valueClass="string">AutomationOrg</rhs>
                   </value>
                 </argument>
               </arguments>
@@ -107,7 +107,7 @@
                             <apiParam name="RateFactor"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-Automation/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Create</worksheetName>
                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                           </sourceValue>
@@ -741,12 +741,12 @@
                 </clause>
                 <clause name="else" testItemId="936">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="937" title="If: {GetSelectedEnvironment() = &quot;Automation&quot;}">
+                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="937" title="If: {GetSelectedEnvironment() = &quot;AutomationOrg&quot;}">
                       <arguments>
                         <argument id="condition">
                           <value class="eq">
                             <lhs class="funcCall" id="GetSelectedEnvironment"/>
-                            <rhs class="value" valueClass="string">Automation</rhs>
+                            <rhs class="value" valueClass="string">AutomationOrg</rhs>
                           </value>
                         </argument>
                       </arguments>
@@ -763,7 +763,7 @@
                                 <parameterValueSource variableName="SourceData1" variableScope="Test">
                                   <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QARSF/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx;1635422766879</cacheToken>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="LaborPayType" whereValue="{op_create.LaborPayType}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-Automation/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Update</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                   </sourceValue>

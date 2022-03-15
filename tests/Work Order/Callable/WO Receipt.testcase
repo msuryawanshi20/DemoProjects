@@ -194,6 +194,9 @@
               </arguments>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="7" title="Check the Sort By Item Number field">
+              <tags>
+                <string>disabled</string>
+              </tags>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=sortByItemNumber"/>
@@ -214,7 +217,7 @@
                   <value class="value" valueClass="string">false</value>
                 </argument>
                 <argument id="beforeWait">
-                  <value class="uiWait" uri="ui:wait:pageload?timeout=60"/>
+                  <value class="uiWait" uri="default"/>
                 </argument>
                 <argument id="afterWait">
                   <value class="uiWait" uri="ui:wait:auraBusy?timeout=60"/>
