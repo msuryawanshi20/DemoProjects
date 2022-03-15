@@ -227,7 +227,7 @@
                       <expectedExceptions/>
                       <parameterValueSources>
                         <parameterValueSource variableName="op_InvLocAddExcelData" variableScope="Test">
-                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QA-AutomationOrg/LOCAdd.xlsx;1641997039348</cacheToken>
+                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/AutomationOrg/LOCAdd.xlsx;1641997039348</cacheToken>
                           <cachedParameters>
                             <apiParam name="RowNumber"/>
                             <apiParam name="Site"/>
@@ -253,7 +253,7 @@
                             <apiParam name="UnitCostLanding"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/LOCAdd.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/LOCAdd.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Location Add</worksheetName>
                             <valuesRange class="value" valueClass="string">A:U</valuesRange>
                           </sourceValue>

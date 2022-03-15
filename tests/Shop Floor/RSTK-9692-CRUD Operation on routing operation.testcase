@@ -111,7 +111,7 @@
                             <apiParam name="ItemNumber"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9692-CRUD Operation on routing operation.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9692-CRUD Operation on routing operation.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Routing Master</worksheetName>
                             <valuesRange class="value" valueClass="string">A:B</valuesRange>
                           </sourceValue>
@@ -348,7 +348,7 @@
                                     <apiParam name="AllowAcceptFlag"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9692-CRUD Operation on routing operation.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9692-CRUD Operation on routing operation.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Operations</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:AA</valuesRange>
                                   </sourceValue>

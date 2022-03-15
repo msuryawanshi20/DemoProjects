@@ -129,7 +129,7 @@
                             <apiParam name="SimOhdRateFringe"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9691-CRUD Operation on Manufacturing Department.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9691-CRUD Operation on Manufacturing Department.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Create Mfg Dept</worksheetName>
                             <valuesRange class="value" valueClass="string">A:M</valuesRange>
                           </sourceValue>
@@ -1419,7 +1419,7 @@
                                     <apiParam name="SimOhdRateFringe"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ManufacturingDepartmentNumber" whereValue="{op_mfgDeptName.fields.manufacturingDepartmentNumber1.value}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9691-CRUD Operation on Manufacturing Department.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9691-CRUD Operation on Manufacturing Department.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Update</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:M</valuesRange>
                                   </sourceValue>

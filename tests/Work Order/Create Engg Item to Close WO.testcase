@@ -151,7 +151,7 @@
                                     <apiParam name="DisassemblyItem"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create Engg Item</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:R</valuesRange>
                                   </sourceValue>
@@ -518,7 +518,7 @@
                               <clauses>
                                 <clause name="then" testItemId="170">
                                   <steps>
-                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="177" title="Write: {op_ItemDetails}=&gt;templates/QA-AutomationOrg/Create Engineering Item Master.xlsx">
+                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="177" title="Write: {op_ItemDetails}=&gt;templates/AutomationOrg/Create Engineering Item Master.xlsx">
                                       <arguments>
                                         <argument id="data">
                                           <value class="variable">
@@ -527,12 +527,12 @@
                                         </argument>
                                         <argument id="dataUrl">
                                           <value class="excelTarget" debug="true" sheetWriteMode="Update">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Routing Master</worksheetName>
                                           </value>
                                         </argument>
                                         <argument id="targetDescription">
-                                          <value class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</value>
+                                          <value class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</value>
                                         </argument>
                                         <argument id="updateValueRange"/>
                                         <argument id="updateColumnNames">
@@ -785,7 +785,7 @@
                                             <apiParam name="DisassemblyItem"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ItemName}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Routing Master</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:C</valuesRange>
                                           </sourceValue>
@@ -995,7 +995,7 @@
                                                             <apiParam name="DisassemblyItem"/>
                                                           </cachedParameters>
                                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ItemName}">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">Operations</worksheetName>
                                                             <valuesRange class="value" valueClass="string">A:AA</valuesRange>
                                                           </sourceValue>
@@ -1456,7 +1456,7 @@
                                             <apiParam name="DisassemblyItem"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ItemName}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Add BOM</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:E</valuesRange>
                                           </sourceValue>
@@ -1655,7 +1655,7 @@
                               </arguments>
                               <parameterValueSources>
                                 <parameterValueSource variableName="op_excelData" variableScope="Test">
-                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\QA-AutomationOrg\\Create Engineering Item Master.xlsx;1641824482952</cacheToken>
+                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\AutomationOrg\\Create Engineering Item Master.xlsx;1641824482952</cacheToken>
                                   <cachedParameters>
                                     <apiParam name="RowNumber"/>
                                     <apiParam name="Site"/>
@@ -1667,7 +1667,7 @@
                                     <apiParam name="ExtractOperationsAndComponent"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ItemName}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>
@@ -2253,7 +2253,7 @@
                                                     <apiParam name="ExtractOperationsAndComponent"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ItemName}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Time and Qty Booking</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:O</valuesRange>
                                                   </sourceValue>
@@ -2555,7 +2555,7 @@
                                                     <apiParam name="LocationComments"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Create Engineering Item Master.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">WO receipt</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:J</valuesRange>
                                                   </sourceValue>

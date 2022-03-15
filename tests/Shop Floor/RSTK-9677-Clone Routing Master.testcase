@@ -99,7 +99,7 @@
                       <parameterValueSources>
                         <parameterValueSource variableName="op_excelData" variableScope="Test">
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9677-Clone Routing Master.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9677-Clone Routing Master.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Create Routing Master</worksheetName>
                             <valuesRange class="value" valueClass="string">A:B</valuesRange>
                           </sourceValue>
@@ -268,7 +268,7 @@
                               <parameterValueSources>
                                 <parameterValueSource variableName="op_excelDataClone" variableScope="Test">
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9677-Clone Routing Master.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9677-Clone Routing Master.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Clone</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:F</valuesRange>
                                   </sourceValue>

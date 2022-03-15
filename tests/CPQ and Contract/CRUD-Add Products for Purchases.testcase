@@ -83,7 +83,7 @@
                               </arguments>
                               <parameterValueSources>
                                 <parameterValueSource variableName="op_SOCONTRACT" variableScope="Test">
-                                  <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QA-AutomationOrg/Contract Miscellaneous Charges.xlsx;1643775916882</cacheToken>
+                                  <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/AutomationOrg/Contract Miscellaneous Charges.xlsx;1643775916882</cacheToken>
                                   <cachedParameters>
                                     <apiParam name="RowNumber"/>
                                     <apiParam name="ContractID"/>
@@ -99,7 +99,7 @@
                                     <apiParam name="SalesDivision"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Products for Purchases.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Products for Purchases.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:K</valuesRange>
                                   </sourceValue>
@@ -372,7 +372,7 @@
                                               </arguments>
                                               <parameterValueSources>
                                                 <parameterValueSource variableName="op_soconpp" variableScope="Test">
-                                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\QA-AutomationOrg\\Products for Purchases.xlsx;1644353737365</cacheToken>
+                                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\AutomationOrg\\Products for Purchases.xlsx;1644353737365</cacheToken>
                                                   <cachedParameters>
                                                     <apiParam name="RowNumber"/>
                                                     <apiParam name="Product"/>
@@ -385,7 +385,7 @@
                                                     <apiParam name="WarrantyType"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Products for Purchases.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Products for Purchases.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Create Product for Purchase</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:H</valuesRange>
                                                   </sourceValue>
@@ -558,7 +558,7 @@
                                               </arguments>
                                               <parameterValueSources>
                                                 <parameterValueSource variableName="op_soconppUpdate" variableScope="Test">
-                                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\QA-AutomationOrg\\Products for Purchases.xlsx;1644353737365</cacheToken>
+                                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\AutomationOrg\\Products for Purchases.xlsx;1644353737365</cacheToken>
                                                   <cachedParameters>
                                                     <apiParam name="RowNumber"/>
                                                     <apiParam name="Product"/>
@@ -571,7 +571,7 @@
                                                     <apiParam name="WarrantyType"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Products for Purchases.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Products for Purchases.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Update</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:H</valuesRange>
                                                   </sourceValue>

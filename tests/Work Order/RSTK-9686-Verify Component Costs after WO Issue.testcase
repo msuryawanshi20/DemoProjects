@@ -238,7 +238,7 @@
                                     <apiParam name="ExtractOperations"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9686-Verify Component Costs after WO Issue.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9686-Verify Component Costs after WO Issue.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>
@@ -794,7 +794,7 @@
                                                             <apiParam name="Comments"/>
                                                           </cachedParameters>
                                                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9686-Verify Component Costs after WO Issue.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9686-Verify Component Costs after WO Issue.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">Add Component</worksheetName>
                                                             <valuesRange class="value" valueClass="string">A:I</valuesRange>
                                                           </sourceValue>

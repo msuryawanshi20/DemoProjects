@@ -142,7 +142,7 @@
                                     <apiParam name="Comments"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9119_SYDATA-Loc Adjust.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9119_SYDATA-Loc Adjust.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Inv Adjust</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:M</valuesRange>
                                   </sourceValue>

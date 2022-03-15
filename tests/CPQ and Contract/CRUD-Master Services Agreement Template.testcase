@@ -81,7 +81,7 @@
                               </arguments>
                               <parameterValueSources>
                                 <parameterValueSource variableName="op_SOMSA" variableScope="Test">
-                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\QA-AutomationOrg\\Master Services Agreement Template.xlsx;1643628928010</cacheToken>
+                                  <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\AutomationOrg\\Master Services Agreement Template.xlsx;1643628928010</cacheToken>
                                   <cachedParameters>
                                     <apiParam name="RowNumber"/>
                                     <apiParam name="MasterServicesAgreement"/>
@@ -90,7 +90,7 @@
                                     <apiParam name="MSAIsActive"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Master Services Agreement Template.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/Master Services Agreement Template.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                   </sourceValue>
@@ -217,7 +217,7 @@
                                       </arguments>
                                       <parameterValueSources>
                                         <parameterValueSource variableName="op_SOMSAupdate" variableScope="Test">
-                                          <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\QA-AutomationOrg\\Master Services Agreement Template.xlsx;1643628928010</cacheToken>
+                                          <cacheToken>D:\\provar\\rsqasampleproj\\rsqasampleproj\\templates\\AutomationOrg\\Master Services Agreement Template.xlsx;1643628928010</cacheToken>
                                           <cachedParameters>
                                             <apiParam name="RowNumber"/>
                                             <apiParam name="MasterServicesAgreement"/>
@@ -226,7 +226,7 @@
                                             <apiParam name="MSAIsActive"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="MasterServicesAgreement" whereValue="{op_SOMSARow.MasterServicesAgreement}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Master Services Agreement Template.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Master Services Agreement Template.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Update</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                           </sourceValue>

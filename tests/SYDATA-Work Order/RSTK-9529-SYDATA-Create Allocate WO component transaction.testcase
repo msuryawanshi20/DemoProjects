@@ -134,7 +134,7 @@
                                     <apiParam name="ExtractOperations"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrgOrgOrg/RSTK-9529-SYDATA-Create Allocate WO component transaction.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrgOrgOrg/RSTK-9529-SYDATA-Create Allocate WO component transaction.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>

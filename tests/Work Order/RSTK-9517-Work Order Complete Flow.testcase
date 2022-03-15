@@ -222,7 +222,7 @@
                                     <apiParam name="ItemNumber"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>
@@ -736,7 +736,7 @@
                                                             <apiParam name="ItemNumber"/>
                                                           </cachedParameters>
                                                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">Add Component</worksheetName>
                                                             <valuesRange class="value" valueClass="string">A:I</valuesRange>
                                                           </sourceValue>
@@ -763,7 +763,7 @@
                                                             <apiParam name="StandardMachineHours"/>
                                                           </cachedParameters>
                                                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">Add Operation</worksheetName>
                                                             <valuesRange class="value" valueClass="string">A:S</valuesRange>
                                                           </sourceValue>
@@ -1267,7 +1267,7 @@
                                                     <apiParam name="ItemNumber"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Time and Qty Booking</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:O</valuesRange>
                                                   </sourceValue>
@@ -1532,7 +1532,7 @@
                                                     <apiParam name="ItemNumber"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">WO receipt</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:J</valuesRange>
                                                   </sourceValue>
@@ -2042,7 +2042,7 @@
                                                     <apiParam name="ItemNumber"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">WO Receipt reversal</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                                   </sourceValue>
@@ -2433,7 +2433,7 @@
                                                     <apiParam name="ItemNumber"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Time and Qty Booking Reversal</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                                   </sourceValue>
@@ -2667,7 +2667,7 @@
                                                     <apiParam name="ItemNumber"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9517-Work Order complete Flow.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Delete Operation and Components</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:C</valuesRange>
                                                   </sourceValue>

@@ -99,7 +99,7 @@
                                     <apiParam name="TxnComment"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">AddHeader</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>
@@ -484,7 +484,7 @@
                                                     <apiParam name="PackagingAmount"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="None">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">AddLine</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:N</valuesRange>
                                                   </sourceValue>
@@ -904,7 +904,7 @@
                                               <clauses>
                                                 <clause name="steps" testItemId="579">
                                                   <steps>
-                                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="588" title="Write: {op_SOLinesResult}=&gt;templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx">
+                                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="588" title="Write: {op_SOLinesResult}=&gt;templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx">
                                                       <arguments>
                                                         <argument id="data">
                                                           <value class="variable">
@@ -913,12 +913,12 @@
                                                         </argument>
                                                         <argument id="dataUrl">
                                                           <value class="excelTarget" debug="true" sheetWriteMode="Update">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">RMA Details Maintenance Grid</worksheetName>
                                                           </value>
                                                         </argument>
                                                         <argument id="targetDescription">
-                                                          <value class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</value>
+                                                          <value class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</value>
                                                         </argument>
                                                         <argument id="updateValueRange"/>
                                                         <argument id="updateColumnNames">
@@ -1143,7 +1143,7 @@
                                                     <apiParam name="BackgroundProcessing"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">FirmAllLines</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:B</valuesRange>
                                                   </sourceValue>
@@ -1435,7 +1435,7 @@
                                                     <apiParam name="ProcessAllLines"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Allocate</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:C</valuesRange>
                                                   </sourceValue>
@@ -1734,7 +1734,7 @@
                                                     <apiParam name="TransactionQuantity"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">PickPackShip</worksheetName>
                                                     <valuesRange class="value"/>
                                                   </sourceValue>
@@ -2075,7 +2075,7 @@
                                               <clauses>
                                                 <clause name="steps" testItemId="670">
                                                   <steps>
-                                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="675" title="Write: {op_SOShipperResultRow}=&gt;templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx">
+                                                    <apiCall apiId="com.provar.plugins.bundled.apis.io.Write" name="Write" testItemId="675" title="Write: {op_SOShipperResultRow}=&gt;templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx">
                                                       <arguments>
                                                         <argument id="data">
                                                           <value class="variable">
@@ -2084,12 +2084,12 @@
                                                         </argument>
                                                         <argument id="dataUrl">
                                                           <value class="excelTarget" debug="true" sheetWriteMode="Update">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">RMA Details Maintenance Grid</worksheetName>
                                                           </value>
                                                         </argument>
                                                         <argument id="targetDescription">
-                                                          <value class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</value>
+                                                          <value class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</value>
                                                         </argument>
                                                         <argument id="updateValueRange"/>
                                                         <argument id="updateColumnNames">
@@ -2313,7 +2313,7 @@
                                                     <apiParam name="ProcessAllLines"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">CreateInvoice</worksheetName>
                                                     <valuesRange class="value"/>
                                                   </sourceValue>
@@ -2646,7 +2646,7 @@
                                                         <parameterValueSource variableName="op_RMAHeader" variableScope="Test">
                                                           <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QARSF/SO to RMA To INSP Order To RMA Receipt.xlsx;1634558962189</cacheToken>
                                                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                             <worksheetName class="value" valueClass="string">RMA Header</worksheetName>
                                                             <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                                           </sourceValue>
@@ -2904,7 +2904,7 @@
                                                                             <apiParam name="Rstk__soline_sohdr__c"/>
                                                                           </cachedParameters>
                                                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="RMA" whereValue="{op_RMAHDR_Row.RMA}">
-                                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                                             <worksheetName class="value" valueClass="string">RMA Details Maintenance Grid</worksheetName>
                                                                             <valuesRange class="value" valueClass="string">A:K</valuesRange>
                                                                           </sourceValue>
@@ -3236,7 +3236,7 @@
                                                                             <apiParam name="LotNumber"/>
                                                                           </cachedParameters>
                                                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="RMA" whereValue="{op_RMAHDR_Row.RMA}">
-                                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                                             <worksheetName class="value" valueClass="string">Receipt</worksheetName>
                                                                             <valuesRange class="value" valueClass="string">A:I</valuesRange>
                                                                           </sourceValue>
@@ -3505,7 +3505,7 @@
                                                                                                       </arguments>
                                                                                                       <parameterValueSources>
                                                                                                         <parameterValueSource variableName="op_inspectionOrderExcelData" variableScope="Test">
-                                                                                                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx;1643045532107</cacheToken>
+                                                                                                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx;1643045532107</cacheToken>
                                                                                                           <cachedParameters>
                                                                                                             <apiParam name="RowNumber"/>
                                                                                                             <apiParam name="RMA"/>
@@ -3515,7 +3515,7 @@
                                                                                                             <apiParam name="QuantityInOtherDisposition"/>
                                                                                                           </cachedParameters>
                                                                                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_ReceiptExcelDataRow.Product}">
-                                                                                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
+                                                                                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx</workbookPath>
                                                                                                             <worksheetName class="value" valueClass="string">Inspection Order Qty</worksheetName>
                                                                                                             <valuesRange class="value" valueClass="string">A:E</valuesRange>
                                                                                                           </sourceValue>
@@ -3546,7 +3546,7 @@
                                                                                                       </arguments>
                                                                                                       <parameterValueSources>
                                                                                                         <parameterValueSource variableName="op_inspectionOrderExcelData" variableScope="Test">
-                                                                                                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QA-AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx;1643045532107</cacheToken>
+                                                                                                          <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/AutomationOrg/SO to RMA To INSP Order To RMA Receipt.xlsx;1643045532107</cacheToken>
                                                                                                           <cachedParameters>
                                                                                                             <apiParam name="RowNumber"/>
                                                                                                             <apiParam name="RMA"/>

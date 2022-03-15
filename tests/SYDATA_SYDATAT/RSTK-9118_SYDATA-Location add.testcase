@@ -164,7 +164,7 @@
                                     <apiParam name="UnitCostLanding"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9118_SYDATA-LocAdd.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9118_SYDATA-LocAdd.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Location Add</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:W</valuesRange>
                                   </sourceValue>

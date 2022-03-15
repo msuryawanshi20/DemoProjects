@@ -107,7 +107,7 @@
                             <apiParam name="RateFactor"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Create</worksheetName>
                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                           </sourceValue>
@@ -763,7 +763,7 @@
                                 <parameterValueSource variableName="SourceData1" variableScope="Test">
                                   <cacheToken>D:/provar/rsqasampleproj/rsqasampleproj/templates/QARSF/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx;1635422766879</cacheToken>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="LaborPayType" whereValue="{op_create.LaborPayType}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9709-CRUD Operation on Labor Pay Type.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Update</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                   </sourceValue>

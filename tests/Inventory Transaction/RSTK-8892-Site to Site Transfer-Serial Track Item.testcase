@@ -133,7 +133,7 @@
                             <apiParam name="TxnComment"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Site to Site.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Site to Site.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">RSTK-8892-Serial</worksheetName>
                             <valuesRange class="value" valueClass="string">A:K</valuesRange>
                           </sourceValue>

@@ -315,7 +315,7 @@
                             <apiParam name="CycleCount"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/LocAdjustment.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/LocAdjustment.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Location Adjustment</worksheetName>
                             <valuesRange class="value" valueClass="string">A:L</valuesRange>
                           </sourceValue>

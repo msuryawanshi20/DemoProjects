@@ -149,7 +149,7 @@
                             <apiParam name="MachinePricePerHour"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Create operation</worksheetName>
                             <valuesRange class="value" valueClass="string">A:U</valuesRange>
                           </sourceValue>
@@ -2280,7 +2280,7 @@
                                     <apiParam name="MachinePricePerHour"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="IndependentOperationID" whereValue="{op_createRow.IndependentOperationID}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Update operation</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:U</valuesRange>
                                   </sourceValue>
@@ -4133,7 +4133,7 @@
                                             <apiParam name="MachinePricePerHour"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="IndependentOperationID" whereValue="{op_createRow.IndependentOperationID}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Add Material</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                           </sourceValue>
@@ -4868,7 +4868,7 @@
                                             <apiParam name="MachinePricePerHour"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="IndependentOperationID" whereValue="{op_createRow.IndependentOperationID}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9716-CRUD operation on Independent Operations.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Add Task</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                           </sourceValue>

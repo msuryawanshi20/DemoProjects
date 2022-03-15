@@ -131,7 +131,7 @@
                             <apiParam name="LocationNumberForOtherDisposition"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9659-CRUD operations on Inspection Order Template.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9659-CRUD operations on Inspection Order Template.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Inspectio Order Template</worksheetName>
                             <valuesRange class="value" valueClass="string">A:K</valuesRange>
                           </sourceValue>

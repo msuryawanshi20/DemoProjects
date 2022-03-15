@@ -218,7 +218,7 @@
                             <apiParam name="Project"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-8093-Inventory Location Adjustment.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-8093-Inventory Location Adjustment.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Inventory Item</worksheetName>
                             <valuesRange class="value" valueClass="string">A:C</valuesRange>
                           </sourceValue>
@@ -376,7 +376,7 @@
                                     <apiParam name="CycleCount"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo" whereName="ItemName" whereValue="{op_ItemDetailsRow.ItemNo}">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-8093-Inventory Location Adjustment.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-8093-Inventory Location Adjustment.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Inventory Location details</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:J</valuesRange>
                                   </sourceValue>

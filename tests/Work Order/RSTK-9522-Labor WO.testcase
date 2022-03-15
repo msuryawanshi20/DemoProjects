@@ -236,7 +236,7 @@
                                     <apiParam name="ExtractOperations"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:H</valuesRange>
                                   </sourceValue>
@@ -576,7 +576,7 @@
                                                     <apiParam name="ExtractOperations"/>
                                                   </cachedParameters>
                                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                                    <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
+                                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
                                                     <worksheetName class="value" valueClass="string">Add Operation</worksheetName>
                                                     <valuesRange class="value" valueClass="string">A:O</valuesRange>
                                                   </sourceValue>
@@ -880,7 +880,7 @@
                                             <apiParam name="ExtractOperations"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Time and Qty Booking</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:O</valuesRange>
                                           </sourceValue>
@@ -1225,7 +1225,7 @@
                                             <apiParam name="ExtractOperations"/>
                                           </cachedParameters>
                                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="StartsWith" whereName="ItemNumber" whereValue="{op_excelDataRow.ItemNumber}">
-                                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
+                                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9522-Labor WO.xlsx</workbookPath>
                                             <worksheetName class="value" valueClass="string">Time and Qty Booking Reversal</worksheetName>
                                             <valuesRange class="value" valueClass="string">A:D</valuesRange>
                                           </sourceValue>

@@ -137,7 +137,7 @@
                             <apiParam name="ToProject"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/Division To division Transfer.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/Division To division Transfer.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">8176-Serial</worksheetName>
                             <valuesRange class="value" valueClass="string">A:L</valuesRange>
                           </sourceValue>

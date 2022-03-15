@@ -218,7 +218,7 @@
                             <apiParam name="InventoryOffsetAccount"/>
                           </cachedParameters>
                           <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                            <workbookPath class="value" valueClass="string">templates/QA-AutomationOrg/RSTK-8109-Inventory Unit Cost Adjust.xlsx</workbookPath>
+                            <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-8109-Inventory Unit Cost Adjust.xlsx</workbookPath>
                             <worksheetName class="value" valueClass="string">Cost Adjust</worksheetName>
                             <valuesRange class="value" valueClass="string">A:C</valuesRange>
                           </sourceValue>
