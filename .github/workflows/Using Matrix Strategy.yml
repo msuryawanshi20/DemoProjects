@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        Plan: ["API-Inventory","API-Work Order", "Engg to WO Close","Inventory Transactions","RMA","Recurring Billing","Shop Floor","Work Order"]
+        Plan: ["Accounts Receivable","API-Inventory","API-Work Order","Engg to WO Close","Inventory Transactions","PO END to End Execution","POLoader","POSYDATA","Purchase Order","Recurring Billing","Requisition","RMA","Sales Orders","Shop Floor","SOAPI","SYDATA - Sales Order","Work Order"]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
