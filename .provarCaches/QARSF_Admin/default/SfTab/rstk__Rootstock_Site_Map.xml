@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Rootstock_Site_Map" n="rstk__Rootstock_Site_Map" namespacePrefix="rstk" pageUrl="https://rstk-qa-rsf.my.salesforce.com/servlet/servlet.Integration?lid=01r41000000AUX5&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd015MHlNRlF4TURvME5Ub3dOaTR5T1RsYSwzengwanBSZVIwcUZ0ZEd4VFBPUnYwLFlXWmtNR0po" s="" seqNum="0" t="Rootstock Site Map">
+  <children>
+    <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>
