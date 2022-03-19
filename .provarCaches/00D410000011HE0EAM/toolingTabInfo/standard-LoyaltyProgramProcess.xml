@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyProgramProcess" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Program Processes" Name="standard-LoyaltyProgramProcess" SobjectName="LoyaltyProgramProcess" Url="https://rstk-qa-rsf.my.salesforce.com/9MX/o"/>
+</toolingTabInfo>

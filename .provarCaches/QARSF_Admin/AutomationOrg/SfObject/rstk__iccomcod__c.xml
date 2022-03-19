@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a1I" label="Inventory Commodity Code" labelPlural="Inventory Commodity Codes" layoutable="true" n="rstk__iccomcod__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Inventory Commodity Code (a1I)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__iccomcods__r" n="New"/>
+    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__iccomcods__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__iccomcods__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__iccomcods__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__iccomcods__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

@@ -1,0 +1,188 @@
+<n1:CustomObjectTranslation n2:type="n1:CustomObjectTranslation" xmlns:n1="http://soap.sforce.com/2006/04/metadata"
+   xmlns:n2="http://www.w3.org/2001/XMLSchema-instance">
+ <n1:fullName>BF_Setup_VAT_Declaration__c-en_US</n1:fullName>
+ <n1:caseValues>
+  <n1:article n2:nil="true" />
+  <n1:caseType n2:nil="true" />
+  <n1:plural>false</n1:plural>
+  <n1:possessive n2:nil="true" />
+  <n1:value>BF Setup VAT Declaration</n1:value>
+ </n1:caseValues>
+ <n1:caseValues>
+  <n1:article n2:nil="true" />
+  <n1:caseType n2:nil="true" />
+  <n1:plural>true</n1:plural>
+  <n1:possessive n2:nil="true" />
+  <n1:value>BF Setup VAT Declarations</n1:value>
+ </n1:caseValues>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>API_Type__c</n1:name>
+  <n1:picklistValues>
+   <n1:masterLabel>HMRC</n1:masterLabel>
+   <n1:translation></n1:translation>
+  </n1:picklistValues>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Access_Token__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Country_Master__c</n1:name>
+  <n1:relationshipLabel></n1:relationshipLabel>
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Declaration_Period__c</n1:name>
+  <n1:picklistValues>
+   <n1:masterLabel>Month</n1:masterLabel>
+   <n1:translation></n1:translation>
+  </n1:picklistValues>
+  <n1:picklistValues>
+   <n1:masterLabel>Quarter</n1:masterLabel>
+   <n1:translation></n1:translation>
+  </n1:picklistValues>
+  <n1:picklistValues>
+   <n1:masterLabel>Year</n1:masterLabel>
+   <n1:translation></n1:translation>
+  </n1:picklistValues>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Financial_Company__c</n1:name>
+  <n1:relationshipLabel></n1:relationshipLabel>
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter>
+   <n1:errorMessage></n1:errorMessage>
+   <n1:informationalMessage n2:nil="true" />
+  </n1:lookupFilter>
+  <n1:name>Financial_Division__c</n1:name>
+  <n1:relationshipLabel></n1:relationshipLabel>
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Gov_Client_Device_ID__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Refresh_Token__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>Supplementary_threshold__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>VAT_ID__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter n2:nil="true" />
+  <n1:name>VAT_Registration_Number__c</n1:name>
+  <n1:relationshipLabel n2:nil="true" />
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:lookupFilter>
+   <n1:errorMessage></n1:errorMessage>
+   <n1:informationalMessage n2:nil="true" />
+  </n1:lookupFilter>
+  <n1:name>VAT_declaration_clearing_account__c</n1:name>
+  <n1:relationshipLabel></n1:relationshipLabel>
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:fields>
+  <n1:gender n2:nil="true" />
+  <n1:help></n1:help>
+  <n1:label></n1:label>
+  <n1:lookupFilter>
+   <n1:errorMessage></n1:errorMessage>
+   <n1:informationalMessage></n1:informationalMessage>
+  </n1:lookupFilter>
+  <n1:name>VAT_declaration_variances_account__c</n1:name>
+  <n1:relationshipLabel></n1:relationshipLabel>
+  <n1:startsWith n2:nil="true" />
+ </n1:fields>
+ <n1:gender n2:nil="true" />
+ <n1:layouts>
+  <n1:layout>BF Setup VAT Declaration Layout</n1:layout>
+  <n1:layoutType n2:nil="true" />
+  <n1:sections>
+   <n1:label></n1:label>
+   <n1:section>Custom Links</n1:section>
+  </n1:sections>
+  <n1:sections>
+   <n1:label></n1:label>
+   <n1:section>VAT Declaration Clearing</n1:section>
+  </n1:sections>
+ </n1:layouts>
+ <n1:nameFieldLabel n2:nil="true" />
+ <n1:quickActions>
+  <n1:aspect n2:nil="true" />
+  <n1:label></n1:label>
+  <n1:name>Create_declaration</n1:name>
+ </n1:quickActions>
+ <n1:startsWith>Consonant</n1:startsWith>
+ <n1:webLinks>
+  <n1:label></n1:label>
+  <n1:name>BF_VAT_Setup_Summary</n1:name>
+ </n1:webLinks>
+ <n1:webLinks>
+  <n1:label></n1:label>
+  <n1:name>Retrieve_VAT_obligations</n1:name>
+ </n1:webLinks>
+</n1:CustomObjectTranslation>

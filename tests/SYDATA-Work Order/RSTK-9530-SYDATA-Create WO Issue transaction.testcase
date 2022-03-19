@@ -101,12 +101,12 @@
                 </clause>
                 <clause name="else" testItemId="143">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="144" title="If: {GetSelectedEnvironment() = &quot;Automation&quot;}">
+                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="144" title="If: {GetSelectedEnvironment() = &quot;AutomationOrg&quot;}">
                       <arguments>
                         <argument id="condition">
                           <value class="eq">
                             <lhs class="funcCall" id="GetSelectedEnvironment"/>
-                            <rhs class="value" valueClass="string">Automation</rhs>
+                            <rhs class="value" valueClass="string">AutomationOrg</rhs>
                           </value>
                         </argument>
                       </arguments>
@@ -134,7 +134,7 @@
                                     <apiParam name="ExtractOperations"/>
                                   </cachedParameters>
                                   <sourceValue class="excelTarget" debug="true" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
-                                    <workbookPath class="value" valueClass="string">templates/QA-Automation/RSTK-9530-SYDATA-Create WO Issue transaction.xlsx</workbookPath>
+                                    <workbookPath class="value" valueClass="string">templates/AutomationOrg/RSTK-9530-SYDATA-Create WO Issue transaction.xlsx</workbookPath>
                                     <worksheetName class="value" valueClass="string">Create WO</worksheetName>
                                     <valuesRange class="value" valueClass="string">A:G</valuesRange>
                                   </sourceValue>
@@ -299,7 +299,14 @@
                           </value>
                         </argument>
                         <argument id="ip_dueDate">
-                          <value class="invalid">{DateFormat({op_excelDataRow.DueDate})}</value>
+                          <value class="funcCall" id="DateFormat">
+                            <argument id="date">
+                              <value class="variable">
+                                <path element="op_excelDataRow"/>
+                                <path element="DueDate"/>
+                              </value>
+                            </argument>
+                          </value>
                         </argument>
                         <argument id="ip_reworkFlag">
                           <value class="value" valueClass="string">false</value>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD1K000001h2ZiWAI" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Inbound Shipment Route Types" Name="rstk__ibrtetype__c" SobjectName="rstk__ibrtetype__c" Url="https://rstk-qa-rsf.my.salesforce.com/a0v/o"/>
+</toolingTabInfo>

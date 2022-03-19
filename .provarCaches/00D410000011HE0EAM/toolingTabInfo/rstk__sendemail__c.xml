@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD1K000001h2bVWAQ" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Sender Email by Project and Templates" Name="rstk__sendemail__c" SobjectName="rstk__sendemail__c" Url="https://rstk-qa-rsf.my.salesforce.com/aBK/o"/>
+</toolingTabInfo>

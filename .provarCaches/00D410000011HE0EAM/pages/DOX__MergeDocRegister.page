@@ -1,0 +1,13 @@
+<apex:page standardcontroller="DOX__Template__c" extensions="DOX.MergeDocRegisterExt">
+    
+    <apex:sectionHeader title="Template" subtitle="Register"/>
+    <apex:form id="form">
+        <apex:pageMessages />
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!cancel}" value="Return to {!DOX__Template__c.Name}"/>
+                <apex:commandButton action="{!registerDoc}" rerender="form" value="Register"/>  
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD41000000AUXgGAO" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Item Vendor Approver Manufacturers" Name="rstk__povendmfr__c" SobjectName="rstk__povendmfr__c" Url="https://rstk-qa-rsf.my.salesforce.com/a3a/o"/>
+</toolingTabInfo>

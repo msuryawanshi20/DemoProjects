@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="TransactionJournal" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Transaction Journals" Name="standard-TransactionJournal" SobjectName="TransactionJournal" Url="https://rstk-qa-rsf.my.salesforce.com/0lV/o"/>
+</toolingTabInfo>

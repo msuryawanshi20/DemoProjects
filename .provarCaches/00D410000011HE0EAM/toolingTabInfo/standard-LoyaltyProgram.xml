@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyProgram" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Programs" Name="standard-LoyaltyProgram" SobjectName="LoyaltyProgram" Url="https://rstk-qa-rsf.my.salesforce.com/0lp/o"/>
+</toolingTabInfo>

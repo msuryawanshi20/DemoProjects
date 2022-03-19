@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyMemberCurrency" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Member Currency" Name="standard-LoyaltyMemberCurrency" SobjectName="LoyaltyMemberCurrency" Url="https://rstk-qa-rsf.my.salesforce.com/0lz/o"/>
+</toolingTabInfo>

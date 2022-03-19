@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Heroku connection configuration</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DOX__app_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>App_name represents the Connected APP name for query</description>
+        <externalId>false</externalId>
+        <label>app_name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOX__base_url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>base_URL formulates the target URL to DOX application on WEB server</description>
+        <externalId>false</externalId>
+        <label>base_url</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>DOX__client_key__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CLIENT_KEY for the connected app</description>
+        <externalId>false</externalId>
+        <label>client_key</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOX__client_secret__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CLIENT_SECRET for connnected app</description>
+        <externalId>false</externalId>
+        <label>client_secret</label>
+        <length>200</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOX__org_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This Org Name value to be used across Heroku and will be used as a schema name as well on Postgres DB.</description>
+        <externalId>false</externalId>
+        <label>org_name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOX__private_key__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PRIVATE_KEY of AES128 encode</description>
+        <externalId>false</externalId>
+        <label>private_key</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOX__redirect_url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>REDIRECT URL is a callback URL for Connected app</description>
+        <externalId>false</externalId>
+        <label>redirect_url</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Heroku Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>

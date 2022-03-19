@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__PO_Line_Revision</fullName>
+        <fields>rstk__formula_name1__c</fields>
+        <fields>rstk__polinerev_carrier__c</fields>
+        <fields>rstk__polinerev_buyermaintdte__c</fields>
+        <fields>rstk__polinerev_buyerrcptdte__c</fields>
+        <fields>rstk__polinerev_poumcf__c</fields>
+        <fields>rstk__polinerev_fob__c</fields>
+        <fields>rstk__polinerev_shipviatype__c</fields>
+        <fields>rstk__polinerev_site__c</fields>
+        <fields>rstk__polinerev_sts__c</fields>
+        <label>PO Line Revision</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>polinerev__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__polinerev_poline__r.rstk__externalid__c &amp; &apos;_&apos; &amp; TEXT(rstk__polinerev_seqno__c)</formula>
+        <inlineHelpText>This is an internal system field used to define the externalID of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_name1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(rstk__polinerev_seqno__c)  &amp; &apos;, Rev: &apos; &amp; TEXT(rstk__polinerev_rev__c) &amp; &apos;, Status: &apos; &amp; rstk__polinerev_sts__c &amp; IF(ISNULL(rstk__polinerev_vendrev__c),  &apos;&apos;, &apos;, Vendor Rev: &apos; &amp; TEXT(rstk__polinerev_vendrev__c))</formula>
+        <inlineHelpText>Internal formula for constructing the associated name field, which is an internal system field, not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Name1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <inlineHelpText>This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_buyercomments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>These are the Buyer&apos;s comments associated with this PO Line&apos;s revision</inlineHelpText>
+        <label>Buyer Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_buyermaintdte__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Date that this PO Line was last maintained</inlineHelpText>
+        <label>Buyer Last Maintained Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_buyerrcptdte__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the new suggested due date for receipt of this PO line</inlineHelpText>
+        <label>Buyer Suggested Receipt Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_carrier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Carrier Code associated with this PO Line Revision</inlineHelpText>
+        <label>Carrier Code</label>
+        <referenceTo>rstk__sycarrier__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_carrierovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates whether the Carrier  has been overridden</inlineHelpText>
+        <label>Carrier Line Override Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_closeshortind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates whether this PO line is closed short</inlineHelpText>
+        <label>Close Short Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_descr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Description of the Item on this PO Line</inlineHelpText>
+        <label>Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_div__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Division associated with this PO Line Revision</inlineHelpText>
+        <label>Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipName>divpolinerevs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_duedte__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Due Date for this PO Line Revision</inlineHelpText>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_exchangerate__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the revised Exchange  Rate on this PO Line</inlineHelpText>
+        <label>Exchange Rate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_fob__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the FOB Code associated with this PO Line Revision</inlineHelpText>
+        <label>FOB</label>
+        <referenceTo>rstk__syfob__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_fobovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates whether the FOB code  has been overridden</inlineHelpText>
+        <label>FOB Line Override Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_frghtrm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>These are the Freight Terms associated with this PO Line Revision</inlineHelpText>
+        <label>Freight Terms</label>
+        <referenceTo>rstk__syfrghtrm__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_frghtrmovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates whether the Freight Terms have  been overridden</inlineHelpText>
+        <label>Freight Terms Line Override Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_invqtyreq__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Inventory Qty Ordered</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_lineamt__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Total Amount of this PO Line</inlineHelpText>
+        <label>Line Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_lne__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the PO Line Number</inlineHelpText>
+        <label>Line</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_longdescr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the long description of the Item on this PO Line</inlineHelpText>
+        <label>Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_mode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Revision Mode for this PO Revision</inlineHelpText>
+        <label>Revision Mode</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_ordno__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Purchase Order Number of this PO Line</inlineHelpText>
+        <label>Purchase Order No</label>
+        <referenceTo>rstk__pohdr__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_overrcptind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates that a receipt greater than order quantity is allowed</inlineHelpText>
+        <label>Over Receipt Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_poline__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the PO Line associated with this Revision</inlineHelpText>
+        <label>PO Line</label>
+        <referenceTo>rstk__poline__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_poumcf__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the PO Unit of Measure Conversion factor for this PO Line Revision</inlineHelpText>
+        <label>Conversion Factor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_puruom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the PO Unit of Measure  for this PO Line Revision</inlineHelpText>
+        <label>Unit Of Measure</label>
+        <referenceTo>rstk__syuom__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_qty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the revised Quantity on this PO Line</inlineHelpText>
+        <label>Quantity</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_rev__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the revised Revision on this PO Line</inlineHelpText>
+        <label>Revision</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_seqno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the sequence number for this PO revision</inlineHelpText>
+        <label>Sequence Number</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_shiptoseqno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the revised ship-to Sequence Number</inlineHelpText>
+        <label>Revised Ship To Sequence Number</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_shipviatype__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>These are the Ship Via Type associated with this PO Line Revision</inlineHelpText>
+        <label>Ship Via Type</label>
+        <referenceTo>rstk__syshipviatype__c</referenceTo>
+        <relationshipName>POLINEREVs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_shipviatypeovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates whether the Ship Via has  been overridden</inlineHelpText>
+        <label>Ship Via Line Override Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Site associated with this PO Line Revision</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipName>polinerevs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_sts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Status of this PO Line&apos;s revision</inlineHelpText>
+        <label>Status</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_tempid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an Internal ID</inlineHelpText>
+        <label>temp id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_unitprice__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Unit Price of the Item in the Home currency</inlineHelpText>
+        <label>Unit Price (Home Currency)</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_unitpricemcurr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Unit Price (Maintenance Currency)</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_unitpricevcurr__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Unit Price of the Item in the Vendor&apos;s currency</inlineHelpText>
+        <label>Unit Price (Vendor Currency)</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_vendcomments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>These are the Vendor comments on this PO Line revision</inlineHelpText>
+        <label>Vendor Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_vendmaintdte__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Vendor&apos;s date last maintained</inlineHelpText>
+        <label>Vendor Last Maintained Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_vendrcptdte__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Vendor&apos;s suggested Receipt date</inlineHelpText>
+        <label>Vendor Suggested Receipt Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__polinerev_vendrev__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Vendor&apos;s Revision for this PO Line</inlineHelpText>
+        <label>Vendor Revision</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field not currently displayed on any Rootstock User pages</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field which is not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PO Line Revision</label>
+    <listViews>
+        <fullName>RS_PO_Line_Revisions_Select</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__polinerev_div__c</columns>
+        <columns>rstk__polinerev_descr__c</columns>
+        <columns>rstk__polinerev_ordno__c</columns>
+        <columns>rstk__polinerev_poline__c</columns>
+        <columns>rstk__polinerev_lne__c</columns>
+        <columns>rstk__polinerev_lineamt__c</columns>
+        <columns>rstk__polinerev_qty__c</columns>
+        <columns>rstk__polinerev_rev__c</columns>
+        <columns>rstk__polinerev_sts__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__polinerev_duedte__c</columns>
+        <columns>rstk__polinerev_unitpricemcurr__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__polinerev_poline__c</field>
+            <operation>contains</operation>
+            <value>02717-</value>
+        </filters>
+        <label>RS PO Line Revisions - Select</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Line_Revisions</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__polinerev_div__c</columns>
+        <columns>rstk__polinerev_descr__c</columns>
+        <columns>rstk__polinerev_ordno__c</columns>
+        <columns>rstk__polinerev_poline__c</columns>
+        <columns>rstk__polinerev_lne__c</columns>
+        <columns>rstk__polinerev_lineamt__c</columns>
+        <columns>rstk__polinerev_qty__c</columns>
+        <columns>rstk__polinerev_rev__c</columns>
+        <columns>rstk__polinerev_sts__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__polinerev_duedte__c</columns>
+        <columns>rstk__polinerev_unitpricemcurr__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>RS PO Line Revisions</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>POLINEREV Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PO Line Revisions</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>rstk__Line_Qty_Req_Not_Less_ThanReceived_Qty</fullName>
+        <active>true</active>
+        <description>Poline quantity required cannot be less than received quantity.</description>
+        <errorConditionFormula>ISNEW() &amp;&amp; rstk__polinerev_qty__c &lt; rstk__polinerev_poline__r.rstk__formula_qtyrcvd__c</errorConditionFormula>
+        <errorMessage>Poline quantity required cannot be less than received quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__PO_line_number_for_revision_is_required</fullName>
+        <active>true</active>
+        <description>PO line number for revision is required</description>
+        <errorConditionFormula>ISNULL(rstk__polinerev_lne__c)</errorConditionFormula>
+        <errorMessage>PO line number for revision is missing.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
