@@ -22,7 +22,7 @@
 						webBrowserDeviceName="Full Screen" 
 						excludeCallableTestCases="false" 
 						salesforceMetadataCache="Reuse" 
-						projectCachePath="../../.provarCaches"
+						projectCachePath="../.provarCaches"
 						testOutputlevel="BASIC" 
 						pluginOutputlevel="WARNING"
 						stopTestRunOnError="false"
