@@ -48,7 +48,7 @@ jobs:
         cd $GITHUB_WORKSPACE/ANT
         echo "Selected Plan Name="${{ github.event.inputs.plan }}
         echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
-        xvfb-run ant -file ${{ github.event.inputs.buildFileName }}" "-DTestEnv=${{ github.event.inputs.TestEnv }}" runtests
+        xvfb-run ant -file ${{ github.event.inputs.buildFileName }} "-DTestEnv=${{ github.event.inputs.TestEnv }}" runtests
     
     - uses: actions/upload-artifact@v2
       with:
