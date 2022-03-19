@@ -6,11 +6,10 @@ name: Execute build by passing buildXML File name as parameter
 on: 
   workflow_dispatch:
     inputs:
-      
       buildFileName:
-      description: 'Build File Name'
-      required: true
-      default: 'sanity.xml'
+       description: "Build File Name"
+       required: true
+       default: "sanity.xml"
 
       TestEnv:
         type: choice
