@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="MemberBenefit" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Member Benefits" Name="standard-MemberBenefit" SobjectName="MemberBenefit" Url="https://rstk-qa-rsf.my.salesforce.com/0hW/o"/>
+</toolingTabInfo>

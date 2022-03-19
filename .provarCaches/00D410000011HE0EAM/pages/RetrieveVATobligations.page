@@ -1,0 +1,52 @@
+<apex:page id="pg" title="Retrieve VAT obligations" standardController="rstk__customext__c" extensions="ControllerRetrieveVATobligations" sideBar="true" action="{!doBeforePageLoad}">
+    
+    <apex:variable var="o" value="{!rstk__customext__c}" />
+    
+    <apex:form id="fm">
+        <apex:pageMessages />
+        <apex:pageBlock id="pb" mode="detail" >
+            
+            <apex:actionFunction name="doRetrieveVATobligations" action="{!doRetrieveVATobligations}" immediate="false"/>
+            
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Retrieve VAT obligations" onclick="doRetrieveVATobligations();return true;" reRender="pbs_Obligations" />
+<!--                <apex:commandButton value="HMRC Authentication" action="{!hmrcAuthentication}" reRender="fm" status="actionStatus"/> -->
+            </apex:pageBlockButtons>
+        
+            <apex:pageBlockSection id="pbs_Main" showHeader="false" columns="1" >
+               
+                <apex:pageBlockSectionItem helpText="Date from which to return obligations.">
+                    <apex:outputLabel value="From Date:" />
+                    <apex:inputField id="custom_date__c" value="{!o.rstk__custom_date__c}" />    
+                </apex:pageBlockSectionItem>
+                 
+                <apex:pageBlockSectionItem helpText="Date to which to return obligations.">
+                    <apex:outputLabel value="To Date:" />
+                    <apex:inputField id="custom_date2__c" value="{!o.rstk__custom_date2__c}" />  
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Obligation status to return: " />
+                    <apex:selectList id="statusopt__c" value="{!statusopt}" size="1" >
+                        <apex:selectOptions value="{!StatusOpts}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection id="pbs_Obligations" showHeader="false" columns="1">
+                <apex:pageBlockTable id="pbt_Obligations" value="{!Obligations}" var="ob">
+                    <apex:column headerValue="Period Start Date" value="{!ob.start}"/>
+                    <apex:column headerValue="Period End Date" value="{!ob.endd}"/>
+                    <apex:column headerValue="Due Date" value="{!ob.due}"/>
+                    <apex:column headerValue="Status" value="{!ob.status}"/>
+                    <apex:column headerValue="Date Received" value="{!ob.received}"/>
+                    <apex:column headerValue="Key" value="{!ob.periodKey}"/>
+                </apex:pageBlockTable>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

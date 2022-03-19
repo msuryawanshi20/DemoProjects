@@ -1,0 +1,170 @@
+<apex:page controller="rootstock.AnalyticsDrilldownCon" title="{!$Label.rootstock__interactive_financial_reports_drilldown}" showHeader="false" sidebar="false" standardStylesheets="false" docType="html-5.0">
+    <apex:includeLightning />
+
+    <apex:includeScript value="{!URLFOR($Resource.rootstock__scripts, '/jquery.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.rootstock__scripts, '/kendo.js')}" />
+    <apex:includeScript value="{!$Resource.rootstock__Analytics}" />
+    <apex:includeScript value="{!URLFOR($Resource.rootstock__scripts, '/csv.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.rootstock__scripts, '/excel.js')}" />
+
+    <apex:stylesheet value="{!URLFOR($Resource.rootstock__styles, '/main.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.rootstock__styles, '/lightning.css')}" />
+    <style>
+        .slds-button,
+        .slds-dropdown__item a,
+        #grid a,
+        .k-icon {
+            color: #333 !important;
+        }
+
+        .slds-dropdown {
+            margin-top: 1px;
+            padding: 0;
+            right: -2px;
+        }
+
+        #grid {
+            overflow: auto;
+        }
+
+        #grid td {
+            white-space: pre;
+        }
+
+        .currency {
+            text-align: right;
+        }
+    </style>
+
+    <apex:variable value="{!$ObjectType.rstkf__gltxn__c.fields}" var="txnFields" />
+    <apex:variable value="{!$ObjectType.rstkf__gltxnsum__c.fields}" var="sumFields" />
+
+    <script>
+        let file;
+        const { report, dims, xAxis, columnFilter, rowFilter, filtersApplied } = JSON.parse('{!JSENCODE(data)}');
+        $(document).ready(() => {
+            const filters = {};
+            each(dims, ({ field }) => {
+                const yValue = rowFilter[field];
+                const filter = Array.to(field === xAxis ? columnFilter : (yValue ? yValue.split(Suffix.DUPLICATE.value)[0] : map(filtersApplied[field], (id) => {
+                    if (!Suffix.DUPLICATE.is(id)) return id;
+                })));
+                if (filter.length) filters[field] = filter;
+            });
+            [{ file }] = [state, Label] = [{ report, dims, filtersApplied: filters, file: `{!$Label.drilldown}_${Date.now()}.` }, { Company: '{!$ObjectType.rstkf__rifr__c.fields.rstkf__rifr_cmpno__c.label}', Currency: '{!$ObjectType.rstk__socust__c.fields.rstk__socust_custcurr__c.label}', Financial_Report: '{!$ObjectType.rstkf__rifrsec__c.fields.rstkf__rifrsec_rifr__c.label}', Year: '{!$ObjectType.rstkf__gljh__c.fields.rstkf__gljh_glyear__c.label}', Total: '{!$Label.Total}' }];
+            filterDisplay();
+
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AnalyticsDrilldownCon.getGlTxns}',
+                _pick(report, ['rstkf__rifr_cmpno__c', 'rstkf__rifr_glyear__c']),
+                filters,
+                (glTxns, { type, message }) => {
+                    if (type === 'exception') return alert(message);
+
+                    each(glTxns, (glTxn) => {
+                        glTxn.rstkf__gltxn_trandate__c = kendo.toString(new Date(glTxn.rstkf__gltxn_trandate__c), 'MM/dd/yyyy hh:mm tt');
+                        glTxn.rstkf__gltxn_balance__c = subtract(glTxn.rstkf__gltxn_dramt__c, glTxn.rstkf__gltxn_cramt__c);
+                        glTxn.srctxn__c = glTxn.srctxn__r = null;
+                        if (glTxn.rstkf__gltxn_apinvtxn__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_apinvtxn__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_apinvtxn__r;
+                        } else if (glTxn.rstkf__gltxn_appayd__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_appayd__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_appayd__r;
+                        } else if (glTxn.rstkf__gltxn_arcashd__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_arcashd__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_arcashd__r;
+                        } else if (glTxn.rstkf__gltxn_arinvtxn__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_arinvtxn__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_arinvtxn__r;
+                        } else if (glTxn.rstkf__gltxn_glbankstmtdist__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_glbankstmtdist__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_glbankstmtdist__r;
+                        } else if (glTxn.rstkf__gltxn_gljd__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_gljd__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_gljd__r;
+                        } else if (glTxn.rstkf__gltxn_sytxncst__c) {
+                            glTxn.srctxn__c = glTxn.rstkf__gltxn_sytxncst__c;
+                            glTxn.srctxn__r = glTxn.rstkf__gltxn_sytxncst__r;
+                        }
+                    });
+
+                    saveState({ grid: $('#grid').kendoGrid({
+                        columns: concat([
+                            { field: 'rstkf__gltxn_trandate__c', title: '{!txnFields.rstkf__gltxn_trandate__c.label}' },
+                            lookupColumn('srctxn__c', '{!$Label.Source_Transaction}'),
+                        ], map(dims.slice(2), ({ field, title }) => {
+                            return lookupColumn(field, title);
+                        }), [
+                            lookupColumn('Id', '{!$ObjectType.rstkf__gltxn__c.label}'),
+                            { field: 'rstkf__gltxn_source__c', title: '{!txnFields.rstkf__gltxn_source__c.label}' },
+                            lookupColumn('rstkf__gltxnsum_glperiod__c', '{!sumFields.rstkf__gltxnsum_glperiod__c.label}'),
+                            lookupColumn('rstkf__gltxnsum_glacct__c', '{!sumFields.rstkf__gltxnsum_glacct__c.label}'),
+                            currencyColumn('rstkf__gltxn_dramt__c', '{!txnFields.rstkf__gltxn_dramt__c.label}'),
+                            currencyColumn('rstkf__gltxn_cramt__c', '{!txnFields.rstkf__gltxn_cramt__c.label}'),
+                            currencyColumn('rstkf__gltxn_balance__c', '{!sumFields.rstkf__Balance_f__c.label}'),
+                        ]),
+                        dataSource: {
+                            aggregate: map(['rstkf__gltxn_dramt__c', 'rstkf__gltxn_cramt__c', 'rstkf__gltxn_balance__c'], (field) => {
+                                return { field, aggregate: 'sum' };
+                            }),
+                            data: glTxns,
+                            pageSize: 25,
+                        },
+                        excel: {
+                            allPages: true,
+                            fileName: `${file}xlsx`,
+                        },
+                        excelExport,
+                        pageable: {
+                            input: true,
+                            messages: { page: '' },
+                            numeric: false,
+                        },
+                        scrollable: false,
+                    }).data('kendoGrid') });
+
+                    $('#spinner').hide();
+                },
+                { escape: false },
+            );
+        });
+
+        function lookupColumn(field, title) {
+            if (field.startsWith('rstkf__gltxnsum_')) field = `rstkf__gltxn_gltxnsum__r.${field}`;
+            const nameField = `${field.endsWith('__c') ? `${field.substring(0, field.length - 3)}__r.` : ''}Name`;
+            return { field: nameField, title, template: `#if (${field}) {#<a href="/#=${field}#" target="_blank">#=${nameField}#</a>#}#` };
+        }
+
+        function currencyColumn(field, title) {
+            return { field, title, type: 'currency', template: cellTemplate({ field }), attributes: { class: 'currency' }, footerTemplate: `{!$Label.Total}: ${cellTemplate({ field: 'sum' })}` };
+        }
+    </script>
+
+    <div class="slds-page-header slds-grid">
+        <div class="slds-col slds-media slds-media_center">
+            <img src="{!URLFOR($Resource.styles, '/rs_icon.png')}" />
+            <div class="slds-media__body">
+                <p class="slds-page-header__title">{!$Label.rootstock__interactive_financial_reports_drilldown}</p>
+                <div id="filters"></div>
+            </div>
+        </div>
+
+        <button class="slds-align-bottom slds-dropdown-trigger slds-button slds-button_neutral">
+            {!$Label.Export}
+            <ul class="slds-dropdown slds-dropdown_right">
+                <li class="slds-dropdown__item"><a onclick="csvExport()">{!$Label.CSV}</a></li>
+                <li class="slds-dropdown__item"><a onclick="state.grid.saveAsExcel()">{!$Label.EXCEL}</a></li>
+            </ul>
+        </button>
+    </div>
+
+    <div id="grid"></div>
+
+    <div id="spinner"></div>
+    <script>
+        $Lightning.use('{!namespace}:stencilcontainerapp', () => {
+            $Lightning.createComponent('{!namespace}:spinner', { }, 'spinner', () => { });
+        });
+    </script>
+</apex:page>

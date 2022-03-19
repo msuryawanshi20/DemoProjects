@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__RMA_Detail</fullName>
+        <fields>Name</fields>
+        <fields>rstk__sorma_custno__c</fields>
+        <fields>rstk__sorma_adjacct__c</fields>
+        <fields>rstk__sorma_closed__c</fields>
+        <fields>rstk__sorma_div__c</fields>
+        <fields>rstk__sorma_action__c</fields>
+        <fields>rstk__sorma_socaddr__c</fields>
+        <fields>rstk__sorma_line__c</fields>
+        <fields>rstk__sorma_syorg__c</fields>
+        <label>RMA Detail</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>sorma__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>rootstock__RMA_Detail_Related_List</fullName>
+        <description>Used in Return Material Authorizattion Record page</description>
+        <displayedFields>
+            <field>rstk__sorma_soprod__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_project__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_action__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_released__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_qtyauth__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_qtyrec__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_soline__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_soshipline__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__sorma_closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>RMA Detail Related List</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>rstk__RSFieldSet</fullName>
+        <description>For user defined fields on Visual Force pages</description>
+        <label>Custom Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>rstk__altextid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>altextid</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__sorma_sormh__r.rstk__externalid__c &amp; &apos;_&apos; &amp; TEXT(ROUND( rstk__sorma_line__c, 0 ))</formula>
+        <inlineHelpText>This is an internal system field used to define the external ID of a record, which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__sorma_sormh__r.rstk__externalid__c &amp; &apos;_&apos; &amp; TEXT(ROUND( rstk__sorma_line__c, 0 ))</formula>
+        <inlineHelpText>Internal formula for constructing the associated name field, which is an internal system field, not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__sorma_div__r.rstk__sydiv_div__c + &apos; &apos; +  rstk__sorma_soprod__r.rstk__soprod_prod__c + &apos; &apos; +  rstk__sorma_project__r.rstk__pjproj_proj__c + &apos; &apos; +  rstk__sorma_reason__r.rstk__soreason_desc__c + &apos; &apos; +  rstk__sorma_soline__r.rstk__soline_sohdr__c</formula>
+        <inlineHelpText>This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field not currently displayed on any Rootstock User pages</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_action__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Valid actions are:  Repair, Replace, and Issue Credit</inlineHelpText>
+        <label>Action</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Replace</fullName>
+                    <default>false</default>
+                    <label>Replace</label>
+                </value>
+                <value>
+                    <fullName>Repair</fullName>
+                    <default>false</default>
+                    <label>Repair</label>
+                </value>
+                <value>
+                    <fullName>Issue Credit</fullName>
+                    <default>false</default>
+                    <label>Issue Credit</label>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                    <label>Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_address1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the street address  (Line 1)</inlineHelpText>
+        <label>Override Address Line 1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_address2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the Suite #, Apartment #, etc. (Line 2)</inlineHelpText>
+        <label>Override Address Line 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_address3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the street address  (Line 3)</inlineHelpText>
+        <label>Override Address Line 3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_adjacct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Adjustment Account associated with this RMA.</inlineHelpText>
+        <label>Adjustment Account</label>
+        <referenceTo>rstk__syacc__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>RMA</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_advpackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Use Advanced Packaging</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Case number, if created by a case.</inlineHelpText>
+        <label>Case Number</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_city__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the city</inlineHelpText>
+        <label>Override City</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_closed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that RMA is closed.</inlineHelpText>
+        <label>Closed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_condition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments on condition when received.</inlineHelpText>
+        <label>Condition Received</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_conmethod__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the contact method</inlineHelpText>
+        <label>Override Contact Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Text to Email</fullName>
+                    <default>false</default>
+                    <label>Text to Email</label>
+                </value>
+                <value>
+                    <fullName>Text to Phone</fullName>
+                    <default>false</default>
+                    <label>Text to Phone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_consigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates Consigned Inventory, which when received will come in at no cost.</inlineHelpText>
+        <label>Consigned Inventory</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_contact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The contact name for this RMA detail record</inlineHelpText>
+        <label>Override Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the country</inlineHelpText>
+        <label>Override Country</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_creditauth__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that a Credit has been authorized for this RMA.</inlineHelpText>
+        <label>Credit Authorized</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_custno__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer for this RMA.</inlineHelpText>
+        <label>Customer</label>
+        <referenceTo>rstk__socust__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date RMA issued.</inlineHelpText>
+        <label>Date Issued</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_daterecvd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_dimvals__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Dimension Values</label>
+        <referenceTo>rstk__dimvals__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_div__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Applicable DIvision</inlineHelpText>
+        <label>Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_dracct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional Sub Ledger Account that would be debited upon an RMA Receipt.  If left blank, will use the RMA Adjustment Account defined on the SO Control record for the given Sales Division.</inlineHelpText>
+        <label>RMA Receipt Debit Account</label>
+        <referenceTo>rstk__syacc__c</referenceTo>
+        <relationshipLabel>RMA Detail (RMA Receipt Debit Account)</relationshipLabel>
+        <relationshipName>dracctsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the email address</inlineHelpText>
+        <label>Override Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_extcomment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments that can be viewed when printing the RMA</inlineHelpText>
+        <label>External Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_fax__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides  the fax number</inlineHelpText>
+        <label>Override Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_fromcase__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates RMA was created from a case.</inlineHelpText>
+        <label>Created From Case</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_fsoackd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Current Print Detail</label>
+        <referenceTo>rstk__fsoackd__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_insplocid__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inspection Location ID to which an RMA is received or transferred to when receiving or transferring to Inspection.</inlineHelpText>
+        <label>Inspection Location ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>RMA Detail (Inspection Location ID)</relationshipLabel>
+        <relationshipName>insplocidsormsa</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_insplocnum__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inspection Location Number to which an RMA is received or transferred to when receiving or transferring to Inspection.</inlineHelpText>
+        <label>Inspection Location Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_inspord__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inspection Order</label>
+        <referenceTo>rstk__inspord__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_insptempl__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inspection Order Template</label>
+        <referenceTo>rstk__insptempl__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_installaddr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When RMA is created for a Product that shipped on a Sales Order, this is the Installation Address defined for the Installation Customer on the Sales Order that the Product being returned as shipped against.</inlineHelpText>
+        <label>Installation Address</label>
+        <referenceTo>rstk__socaddr__c</referenceTo>
+        <relationshipLabel>RMA Detail (Installation Address)</relationshipLabel>
+        <relationshipName>installaddrsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_installcust__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When RMA is created for a Product that shipped on a Sales Order, this is the Installation Customer defined on the Sales Order that the Product being returned as shipped against.</inlineHelpText>
+        <label>Installation Customer</label>
+        <referenceTo>rstk__socust__c</referenceTo>
+        <relationshipLabel>RMA Detail (Installation Customer)</relationshipLabel>
+        <relationshipName>installcustsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_intcomment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal-only Comments</inlineHelpText>
+        <label>Internal Comment</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_invdiv__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inventory Division associated with this return.</inlineHelpText>
+        <label>Inventory Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipLabel>RMA Detail (Inventory Division)</relationshipLabel>
+        <relationshipName>Return_Material_Authorization1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_invlocid__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inventory Location ID to which an RMA is received or transferred to when receiving or transferring to Inventory.</inlineHelpText>
+        <label>Inventory Location ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>invlocidsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_invlocnum__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inventory Location Number to which an RMA is received or transferred to when receiving or transferring to Inventory.</inlineHelpText>
+        <label>Inventory Location Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_isocountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>sorma_isocountry__c</description>
+        <externalId>false</externalId>
+        <label>ISO Country Codes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rstk__ISO_Country_Codes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_line__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>RMA line number for this RMA Detail</inlineHelpText>
+        <label>Line</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the ship-to name</inlineHelpText>
+        <label>Override Ship to Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_oshiptoaddr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, all address and related fields can be overwritten for this RMA only.</inlineHelpText>
+        <label>Ship To Address Override</label>
+        <referenceTo>rstk__sormaaddr__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>oshiptoaddrsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_overcmprice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Setting this indicator will use the Override price on Credit Memo Lines created from this RMA Line</inlineHelpText>
+        <label>Use Override Price on Credit Memo Line</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_ovrshipto__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, this allows the user to override all Ship-To Address fields</inlineHelpText>
+        <label>Ship To Address Override</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_phone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the phone number</inlineHelpText>
+        <label>Override Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_preshipok__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that replacement can occur before product is returned.</inlineHelpText>
+        <label>Advance Replacement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Project associated with this RMA.</inlineHelpText>
+        <label>Project</label>
+        <referenceTo>rstk__pjproj__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyalloc__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity Allocated</inlineHelpText>
+        <label>Qty Allocated</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyauth__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity Authorized</inlineHelpText>
+        <label>Qty Authorized</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyinsp__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity in Inspection on this RMA.</inlineHelpText>
+        <label>Qty in Inspection</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyrec__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity Received against this RMA.</inlineHelpText>
+        <label>Qty Received</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyscrap__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity Scrapped against this RMA.</inlineHelpText>
+        <label>Qty Scrapped</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_qtyship__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity Shipped</inlineHelpText>
+        <label>Qty Shipped</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_reason__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Must be a valid Reason Code.</inlineHelpText>
+        <label>Reason for Return</label>
+        <referenceTo>rstk__soreason__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_released__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked. indicates that this RMA Detail record is released and can now be processed.</inlineHelpText>
+        <label>Released</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_resp__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Manufacturing User responsible for this RMA.</inlineHelpText>
+        <label>Responsible User</label>
+        <referenceTo>rstk__syusr__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_returnonly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, a Replacement Sales Order cannot be created from RMA Detail.  Note that field is disabled if a Replacement SO Line has already been created for this RMA Detail record.</inlineHelpText>
+        <label>Return Only (No Replacement)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_returnprice__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When the &apos;Replacement Product&apos; field is used, when a price is set here, this will be the Unit Price used when creating a Replacement Sales Order from this RMA Detail.  If not set, the pricing library will be called and the price will be derived as usual.</inlineHelpText>
+        <label>Override Price for Replacement Sales Ord</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_returnprod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When set, when a Replacement Sales Order is created from this RMA Detail, the SO Line Product will be the Rootstock Product set here rather than the Product being returned.</inlineHelpText>
+        <label>Replacement Product</label>
+        <referenceTo>rstk__soprod__c</referenceTo>
+        <relationshipLabel>RMA Detail (Replacement Product)</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_rmano__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>RMA Number that this RMA Detail record is tied to.</inlineHelpText>
+        <label>RMA Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_scraplocid__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Location ID to which an RMA is transferred  when the RMA is scrapped.  Location type must be Non-nettable.</inlineHelpText>
+        <label>Scrap Location ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>RMA Detail (Scrap Location ID)</relationshipLabel>
+        <relationshipName>scraplocidsormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_scraplocnum__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Location Number to which an RMA is transferred to when RMA is scrapped.</inlineHelpText>
+        <label>Scrap Location Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_shipcost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Shipping costs</inlineHelpText>
+        <label>Shipping Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_shipsite__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies Site from which RMA replacement will be shipped.</inlineHelpText>
+        <label>Ship From Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>RMA Detail (Ship From Site)</relationshipLabel>
+        <relationshipName>shipsitesormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_shiptomethod__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Ship-To Address Method</inlineHelpText>
+        <label>Ship To Address Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Use Header</fullName>
+                    <default>false</default>
+                    <label>Use Header</label>
+                </value>
+                <value>
+                    <fullName>Use Customer Address</fullName>
+                    <default>false</default>
+                    <label>Use Customer Address</label>
+                </value>
+                <value>
+                    <fullName>Line Override</fullName>
+                    <default>false</default>
+                    <label>Line Override</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies Site in which RMA will be received.</inlineHelpText>
+        <label>Receive To Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_socaddr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Ship To Address for the customer.</inlineHelpText>
+        <label>Customer Ship To Address</label>
+        <referenceTo>rstk__socaddr__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_soinv__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Associated Credit Memo number.</inlineHelpText>
+        <label>Credit Memo Number</label>
+        <referenceTo>rstk__soinv__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>RMA</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_soline__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales Order Line associated with the RMA.</inlineHelpText>
+        <label>Sales Order Line</label>
+        <referenceTo>rstk__soline__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_soprod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Product being returned on this RMA Detail record.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>rstk__soprod__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>Return_Material_Authorization</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_sormastat__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>User-defined RMA statuses established in User Status under Sales Setup menu.</inlineHelpText>
+        <label>Designated RMA Status</label>
+        <referenceTo>rstk__sormastat__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_sormh__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Return Material Authorization number.</inlineHelpText>
+        <label>RMA Number</label>
+        <referenceTo>rstk__sormh__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_soship__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The shipper from which this RMA is being returned</inlineHelpText>
+        <label>Shipper Number</label>
+        <referenceTo>rstk__soship__c</referenceTo>
+        <relationshipName>RMA_Header</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_soshipline__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Associated Shipper Line number.</inlineHelpText>
+        <label>Shipper Line</label>
+        <referenceTo>rstk__soshipline__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_state__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the state</inlineHelpText>
+        <label>Override State</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_syorg__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Organizational Department associated with this RMA.</inlineHelpText>
+        <label>Organizational Department</label>
+        <referenceTo>rstk__syorg__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_uom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales UOM</label>
+        <referenceTo>rstk__syuom__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>sormas</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_uomcf__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales/Inv UOM Conv Factor</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_usegenerickit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, this indicates that the item being returned is not a Product that was shipped.</inlineHelpText>
+        <label>Process Non-Product Components</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_wbs__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>WBS Account</inlineHelpText>
+        <label>Project Charge Code</label>
+        <referenceTo>rstk__pjprojwbs__c</referenceTo>
+        <relationshipLabel>RMA Detail</relationshipLabel>
+        <relationshipName>RMA_Header</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_zerormarcpt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, the RMA Receipt transaction will be costed at $0, regardless of the actual cost of the item being received.</inlineHelpText>
+        <label>Do RMA Receipt at Zero Cost</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__sorma_zip__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When Override Ship-To is checked, this overrides the zip code</inlineHelpText>
+        <label>Override Zip Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field which is not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RMA Detail</label>
+    <listViews>
+        <fullName>rstk__RS_RMA_Detail</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__sorma_sormh__c</columns>
+        <columns>rstk__sorma_custno__c</columns>
+        <columns>rstk__sorma_div__c</columns>
+        <columns>rstk__sorma_rmano__c</columns>
+        <columns>rstk__sorma_soprod__c</columns>
+        <columns>rstk__sorma_dimvals__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__sorma_qtyauth__c</columns>
+        <columns>rstk__sorma_qtyrec__c</columns>
+        <columns>rstk__sorma_qtyinsp__c</columns>
+        <columns>rstk__sorma_qtyship__c</columns>
+        <columns>rstk__sorma_closed__c</columns>
+        <columns>rstk__sorma_released__c</columns>
+        <columns>rstk__sorma_date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__sorma_dimvals__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>RMA Detail</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_RMA_Header</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__sorma_custno__c</columns>
+        <columns>rstk__sorma_div__c</columns>
+        <columns>rstk__sorma_rmano__c</columns>
+        <columns>rstk__sorma_soprod__c</columns>
+        <columns>rstk__sorma_project__c</columns>
+        <columns>rstk__sorma_qtyauth__c</columns>
+        <columns>rstk__sorma_qtyrec__c</columns>
+        <columns>rstk__sorma_qtyship__c</columns>
+        <columns>rstk__sorma_reason__c</columns>
+        <columns>rstk__sorma_action__c</columns>
+        <columns>rstk__sorma_closed__c</columns>
+        <columns>rstk__sorma_condition__c</columns>
+        <columns>rstk__sorma_date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>RMA Header</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_debug</fullName>
+        <columns>rstk__sorma_project__c</columns>
+        <columns>rstk__sorma_scraplocid__c</columns>
+        <columns>rstk__sorma_scraplocnum__c</columns>
+        <columns>rstk__sorma_insplocid__c</columns>
+        <columns>rstk__sorma_date__c</columns>
+        <columns>rstk__sorma_insplocnum__c</columns>
+        <columns>rstk__sorma_invlocid__c</columns>
+        <columns>rstk__sorma_invlocnum__c</columns>
+        <columns>NAME</columns>
+        <columns>rstk__sorma_sormh__c</columns>
+        <columns>rstk__sorma_qtyauth__c</columns>
+        <columns>rstk__sorma_qtyrec__c</columns>
+        <columns>rstk__sorma_qtyinsp__c</columns>
+        <columns>rstk__sorma_qtyship__c</columns>
+        <columns>rstk__sorma_released__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__sorma_dimvals__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>RS_debug</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>RMA Detail</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <searchResultsAdditionalFields>rstk__sorma_div__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_custno__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_rmano__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_soprod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_project__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_qtyauth__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_qtyrec__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__sorma_qtyship__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__searchindex__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>rstk__Adjustment_Account_Reqd_For_Release</fullName>
+        <active>true</active>
+        <description>Adjustment Account is required in order to release the RMA</description>
+        <errorConditionFormula>AND(
+ rstk__sorma_released__c = true,
+ ISBLANK(rstk__sorma_adjacct__c)
+)</errorConditionFormula>
+        <errorMessage>Adjustment Account is required in order to release the RMA</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Cannot_Unrelease_When_Qty_Rcvd_Shipped</fullName>
+        <active>true</active>
+        <description>Cannot unrelease RMA when quantities have been received or shipped</description>
+        <errorConditionFormula>AND(
+ ISCHANGED(rstk__sorma_released__c),
+ rstk__sorma_released__c = false,
+ OR(rstk__sorma_qtyrec__c &gt; 0, rstk__sorma_qtyship__c &gt; 0, rstk__sorma_qtyinsp__c &gt; 0, rstk__sorma_qtyscrap__c &gt; 0)
+)</errorConditionFormula>
+        <errorMessage>Cannot unrelease RMA when quantities have been received or shipped</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Hdr_Release_Reqd_to_Release_Dtl</fullName>
+        <active>true</active>
+        <errorConditionFormula>rstk__sorma_released__c &amp;&amp; !rstk__sorma_sormh__r.rstk__sormh_released__c</errorConditionFormula>
+        <errorMessage>RMA Header must be released in order to release RMA Detail.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__InValid_Location_ID_and_Location_Number</fullName>
+        <active>true</active>
+        <description>Inventory/Inspection/Scrap location id and location number should be different.</description>
+        <errorConditionFormula>rstk__sorma_released__c &amp;&amp; (( rstk__sorma_invlocid__c =  rstk__sorma_insplocid__c &amp;&amp;  rstk__sorma_invlocnum__c =  rstk__sorma_insplocnum__c ) || ( rstk__sorma_invlocid__c =   rstk__sorma_scraplocid__c &amp;&amp;  rstk__sorma_invlocnum__c =   rstk__sorma_scraplocnum__c ) || ( rstk__sorma_scraplocid__c =  rstk__sorma_insplocid__c &amp;&amp;  rstk__sorma_scraplocnum__c =  rstk__sorma_insplocnum__c ))</errorConditionFormula>
+        <errorMessage>Inventory/Inspection/Scrap location id and location number should be different.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Inspection_Location_Reqd_For_Release</fullName>
+        <active>true</active>
+        <description>Inspection location is required in order to release the RMA</description>
+        <errorConditionFormula>AND(
+ rstk__sorma_released__c = true,
+ OR(ISBLANK(rstk__sorma_insplocid__c), ISBLANK(rstk__sorma_insplocnum__c))
+)</errorConditionFormula>
+        <errorMessage>Inspection location is required in order to release the RMA</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Inventory_Division_Is_Reqd</fullName>
+        <active>true</active>
+        <description>Inventory division is required</description>
+        <errorConditionFormula>ISBLANK(rstk__sorma_invdiv__c)</errorConditionFormula>
+        <errorMessage>Inventory division is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Inventory_Location_Reqd_For_Release</fullName>
+        <active>true</active>
+        <description>Inventory location is required in order to release the RMA</description>
+        <errorConditionFormula>AND(
+ rstk__sorma_released__c = true,
+ OR(ISBLANK(rstk__sorma_invlocid__c), ISBLANK(rstk__sorma_invlocnum__c))
+)</errorConditionFormula>
+        <errorMessage>Inventory location is required in order to release the RMA</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Issue_Credit_For_Credit_Auth</fullName>
+        <active>true</active>
+        <description>Action must be Issue Credit in order to authorize a credit memo</description>
+        <errorConditionFormula>AND(
+ rstk__sorma_creditauth__c = true,
+ ISPICKVAL( rstk__sorma_action__c , &apos;Issue Credit&apos;) = false
+)</errorConditionFormula>
+        <errorMessage>Action must be Issue Credit in order to authorize a credit memo</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Product_Should_Not_Be_Of_Type</fullName>
+        <active>true</active>
+        <description>Cannot create RMA with Product of type Service or Miscellaneous</description>
+        <errorConditionFormula>ISPICKVAL(rstk__sorma_soprod__r.rstk__soprod_prodtype__c, &apos;Service&apos;) || ISPICKVAL(rstk__sorma_soprod__r.rstk__soprod_prodtype__c, &apos;Miscellaneous&apos;)</errorConditionFormula>
+        <errorMessage>Cannot create RMA with Product of type Service or Miscellaneous</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Product_once_set_cannot_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp; ISCHANGED( rstk__sorma_soprod__c )</errorConditionFormula>
+        <errorMessage>Product once set cannot be changed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Project_Must_Match_Soline_Project</fullName>
+        <active>true</active>
+        <description>When soline is specified, Project must match soline project</description>
+        <errorConditionFormula>AND(
+(NOT ISBLANK( rstk__sorma_soline__r.rstk__soline_project__c )),
+(rstk__sorma_soline__r.rstk__soline_project__c !=  rstk__sorma_project__c) 
+)</errorConditionFormula>
+        <errorMessage>When soline is specified, Project must match soline project</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Qty_Authorized_cannot_exceed_Qty_Shipped</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISPICKVAL(rstk__sorma_soshipline__r.rstk__soshipline_prod__r.rstk__soprod_prodtype__c , &apos;Kit&apos;)) &amp;&amp; 
+((!ISBLANK(rstk__sorma_soshipline__c) &amp;&amp; rstk__sorma_qtyauth__c &gt; rstk__sorma_soshipline__r.rstk__soshipline_qtyship__c) || (!ISBLANK(rstk__sorma_soline__c) &amp;&amp; rstk__sorma_qtyauth__c &gt; rstk__sorma_soline__r.rstk__soline_qtyship__c))</errorConditionFormula>
+        <errorMessage>Qty Authorized cannot exceed Qty Shipped</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Qty_Received_cannot_exceed_Qty_Auth</fullName>
+        <active>true</active>
+        <description>Qty Received cannot exceed Qty Authorized</description>
+        <errorConditionFormula>rstk__sorma_qtyrec__c &gt;  rstk__sorma_qtyauth__c</errorConditionFormula>
+        <errorMessage>Qty Received cannot exceed Qty Authorized</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Qty_in_Inspection_cannot_exceed_Qty_Auth</fullName>
+        <active>true</active>
+        <description>Qty in Inspection cannot exceed Qty Authorized</description>
+        <errorConditionFormula>rstk__sorma_qtyinsp__c &gt;  rstk__sorma_qtyauth__c</errorConditionFormula>
+        <errorMessage>Qty in Inspection cannot exceed Qty Authorized</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Quantity_Authorized_Greaterthanzero</fullName>
+        <active>true</active>
+        <description>Quantity Authorized must be greater than zero</description>
+        <errorConditionFormula>OR(ISNULL(rstk__sorma_qtyauth__c),  rstk__sorma_qtyauth__c &lt;= 0)</errorConditionFormula>
+        <errorMessage>Quantity Authorized must be greater than zero</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Scrap_Location_Reqd_For_Release</fullName>
+        <active>true</active>
+        <description>Scrap location is required in order to release the RMA</description>
+        <errorConditionFormula>AND(
+ rstk__sorma_released__c = true,
+ OR(ISBLANK(rstk__sorma_scraplocid__c), ISBLANK(rstk__sorma_scraplocnum__c))
+)</errorConditionFormula>
+        <errorMessage>Scrap location is required in order to release the RMA</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Soline_Inventory_DIvision_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISBLANK( rstk__sorma_soline__c ) &amp;&amp;  rstk__sorma_soline__r.rstk__soline_shipdiv__c !=  rstk__sorma_invdiv__c</errorConditionFormula>
+        <errorMessage>The Inventory Division must match the Inventory Division for the Sales Order Line</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Sorma_date_required</fullName>
+        <active>true</active>
+        <description>Date Issued is required</description>
+        <errorConditionFormula>ISBLANK(rstk__sorma_date__c)</errorConditionFormula>
+        <errorMessage>Date Issued is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Validate_Shipper_Line</fullName>
+        <active>true</active>
+        <description>Validate Shipper Line</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_soshipline__c) &amp;&amp; (rstk__sorma_soshipline__r.rstk__soshipline_line__c != rstk__sorma_soline__c || rstk__sorma_soshipline__r.rstk__soshipline_qtyship__c &lt;=0)</errorConditionFormula>
+        <errorMessage>Shipper Line is not valid for the specified Sales Order Line</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_dracct_validation</fullName>
+        <active>true</active>
+        <description>RMA Receipt Debit Account should belong to the RMA Inventory Division and should be of type Inventory, Inventory Adjustment, Non Nettable, OTH Clearing, Other.</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_dracct__c) &amp;&amp; (
+rstk__sorma_dracct__r.rstk__syacc_div__c != rstk__sorma_invdiv__c || !( ISPICKVAL(rstk__sorma_dracct__r.rstk__syacc_gltype_pl__c, &apos;Inventory&apos;) ||
+ISPICKVAL(rstk__sorma_dracct__r.rstk__syacc_gltype_pl__c, &apos;Inventory Adjustment&apos;) ||
+ISPICKVAL(rstk__sorma_dracct__r.rstk__syacc_gltype_pl__c, &apos;Non Nettable&apos;) ||
+ISPICKVAL(rstk__sorma_dracct__r.rstk__syacc_gltype_pl__c, &apos;OTH Clearing&apos;) ||
+ISPICKVAL(rstk__sorma_dracct__r.rstk__syacc_gltype_pl__c, &apos;Other&apos;)
+))</errorConditionFormula>
+        <errorMessage>RMA Receipt Debit Account should belong to the RMA Inventory Division and should be of type Inventory, Inventory Adjustment, Non Nettable, OTH Clearing, Other.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_installaddr_validation</fullName>
+        <active>true</active>
+        <description>Installation Address is required. It should belong to the Installation Customer and should be a valid Installation Address</description>
+        <errorConditionFormula>ISBLANK(rstk__sorma_installaddr__c) || rstk__sorma_installaddr__r.rstk__socaddr_custno__c != rstk__sorma_installcust__c || rstk__sorma_installaddr__r.rstk__socaddr_useasinstall__c = FALSE</errorConditionFormula>
+        <errorMessage>Installation Address is required. It should belong to the Installation Customer and should be a valid Installation Address</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_line_validation</fullName>
+        <active>true</active>
+        <description>Line is required , should be unique under RMA Header and cannot me modified in edit mode.</description>
+        <errorConditionFormula>ISBLANK(rstk__sorma_line__c) || (! ISNEW() &amp;&amp;  ISCHANGED(rstk__sorma_line__c) )</errorConditionFormula>
+        <errorMessage>Line is required , should be unique under RMA Header and cannot me modified in edit mode.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_reason_validation</fullName>
+        <active>true</active>
+        <description>Reason for Return is invalid. It should have the Use For RMA Returns checked and should have the division blank or point to the RMA Header Division</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_reason__c) &amp;&amp; (
+!rstk__sorma_reason__r.rstk__soreason_rma__c || (!ISBLANK(rstk__sorma_reason__r.rstk__soreason_div__c) &amp;&amp; rstk__sorma_reason__r.rstk__soreason_div__c != rstk__sorma_sormh__r.rstk__sormh_div__c))</errorConditionFormula>
+        <errorMessage>Reason for Return is invalid. It should have the Use For RMA Returns checked and should have the division blank or point to the RMA Header Division</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_released_changed</fullName>
+        <active>true</active>
+        <description>One or more fields updated is non editable after the RMA is released.</description>
+        <errorConditionFormula>!ISNEW() &amp;&amp;  PRIORVALUE(rstk__sorma_released__c) == true &amp;&amp; (rstk__sorma_qtyrec__c &gt; 0 || rstk__sorma_qtyship__c &gt; 0 || rstk__sorma_qtyinsp__c &gt; 0 || rstk__sorma_qtyscrap__c &gt; 0) &amp;&amp; 
+(ISCHANGED(rstk__sorma_released__c) || ISCHANGED(rstk__sorma_qtyauth__c) || ISCHANGED(rstk__sorma_soline__c) || ISCHANGED(rstk__sorma_invdiv__c) || ISCHANGED(rstk__sorma_project__c) || ISCHANGED(rstk__sorma_adjacct__c) || ISCHANGED(rstk__sorma_wbs__c) || ISCHANGED(rstk__sorma_site__c) || ISCHANGED(rstk__sorma_insplocid__c) || ISCHANGED(rstk__sorma_invlocid__c) ||  ISCHANGED(rstk__sorma_scraplocid__c) || ISCHANGED(rstk__sorma_insplocnum__c) || ISCHANGED(rstk__sorma_invlocnum__c) || ISCHANGED(rstk__sorma_scraplocnum__c) || ISCHANGED(rstk__sorma_insptempl__c) || ISCHANGED(rstk__sorma_case__c))</errorConditionFormula>
+        <errorMessage>One or more fields updated is non editable after the RMA is released.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_resp_validation</fullName>
+        <active>true</active>
+        <description>Responsible User should not point to an Obsolete User</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_resp__c) &amp;&amp; rstk__sorma_resp__r.rstk__syusr_obsolete__c</errorConditionFormula>
+        <errorMessage>Responsible User should not point to an Obsolete User</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_shipcost_validation</fullName>
+        <active>true</active>
+        <description>Shipping Costs is required and cannot be less than zero.</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_shipcost__c) &amp;&amp; rstk__sorma_shipcost__c &lt; 0</errorConditionFormula>
+        <errorMessage>Shipping Costs is required and cannot be less than zero.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_site_validation</fullName>
+        <active>true</active>
+        <description>Receive to Site is required. It should belong to the Inventory Division.</description>
+        <errorConditionFormula>ISBLANK(rstk__sorma_site__c) || rstk__sorma_site__r.rstk__sysite_div__c != rstk__sorma_invdiv__c</errorConditionFormula>
+        <errorMessage>Receive to Site is required. It should belong to the Inventory Division.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_socaddr_validation</fullName>
+        <active>true</active>
+        <description>Customer Ship To Address should belong to the RMA Header Customer and have the Use As Ship To flag checked.</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_socaddr__c) &amp;&amp; (rstk__sorma_socaddr__r.rstk__socaddr_custno__c != rstk__sorma_sormh__r.rstk__sormh_custno__c || !rstk__sorma_socaddr__r.rstk__socaddr_useasshipto__c)</errorConditionFormula>
+        <errorMessage>Customer Ship To Address should belong to the RMA Header Customer and have the Use As Ship To flag checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_soline_validation</fullName>
+        <active>true</active>
+        <description>Sales Order Line should belong to the RMA Header Division, Customer, Product and should have Quantity Shipped greater than zero.</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_soline__c) &amp;&amp; (
+rstk__sorma_soline__r.rstk__soline_sohdr__r.rstk__sohdr_div__c != rstk__sorma_sormh__r.rstk__sormh_div__c || 
+rstk__sorma_soline__r.rstk__soline_prod__c != rstk__sorma_soprod__c || rstk__sorma_soline__r.rstk__soline_qtyship__c &lt;= 0)</errorConditionFormula>
+        <errorMessage>Sales Order Line should belong to the RMA Header Division, Customer, Product and should have Quantity Shipped greater than zero.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_sormastat_validation</fullName>
+        <active>true</active>
+        <description>Designated RMA Status should belong to the RMA Header Division.</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_sormastat__c) &amp;&amp; rstk__sorma_sormastat__r.rstk__sormastat_div__c != rstk__sorma_sormh__r.rstk__sormh_div__c</errorConditionFormula>
+        <errorMessage>Designated RMA Status should belong to the RMA Header Division.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__sorma_syorg_validation</fullName>
+        <active>false</active>
+        <description>Organizational Department should belong to the RMA Header Division</description>
+        <errorConditionFormula>!ISBLANK(rstk__sorma_syorg__c) &amp;&amp; rstk__sorma_syorg__r.rstk__syorg_div__c != rstk__sorma_sormh__r.rstk__sormh_div__c</errorConditionFormula>
+        <errorMessage>Organizational Department should belong to the RMA Header Division</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>rootstock__Process_Receipt</fullName>
+        <availability>online</availability>
+        <description>Process Receipt</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Process Receipt</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/rstk__Rmaprocesses?id={!rstk__sorma__c.Id}&amp;mode=rmareceipt</url>
+    </webLinks>
+    <webLinks>
+        <fullName>rootstock__RMA_Receipt_Disposition_Reversal</fullName>
+        <availability>online</availability>
+        <description>RMA Receipt Disposition / Reversal</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>RMA Receipt Disposition / Reversal</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/rstk__Rmaprocesses?id={!rstk__sorma__c.Id}&amp;mode=rmareceiptdispositionandreversal</url>
+    </webLinks>
+    <webLinks>
+        <fullName>rootstock__Serial_Details</fullName>
+        <availability>online</availability>
+        <description>Serial Details</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Serial Details</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/rstk__Rmaserialdetails?id={!rstk__sorma__c.Id}</url>
+    </webLinks>
+</CustomObject>

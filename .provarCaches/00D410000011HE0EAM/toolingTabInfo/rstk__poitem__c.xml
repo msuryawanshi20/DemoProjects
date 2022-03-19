@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD41000000AUXXGA4" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Purchase Item Master" Name="rstk__poitem__c" SobjectName="rstk__poitem__c" Url="https://rstk-qa-rsf.my.salesforce.com/a35/o"/>
+</toolingTabInfo>

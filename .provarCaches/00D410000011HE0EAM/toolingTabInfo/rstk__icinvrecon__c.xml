@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD1K000001h2ZvWAI" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Physical Inventory Reconciliation" Name="rstk__icinvrecon__c" SobjectName="rstk__icinvrecon__c" Url="https://rstk-qa-rsf.my.salesforce.com/a1B/o"/>
+</toolingTabInfo>

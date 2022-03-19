@@ -1,0 +1,37 @@
+<apex:page standardController="asp04__Authorisation__c" extensions="asp04.ProcessPayUsingAuthControllerExtension" >
+ <style type="text/css">
+  .exceptionText {
+    color:red; 
+    font-size:14px; 
+    font-weight:normal; 
+    margin-left:40px;
+  }
+ </style>
+ <script>
+    function disableButton(buttonReference) {
+        setTimeout('disableButtonElementAfterTimeout(\'' + buttonReference.id + '\');', 0);
+    }
+    function disableButtonElementAfterTimeout(id) {
+        var buttonElement = document.getElementById( id );
+        buttonElement.disabled = 'disabled';
+        buttonElement.className = 'btnDisabled';
+        buttonElement.value = "{!$Label.asp04__processing_payment}";
+    }
+ </script>
+ <apex:messages styleClass="exceptionText"/>
+    <apex:form >
+      <apex:sectionheader title="{!$Label.asp04__take_authorisation_immediate_payment}" />
+      <apex:pageBlock mode="MainDetail" >
+          <apex:pageblocksection columns="2" >
+              <apex:inputField value="{!Payment.asp04__Amount__c}"/>
+              <apex:inputField value="{!Payment.asp04__Suppress_Notification_by_PSP__c}" rendered="{!IF(authorisation.asp04__Payment_Route_Selected__c == 'Direct Debit' || authorisation.asp04__Payment_Route_Selected__c == 'eCheck', TRUE, FALSE)}"/>
+          </apex:pageblocksection>
+
+          <apex:pageBlockButtons location="bottom" >
+              <apex:commandButton id="ProcessPaymentButton" action="{!Save}" value="{!$Label.asp04__process_payment}" rendered="{!$ObjectType.asp04__Payment__c.Createable}" onclick="disableButton(this);"/>
+              <apex:commandButton action="{!Cancel}" value="{!$Label.asp04__cancel_camel_case}" />
+          </apex:pageBlockButtons>
+
+      </apex:pageBlock>
+    </apex:form>  
+</apex:page>

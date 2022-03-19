@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>asp04__Account_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the name on the bank account or the cardholder name for future reference.</inlineHelpText>
+        <label>Account Name</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Account_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A partially obscured record of the bank account or credit card number for future reference.</inlineHelpText>
+        <label>Account Reference</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of the payment. Will contain either the requested amount of the amount actually collected depending on the status of the payment.</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Asperato_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A unique reference to the payment transaction generated by Asperato and reflected through to the payment gateway.</inlineHelpText>
+        <label>Asperato Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Asperato_Repeat_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( asp04__Authorisation__r.asp04__Asperato_Repeat_Token__c = null , &apos;Not set up yet&apos;, asp04__Authorisation__r.asp04__Asperato_Repeat_Token__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A formula reflecting the Asperato Repeat Token from the associated authorisation if appropriate. Contains the text &quot;Not set up yet&quot; if there is no value.</inlineHelpText>
+        <label>Asperato Repeat Token</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Attempt_Retry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>$Setup.asp04__Asperato_ONE_protected_settings__c.asp04__Success_Plus_Enabled__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attempt Retry</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Authorisation_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(asp04__Authorisation__r.asp04__Status__c, &quot;&quot;), &quot;Not set up yet&quot;, TEXT(asp04__Authorisation__r.asp04__Status__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The status of an attached Authorisation if it exists</inlineHelpText>
+        <label>Authorisation Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Authorisation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A link to the related Authorisation object if appropriate.</inlineHelpText>
+        <label>Authorisation</label>
+        <referenceTo>asp04__Authorisation__c</referenceTo>
+        <relationshipLabel>Payments</relationshipLabel>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Authorisation_merchant_group__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>asp04__Authorisation__r.asp04__Merchant_Group__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Authorisation merchant group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Batch_Identifier__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal batch identifier (do not display)</inlineHelpText>
+        <label>Batch Identifier</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Billing_Address_City__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the city in the billing address that was captured on the payment page.</inlineHelpText>
+        <label>Billing Address City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Billing_Address_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the country in the billing address that was captured on the payment page.</inlineHelpText>
+        <label>Billing Address Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Billing_Address_PostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the postal code in the billing address that was captured on the payment page.</inlineHelpText>
+        <label>Billing Address PostalCode</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Billing_Address_State__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the state/county in the billing address that was captured on the payment page.</inlineHelpText>
+        <label>Billing Address State</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Billing_Address_Street__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the street(s) in the billing address that was captured on the payment page.</inlineHelpText>
+        <label>Billing Address Street</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Cancel_Endpoint_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The link or URL that will be executed if the customer presses the cancel link on the payment page.</inlineHelpText>
+        <label>Cancel Endpoint</label>
+        <length>2048</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__Cancel_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Endpoint to use when a cancel is requested from a transaction
+(This field is deprecated - use the &apos;long&apos; version instead)</inlineHelpText>
+        <label>Cancel Endpoint (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Card_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of credit or debit card, or `Not Applicable` for the other Payment Types</inlineHelpText>
+        <label>Card Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Company_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the company name that was captured on the payment page.</inlineHelpText>
+        <label>Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Custom_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A custom reference (to be sent to the PSP) for this payment. Note that not all PSPs support custom references, and some often have restrictions on the maximum length of a reference.</inlineHelpText>
+        <label>Custom Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Customer_ID__c</fullName>
+        <defaultValue>$Setup.asp04__AsperatoOneSettings__c.asp04__Customer_ID__c</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Asperato Customer ID. It defaults to the value that is entered into the Asperato Getting Started page.</inlineHelpText>
+        <label>Customer ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Direct_Debit_Error_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>In the event that the BACS system passes back an error response this will contain the raw BACS error code.</inlineHelpText>
+        <label>Direct Debit Error Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Due_Date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The date on which the payment is scheduled for collection.</inlineHelpText>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the email address that was captured on the payment page.</inlineHelpText>
+        <label>Email</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Error_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a santised error code that is created by Asperato when a transaction fails. It is based on the data that is returned from the Payment Service Provider(s). The actual codes are recorded in the Sanitised responses section of this document.</inlineHelpText>
+        <label>Error Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Fail_Endpoint_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The link or URL that will be executed if the customer presses the &apos;Finished&apos; button on the transaction error response screen.</inlineHelpText>
+        <label>Fail Endpoint</label>
+        <length>2048</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__Fail_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Endpoint to use when a transaction fails
+(This field is deprecated - use the &apos;long&apos; version instead)</inlineHelpText>
+        <label>Fail Endpoint (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__First_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the first name that was captured on the payment page.</inlineHelpText>
+        <label>First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Frequency__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>If( Text( asp04__PaymentSchedule__r.asp04__Frequency__c ) == null, &apos;Single&apos;, Text( asp04__PaymentSchedule__r.asp04__Frequency__c ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A formula reflecting the payment frequency from the associated payment schedule if appropriate.</inlineHelpText>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Is_Gift_Card__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked this indicates that the payment was related to a gift card</inlineHelpText>
+        <label>Is Gift Card</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>asp04__Language</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>asp04__Last_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Records the last name that was captured on the payment page.</inlineHelpText>
+        <label>Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Merchant_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The merchant group that should be used for this transaction. The default merchant group will be used if left blank. More information on Merchant groups is available here.</inlineHelpText>
+        <label>Merchant Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__PSP_Passthrough_Parameters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PSP Passthrough Parameters</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__PSP_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A reference to the payment generated by the payment gateway.</inlineHelpText>
+        <label>Payment Service Provider Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__PSP_Repeat_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( asp04__Authorisation__r.asp04__PSP_Repeat_Token__c = null, &apos;Not set up yet&apos;, asp04__Authorisation__r.asp04__PSP_Repeat_Token__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A formula reflecting the repeat cross reference from the associated authorisation if appropriate. Contains the text &quot;Not set up yet&quot; if there is no value.</inlineHelpText>
+        <label>Payment Service Provider Repeat Token</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Pass_Thru_Parameters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A JSON REST format list of the parameters that were passed through from the starting URL.</inlineHelpText>
+        <label>Pass Thru Parameters</label>
+        <length>2048</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__PaymentSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A link to the related Payment Schedule record if appropriate.</inlineHelpText>
+        <label>Payment Schedule</label>
+        <referenceTo>asp04__PaymentSchedule__c</referenceTo>
+        <relationshipLabel>Payments (Payment Schedule)</relationshipLabel>
+        <relationshipName>Payments1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Payment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date of the payment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date on which the payment is either expected to clear or was cleared. Note that this payment date is always in GMT, not the default timezone of the org.</inlineHelpText>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Payment_Route_Options__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A list of payment routes that could be used for this payment.  The routes shown here will be reflected in the options shown on the payment page.</inlineHelpText>
+        <label>Payment Route Options</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>asp04__Payment_Route_Options</valueSetName>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__Payment_Route_Selected__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The payment route that was selected by the customer when they made the payment.</inlineHelpText>
+        <label>Payment Route Selected</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>asp04__Payment_Route_Options</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>asp04__Payment_Stage_Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A descriptive text showing the reason related to the current payment stage. Might contain the reason for cancellation or failure for example.</inlineHelpText>
+        <label>Payment Stage Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Payment_Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Payment Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Awaiting submission</fullName>
+                    <default>true</default>
+                    <label>Awaiting submission</label>
+                </value>
+                <value>
+                    <fullName>Submitted for collection</fullName>
+                    <default>false</default>
+                    <label>Submitted for collection</label>
+                </value>
+                <value>
+                    <fullName>Collected from customer</fullName>
+                    <default>false</default>
+                    <label>Collected from customer</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Retry in progress</fullName>
+                    <default>false</default>
+                    <label>Retry in progress</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>asp04__Payout_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Payout Reference Number for the payout made by GoCardless against this payment transaction</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Payout Reference Number for the payout made by GoCardless against this payment transaction</inlineHelpText>
+        <label>Payout Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Process_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(asp04__Payment_Route_Selected__c, &apos;Direct Debit&apos;), asp04__Due_Date__c - $Setup.asp04__AsperatoOneSettings__c.asp04__BACS_Delay__c, asp04__Due_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A formula that calculates the date on which a payment is scheduled to be processed. Takes into account any delay caused by direct debit processing.</inlineHelpText>
+        <label>Process Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates how the original request was created.  &apos;Web&apos; shows that this was via a web page,&apos;Repeat&apos; indicates an automatic repeat payment and &apos;cardholder not present&apos; shows the request came from within Salesforce.</inlineHelpText>
+        <label>Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>Holder not present</fullName>
+                    <default>false</default>
+                    <label>Holder not present</label>
+                </value>
+                <value>
+                    <fullName>Repeat</fullName>
+                    <default>false</default>
+                    <label>Repeat</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>asp04__Success_Endpoint_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The link or URL that will be executed if the customer presses the &apos;Finished&apos; button on the transaction success response screen.</inlineHelpText>
+        <label>Success Endpoint</label>
+        <length>2048</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>asp04__Success_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Endpoint to use where the transaction is successful
+(This field is deprecated - use the &apos;long&apos; version instead)</inlineHelpText>
+        <label>Success Endpoint (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__Suppress_Notification_by_PSP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set true to suppress PSP Notification and send your own custom notification for this payment to the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set true to suppress PSP Notification and send your own custom notification for this payment to the customer.</inlineHelpText>
+        <label>Suppress Notification by PSP</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Suppress_PSP_Notifications__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>AND( 
+$Setup.asp04__Asperato_ONE_protected_settings__c.asp04__Bypass_Payment_Notifications_by_PSP__c,
+ $Setup.asp04__AsperatoOneSettings__c.asp04__Suppress_Notification_for_Payments__c,
+ asp04__Suppress_Notification_by_PSP__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Suppress PSP Notifications</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Total_Refunded__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a roll-up total of all the refunds that have been made against this Payment.</inlineHelpText>
+        <label>Total Refunded</label>
+        <summarizedField>asp04__Refund__c.asp04__Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>asp04__Refund__c.asp04__Refund_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Failed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>asp04__Refund__c.asp04__Payment__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>asp04__Transaction_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a code that links separate payment records together to form a single transaction.</inlineHelpText>
+        <label>Transaction Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>asp04__eCommerce_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://&quot; + $Setup.asp04__AsperatoOneSettings__c.asp04__Server_URL__c + &quot;/PMWeb1?pmRef=&quot; +   asp04__Customer_ID__c + &quot;&amp;pid=&quot; +  Id + &quot;&amp;locale=&quot; +   TEXT(asp04__Language__c) ,&quot;https://&quot; + $Setup.asp04__AsperatoOneSettings__c.asp04__Server_URL__c + &quot;/PMWeb1?pmRef=&quot; +   asp04__Customer_ID__c + &quot;&amp;pid=&quot; +  Id + &quot;&amp;locale=&quot; +   TEXT( asp04__Language__c )  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the URL needed to invoke the Asperato paypage is an eCommerce situation. For example, this can be used to email someone a link by which to make a payment.</inlineHelpText>
+        <label>eCommerce URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payment</label>
+    <listViews>
+        <fullName>asp04__All</fullName>
+        <columns>NAME</columns>
+        <columns>asp04__Due_Date__c</columns>
+        <columns>asp04__Amount__c</columns>
+        <columns>asp04__Payment_Stage__c</columns>
+        <columns>asp04__Payment_Route_Selected__c</columns>
+        <columns>asp04__Frequency__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>asp04__Due_for_payment</fullName>
+        <columns>NAME</columns>
+        <columns>asp04__Due_Date__c</columns>
+        <columns>asp04__Amount__c</columns>
+        <columns>asp04__Frequency__c</columns>
+        <columns>asp04__Payment_Route_Selected__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>asp04__Payment_Stage__c</field>
+            <operation>equals</operation>
+            <value>Awaiting submission</value>
+        </filters>
+        <label>Due for payment</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PAY-{000000000}</displayFormat>
+        <label>Payment Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Payments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>asp04__Due_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>asp04__Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>asp04__Payment_Stage__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>asp04__Payment_Route_Selected__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>asp04__Frequency__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>asp04__Due_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>asp04__Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>asp04__Payment_Stage__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>asp04__Payment_Route_Selected__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>asp04__Frequency__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>asp04__Due_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>asp04__Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>asp04__Payment_Stage__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>asp04__Payment_Route_Selected__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>asp04__Frequency__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>asp04__Due_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>asp04__Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>asp04__Payment_Stage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>asp04__Payment_Route_Selected__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>asp04__Frequency__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>asp04__PreventFromNegativeAmountEntry</fullName>
+        <active>true</active>
+        <description>Any negative values entered in amount on payment records are not accepted. Zero amounts are allowed on payment records.</description>
+        <errorConditionFormula>asp04__Amount__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>asp04__Amount__c</errorDisplayField>
+        <errorMessage>Amount cannot be negative.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>asp04__Protect_submitted_data</fullName>
+        <active>true</active>
+        <description>Stop changes to the dates, amounts and payment route when the Status indicates that data has been sent to Asperato but no response has been recieved yet.</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL(PRIORVALUE(asp04__Payment_Stage__c),&apos;Submitted for collection&apos;), 
+OR(ISCHANGED(asp04__Amount__c) , ISCHANGED(asp04__Due_Date__c) ,  ISCHANGED(asp04__Payment_Route_Selected__c)),
+ISPICKVAL(asp04__Payment_Stage__c, &apos;Submitted for collection&apos;)  
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t change the Amount, Due Date or the Payment Route Selected while Asperato is processing the payment</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>asp04__SetupAsperatoOneValidation</fullName>
+        <active>true</active>
+        <description>Setup Asperato ONE before creating a payment.</description>
+        <errorConditionFormula>ISNEW() &amp;&amp;   $Setup.asp04__AsperatoOneSettings__c.asp04__Customer_ID__c == &apos;&apos;</errorConditionFormula>
+        <errorMessage>You must setup Asperato ONE before creating a payment.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>asp04__Process_Payment</fullName>
+        <availability>online</availability>
+        <description>Takes the user to the Asperato payment page</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Process Payment</masterLabel>
+        <openType>noSidebar</openType>
+        <page>asp04__ProcessPayment</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>asp04__Refund</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Refund</masterLabel>
+        <openType>replace</openType>
+        <page>asp04__ProcessRefund</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

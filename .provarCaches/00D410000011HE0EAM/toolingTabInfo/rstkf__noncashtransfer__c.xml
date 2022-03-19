@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD1K0000014nV0WAI" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="AR Non Cash Transfer Process" Name="rstkf__noncashtransfer__c" SobjectName="rstkf__noncashtransfer__c" Url="https://rstk-qa-rsf.my.salesforce.com/aBN/o"/>
+</toolingTabInfo>

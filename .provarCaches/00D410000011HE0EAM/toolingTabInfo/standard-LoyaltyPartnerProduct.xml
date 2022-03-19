@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyPartnerProduct" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Partner Products" Name="standard-LoyaltyPartnerProduct" SobjectName="LoyaltyPartnerProduct" Url="https://rstk-qa-rsf.my.salesforce.com/0le/o"/>
+</toolingTabInfo>

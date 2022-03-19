@@ -1,0 +1,125 @@
+<apex:page controller="DOX.DashboardExt">
+    <style>
+        #logs {
+            height:400px;
+            border:1px dotted black ;
+            overflow:scroll;
+            padding:4px;
+        }
+    </style>
+    <c:KendoResources />
+    <div id="tabstrip" style="display:none;">
+        <ul>
+            <li class="k-state-active">
+                Usage Info
+            </li> 
+        </ul>
+        <div>
+            <div>
+                <div id="chart" ></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function daysInMonth(month,year) {
+            var arr=[];
+            var totalDays = new Date(year, month, 0).getDate();
+            for ( i=1;i<=totalDays ;i++) {
+                arr.push(i);
+            }
+            return arr ;
+        }
+        
+        function createChart() {
+            var today = new Date() ;
+            var cats = daysInMonth ( today.getMonth(), today.getFullYear() ) ;  
+            
+            $("#chart").kendoChart({
+                dataSource: {
+                    transport: {
+                        read: function(readOptions) {
+                            Visualforce.remoting.Manager.invokeAction
+                                ('{!$RemoteAction.DashboardExt.fetch}' ,
+                                    function(result, event){
+                                        if(event.type == 'exception'){
+                                            //Exception message
+                                            KenandyErp.Alert ( event.message ) ;
+                                        }
+                                        else { 
+                                            var result  = JSON.parse(result) ;
+                                            if ( result && result.length>0) {
+                                                var x={};
+                                                
+                                                for ( i=0;i<result.length;i++) {
+                                                    //op.push ({day:result[i]._id.day , total: result[i].count }) ;
+                                                    x[result[i]._id.day] = result[i].count ;
+                                                }
+                                                
+                                                var op = [] ;
+                                                for ( i=0;i<cats.length;i++) {
+                                                    var tot = x[cats[i]] ? x[cats[i]] : 0; 
+                                                    op.push ({day:cats[i] , total: tot  }) ;
+                                                }
+                                                
+                                                readOptions.success( op ) ;    
+                                            }
+                                            
+                                        }
+                                    },
+                                    {escape: false}
+                                ); 
+                        }
+                    }
+                },
+                title: {
+                    text: "Usage Statistics"
+                },
+                legend: {
+                    position: "top"
+                },
+                seriesDefaults: {
+                    type: "line"
+                },
+                series: [{
+                    field: "total",
+                    name: "Requests",
+                    baseUnitStep: 1
+                }],
+                categoryAxis: {
+                    field: "day",
+                    //categories:cats,
+                    labels: {
+                        rotation: -90
+                    },
+                    crosshair: {
+                        visible: true
+                    },
+                    baseUnitStep: 1
+                },
+                valueAxis: {
+                    labels: {
+                        format: "{0}"
+                    },
+                },
+                tooltip: {
+                    visible: true,
+                    shared: true,
+                    format: "N0"
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#tabstrip").show();
+            $("#tabstrip").kendoTabStrip({
+                select: function (e) {
+                }
+            });
+            createChart () ;
+        });
+        
+    </script>
+    
+
+</apex:page>

@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>rstk__Requirements</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__Requirements</fullName>
+        <fields>rstk__icixr_parenticitem__c</fields>
+        <fields>rstk__formula_dmdqtyreq__c</fields>
+        <fields>rstk__formula_derivesoorddmd__c</fields>
+        <fields>rstk__formula_extid__c</fields>
+        <fields>rstk__icixr_icitem__c</fields>
+        <fields>rstk__icixr_item__c</fields>
+        <fields>rstk__icixr_lnerel__c</fields>
+        <fields>rstk__icixr_mrpchange__c</fields>
+        <fields>rstk__icixr_mrplaunch__c</fields>
+        <label>Requirements</label>
+    </compactLayouts>
+    <customHelpPage>rstk__objecthelp_icixr</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>icixr__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>rstk__RSFieldSet</fullName>
+        <description>For user defined fields on Visual Force pages</description>
+        <label>Custom Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>External Id</label>
+        <length>140</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_bypassmrp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used internally for setting the icixr_bypass in certain cases. Note that there are other criteria for the setting of icixr_bypass.</description>
+        <externalId>false</externalId>
+        <formula>OR (
+   rstk__icixr_soorddmd__r.rstk__soorddmd_soline__r.rstk__soline_useconfig__c = true,
+   AND (
+      ISPICKVAL(rstk__icixr_soorddmd__r.rstk__soorddmd_soline__r.rstk__soline_prodtype__c, &apos;Configured&apos;),
+      rstk__icixr_soorddmd__r.rstk__soorddmd_soline__r.rstk__soline_usestock__c = false
+   ),
+   AND(rstk__icixr_ordtype__c = &apos;M&apos;, !ISBLANK(rstk__icixr_wocst__r.rstk__wocst_soline__c))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Used internally</inlineHelpText>
+        <label>formula_bypassmrp</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_deriveicreqdmd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_ordtype__c = &apos;5&apos; &amp;&amp;  ISBLANK(rstk__icixr_icreqdmd__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Derive Icreqdmd</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_derivepodmd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_ordtype__c = &apos;4&apos; &amp;&amp;  ISBLANK(rstk__icixr_podmd__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Derive Podmd</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_derivesoorddmd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_ordtype__c = &apos;1&apos; &amp;&amp;  ISBLANK(rstk__icixr_soorddmd__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Derive Soorddmd</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_derivewoorddmd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_ordtype__c = &apos;6&apos; &amp;&amp;  ISBLANK(rstk__icixr_woorddmd__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Derive Woorddmd</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_dmdqtyreq__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(rstk__icixr_ordtype__c = &apos;1&apos;, rstk__icixr_soorddmd__r.rstk__soorddmd_qtyreq__c, 
+	IF(rstk__icixr_ordtype__c = &apos;4&apos;, rstk__icixr_podmd__r.rstk__podmd_qtyreq__c, 
+		IF(rstk__icixr_ordtype__c = &apos;5&apos;, rstk__icixr_icreqdmd__r.rstk__icreqdmd_qtyreq__c, 
+			IF(rstk__icixr_ordtype__c = &apos;6&apos;, rstk__icixr_woorddmd__r.rstk__woorddmd_qtyreq__c, 0)
+		)
+	)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Demand Qty Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_icitem__r.rstk__externalid__c &amp; &apos;_&apos; &amp; rstk__icixr_proj__r.rstk__pjproj_proj__c &amp; &apos;_&apos; &amp; rstk__icixr_site__r.rstk__sysite_site__c &amp; &apos;_&apos; &amp; rstk__icixr_ordtype__c &amp; &apos;_&apos; &amp; rstk__icixr_ordno__c &amp; &apos;_&apos; &amp; Text(rstk__icixr_lne__c) &amp; &apos;_&apos; &amp; Text(rstk__icixr_lnerel__c)</formula>
+        <inlineHelpText>This is an internal system field used to define the externalID of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <inlineHelpText>This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When enabled (set to TRUE) this field causes the MRP process to bypass this requirement as if it didn’t exist.</inlineHelpText>
+        <label>Exclude Requirement from MRP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_dtereqd__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date a demand is required or a supply is available. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date a demand is required or a supply is needed to fulfill a requirement.</inlineHelpText>
+        <label>Date Required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_fcstdmdnetopt_pl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The values can be: 
+
+Net all demands against forecast 
+
+Net only independent demands 
+
+If null or ‘Net all demands against forecast’ then all demands (both dependent and independent) are netted against a forecast (all demands are subtracted from the forecasts demand until it is depleted and only the remainder is applied as demand in MRP). 
+An independent demand is: 
+
+Sales Order 
+A dependent demand is: 
+
+PO Subcontract Requisition Demand 
+
+Work Order Demand 
+
+PO Subcontract Order Demand 
+If ‘Net only independent demands’ then only independent demands are netted against a forecast (only independent demands are subtracted from the forecasts demand until it is depleted and only the remainder is applied as demand in MRP). 
+
+This field is only applicable if the Order Type is ‘0’ for Forecast Demand - See corresponding field (ICFCSTDMD_DMDNETOPT) in Forecast Demand record. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Demand Netting Option:  1 - Net all demands against forecast. 2 - Net only independent demands</inlineHelpText>
+        <label>Net Forecast Demand Option</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Net all demands against forecast</fullName>
+                    <default>false</default>
+                    <label>Net all demands against forecast</label>
+                </value>
+                <value>
+                    <fullName>Net only independent demands</fullName>
+                    <default>false</default>
+                    <label>Net only independent demands</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_fcstenddte__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Only applies when Order Type is 0 (Forecast Demand) – represents the end date of the forecast period. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Forecast End Date</inlineHelpText>
+        <label>Forecast End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_fcststrtdte__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Only applies when Order Type is 0 (Forecast Demand) – represents the start date of the forecast period. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Forecast Start Date</inlineHelpText>
+        <label>Forecast Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_icdreq__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Disassembly Derived Component</inlineHelpText>
+        <label>Disassembly Derived Component</label>
+        <referenceTo>rstk__icdreq__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_icfcstdmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Forecast Number</inlineHelpText>
+        <label>Forecast Demand</label>
+        <referenceTo>rstk__icfcstdmd__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_icitem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Inventory Item Number</inlineHelpText>
+        <label>Item Lookup</label>
+        <referenceTo>rstk__icitem__c</referenceTo>
+        <relationshipLabel>Requirements (Item Lookup)</relationshipLabel>
+        <relationshipName>ICIXRs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_icreq__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Requisition Number</inlineHelpText>
+        <label>icixr_icreq</label>
+        <referenceTo>rstk__icreq__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_icreqdmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Requisition Item Number</inlineHelpText>
+        <label>icixr_icreqdmd</label>
+        <referenceTo>rstk__icreqdmd__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_invuom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Inventory UOM</inlineHelpText>
+        <label>Inv UOM</label>
+        <referenceTo>rstk__syuom__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_item__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Inventory Item Number</inlineHelpText>
+        <label>Item Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_itemrev__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Item Revision</inlineHelpText>
+        <label>Item Revision</label>
+        <referenceTo>rstk__peitemrev__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_lne__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifies the line id of the Order Line to which this Requirement corresponds. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Line id of this Requirement&apos;s  corresponding Order</inlineHelpText>
+        <label>Line No</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_lnerel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Not Currently Used (is always 0). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Not currently used - always zero</inlineHelpText>
+        <label>Line Release</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_mrpchange__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icixr_icitem__r.rstk__icitem_mrpchange__c</formula>
+        <label>MRP Change</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_mrplaunch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>MRP Launch</label>
+        <referenceTo>rstk__mrplaunch__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_ordno__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Order No of the corresponding Purchase/Subcontract Requisition, Purchase /Subcontract Order, Sales Order or Work Order or Forecast to which this Requirement applies 
+
+There is also 3 ICIXR order types that represent disassembly supplies and these are the ICDREQ orders. 
+
+The intersite and interdivision orders are future enhancements ; as is the independent demand. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Order Number</inlineHelpText>
+        <label>Order No</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_ordsite__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Order Site</inlineHelpText>
+        <label>Order Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>Requirements (Order Site)</relationshipLabel>
+        <relationshipName>Requirements1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_ordtype__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The supplies and demands in gray are future enhancements 
+
+Domain of values: 
+ 
+
+Page Break
+ 
+
+Value 
+
+Description 
+
+R 
+
+Purchase Requisition Supply 
+
+P 
+
+PO Supply 
+
+M 
+
+Work Order Supply 
+
+N 
+
+Icdreq associated with wocst 
+
+S 
+
+Subcontract Requisition 
+
+0 
+
+Forecast Demand 
+
+1 
+
+Sales Order Demand 
+
+4 
+
+Subcontract PO Demand 
+
+5 
+
+PO Requisition Demand 
+
+6 
+
+WO Demand 
+
+(DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Order Type</inlineHelpText>
+        <label>Order Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_parenticitem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Item Number of the Parent – lookup to ICITEM. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent Item of this Requirement</inlineHelpText>
+        <label>Parent Item</label>
+        <referenceTo>rstk__icitem__c</referenceTo>
+        <relationshipLabel>Requirements (parentitem_ui)</relationshipLabel>
+        <relationshipName>icixrs2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_parentitem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Item No of the parent item. The Parent Item applies to subordinate demands created as the result of a BOM, such as WO Demands or Subcontract Demands – The Parent Item is the Item in the BOM that is the “Parent’ of this Item (or may be the first ancestor that is not a Phantom). Note that for stand-alone items (such as SO Demands/Supplies) the Parent Item and Item are the same. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Parent Item Number</inlineHelpText>
+        <label>Parent Item No</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_podmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>PO Component Demand</label>
+        <referenceTo>rstk__podmd__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_poline__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements PO Line</inlineHelpText>
+        <label>poline</label>
+        <referenceTo>rstk__poline__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_proj__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>If the Division has Project Control active, a Project No is required otherwise this is blank. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Project</inlineHelpText>
+        <label>Project</label>
+        <referenceTo>rstk__pjproj__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_qtyoutstdg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Quantity Remaining. Continuing the example above, this would be the quantity not yet received for a PO. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Quantity outstanding</inlineHelpText>
+        <label>Qty Remaining</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_qtyreq__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Quantity required by this demand/supply. For example this would be the quantity required on a PO Line (subject to conversion between inventory and purchasing units). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Quantity required</inlineHelpText>
+        <label>Qty Required</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_receiptsite__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Receipt Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>Requirements (Site Master)</relationshipLabel>
+        <relationshipName>receiptsiteicixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_resp__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Responsible User</inlineHelpText>
+        <label>Reponsible Planner</label>
+        <referenceTo>rstk__syusr__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Site</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>Requirements (Site)</relationshipLabel>
+        <relationshipName>Requirements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_soline__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements SO Lin</inlineHelpText>
+        <label>soline</label>
+        <referenceTo>rstk__soline__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_soorddmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Sales Order Demand</label>
+        <referenceTo>rstk__soorddmd__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_sts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Order Status</inlineHelpText>
+        <label>Status</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_tempdmdqtyreq__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>icixr_tempdmdqtyreq</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_wbs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirements Work Breakdown Structure</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_wocst__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Work Order Number</inlineHelpText>
+        <label>Work Order</label>
+        <referenceTo>rstk__wocst__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icixr_woorddmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement WO Component Item Number</inlineHelpText>
+        <label>Work Order Components</label>
+        <referenceTo>rstk__woorddmd__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>icixrs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field not currently displayed on any Rootstock User pages</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field which is not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Requirements</label>
+    <listViews>
+        <fullName>All_PK</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_receiptsite__c</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_qtyreq__c</columns>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>rstk__icixr_lne__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>contains</operation>
+            <value>Pragati Kakade</value>
+        </filters>
+        <label>All_PK</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Types_AC</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_bypass__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_qtyreq__c</columns>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_poline__c</columns>
+        <columns>rstk__icixr_soorddmd__c</columns>
+        <columns>rstk__icixr_wocst__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All Types-AC</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Types_Today</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_qtyreq__c</columns>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_poline__c</columns>
+        <columns>rstk__icixr_soorddmd__c</columns>
+        <columns>rstk__icixr_wocst__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All Types - Today</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>SO_Demands_Select</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_soorddmd__c</columns>
+        <columns>rstk__icixr_soline__c</columns>
+        <columns>rstk__formula_derivesoorddmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>SO Demands - Select</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>X4885</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_receiptsite__c</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_qtyreq__c</columns>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_lne__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>4885</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_All</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_receiptsite__c</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_qtyreq__c</columns>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>rstk__icixr_lne__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_DEBUG</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>rstk__externalid__c</columns>
+        <columns>rstk__formula_extid__c</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_lne__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_receiptsite__c</columns>
+        <columns>rstk__icixr_soline__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>RS_DEBUG</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Forecast_Demands</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_icfcstdmd__c</columns>
+        <columns>rstk__icixr_fcstenddte__c</columns>
+        <columns>rstk__icixr_fcststrtdte__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Forecast Demands</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Demands</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_podmd__c</columns>
+        <columns>rstk__icixr_poline__c</columns>
+        <columns>rstk__formula_derivepodmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </filters>
+        <label>PO Demands</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Supplies</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_podmd__c</columns>
+        <columns>rstk__icixr_poline__c</columns>
+        <columns>rstk__formula_derivepodmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>PO Supplies</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Requirements</fullName>
+        <booleanFilter>(1 or 3 ) and 2</booleanFilter>
+        <columns>rstk__icixr_qtyoutstdg__c</columns>
+        <columns>NAME</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_ordtype__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_lne__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_poline__c</columns>
+        <columns>rstk__icixr_podmd__c</columns>
+        <columns>rstk__icixr_icreq__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_item__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>rstk__icixr_ordno__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>rstk__icixr_item__c</field>
+            <operation>contains</operation>
+        </filters>
+        <label>Requirements</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Requistions</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__formula_deriveicreqdmd__c</columns>
+        <columns>rstk__icixr_icreq__c</columns>
+        <columns>rstk__icixr_icreqdmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>R</value>
+        </filters>
+        <label>Requisitions</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_SO_Demands</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_soorddmd__c</columns>
+        <columns>rstk__icixr_soline__c</columns>
+        <columns>rstk__formula_derivesoorddmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>SO Demands</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Work_Order_Demands</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_wocst__c</columns>
+        <columns>rstk__formula_derivewoorddmd__c</columns>
+        <columns>rstk__icixr_woorddmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>6</value>
+        </filters>
+        <label>Work Order Demands</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Work_Orders</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icixr_item__c</columns>
+        <columns>rstk__icixr_icitem__c</columns>
+        <columns>rstk__icixr_site__c</columns>
+        <columns>rstk__icixr_ordsite__c</columns>
+        <columns>rstk__icixr_ordno__c</columns>
+        <columns>rstk__icixr_proj__c</columns>
+        <columns>rstk__icixr_sts__c</columns>
+        <columns>rstk__icixr_dtereqd__c</columns>
+        <columns>rstk__icixr_wocst__c</columns>
+        <columns>rstk__formula_derivewoorddmd__c</columns>
+        <columns>rstk__icixr_woorddmd__c</columns>
+        <columns>rstk__icixr_parentitem__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icixr_ordtype__c</field>
+            <operation>equals</operation>
+            <value>M</value>
+        </filters>
+        <label>Work Orders</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Requirement Link</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Requirements</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>rstk__Inventory_Item_is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( rstk__icixr_icitem__c )</errorConditionFormula>
+        <errorMessage>Inventory Item is Required</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

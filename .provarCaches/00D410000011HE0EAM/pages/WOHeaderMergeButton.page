@@ -1,0 +1,7 @@
+<apex:page controller="WOHeaderMergeButtonCon" action="{!init}">
+    <apex:outputPanel rendered="{!records.size > 0}"> 
+        <apex:form > 
+            <DOX:MergeSelectedRecords records="{!records}"   />  
+        </apex:form>
+    </apex:outputPanel>
+</apex:page>

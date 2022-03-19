@@ -377,7 +377,14 @@
                           </value>
                         </argument>
                         <argument id="ip_dueDate">
-                          <value class="invalid">{DateFormat({op_excelDataRow.DueDate})}</value>
+                          <value class="funcCall" id="DateFormat">
+                            <argument id="date">
+                              <value class="variable">
+                                <path element="op_excelDataRow"/>
+                                <path element="DueDate"/>
+                              </value>
+                            </argument>
+                          </value>
                         </argument>
                         <argument id="ip_reworkFlag">
                           <value class="value" valueClass="string">false</value>

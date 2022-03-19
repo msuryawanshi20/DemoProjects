@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="BenefitType" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Benefit Types" Name="standard-BenefitType" SobjectName="BenefitType" Url="https://rstk-qa-rsf.my.salesforce.com/0jh/o"/>
+</toolingTabInfo>

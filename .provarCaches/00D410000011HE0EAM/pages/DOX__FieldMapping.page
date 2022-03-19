@@ -1,0 +1,301 @@
+<apex:page standardController="DOX__Template__c" extensions="DOX.FieldMappingExt" sidebar="false" showHeader="false" title="Field Mapping" standardStylesheets="false">
+    <!-- Kendo -->
+    <c:KendoResources />
+    
+    <!-- Bootstrap js and css -->
+    <apex:includeScript value="{!URLFOR($Resource.DOX__bootstrapzip,'/js/bootstrap.js')}"/> 
+    <apex:stylesheet value="{!URLFOR($Resource.DOX__bootstrapzip,'/css/bootstrap.css')}" />
+    
+    <!-- Application specific js and css -->
+    <apex:includeScript value="{!$Resource.DOX__MergeMapping}" loadOnReady="true" ></apex:includeScript>
+    <apex:stylesheet value="{!$Resource.DOX__main}" />
+    
+    <script>
+        $(document).on('DocReady', function(e) {
+            KenandyErp.BlockUI( $('#wrap'));
+            var remoteActions = {
+                getAvailableFields: '{!$RemoteAction.FieldMappingExt.getAvailableFields}',
+                getRelatedObjects: '{!$RemoteAction.FieldMappingExt.getRelatedObjects}',
+                getMergeDocumentInfo: '{!$RemoteAction.FieldMappingExt.getMergeDocumentInfo}',
+                updateFieldMap:'{!$RemoteAction.FieldMappingExt.updateFieldMap}',
+                saveTemplateRules:'{!$RemoteAction.FieldMappingExt.saveTemplateRules}',
+                removeTemplateRule:'{!$RemoteAction.FieldMappingExt.removeTemplateRule}'
+            } ;
+            
+            var options = {} ;
+            options.remoteActions = remoteActions ;
+            options.recordId = '{!currentRecordId}';
+            options.SESSION_ID = '{!$Api.Session_ID}';
+            options.NamespaceUU = '{!NamespaceUU}';
+            var mapping = new FieldMapping  ( options) ;
+            mapping.init();
+        });
+    </script>
+    <div id="wrap" >
+        <div class="row">
+            <!--- SIDEBAR -->
+            <div class="col-md-4" style="min-width:200px;overflow-y:scroll;">
+                <div class="row" id="tmpl-cards"  style="background:#222;">
+                      <table class="table">
+                          <tr style="background:#222;border-color:#333;color:#fff;">
+                              <td width="30%" style="background:#222;border-color:#333;color:#fff;">Document Section</td>
+                              <td width="70%" style="background:#222;border-color:#333;color:#fff;">
+                                  <select id="section-picklist" class="form-control picklist-custom" data-template="select-template" data-bind="source: sections"></select>
+                              </td>
+                          </tr>
+                      </table>
+                      <table class="table" style="background:#222;">
+                        <tr style="background:#222;border-color:#333;color:#fff;">
+                          <td width="100%" style="background:#222;border-color:#333;color:#fff;">
+                              <div class="input-group input-group-sm">
+                                  <span class="input-group-addon" id="sizing-addon3" style="background-color:#555;color:#fff;"><span class="glyphicon glyphicon-search" ></span></span>
+                                  <input type="text" class="form-control" placeholder="Search Fields.." aria-describedby="sizing-addon3" id="searchbar"  style="background-color:#555;color:#fff;"/>
+                                </div>
+                          </td>
+                      </tr>
+                     </table>
+                </div>    
+                <div class="row" id="available-fields-section">
+                    <div id="available-fields">
+                        <ul data-bind="visible:fields,source:fields" data-template="available-fields-template" ></ul>
+                        
+                        <div data-bind="visible:errVisible">
+                            <span class="alert alert-danger">SObject Info unavailable. Select Sobject to map this section from the workspace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WORKSPACE --->
+            <div class="col-md-8">
+                <div id="workspace"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="modal-content">
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- WORKSPACE TEMPLATES -->
+    <script id="workspace-template" type="text/x-kendo-template">
+        <nav class="navbar navbar-default kndy-custom-nav">
+            <div class="table-tag">
+                <span class="btn btn-transparent" data-bind="visible: objectName">Mapped To <b><span data-bind="text: objectName"></span></b> </span>
+                <span class="btn btn-primary map-object" data-bind="invisible: objectName">Map To SObject</span>
+                <a href="/{!currentRecordId}" class="btn btn-primary pull-right margin10r">Go Back</a>
+                <span class="btn btn-success pull-right margin10r ui-sort"><span class="glyphicon glyphicon-sort" kndy-section-name="#=sectionName#"></span>Sort</span>
+                <span class="btn btn-success pull-right margin10r ui-filter"><span class="glyphicon glyphicon-filter" kndy-section-name="#=sectionName#"></span>Filter</span>
+                #if(sectionName !='Header'){#
+                    <span class="btn btn-success pull-right margin10r ui-rules"><span class="glyphicon glyphicon-cog" kndy-section-name="#=sectionName#"></span>Manage Rule</span>
+                #}#    
+                
+            </div>
+        </nav>
+        
+        <div id='container'>
+            <div id="message-block"></div>
+            <section class="section" >
+                <ul data-bind="source: fields" data-template="section-bean-template" class="header-ul"></ul>
+            </section>
+        </div>
+        
+    </script>
+    
+    <!-- Bean template for the Template Fields -->
+    <script id="section-bean-template" type="text/x-kendo-template">
+        <li class="panel panel-default droptarget" kndy-record-id="#=Id#" kndy-doc-section="#if(data.{!NamespaceUU}Document_Table_Name__c){##=data.{!NamespaceUU}Document_Table_Name__c##}else{#Header#}#">
+            <div class="panel-heading">
+                <span  class="header-field" data-bind="source: {!NamespaceUU}Document_Field__c"></span>
+                <span class="close remove-mapping" aria-label="Close" data-bind="visible: {!NamespaceUU}Database_Field__c" kndy-record-id="#=Id#" ><span aria-hidden="true">x</span></span>
+            </div>
+            <div class="panel-body">
+                <span>
+                    <span class="header-field" data-bind="source:{!NamespaceUU}Database_Field__c"></span>
+                <span>
+                <span class="center-block pull-right flash-indicator" ></span>
+            </div>
+        </li> 
+    </script>
+    
+    <!-- SIDEBAR : AVAILABLE FIELDS BEAN -->
+    <script id="available-fields-template" type="text/x-kendo-template">
+        #if(isReference){#
+            <li class="well drag lookup" kndy-field-api="#=name#" kndy-reference-api="#=referenceObject#" kndy-relationship-name="#=referenceObjectRelated#" kndy-field-label="#=label#" kndy-field-type="#=fieldType#">
+                <span data-bind="text: label" class="field-label"></span> 
+                <span style="float:right;" class="label label-primary" >LOOKUP</span> 
+                <span class="ref-path clearfix"></span>
+            </li>
+        #} else {#
+            <li class="well drag" kndy-field-api="#= name #" kndy-field-label="#=label#" kndy-field-type="#=fieldType#">
+                <span data-bind="text: label"  class="field-label"></span> 
+                <span class="ref-path clearfix"></span>
+            </li>
+        #}#
+    </script>
+    
+    <!--  -->
+    <script id="select-template" type="text/x-kendo-template">
+        <option #if ( data == 'Header') {# selected="selected"#}#    >#:data# </option>
+    </script>
+    
+    <!-- Bean template for template rules add/manage -->
+    <script id="modal-rule-template" type="text/x-kendo-template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Template Rule for: <span data-bind="text:{!NamespaceUU}Document_Table_Name__c"></span></h4>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <span id="modal-message" class="clearfix"></span>
+            <label for="query">Extract Query</label>
+            <textarea class="form-control" id="query" rows="3" data-bind="value:{!NamespaceUU}Extract_Query__c"></textarea>
+    
+            <label for="groupByParent">Group By Parent</label>
+            <input type="text" class="form-control" id="groupByParent" placeholder="Group By Parent" data-bind="value:{!NamespaceUU}Group_By__c"/>
+    
+            <label for="groupByChild">Group By Child</label>
+            <input type="text" class="form-control" id="groupByChild" placeholder="Group By Child" data-bind="value:{!NamespaceUU}Group_By_Child__c"/>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bind="click: removeRuleButtonClick, text: removeRuleButtonName"></button>
+            <button type="button" class="btn btn-primary" data-bind="click: saveButtonClick, text: saveButtonName"></button>
+        </div>
+    </script>
+    
+    <!-- Bean template for picking up child object for parent -->
+    <script id="modal-table-map" type="text/x-kendo-template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel" data-bind="text:modalHeader"></h4>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <span id="modal-message"></span>
+            <label>Section </label>
+            <label class="labelClass" for="sobjects">SObject</label>
+            <input id="sobjects"  />
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bind="click: saveButtonClick, text: saveButtonName"></button>
+        </div>
+        
+    </script>
+    
+    <!-- Template for Filter modal view -->
+    <script id="modal-filter-template" type="text/x-kendo-template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Filter Rules : <span data-bind="text:sectionName"></span></h4>
+        </div>
+
+        <div class="modal-body" id="modal-body">
+            <span id="modal-message" class="clearfix"></span>
+            
+            <table class="table" data-template="modal-filter-row-template" data-bind="source: fields" />
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bind="click: saveButtonClick, text: saveButtonName"></button>
+        </div>
+        
+    </script>
+    
+    <!-- Template for filter row in the modal view : Consumed by modal-filter-template -->
+    <script id="modal-filter-row-template" type="text/x-kendo-template">
+        <tr kndy-record-id="#=Id#" data-bind="visible: {!NamespaceUU}Database_Field__c">
+            <td><span class="glyphicon glyphicon-trash filter-delete" kndy-record-id="#=Id#" ></span></td>
+            <td> <label> #={!NamespaceUU}Database_Field__c# </label> </td>
+            <td class="prevValue"> #={!NamespaceUU}Filter_Criteria__c# </td>
+            <td>
+                <select>
+                    #var ftype; if( textFieldTypes.indexOf({!NamespaceUU}Field_Type__c)>-1 ){ftype='textFieldTypes' }else { ftype='numberFieldTypes'}#
+                    #for ( var j=0;j<Criteria[ftype].length;j++ ){#
+                        <option kndy-filter-operator="#=Criteria[ftype][j].key#">#=Criteria[ftype][j].value#</option>
+                    #}#
+                </select>
+            </td>
+            <td>
+                <input type="text" class="form-control" aria-describedby="basic-addon3">
+            </td>
+        </tr>
+    </script>
+    
+    <!-- Template for modal sort view  -->
+    <script id="modal-sort-template" type="text/x-kendo-template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Sort Rules : <span data-bind="text:sectionName"></span></h4>
+        </div>
+
+        <div class="modal-body" id="modal-body" style="overflow-y:scroll;">
+            <span id="modal-message" class="clearfix"></span>
+            <ul id="sort-order" class="table" data-bind="source:fields" data-template="sort-bean"></ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary pull-left" data-bind="click: changeSequence, invisible:sequenceToggle">Change Sequence</button>
+            <button type="button" class="btn btn-primary pull-left" data-bind="click: saveSequence, visible:sequenceToggle">Save Sequence</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bind="click: saveButtonClick, text: saveButtonName"></button>
+        </div>
+        
+    </script>
+    
+    <!-- Template for sort row in modal view  -->
+    <script id="sort-bean" type="text/x-kendo-template">
+        <li class="sort-bean" data-bind="visible:{!NamespaceUU}Database_Field__c,attr:{kndy-sort-sequence:{!NamespaceUU}Sort_Sequence__c,kndy-record-id:Id}">
+            <span class="glyphicon glyphicon-resize-vertical sortable" ></span>
+            <label data-bind="text:{!NamespaceUU}Database_Field__c"></label>
+            <span class="pull-right">
+                <select data-bind="value: {!NamespaceUU}Sort_Order__c">
+                    <option #if({!NamespaceUU}Database_Field__c){#selected='selected'#}#>None</option>
+                    <option>Ascending</option>
+                    <option>Descending</option>
+                </select>
+            </span>
+            <span class="badge badge-info pull-right" data-bind="text:{!NamespaceUU}Sort_Sequence__c,visible:{!NamespaceUU}Sort_Sequence__c"></span>
+            
+        </li>
+    </script>
+    
+    <!-- modal for lookup relationship path mapping -->
+    <script id="modal-lookup-template" type="text/x-kendo-template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            <h4 class="modal-title" id="myModalLabel">Field Path Builder : <span data-bind="text:label "></span></h4>
+        </div>
+        <div>
+            <span style="padding-left:10px;">Select a field, then click Insert. Labels followed by a '>' indicates a reference field.</span>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <span id="modal-message" class="clearfix"></span>
+            <table>
+                <tr id="lookupRow">
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bind="click: insertClick">Insert</button>
+        </div>
+    </script>
+    
+    <!-- modal template for ref select. used in modal-lookup-template-->
+    <script id="modal-select-bean-template" type="text/x-kendo-template">
+        <select size="10" class="referenceSelect minWidth100" id="lookupSelect-lvl#=level#" kndy-ref-level="#=level#" >
+            #for(var i=0;i<data.fields.length;i++){#
+                #if(data.fields[i].isReference){#
+                    <option kndy-field-api="#=data.fields[i].name#" kndy-lookup-object="#=data.fields[i].referenceObject#" kndy-relationship-name="#=data.fields[i].referenceObjectRelated#">#=data.fields[i].label# ></option>
+                #} else {#
+                    <option kndy-field-api="#=data.fields[i].name#">#=data.fields[i].label#</option>
+                #}#
+            #}#
+        </select>
+    </script>
+</apex:page>

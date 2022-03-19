@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyTierGroup" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Tier Groups" Name="standard-LoyaltyTierGroup" SobjectName="LoyaltyTierGroup" Url="https://rstk-qa-rsf.my.salesforce.com/0lt/o"/>
+</toolingTabInfo>

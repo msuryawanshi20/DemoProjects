@@ -1,0 +1,6 @@
+<apex:page standardController="Account"
+            extensions="DOX.MergeCurrentRecordExt">
+<apex:form > 
+    <c:MergeSelectedRecords records="{!allOrders}"   />  
+</apex:form>
+</apex:page>

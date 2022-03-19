@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="LoyaltyProgramMemberCase" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Program Member Cases" Name="standard-LoyaltyProgramMemberCase" SobjectName="LoyaltyProgramMemberCase" Url="https://rstk-qa-rsf.my.salesforce.com/0lY/o"/>
+</toolingTabInfo>

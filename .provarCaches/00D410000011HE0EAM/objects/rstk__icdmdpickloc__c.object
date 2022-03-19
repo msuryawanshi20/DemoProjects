@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__Pick_List</fullName>
+        <fields>Name</fields>
+        <fields>rstk__icdmdpickloc_compitem__c</fields>
+        <fields>rstk__icdmdpickloc_div__c</fields>
+        <fields>rstk__icdmdpickloc_orddmdlne__c</fields>
+        <fields>rstk__icdmdpickloc_locnum__c</fields>
+        <fields>rstk__icdmdpickloc_lotno__c</fields>
+        <fields>rstk__icdmdpickloc_sopickh__c</fields>
+        <fields>rstk__icdmdpickloc_totqtypickreqd__c</fields>
+        <fields>rstk__icdmdpickloc_allocpol__c</fields>
+        <fields>rstk__icdmdpickloc_backflushpol__c</fields>
+        <label>Pick List</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>icdmdpickloc__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>rootstock__PickListFields</fullName>
+        <description>WO Picklist Grid</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_compitem__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_descr__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_totqtypickreqd__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_locid__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_locnum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_locqty__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_locsec__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__icdmdpickloc_backflushpol__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>PickListFields</label>
+    </fieldSets>
+    <fields>
+        <fullName>Location_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK(rstk__icdmdpickloc_locid__r.rstk__sylocid_locid__c)),  rstk__icdmdpickloc_locid__r.rstk__sylocid_locid__c , &apos;N/A&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK(rstk__icdmdpickloc_locnum__c)) , rstk__icdmdpickloc_locnum__c, &apos;N/A&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>NULL</formula>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icdmdpickloc_ordno__c + &apos;_&apos; + rstk__icdmdpickloc_compitem__r.rstk__icitem_item__r.rstk__peitem_item__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_allocpol__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Allocation Policy</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_backflushpol__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Backflush Ind</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First Operation</fullName>
+                    <default>false</default>
+                    <label>First Operation</label>
+                </value>
+                <value>
+                    <fullName>Last Operation</fullName>
+                    <default>false</default>
+                    <label>Last Operation</label>
+                </value>
+                <value>
+                    <fullName>No Backflushing</fullName>
+                    <default>false</default>
+                    <label>No Backflushing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_bgcolor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>icdmdpickloc_bgcolor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_compitem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Component Item</label>
+        <referenceTo>rstk__icitem__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_descr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_div__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipLabel>divicdmdpicklocs</relationshipLabel>
+        <relationshipName>divicdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_dmdqtyoutstdg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Qty Outstanding</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_dtereqd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Date Required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_expiredate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_fsopickh__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SO Pick List Header</label>
+        <referenceTo>rstk__fsopickh__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ictransreq__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Planned Location Transfer</label>
+        <referenceTo>rstk__ictransreq__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ictransreqh__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Planned Transfer Group</label>
+        <referenceTo>rstk__ictransreqh__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_issued__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Issue Txn Processed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_itemrev__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Item Rev</label>
+        <referenceTo>rstk__peitemrev__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_locid__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Loc ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_locnum__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Location Number is a more granular definition of specific areas WITHIN a Location ID. Normally this would identify a specific Bin or Aisle/Rack/Shelf/Bin type of warehouse identification.</inlineHelpText>
+        <label>Loc No</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_locqty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Loc Qty</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_locsec__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Lot/Serial No</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_loctype__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Location Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consigned</fullName>
+                    <default>false</default>
+                    <label>Consigned</label>
+                </value>
+                <value>
+                    <fullName>Non-nettable</fullName>
+                    <default>false</default>
+                    <label>Non-nettable</label>
+                </value>
+                <value>
+                    <fullName>On Hand</fullName>
+                    <default>false</default>
+                    <label>On Hand</label>
+                </value>
+                <value>
+                    <fullName>Outside Operation</fullName>
+                    <default>false</default>
+                    <label>Outside Operation</label>
+                </value>
+                <value>
+                    <fullName>Vendor Managed Inventory</fullName>
+                    <default>false</default>
+                    <label>Vendor Managed Inventory</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_lotno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Lot Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_name_del__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__icdmdpickloc_ordno__c + &apos;_&apos; + rstk__icdmdpickloc_compitem__r.rstk__icitem_item__r.rstk__peitem_item__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>icdmdpickloc_name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_notes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Rich Text Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_oper__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Operation No</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_oper_ui__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Operation</label>
+        <referenceTo>rstk__woordop__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_orddmdlne__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Dmd Line</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ordlne__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Ord Line</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ordlnerel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Ord Line Release</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ordno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Order No</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_ordtype__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Order Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_pickseq__c</fullName>
+        <defaultValue>999999</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Pick Sequence</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_plainnotes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>icdmdpickloc_plainnotes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_podmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When picklist is for PO Components to be picked, this is the PO Component Demand this picklist record applies to.</inlineHelpText>
+        <label>PO Component Demand</label>
+        <referenceTo>rstk__podmd__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>Pick_Lists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_pohdr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>PO Entry</label>
+        <referenceTo>rstk__pohdr__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_procqty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Processed Qty</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_proj__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Issuing Project</label>
+        <referenceTo>rstk__pjproj__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_qtyalloc__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Qty Allocated</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_refdes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Reference Designators</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_seqno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Seq Number</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_serials__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Serial Numbers</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_soorddmd__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Sales Order Demand</label>
+        <referenceTo>rstk__soorddmd__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_sopickh__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Pick List Batch</label>
+        <referenceTo>rstk__sopickh__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_srlno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Serial Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_suggestedqty__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Suggested Qty</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_totqtypickreqd__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Pick Qty</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_wbs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Job Code</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_wctr__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Work Center</label>
+        <referenceTo>rstk__rtwctr__c</referenceTo>
+        <relationshipLabel>Pick List</relationshipLabel>
+        <relationshipName>Pick_List</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__icdmdpickloc_wocst__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Work Order</label>
+        <referenceTo>rstk__wocst__c</referenceTo>
+        <relationshipLabel>Pick Lists</relationshipLabel>
+        <relationshipName>icdmdpicklocs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Pick List</label>
+    <listViews>
+        <fullName>Pick_Lists_PK</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__icdmdpickloc_ordno__c</columns>
+        <columns>rstk__icdmdpickloc_ordlnerel__c</columns>
+        <columns>rstk__icdmdpickloc_compitem__c</columns>
+        <columns>Location_ID__c</columns>
+        <columns>Location_Number__c</columns>
+        <columns>rstk__icdmdpickloc_locid__c</columns>
+        <columns>rstk__icdmdpickloc_locnum__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icdmdpickloc_locqty__c</columns>
+        <columns>rstk__icdmdpickloc_locsec__c</columns>
+        <columns>rstk__icdmdpickloc_lotno__c</columns>
+        <columns>rstk__icdmdpickloc_wocst__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__icdmdpickloc_wocst__c</field>
+            <operation>contains</operation>
+            <value>PK_WO_AUG10-1</value>
+        </filters>
+        <label>Pick Lists_PK</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__All</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__icdmdpickloc_ordno__c</columns>
+        <columns>rstk__icdmdpickloc_ordlnerel__c</columns>
+        <columns>rstk__icdmdpickloc_compitem__c</columns>
+        <columns>Location_ID__c</columns>
+        <columns>Location_Number__c</columns>
+        <columns>rstk__icdmdpickloc_totqtypickreqd__c</columns>
+        <columns>rstk__icdmdpickloc_qtyalloc__c</columns>
+        <columns>rstk__icdmdpickloc_soorddmd__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>Pick Lists</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__Details</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__icdmdpickloc_div__c</columns>
+        <columns>rstk__icdmdpickloc_proj__c</columns>
+        <columns>rstk__icdmdpickloc_loctype__c</columns>
+        <columns>rstk__icdmdpickloc_locid__c</columns>
+        <columns>rstk__icdmdpickloc_locnum__c</columns>
+        <columns>rstk__icdmdpickloc_ordno__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__icdmdpickloc_ordlne__c</columns>
+        <columns>rstk__icdmdpickloc_totqtypickreqd__c</columns>
+        <columns>rstk__icdmdpickloc_soorddmd__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Details</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Pick Lists</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

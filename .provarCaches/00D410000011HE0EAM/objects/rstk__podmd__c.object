@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__PO_Component_Demand</fullName>
+        <fields>Name</fields>
+        <fields>rstk__podmd_backflushpol__c</fields>
+        <fields>rstk__podmd_dtereqd__c</fields>
+        <fields>rstk__podmd_compitem__c</fields>
+        <fields>rstk__podmd_compqty_qtyreq_ui__c</fields>
+        <fields>rstk__podmd_dolchgoutlab__c</fields>
+        <fields>rstk__formula_defaultproject__c</fields>
+        <fields>rstk__podmd_qtytype_qtyreqd_ui__c</fields>
+        <fields>rstk__podmd_qtytype_qtyper_ui__c</fields>
+        <fields>rstk__podmd_compqty_qtyper_ui__c</fields>
+        <label>PO Component Demand</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>podmd__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>rstk__RSFieldSet</fullName>
+        <description>Test</description>
+        <displayedFields>
+            <field>rstk__Demand_Formula__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>rstk__Designated_Source_c__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Custom Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>rootstock__podmd_po_ordno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_ordno__r.rstk__pohdr_ordno__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PO Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__Demand_Formula__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Text</description>
+        <externalId>false</externalId>
+        <label>Demand Formula</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__Designated_Source_c__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Designated Source</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__altextid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>altextid</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_defaultproject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_invdiv__r.rstk__sydiv_dflthomeproj__c</formula>
+        <inlineHelpText>Internal formula for constructing the associated field.</inlineHelpText>
+        <label>Default Project</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_poline__r.rstk__externalid__c &amp; &apos;_&apos; &amp;  rstk__podmd_compitem__r.rstk__externalid__c</formula>
+        <inlineHelpText>This is the formula for determining the External ID of this record, which is not used or shown on any Rootstock pages</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_poline__r.Name + &quot;-&quot; + rstk__podmd_compitem__r.rstk__icitem_item__r.rstk__peitem_item__c</formula>
+        <inlineHelpText>Internal formula for constructing the associated name field.</inlineHelpText>
+        <label>Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>null</formula>
+        <inlineHelpText>This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_statusmismatch__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ISBLANK(rstk__podmd_dmdsts__c) || rstk__podmd_dmdsts__c != LEFT(TEXT(rstk__podmd_poline__r.rstk__poline_ordsts__c),1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>formula_statusmismatch</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_backflushpol__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The  Backflush policy of this PO Component.  It defaults from the Inventory Commodity Code and can be one of three choices:  No Backflush, First Operation, Last Operation.  Last Operation means completions reported after the first operation.</inlineHelpText>
+        <label>Backflush Policy Indicator</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Last Operation</fullName>
+                    <default>false</default>
+                    <label>Last Operation</label>
+                </value>
+                <value>
+                    <fullName>No Backflush</fullName>
+                    <default>false</default>
+                    <label>No Backflush</label>
+                </value>
+                <value>
+                    <fullName>First Operation</fullName>
+                    <default>false</default>
+                    <label>First Operation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_compitem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the  PO Component Item Number for a subcontract item.</inlineHelpText>
+        <label>Component Item Number</label>
+        <referenceTo>rstk__icitem__c</referenceTo>
+        <relationshipLabel>PO Component Demand</relationshipLabel>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_compqty_ordqty_ui__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This field value defines the Order Qty for the associated Purchase Order Demand.</inlineHelpText>
+        <label>Order Qty</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_compqty_qtyper_ui__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When “Enter Qty Per” is checked, the quantity per field is enabled and the value is entered here.</inlineHelpText>
+        <label>Qty Per</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_compqty_qtyreq_ui__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When either ‘Enter Component Qty’ or ‘Fixed Component Qty’ is selected, the quantity is entered in this field</inlineHelpText>
+        <label>Component Qty</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_desc__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_compitem__r.rstk__icitem_item__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dimvals__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Dimension for this PO Demand</inlineHelpText>
+        <label>Dimension Values</label>
+        <referenceTo>rstk__dimvals__c</referenceTo>
+        <relationshipLabel>PO Component Demand</relationshipLabel>
+        <relationshipName>podmds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_div__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>the Division associated with this PO Component</inlineHelpText>
+        <label>Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Division)</relationshipLabel>
+        <relationshipName>divpodmds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dmdsts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>old field label  :  PO Demand Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Status</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutfrght__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Charged Out Freight Cost</inlineHelpText>
+        <label>podmd_dolchgoutfrght</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutlab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Charged Out Labor Cost</inlineHelpText>
+        <label>Deductions, Labor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Outside Material</inlineHelpText>
+        <label>Deductions, Material</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutohdfrng__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Fringe Overhead</inlineHelpText>
+        <label>Deductions, Fringe Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutohdlab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Outside Labor</inlineHelpText>
+        <label>Deductions, Labor Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutohdmach__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Machine Overhead</inlineHelpText>
+        <label>Deductions, Machine Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutohdmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Material  Overhead</inlineHelpText>
+        <label>Deductions, Material Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutothlnd__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Other Indirect Costs</inlineHelpText>
+        <label>podmd_dolchgoutothlnd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutsublab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Demand Amount charged out for Subcontracted Labor</inlineHelpText>
+        <label>Deductions, Subcontract Labor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dolchgoutsubmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Charged Out Subcontract Cost</inlineHelpText>
+        <label>Deductions, Subcontract Material</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_dtereqd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Date required for this Subcontracted Component.</inlineHelpText>
+        <label>Date Required</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_enginvumcf__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Engineering to Inventory Unit of Measure Conversion factor  for the Subcontracted Component.</inlineHelpText>
+        <label>Eng-to-Inv UOM Conversion Factor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_fixqtyflag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Fixed Quantity Flag. When set, this component has a fixed quantity per order as opposed to a calculated quantity based on number ordered.</inlineHelpText>
+        <label>Fix Quantity Flag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_fullyalloc__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_qtyalloc__c + rstk__podmd_qtyiss__c &gt;= rstk__podmd_qtyreq__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fully Allocated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_homeprojind__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Home Project Indicator of this PO Component</inlineHelpText>
+        <label>Home Project Indicator</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Home</fullName>
+                    <default>false</default>
+                    <label>Not Home</label>
+                </value>
+                <value>
+                    <fullName>Project Home</fullName>
+                    <default>false</default>
+                    <label>Project Home</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_icixrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Planned Requirement Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_invdiv__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Inventory Division</inlineHelpText>
+        <label>Inv Division</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Inv Division)</relationshipLabel>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_invsite__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Inventory Site</inlineHelpText>
+        <label>Inv Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Inv Site)</relationshipLabel>
+        <relationshipName>PO_Component1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_invuom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Inventory UOM of the PO Component</inlineHelpText>
+        <label>Inv UOM</label>
+        <referenceTo>rstk__syuom__c</referenceTo>
+        <relationshipLabel>PO Component Demand</relationshipLabel>
+        <relationshipName>podmds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ishomeproj__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>(rstk__podmd_compitem__r.rstk__icitem_homeprojindind__c == true &amp;&amp; ISPICKVAL(rstk__podmd_compitem__r.rstk__icitem_iccomcod__r.rstk__iccomcod_dflthomeprojind_pl__c, &apos;Project Home&apos;)) || ( rstk__podmd_compitem__r.rstk__icitem_homeprojindind__c == false &amp;&amp; ISPICKVAL( rstk__podmd_compitem__r.rstk__icitem_homeprojind__c , &apos;Project Home&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Formula Is Home Proj</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_isslocid__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Location ID from which inventory will be backflushed upon PO Receipt.  Location ID must be a backflush location.</inlineHelpText>
+        <label>Issue From Inventory Location ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>PO Component Demand</relationshipLabel>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_issproj__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Issue Project for the PO Component</inlineHelpText>
+        <label>Issue Project</label>
+        <referenceTo>rstk__pjproj__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Issue Project)</relationshipLabel>
+        <relationshipName>podmds</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_isswbs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Issue WBS (Future Use)</inlineHelpText>
+        <label>ISSWBS (Future use)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_itemrev__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>Item Revision</label>
+        <referenceTo>rstk__peitemrev__c</referenceTo>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_lne__c</fullName>
+        <deprecated>false</deprecated>
+        <description>old field label  :  PO Demand Line Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchase Order Line Number for this Component Demand</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_nodims__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__podmd_poline__r.rstk__poline_nodims__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Suppress Dimension Details</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ordno__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchase Order Number for this Component Demand</inlineHelpText>
+        <label>Purchase Order Number</label>
+        <referenceTo>rstk__pohdr__c</referenceTo>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_poitem__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(rstk__podmd_poline__r.rstk__poline_item__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PO Item</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_poline__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the PO Line number associated with this PO Component</inlineHelpText>
+        <label>PO Line</label>
+        <referenceTo>rstk__poline__c</referenceTo>
+        <relationshipLabel>PO Component Demand</relationshipLabel>
+        <relationshipName>podmds</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_polineinvdiv__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(rstk__podmd_poline__r.rstk__poline_invdiv__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>POLine Inv Div</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_polineinvsite__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( rstk__podmd_poline__r.rstk__poline_invsite__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>POLine Inv Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_polinercptlocid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( rstk__podmd_poline__r.rstk__poline_rcptlocid__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>POLine Rcpt LocID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_polinercptsite__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( rstk__podmd_poline__r.rstk__poline_receiptsite__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>POLine Receipt Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_povend__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(rstk__podmd_poline__r.rstk__poline_ordno__r.rstk__pohdr_vendno__c)</formula>
+        <label>Vendor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_proj__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Project associated with this subcontracted component</inlineHelpText>
+        <label>Project</label>
+        <referenceTo>rstk__pjproj__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Project)</relationshipLabel>
+        <relationshipName>podmd1s</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyalloc__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Component quantity Allocated</inlineHelpText>
+        <label>Qty Allocated</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyiss__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Component quantity Issued</inlineHelpText>
+        <label>Qty Issued</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyoutstdg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Component Quantity Remaining to be issued</inlineHelpText>
+        <label>Qty Remaining</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyper__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Quantity Per for this Subcontracted Component</inlineHelpText>
+        <label>Qty Per</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyreq__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Total PO Component Quantity required for specified PO Line.</inlineHelpText>
+        <label>Qty Required</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyreq_pseudo__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the quantity required to assemble/build the Purchase Order Parent Item</inlineHelpText>
+        <label>Qty Required</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtyscp__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Quantity scrapped</inlineHelpText>
+        <label>Qty Scrapped</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtytype_fixedqty_ui__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that the Comp Qty is fixed,and independent of the PO Qty. Example: PO is for 10 and the Fixed Component Qty is set to 5, the ‘Component Order Qty’ is then set to 5 and the ‘Qty Per’ is set to .5</inlineHelpText>
+        <label>Fixed Component Qty</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtytype_qtyper_ui__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that ‘Qty Per’ is the means that ‘Component Order Qty’ is/was calculated. Example: If ‘Qty Per’ is set to 2 and the PO is for 10 of the Parent item, then the Compomemt Order Qty is calculated as 20.</inlineHelpText>
+        <label>Enter Qty Per</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_qtytype_qtyreqd_ui__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that the Quantity for this component is to be entered directly as Component Quantity. In this case, the Qty Per will be calculated automatically.</inlineHelpText>
+        <label>Enter Component Qty</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_scppct__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Component Scrap Percentage</inlineHelpText>
+        <label>Scrap Percentage</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_setqty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Setup Quantity</inlineHelpText>
+        <label>Set Quantity</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Site associated with this PO Component</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>rstk__sysite__c</referenceTo>
+        <relationshipLabel>PO Component Demand (Site)</relationshipLabel>
+        <relationshipName>PO_Component</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_subdmddiv__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(IF(rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsiteind__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_comcod__r.rstk__pocomcod_subdmdsite__r.rstk__sysite_div__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsite__r.rstk__sysite_div__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Dmd Div</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_subdmdlocid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(IF(rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsiteind__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_comcod__r.rstk__pocomcod_subdmdlocid__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdlocid__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Dmd LocID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_subdmdlocidsite__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(IF(rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsiteind__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_comcod__r.rstk__pocomcod_subdmdlocid__r.rstk__sylocid_site__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdlocid__r.rstk__sylocid_site__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Dmd LocID Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_subdmdsite__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(IF(rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsiteind__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_comcod__r.rstk__pocomcod_subdmdsite__c, rstk__podmd_poline__r.rstk__poline_item__r.rstk__poitem_subdmdsite__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Dmd Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_tempid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Demand UI Temporary field</inlineHelpText>
+        <label>temp id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstfrght__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Freight Cost of the PO Component</inlineHelpText>
+        <label>podmd_ucstfrght</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstlab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Labor Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Labor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Material Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Material</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstohdfrng__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Overhead Fringe Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Fringe Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstohdlab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Overhead Labor Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Labor Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstohdmach__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Overhead Machine Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Machine Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstohdmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Overhead Material Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Material Ohd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstothlnd__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Unit Cost for Other Indirect Charges for this subcontracted component</inlineHelpText>
+        <label>podmd_ucstothlnd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstsublab__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Subcontract Labor Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Subcontract Labor</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_ucstsubmtl__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Standard Unit Subcontract Material Cost of the PO Component</inlineHelpText>
+        <label>Unit Cost, Subcontract Material</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_varcstfrght__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Freight Cost Variance</inlineHelpText>
+        <label>podmd_varcstfrght</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_varcstothlnd__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Other Landed Cost Variance</inlineHelpText>
+        <label>podmd_varcstothlnd</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__podmd_wbs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Project WBS</inlineHelpText>
+        <label>WBS</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field not currently displayed on any Rootstock User pages</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__temp_decnumber1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>temp_decnumber1</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field which is not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PO Component Demand</label>
+    <listViews>
+        <fullName>rstk__PO_Component_Demand_Today</fullName>
+        <columns>LAST_UPDATE</columns>
+        <columns>NAME</columns>
+        <columns>rstk__podmd_div__c</columns>
+        <columns>rstk__podmd_ordno__c</columns>
+        <columns>rstk__podmd_qtyreq__c</columns>
+        <columns>rstk__podmd_qtyiss__c</columns>
+        <columns>rstk__podmd_lne__c</columns>
+        <columns>rstk__podmd_compitem__c</columns>
+        <columns>rstk__podmd_backflushpol__c</columns>
+        <columns>rstk__podmd_dmdsts__c</columns>
+        <columns>rstk__podmd_invsite__c</columns>
+        <columns>rstk__podmd_site__c</columns>
+        <columns>rstk__podmd_issproj__c</columns>
+        <columns>rstk__podmd_dtereqd__c</columns>
+        <columns>rstk__podmd_qtyper__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>PO Component Demand - Today</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__PO_Demand_Site</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__podmd_div__c</columns>
+        <columns>rstk__podmd_invdiv__c</columns>
+        <columns>rstk__podmd_ordno__c</columns>
+        <columns>rstk__podmd_lne__c</columns>
+        <columns>rstk__podmd_site__c</columns>
+        <columns>rstk__podmd_invsite__c</columns>
+        <columns>rstk__podmd_qtyreq__c</columns>
+        <columns>rstk__podmd_qtyiss__c</columns>
+        <columns>rstk__podmd_compitem__c</columns>
+        <columns>rstk__podmd_backflushpol__c</columns>
+        <columns>rstk__podmd_issproj__c</columns>
+        <columns>rstk__podmd_dtereqd__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>PO Demand - Site</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Component_Demand</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__podmd_div__c</columns>
+        <columns>rstk__podmd_ordno__c</columns>
+        <columns>rstk__podmd_qtyreq__c</columns>
+        <columns>rstk__podmd_qtyreq_pseudo__c</columns>
+        <columns>rstk__podmd_qtyper__c</columns>
+        <columns>rstk__podmd_compqty_qtyper_ui__c</columns>
+        <columns>rstk__podmd_qtyiss__c</columns>
+        <columns>rstk__podmd_lne__c</columns>
+        <columns>rstk__podmd_compitem__c</columns>
+        <columns>rstk__podmd_backflushpol__c</columns>
+        <columns>rstk__podmd_proj__c</columns>
+        <columns>rstk__podmd_itemrev__c</columns>
+        <columns>rstk__externalid__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__podmd_ordno__c</field>
+            <operation>contains</operation>
+        </filters>
+        <label>PO Component Demand</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Component_Demand_Select</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__podmd_div__c</columns>
+        <columns>rstk__podmd_ordno__c</columns>
+        <columns>rstk__podmd_qtyreq__c</columns>
+        <columns>rstk__podmd_qtyiss__c</columns>
+        <columns>rstk__podmd_lne__c</columns>
+        <columns>rstk__podmd_compitem__c</columns>
+        <columns>rstk__podmd_backflushpol__c</columns>
+        <columns>rstk__podmd_issproj__c</columns>
+        <columns>rstk__podmd_proj__c</columns>
+        <columns>rstk__podmd_dtereqd__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__podmd_qtyper__c</columns>
+        <columns>rstk__altextid__c</columns>
+        <columns>rstk__externalid__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>PO Component Demand - Select</label>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_PO_Component_Demandbcbcb</fullName>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__podmd_compitem__c</columns>
+        <columns>rstk__podmd_invsite__c</columns>
+        <columns>rstk__podmd_isslocid__c</columns>
+        <columns>NAME</columns>
+        <columns>rstk__podmd_qtyoutstdg__c</columns>
+        <columns>rstk__podmd_backflushpol__c</columns>
+        <columns>rstk__podmd_poitem__c</columns>
+        <columns>rstk__podmd_site__c</columns>
+        <columns>rstk__podmd_polinercptsite__c</columns>
+        <columns>rstk__podmd_polineinvsite__c</columns>
+        <columns>rstk__podmd_dmdsts__c</columns>
+        <columns>rstk__podmd_div__c</columns>
+        <columns>rstk__podmd_invdiv__c</columns>
+        <columns>rstk__podmd_ordno__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>UPDATEDBY_USER</field>
+            <operation>contains</operation>
+            <value>beatriz</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>1386</value>
+        </filters>
+        <label>PO Cobcbcmponent Demand</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>PODMD Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PO Component Demand</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <searchResultsAdditionalFields>rstk__podmd_div__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_compitem__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_proj__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_dtereqd__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_qtyper__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_qtyreq__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_qtyiss__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__podmd_issproj__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>rstk__Qty_Allocated_Cannot_be_less_than_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>rstk__podmd_qtyalloc__c &lt; 0</errorConditionFormula>
+        <errorMessage>Qty Allocated Cannot be less than 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>rstk__Validate_RcptLodId_LocationID_Type_OH</fullName>
+        <active>true</active>
+        <description>Validate Add PODMD</description>
+        <errorConditionFormula>ISPICKVAL(rstk__podmd_compitem__r.rstk__icitem_item__r.rstk__peitem_itemtype__c , 
+&apos;Labor Only&apos;)</errorConditionFormula>
+        <errorMessage>Purchase Order Demands cannot exist for Labor Only Items</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

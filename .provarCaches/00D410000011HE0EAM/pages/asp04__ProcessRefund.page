@@ -1,0 +1,42 @@
+<apex:page standardController="asp04__Payment__c" extensions="asp04.RefundControllerExtension" >
+ <style type="text/css">
+  .exceptionText {
+    color:red; 
+    font-size:14px; 
+    font-weight:normal; 
+    margin-left:40px;
+  }
+ </style>
+ <script>
+    function disableButton(buttonReference) {
+        setTimeout('disableButtonElementAfterTimeout(\'' + buttonReference.id + '\');', 0);
+    }
+    function disableButtonElementAfterTimeout(id) {
+        var buttonElement = document.getElementById( id );
+        buttonElement.disabled = 'disabled';
+        buttonElement.className = 'btnDisabled';
+        buttonElement.value = "{!$Label.asp04__processing_refund}";
+    }
+ </script>
+ <apex:messages styleClass="exceptionText"/>
+    <apex:form >
+      <apex:sectionheader title="{!$Label.asp04__refund_a_payment}" />
+      <apex:pageBlock mode="MainDetail" >
+          <apex:pageblocksection columns="1" >
+              <apex:outputField value="{!RefundPayment.asp04__Payment__c}"/>
+              <apex:outputField value="{!Payment.asp04__Amount__c}"/>
+              <apex:outputField value="{!Payment.asp04__Total_Refunded__c}"/>
+          </apex:pageblocksection>
+          <br/>
+          <apex:pageblocksection columns="1" >
+              <apex:inputField value="{!RefundPayment.asp04__Amount__c}"/>
+          </apex:pageblocksection>
+
+          <apex:pageBlockButtons location="bottom" >
+              <apex:commandButton id="savebutton" action="{!Save}" value="{!$Label.asp04__process_refund}" rendered="{!$ObjectType.asp04__Refund__c.Createable}" onclick="disableButton(this);" />
+              <apex:commandButton action="{!Cancel}" value="{!$Label.asp04__cancel_camel_case}" />
+          </apex:pageBlockButtons>
+
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

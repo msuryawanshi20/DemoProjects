@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="0KD1K000001h2aEWAQ" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Inventory Shortage Report" Name="rstk__icshrtlist__c" SobjectName="rstk__icshrtlist__c" Url="https://rstk-qa-rsf.my.salesforce.com/a1l/o"/>
+</toolingTabInfo>

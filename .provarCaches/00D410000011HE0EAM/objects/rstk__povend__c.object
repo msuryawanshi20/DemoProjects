@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>rootstock__RecordEdit</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>rstk__PovendView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>rstk__Vendor_Master</fullName>
+        <fields>Name</fields>
+        <fields>rstk__povend_vendno__c</fields>
+        <fields>rstk__povend_sf_account_name__c</fields>
+        <fields>rstk__povend_vendcurr__c</fields>
+        <fields>rstk__povend_maintcurrind__c</fields>
+        <fields>rstk__povend_terms__c</fields>
+        <fields>rstk__povend_taxid__c</fields>
+        <fields>rstk__povend_buyusrno__c</fields>
+        <fields>rstk__povend_sf_contact__c</fields>
+        <fields>rstk__povend_dirmtlind__c</fields>
+        <label>Vendor Master</label>
+    </compactLayouts>
+    <customHelpPage>rstk__objecthelp_povend</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>povend__c</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>rstk__RSFieldSet</fullName>
+        <description>For user defined fields on Visual Force pages</description>
+        <label>Custom Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>rootstock__povend_addressnum__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Addresses</label>
+        <summarizedField>rstk__povendpoaddr__c.rstk__povendpoaddr_seq__c</summarizedField>
+        <summaryForeignKey>rstk__povendpoaddr__c.rstk__povendpoaddr_vendno__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>rstk__externalid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_extid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__povend_vendno__c</formula>
+        <inlineHelpText>This is an internal system field used to define the externalID of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula External Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_leadtime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__povend_ltvend__c + rstk__povend_ltvendship__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal formula for constructing the associated field.</inlineHelpText>
+        <label>Lead Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__formula_searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstk__povend_sf_contact__r.Id + &apos; &apos; +  rstk__povend_buyusrno__r.rstk__syusr_employee__c  + &apos; &apos; + rstk__povend_sf_account__r.Id</formula>
+        <inlineHelpText>This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>Formula Search Index</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_1099ind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>1099 Vendor Indicator</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that the Vendor is a 1099 &quot;business&quot;</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_altfsvendid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The secondary Financial Vendor ID where applicable.</inlineHelpText>
+        <label>Secondary Financial Vendor ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_buyerpaysbc__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Buyer Pays Payment Bank Charge</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field serves as a default for Purchase Orders created for this Vendor, to indicate that the Buyer will be responsible for paying a Bank Charge which will be added to the Payables Invoice.</inlineHelpText>
+        <label>Buyer Pays Payment Bank Charge</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_buyusrno__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>There will be a drop down on the SYUSR table. The SYUSR records that are candidates are those whose SYUSR_RESPBUYERIND is set to ‘T’. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Buyer assigned as responsible for this Vendor. Must be a valid Mfg User where the Responsible Buyer Indicator is checked.</inlineHelpText>
+        <label>Resp Buyer</label>
+        <referenceTo>rstk__syusr__c</referenceTo>
+        <relationshipLabel>Vendor Masters (Resp Buyer)</relationshipLabel>
+        <relationshipName>POVENDs1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_carrier__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This must be a valid Carrier on the SYCARRIER  record (i.e. POVEND_CARRIER  must =  SYCARRIER_ID). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the standard carrier used by this Vendor to deliver goods to the Receiving facility. PO&apos;s for this vendor will default to use this carrier, but it can be overwritten on the PO line.</inlineHelpText>
+        <label>Carrier</label>
+        <referenceTo>rstk__sycarrier__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_ccind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Credit Card Vendor Indicator</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates this Vendor pays via a Credit Card, requiring Credit Card fields below to be populated</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_cctype__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Credit Card Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The (optional) Credit Card (type) used with this Vendor</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_custno__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Customer Number that this Vendor uses for you (and used in AP Processing)</inlineHelpText>
+        <label>My Customer Number at this Vendor</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_dfltrequestorg__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the default Group used to initialize a PO&apos;s Requesting Group for a PO placed with this Vendor.</inlineHelpText>
+        <label>Default Requesting Group</label>
+        <referenceTo>rstk__syorg__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_dimval__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If &apos;Vendor&apos; is selected as a Dimension Source values on the Company Master, then values established for the &apos;Vendor&apos; Dimension will appear here for selection, and will be passed to the Financial Package as the dimension value. (With Rootstock Financials)</inlineHelpText>
+        <label>Accounting Dimension Value</label>
+        <referenceTo>rstk__sydim__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>Vendor_Masters</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_dirmtlind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default is ‘T’. 
+
+If the value is ‘T’ then this vendor supplies direct material items 
+
+If the value is ‘F’ then this vendor does not supply direct material items 
+
+This is helpful in PO Entry so that when the PO Lines are added for a vendor, this flag will determine (or not) if a PO Line for direct material can be added. 
+
+If the Vendor does not supply direct material items, then those POITEM records whose POITEM_TYPE is ‘P’ (purchased) or ‘S’ (subcontract) or ‘O’ (Outside labor) will not be candidates for selection when adding a POLINE 
+
+Also in PO entry, the buyer putting up the purchase order has a setting on the POVEND record (POVEND_BUYUSRNO) which is used as a filtering mechanism to only get those vendors associated with the buyer’s User Number.  (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this Vendor may be used to supply Direct Material.</inlineHelpText>
+        <label>Direct Material Indicator</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_doclanguage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>povend_doclanguage__c</description>
+        <externalId>false</externalId>
+        <label>Document Language Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>rstk__povend_dirmtlind__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>rstk__Languages</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Chinese (Simplified)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Chinese (Traditional)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Danish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Dutch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>English</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Finnish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>French</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>German</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Italian</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Japanese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Korean</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Norwegian</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Portuguese (Brazil)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Russian</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Spanish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Spanish (Mexico)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Swedish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Thai</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_emplind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates that the Vendor record is for an Employee (used for AP purposes).</inlineHelpText>
+        <label>Employee Indicator</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_fob__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This must be a valid FOB CODE on the SYFOB  record (i.e. POVEND_FOB   must =  SYFOB_ID). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the standard FOB (Freight On Board) term for this Vendor.  Not required.  If entered, it will be the default FOB for each purchase order for this Vendor, but can be overwritten.</inlineHelpText>
+        <label>FOB</label>
+        <referenceTo>rstk__syfob__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_frghtrm__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This must be a valid FREIGHT TERMS CODE on the SYFRGHTRM  record (i.e. POVEND_FRGHTRM  must =  SYFRGHTRM_ID). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the standard Freight term for this Vendor. Not required, but if supplied, this becomes the default terms for any PO&apos;s using this vendor.  It can be overwritten on the PO.</inlineHelpText>
+        <label>Freight Terms</label>
+        <referenceTo>rstk__syfrghtrm__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_fsvendid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Vendor ID for an external Financial System.  Used if this Vendor has supplied your Financial System.</inlineHelpText>
+        <label>Financial System Vendor ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Inactive Vendors may not be used on new Purchase Orders and may not be set as the Assigned Vendor on Inventory Requisitions.</inlineHelpText>
+        <label>Inactive</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_indmtlind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label:  Indirect Material Indicator  
+
+Default is ‘T’. 
+
+If the value is ‘T’ then this vendor supplies indirect material items 
+
+If the value is ‘F’ then this vendor does not supply indirect material items 
+
+This is helpful in PO Entry so that when the PO Lines are added for a vendor, this flag will determine (or not) if a PO Line for indirect material can be added. 
+
+If the Vendor does not supply indirect material items, then those POITEM records whose POITEM_TYPE is ‘I’ (indirect material) will not be candidates for selection when adding a POLINE 
+
+This POVEND_INDMTLIND will also be a guide as to which POITEM records are candidate for selection on Agreement lines (POAGRLNE) identical to the consideration employed for PO LINES. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, this Vendor is identified as one that supplies Indirect Material.</inlineHelpText>
+        <label>Indirect Material Indicator</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_ltvend__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is the Lead time it takes the Vendor to manufacturing/assemble the item (or the time it takes the Vendor to perform the Service). 
+
+For  Service items this is used as the amount of time it takes for the vendor to perform the service 
+
+The PO Receipt Date (POLINE_SCHEDRCPTDTE)  is the date that the user enters on the purchase Order Line. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When the Vendor Lead Time Override is checked, this is the lead time that will be used.  Vendor lead time is the time the vendor requires to have the purchased item available to ship. It is expressed in days.</inlineHelpText>
+        <label>Vendor Lead Time</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_ltvendovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default is ‘F’ (unchecked) 
+
+If this value is ‘T’, then the PO Line Vendor Ship Date is equal to the date the PO is submitted to the vendor (POHDR_SCHDPLACEDATE) plus the POVEND_LTVEND  
+
+If this value is ‘F’, then the PO Line Vendor Ship Date is equal to the date the PO is submitted to the vendor (POHDR_SCHDPLACEDATE) plus the POCOMCOD/POITEM_LTVEND. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checkbox is checked, the Vendor Lead Time on this Vendor record will be used to calculate the Vendor Ship Date (as opposed to the Vendor Lead Time from the PO Commodity Code or PO Item Master).</inlineHelpText>
+        <label>Vendor LT Override Ind</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_ltvendship__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is the Lead time it takes the Vendor to ship the item from their dock  to the company’s dock.   
+
+For service this lead time has no applicability.  
+
+The PO Receipt Date (POLINE_SCHEDRCPTDTE)  is the date that the user enters on the purchase Order Line. 
+
+If this is direct or indirect material, then: 
+
+The POLINE_VENDSHIPDTE is set equal to the POLINE_SCHEDRCPTDTE minus the LTVENDSHIP 
+
+If this is service, then: 
+
+The POLINE_VENDSHIPDTE  is equal to the POLINE_SCHEDRCPTDTE. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When the Vendor Shipment Lead Time Override is checked, this is the lead time that will be used.  This field displays the number of days required to ship from the vendor site to make your dock date.</inlineHelpText>
+        <label>Vendor Shipment Lead Time</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_ltvendshipovrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this value is ‘T’, then the PO Line Scheduled Rcpt  Date is equal to the date the PO is shipped from the vendor (POLINE_VENDSHIPDATE) plus the POVEND_LTVENDSHIP  
+
+If this value is ‘F’ and the item on the POLINE is a direct material item (POLINE_POTYPE = ‘P’ or ‘S’ or ‘O’),  then the PO Line Scheduled Rcpt Date is equal to the date the PO is shipped from the vendor (POLINE_VENDSHIPDATE) plus the ICCOMCOD/ICITEM_LTVENDSHIP. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, the Vendor Shipment Lead Time on this Vendor record will be used to calculate the Vendor Ship Date (as opposed to the Vendor Shipment Lead Time from the Inventory Commodity Code or Inventory Item Master).</inlineHelpText>
+        <label>Vendor Shipment LT Override Ind</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_maintcurrind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is a check box 
+
+This should default to ‘T’ 
+
+If the value is ‘T’ this means that the purchase order (and requisition) which are for this Vendor will be maintained in the POVEND_VENDCURR. 
+
+If this value is ‘F’ this means that the purchase order (and requisition) will be maintained in the SYCMP_HOMECURR. 
+
+This denotes the currency that the purchase order and agreement unit prices will typically be maintained in. 
+
+The check to see if the purchase order or agreement or requisition is to be maintained in the Vendor’s currency (versus the home currency) is as follows: 
+
+IF POVEND_MAINTCURRIND = ‘T’ and POVEND_VENDCURR # SYCMP_HOMECURR then they should be maintained in the Vendor’s currency (POVEND_VENDCURR). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, POs placed with this Vendor will be in the Vendor&apos;s currency.  When unchecked, POs will be in the Home currency as defined on the Company Master.</inlineHelpText>
+        <label>Maintenance Currency Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_mfgacctdiv__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This does not need to be set.  If this is set, it must be a valid SYDIV and it is used, together with the POVEND_EXPENSEACCT, to retrieve the appropriate SYACC record. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vendor Accounting Division</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <referenceTo>rstk__sydiv__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_mfgapusrno__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accounts Payable User</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Accounts Payable Financial User responsible for this Vendor&apos;s AP activity</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_mfgbankacct__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Bank Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Bank Account used with this Vendor, required when &apos;Credit Card Vendor Indicator&apos; is checked</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_mfgdfltcmpno__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default Company for Vendor</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The default Company in which this Vendor is typically used</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_mfgglexpenseacct__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This does not need to be set.  If it is set, then it is used, together with the POVEND_MFGACCTDIV to retrieve the appropriate SYACC 
+
+It is only used for indirect material and services and is an expense account (and really plays only a supporting role in the initialization of the Expense Account on the POITEMVEND record for indirect material and service items).  See POITEMVEND_EXPENSEACCT. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Mfg Account (which points to a GL Account) used with this Vendor, required when &apos;Credit Card Vendor Indicator&apos; is checked</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_multicmpnoind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Multi Company Vendor Indicator</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, indicates that this Vendor is used in multiple Rootstock Companies</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_onetimeind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Not Applicable</inlineHelpText>
+        <label>One Time Vendor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_paytype__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Pay Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the payment type used to pay this Vendor.  Options are
+
+•	Check
+•	Cash
+•	EFT
+•	Credit Card</inlineHelpText>
+        <label>Z_OBSOLETE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Check</fullName>
+                    <default>false</default>
+                    <label>Check</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>EFT</fullName>
+                    <default>false</default>
+                    <label>EFT</label>
+                </value>
+                <value>
+                    <fullName>Credit Card</fullName>
+                    <default>false</default>
+                    <label>Credit Card</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_poemailtmpl__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When set, this overrides the defaulted PO Print Email Template when adding a PO for this Vendor.</inlineHelpText>
+        <label>PO Print Form Template</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_povclass__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Vendor Class associated with this Vendor Master.  Vendor Class is used to initialize key values to defaults from Vendor Class assigned.</inlineHelpText>
+        <label>Vendor Class</label>
+        <referenceTo>rstk__povclass__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>Vendor_Master</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_serviceind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default is ‘T’ 
+
+If the value is ‘T’ then this vendor supplies service  
+
+If the value is ‘F’ then this vendor does not supply service 
+
+This is helpful in PO Entry so that when the PO Lines are added for a vendor, this flag will determine (or not) if a PO Line for service can be added. 
+
+If the Vendor does not supply service items, then those POITEM records whose POITEM_TYPE is ‘V’ (service) will not be candidates for selection when adding a POLINE 
+
+This POVEND_SERVICEIND will also be a guide as to which POITEM records are candidate for selection on Agreement lines (POAGRLNE) identical to the consideration employed for PO LINES. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, this Vendor may be chosen to provide service items.</inlineHelpText>
+        <label>Service Indicator</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_sf_account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This link is established when the POVEND record is added within the Salesforce Account Maintenance program 
+
+There is also a ‘lookup’ from the Salesforce Account record to the POVEND This link too is established when the POVEND record is added within the Salesforce Account Maintenance program (page) 
+
+A deletion of the POVEND record’ in POVEND Maintenance providing there is no POHDR nor POAGRHDR nor POITEMVEND reference. (Also when there is a capability for indirect material requisitions, there can not be a  SYREQIND reference. ) 
+
+Deleting a POVEND record in POVEND maintenance will cause the ‘lookup’ reference to be eliminated on the Salesforce Account record 
+
+By the same token an Salesforce Account record cannot be deleted if the POVEND record exists and there will be no script which deletes both Salesforce Account Record and POVEND record from within Salesforce Account Maintenance. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When linked to an existing SF Account, this is a look-up field to the SF Account Name and will populate this field and the Salesforce Name field below. For a new SF Account, this field will be set to the value entered as Salesforce name.</inlineHelpText>
+        <label>Salesforce Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>sf_account_povends</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_sf_account_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type: This is not  an actual field.  The system obtains  the Name from the Salesforce Account record. This is however referenced in the documentation, regardless of where the Vendor’s name is retrieved, as POVEND_SF_ACCOUNT_NAME 
+
+This is the Vendor’s Name and it is on the Salesforce table (as ‘NAME’  ) 
+
+There is no  Name on this POVEND file but will rely on the Name on the SF Account Master  
+
+The POVEND_SF_ACCOUNT_NAME is used and have its value’s populated from SF account name.  If no existing SF account is linked at the time of adding a povend then the povend_sf_account_name is set from povend_vendno. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When linking to an existing SF Account this field is disabled and will be set to the Salesforce Account value selected above. When creating a new SF Account this field is required and will set the SF Account Number and SF Account name values.</inlineHelpText>
+        <label>Salesforce Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_sf_contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is a ‘lookup’ to the Salesforce Contact  table 
+
+Label:  Salesforce Contact Reference 
+
+This link is established when the POVEND record is added within the SF Account Maintenance program. 
+
+It is set to the primary contact for the SF Account to which the POVEND corresponds to (i.e. POVEND_SF_ACCOUNT). 
+
+This field is not necessarily mandatory (it can be left null in which case no contacts will be set in POHDR_SF_VENDCONTACT for example). 
+
+There is also to be a ‘lookup’ from the Salesforce Account record to the POVEND 
+
+ This is a reference to the Salesforce Contact Table and corresponds to a valid SF Contact that corresponds to the SF Account to that which the POVEND points to (POVEND_SF_ACCOUNT). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the name of the individual(s) identified as the Vendor contact. Currently, this field displays the SF Contacts &amp; NOT the Vendor Contacts under the Vendor Contact tab. Therefore, maintenance of these Contacts must be made on the SF Account record.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>Vendor_Masters</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_shipviatype__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This must be a valid Ship Via Type on the SYSHIPVIATYPE record (i.e. POVEND_SHIPVIATYPE must =  SYSHIPVIATYPE_ID). (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a user-defined value that defines how goods are shipped from the Vendor. These values are defined in the Ship Via Type Codes table.  This default may be overwritten on the Purchase Order.</inlineHelpText>
+        <label>Shipping Method</label>
+        <referenceTo>rstk__syshipviatype__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_taxid__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Vendor&apos;s Tax ID Number</inlineHelpText>
+        <label>Tax Identification Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_terms__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This must be a valid TERMS CODE on the SYTERMS  record (i.e. POVEND_TERMS   must =  SYTERMS_ID).(DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A user-defined value that indicates the payment terms established with this Vendor. These values are defined in the Terms Code table.  They may be overwritten on the purchase order.</inlineHelpText>
+        <label>Payment Terms</label>
+        <referenceTo>rstk__syterms__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_usrno__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the User Number associated with this Vendor</inlineHelpText>
+        <label>User</label>
+        <referenceTo>rstk__syusr__c</referenceTo>
+        <relationshipLabel>Vendor Masters (Employee User)</relationshipLabel>
+        <relationshipName>POVENDs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_vatclass__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This value is used to initialize the VAT Class on Purchase Order Lines.  In the initialization hierarchy, this value is checked after the Item Vendor and before the Item Master.</inlineHelpText>
+        <label>Override VAT Class</label>
+        <referenceTo>rstk__syvatclass__c</referenceTo>
+        <relationshipLabel>Vendor Master</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_vendcurr__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is the ISO Code. 
+
+Must be a valid SF ISO 
+
+This is set from the SF Account’s currency.  
+
+The term in their documentation is Account Currency 
+
+The vendor should be established with their own currency 
+
+This is set when adding the vendor and it is assumed that this is a valid value on the Currency table in SF but will depend on the validity of the Salesforce Account Currency field value 
+
+It is not expected that this will be maintained in POVEND Maintenance but rather will be maintained in SF Account Maintenance and there will be scripts on the SF Account Maintenance Page which will change this value if the SF Account Currency value changes. When adding a new POVEND if an existing SF account is linked then POVEND_VENDCURR is set from account currency otherwise it is set from SYCMP_HOMECURR. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This denotes the currency used by the given Vendor as defined on the Salesforce Account record.</inlineHelpText>
+        <label>Vendor Currency</label>
+        <referenceTo>rstk__sycurr__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>Vendor_Masters</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_vendlocid__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This can be null or this can be the Stock Loc Id of a Stock Loc Id Master whose SYLOCID_VENDLOCIND = ‘T’  
+
+Only one vendor can have this Vendor Loc ID value if not null and therefore this is checked in POVEND Maintenance to insure that this is the case. 
+
+This is used in PO Subcontract Backflush and will be used in PO Entry to facilitate the setting of the Location Id from which subcontract PO Component is issued when Override Backflush Loc ID is selected (represents a location at the vendor). 
+
+This also is used in POITEMVEND maintenance to facilitate the setting of the POITEMVEND_VENDLOCID. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location ID used for subcontract items to be shipped  to this Vendor.</inlineHelpText>
+        <label>Vendor Loc ID</label>
+        <referenceTo>rstk__sylocid__c</referenceTo>
+        <relationshipLabel>Vendor Masters</relationshipLabel>
+        <relationshipName>Vendor_Masters</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstk__povend_vendno__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Vendor Number field is a user defined field to be used as a unique identifier for the Vendor, within Rootstock. (DD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a user-defined value assigned to this Vendor within Rootstock.  It is the Salesforce Account Number, unless auto-numbering is used.</inlineHelpText>
+        <label>Vendor No</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__searchindex__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field not currently displayed on any Rootstock User pages</inlineHelpText>
+        <label>Search Index</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstk__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is an internal system field which is not currently displayed on any Rootstock User pages.</inlineHelpText>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_apusrno__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accounts Payable User</label>
+        <referenceTo>rstkf__glusr__c</referenceTo>
+        <relationshipLabel>Vendor Master</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_balanceowedhome__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>rstkf__povend_unappldrhomeamt__c - rstkf__povend_unapplcrhomeamt__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Balance Owed Amount (Home Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_cctype__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Credit Card Type</label>
+        <referenceTo>rstkf__glapcc__c</referenceTo>
+        <relationshipLabel>Vendor Master</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_dfltcmpno__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Company for Vendor</label>
+        <referenceTo>rstkf__glcmp__c</referenceTo>
+        <relationshipLabel>Vendor Master</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_glexpenseacct__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Expense Account (GL)</label>
+        <referenceTo>rstkf__glacct__c</referenceTo>
+        <relationshipLabel>Vendor Master</relationshipLabel>
+        <relationshipName>povends</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_holdforpayment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Vendor on Hold for Payment</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_unapplcrhomeamt__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Unapplied Credit Amount (Home Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstkf__povend_unappldrhomeamt__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Unapplied Debit Amount (Home Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rstkf__triggeroptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>triggeroptions</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Vendor Master</label>
+    <listViews>
+        <fullName>Currency_Vendors</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <columns>rstk__povend_maintcurrind__c</columns>
+        <columns>rstkf__povend_dfltcmpno__c</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__povend_fsvendid__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__povend_maintcurrind__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>rstk__povend_vendcurr__c</field>
+            <operation>notContain</operation>
+            <value>USD</value>
+        </filters>
+        <label>Currency Vendors</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Vendor_Master</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_povclass__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Vendor Master</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>VAT_Vendors</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <columns>rstk__povend_maintcurrind__c</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__povend_fsvendid__c</columns>
+        <columns>rstk__povend_vatclass__c</columns>
+        <columns>rstkf__povend_glexpenseacct__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__povend_vatclass__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>VAT Override Vendors</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Vendor_Master_Filtered</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>SB-24808 (1103)</value>
+        </filters>
+        <label>Vendor Master - Filtered</label>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Vendor_Master</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <columns>rstk__povend_dimval__c</columns>
+        <columns>rstk__povend_sf_account__c</columns>
+        <columns>rstk__povend_sf_account_name__c</columns>
+        <columns>rstkf__povend_cctype__c</columns>
+        <columns>rstk__povend_terms__c</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>rstkf__povend_dfltcmpno__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__povend_maintcurrind__c</columns>
+        <columns>rstk__povend_dirmtlind__c</columns>
+        <columns>rstk__povend_serviceind__c</columns>
+        <columns>rstk__povend_indmtlind__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Vendor Master</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__RS_Vendor_Master1</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <columns>rstk__povend_dimval__c</columns>
+        <columns>rstk__povend_sf_account__c</columns>
+        <columns>rstk__povend_onetimeind__c</columns>
+        <columns>rstk__povend_fsvendid__c</columns>
+        <columns>rstk__povend_altfsvendid__c</columns>
+        <columns>rstk__povend_maintcurrind__c</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__povend_dirmtlind__c</columns>
+        <columns>rstk__povend_serviceind__c</columns>
+        <columns>rstk__povend_indmtlind__c</columns>
+        <columns>rstk__povend_terms__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>rstk__povend_usrno__c</field>
+            <operation>contains</operation>
+            <value>S</value>
+        </filters>
+        <label>Vendor Master1</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>rstk__Vendor_Master_ALL</fullName>
+        <columns>NAME</columns>
+        <columns>rstk__povend_vendno__c</columns>
+        <columns>rstk__povend_dimval__c</columns>
+        <columns>rstk__povend_sf_account__c</columns>
+        <columns>rstk__povend_onetimeind__c</columns>
+        <columns>rstk__povend_vendcurr__c</columns>
+        <columns>rstk__povend_fsvendid__c</columns>
+        <columns>rstk__povend_altfsvendid__c</columns>
+        <columns>rstk__povend_maintcurrind__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>rstk__povend_dirmtlind__c</columns>
+        <columns>rstk__povend_serviceind__c</columns>
+        <columns>rstk__povend_indmtlind__c</columns>
+        <columns>rstk__povend_terms__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Vendor Master ALL</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Vendor Master</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <searchResultsAdditionalFields>rstk__povend_vendno__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_sf_account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_sf_account_name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_sf_contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_ltvend__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_dirmtlind__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_serviceind__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>rstk__povend_indmtlind__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>rstk__Validate_RespBuyer</fullName>
+        <active>true</active>
+        <description>validation Resp Buyer</description>
+        <errorConditionFormula>And(NOT(ISBLANK(rstk__povend_buyusrno__c)), NOT(rstk__povend_buyusrno__r.rstk__syusr_respbuyerind__c))</errorConditionFormula>
+        <errorMessage>The Resp Buyer is not Responsible Buyer</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
