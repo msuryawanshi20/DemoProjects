@@ -23,7 +23,7 @@ on:
         description: Please select environment
         options: 
         - default
-        - Automation 
+        - AutomationOrg 
   
 jobs:
   build:
