@@ -1,44 +1,39 @@
 <project default="runtests">
-	<property environment="env"/>
-	<property name="provar.home" value="${env.PROVAR_HOME}"/>
-	<property name="testproject.home" value=".."/>
-	<property name="testproject.results" value="../ANT/Results"/>
-	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
-	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
-	
-	
-	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar"/>
-	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	
-<target name="runtests">
-	
-		<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
-	
-		<Run-Test-Case provarHome="${provar.home}" 
-						projectPath="${testproject.home}" 
-						resultsPath="${testproject.results}" 
-						resultsPathDisposition="Increment" 
-						testEnvironment="AutomationOrg" 
-						webBrowser="Chrome" 
-						webBrowserConfiguration="Full Screen"
-						webBrowserProviderName="Desktop"
-						webBrowserDeviceName="Full Screen" 
-						excludeCallableTestCases="true" 
-						salesforceMetadataCache="Reload" 
-						projectCachePath="../.provarCaches"
-						testOutputlevel="BASIC" 
-						pluginOutputlevel="WARNING"
-						stopTestRunOnError="false"
-						secretsPassword="${secrets.password}"
-						testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
-						invokeTestRunMonitor="true"
-						>
-		
-			<fileset dir="../tests/CPQ and Contract"><include name="Add Contract Miscellaneous Charges.testcase"/>
-			</fileset><fileset dir="../tests/CPQ and Contract"><include name="Create Sales Order.testcase"/>
-			</fileset><fileset dir="../tests/CPQ and Contract"><include name="CRUD-Add Products for Purchases.testcase"/>
-			</fileset><fileset dir="../tests/CPQ and Contract"><include name="CRUD-Contract Master.testcase"/></fileset>
+	<property environment="env" />
+	<property name="provar.home" value="${env.PROVAR_HOME}" />
+
+	<property name="testproject.home" value=".." />
+	<property name="testproject.results" value="../ANT/Results" />
+	<property name="secrets.password" value="${env.ProvarSecretsPassword}" />
+	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}" />
+
+
+	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar" />
+	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar" />
+	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar" />
+
+	<target name="runtests">
+
+		<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}" />
+
+		<Run-Test-Case provarHome="${provar.home}" projectPath="${testproject.home}" resultsPath="${testproject.results}" resultsPathDisposition="Increment" testEnvironment="AutomationOrg" webBrowser="Chrome" webBrowserConfiguration="Full Screen" webBrowserProviderName="Desktop" webBrowserDeviceName="Full Screen" excludeCallableTestCases="true" salesforceMetadataCache="Reload" projectCachePath="../.provarCaches" testOutputlevel="BASIC" pluginOutputlevel="WARNING" stopTestRunOnError="false" secretsPassword="${secrets.password}" testEnvironmentSecretsPassword="${testenvironment.secretspassword}" invokeTestRunMonitor="true" dontFailBuild="true">
+
+			<fileset dir="../tests/Work Order"><include name="Create Engg Item to Close WO.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9518-Rework Work Order.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9519-Disassembly Work Order.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9520-Refurb Work Order.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9521-Consigned Work Order.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9522-Labor WO.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9686-Verify Component Costs after WO Issue.testcase"/></fileset>
+			<fileset dir="../tests/Work Order"><include name="RSTK-9717-WO To Inspection order To WO Receipt flow.testcase"/></fileset>
+			<fileset dir="../tests/RMA"><include name="RMA Complete Flow(Issue Credit)-SO TO RMA Receipt To Create Credit Memo.testcase"/></fileset>
+			<fileset dir="../tests/RMA"><include name="RMA Complete Flow(Repair)-SO To RMA Receipt TO Replacement SO.testcase"/></fileset>
+			<fileset dir="../tests/RMA"><include name="RMA Receipt reversal.testcase"/></fileset>
+			<fileset dir="../tests/RMA"><include name="SO to RMA To INSP Order To RMA Receipt.testcase"/></fileset>
+			<fileset dir="../tests/CPQ and Contract"><include name="Add Contract Miscellaneous Charges.testcase"/></fileset>
+			<fileset dir="../tests/CPQ and Contract"><include name="Create Sales Order.testcase"/></fileset>
+			<fileset dir="../tests/CPQ and Contract"><include name="CRUD-Add Products for Purchases.testcase"/></fileset>
+			<fileset dir="../tests/CPQ and Contract"><include name="CRUD-Contract Master.testcase"/></fileset>
 			<fileset dir="../tests/CPQ and Contract"><include name="CRUD-Master Services Agreement Template.testcase"/></fileset>
 			<fileset dir="../tests/CPQ and Contract"><include name="Generate invoice and change invoice date.testcase"/></fileset>
 			<fileset dir="../tests/CPQ and Contract"><include name="SO Contract to Delete Sales Order Invoice Record.testcase"/></fileset>
@@ -59,18 +54,8 @@
 			<fileset dir="../tests/Shop Floor"><include name="RSTK-9710-CRUD operation on Work Center Group.testcase"/></fileset>
 			<fileset dir="../tests/Shop Floor"><include name="RSTK-9711-CRUD operation on Work Center Group Details.testcase"/></fileset>
 			<fileset dir="../tests/Shop Floor"><include name="RSTK-9716-CRUD operation on Independent Operations.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="Create Engg Item to Close WO.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9518-Rework Work Order.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9519-Disassembly Work Order.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9520-Refurb Work Order.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9521-Consigned Work Order.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9522-Labor WO.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9686-Verify Component Costs after WO Issue.testcase"/></fileset>
-			<fileset dir="../tests/Work Order"><include name="RSTK-9717-WO To Inspection order To WO Receipt flow.testcase"/></fileset>
-			<fileset dir="../tests/RMA"><include name="RMA Complete Flow(Issue Credit)-SO TO RMA Receipt To Create Credit Memo.testcase"/></fileset>
-			<fileset dir="../tests/RMA"><include name="RMA Complete Flow(Repair)-SO To RMA Receipt TO Replacement SO.testcase"/></fileset>
-			<fileset dir="../tests/RMA"><include name="RMA Receipt reversal.testcase"/></fileset>
-			<fileset dir="../tests/RMA"><include name="SO to RMA To INSP Order To RMA Receipt.testcase"/></fileset>
+
+
 		</Run-Test-Case>
 
 	</target>
