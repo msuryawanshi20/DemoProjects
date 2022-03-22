@@ -43,7 +43,7 @@
             	<script>var rows = {}; var rcptlocnumslfldIdx = 0;</script>
             	<apex:pageBlockTable value="{!rmarcptcomps}" var="comp">
             		<apex:column headerValue="Selected" style="vertical-align:top;">
-            			<apex:inputCheckbox id="selected" value="{!comp.rmadtl.selected}" onclick="rowSelected('{!comp.rmadtl.sorma.id}')"/>
+                        <apex:inputCheckbox id="selected" value="{!comp.rmadtl.selected}" onclick="rowSelected('{!comp.rmadtl.sorma.id}', this.checked)" />
             		</apex:column>
             		<apex:column headerValue="{!f_sorma.rstk__sorma_line__c.label}" style="vertical-align:top;">
             			<apex:outputField value="{!comp.rmadtl.sorma.rstk__sorma_line__c}" rendered="{!comp.isfirst}"/>
@@ -142,6 +142,7 @@
                         <script>
                         	var comps = rows["{!comp.rmadtl.sorma.id}"].comps;
                         	comps["{!comp.sormadmd.id}"] = {
+                                selectedfld: document.getElementById('{!$Component.selected}'),
                                 compname: "{!comp.sormadmd.sormadmd_compitem__r.name}",
                                 rcptqtyfld: document.getElementById("{!$Component.rcptqty}"),
                                 rcptsrlsfld: document.getElementById("{!$Component.rcptsrls}"),

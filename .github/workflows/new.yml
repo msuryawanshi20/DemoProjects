@@ -1,0 +1,313 @@
+name: Parallel Exection-New
+on: 
+  workflow_dispatch:
+    inputs:
+      TestEnv:
+        type: choice
+        description: Please select environment
+        options: 
+        - default
+        - AutomationOrg 
+  
+jobs:
+  execute_API-Inventory:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=API-Inventory" runtests
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Inventory Transactions" runtests
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for API-Inventory- ${{ steps.date.outputs.date }}
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for API-Inventory- ${{ steps.date.outputs.date }}
+        path: ${{ github.workspace }}/ANT/Results/*
+
+  execute_API-Work_Order:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=API-Work Order" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for API-Inventory- ${{ steps.date.outputs.date }}
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for API-Inventory- ${{ steps.date.outputs.date }}
+        path: ${{ github.workspace }}/ANT/Results/*	
+
+  execute_Engg_to_WO_Close:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Engg to WO Close" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for Engg to WO Close- ${{ steps.date.outputs.date }}
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for Engg to WO Close- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*		
+  
+  execute_RMA:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=RMA" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for RMA- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for RMA- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*		
+
+  execute_Recurring_Billing:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Recurring Billing" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for Recurring Billing- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for Recurring Billing- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*		
+
+  execute_Shop_Floor:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Shop Floor" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for Shop Floor- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for Shop Floor- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*		
+
+  execute_Work_Order:
+
+    runs-on: ubuntu-latest
+    env: 
+       PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+    
+    steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+    - uses: actions/checkout@v2
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+      
+    - name: Build with Ant
+      run: |
+        mkdir $GITHUB_WORKSPACE/ProvarHome
+        curl -O https://download.provartesting.com/latest/Provar_ANT_latest.zip
+        unzip -o Provar_ANT_latest.zip -d ProvarHome
+        rm Provar_ANT_latest.zip
+        sudo apt-get update && sudo apt-get upgrade       
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+        sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >>sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get -y install google-chrome-stable
+        echo $PROVAR_HOME
+        cd $GITHUB_WORKSPACE/ANT
+        echo "Selected Plan Name="${{ github.event.inputs.plan }}
+        echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
+        xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Work Order" runtests
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Execution Report for Work Order- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: Execution Report for Work Order- ${{ steps.date.outputs.date }}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        path: ${{ github.workspace }}/ANT/Results/*		

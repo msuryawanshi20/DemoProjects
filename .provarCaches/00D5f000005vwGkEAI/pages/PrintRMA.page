@@ -1,0 +1,14 @@
+<!-- 
+/********************************************************************************************************************************************
+ * Name             :   PrintRMA
+ * Author           :   Hibiz Solutions LLC
+ * Created Date     :   03-SEP-2018
+ * Purpose          :   Used to print RMA Pdf
+ *
+ ********************************************************************************************************************************************/
+ -->
+<apex:page standardController="rstk__sormh__c" extensions="DOX.MergeCurrentRecordExt">
+    <apex:form >
+        <DOX:MergeSelectedRecords records="{!allOrders}"></DOX:MergeSelectedRecords>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<apex:page controller="DOX.RootFormsTemplates" id="page">
+    <apex:form id="form">
+        <apex:pagemessages ></apex:pagemessages>
+        <apex:pageBlock id="pBlock" title="">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Generate RootForms Templates" disabled="{!disableButton}" action="{!generateTemplate}"/>
+                <apex:commandButton value="Generate RootForms Financial Templates" disabled="{!disableFINButton}" action="{!generateFinancialTemaplates}"/>  
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
