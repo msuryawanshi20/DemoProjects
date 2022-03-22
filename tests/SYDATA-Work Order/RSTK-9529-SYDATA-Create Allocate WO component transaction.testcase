@@ -101,12 +101,12 @@
                 </clause>
                 <clause name="else" testItemId="143">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="144" title="If: {GetSelectedEnvironment() = &quot;AutomationOrgOrgOrg&quot;}">
+                    <apiCall apiId="com.provar.plugins.bundled.apis.If" name="If" testItemId="144" title="If: {GetSelectedEnvironment() = &quot;AutomationOrg&quot;}">
                       <arguments>
                         <argument id="condition">
                           <value class="eq">
                             <lhs class="funcCall" id="GetSelectedEnvironment"/>
-                            <rhs class="value" valueClass="string">AutomationOrgOrgOrg</rhs>
+                            <rhs class="value" valueClass="string">AutomationOrg</rhs>
                           </value>
                         </argument>
                       </arguments>
