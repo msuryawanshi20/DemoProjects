@@ -1,11 +1,10 @@
 package pageobjects;
 
-import java.util.List;
-
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-import com.provar.core.testapi.annotations.*;
+import com.provar.core.testapi.annotations.AuraBy;
+import com.provar.core.testapi.annotations.SalesforcePage;
+import com.provar.core.testapi.annotations.TextType;
 
 @SalesforcePage( title="Rootstock__ Record Edit"                                
                , summary=""

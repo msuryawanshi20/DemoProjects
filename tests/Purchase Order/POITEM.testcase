@@ -190,12 +190,26 @@
                                   <value class="value" valueClass="string">Click the Purchase Item Master button</value>
                                 </argument>
                                 <argument id="autoRetry"/>
+                                <argument id="ieClickMethod">
+                                  <value class="value" valueClass="string">Default</value>
+                                </argument>
                               </arguments>
                               <generatedParameters>
-                                <apiParam group="value" name="hover" title="Hover before Clicking">
+                                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                                   <type>
                                     <booleanType/>
+                                  </type>
+                                </apiParam>
+                                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                                  <summary>How the click should be executed for Internet Explorer.</summary>
+                                  <type>
+                                    <choiceType>
+                                      <constraints>
+                                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                                      </constraints>
+                                    </choiceType>
                                   </type>
                                 </apiParam>
                               </generatedParameters>
@@ -205,19 +219,19 @@
                       </clauses>
                       <generatedParameters/>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="81" title="On SF Purchase Item Master PO Item Master - ID - Select list view">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="81" title="On SF Purchase Item Master Purchase item master list view">
                       <arguments>
                         <argument id="uiConnectionName">
                           <value class="value" valueClass="string">SFConnection</value>
                         </argument>
                         <argument id="target">
-                          <value class="uiTarget" uri="sf:ui:target?object=rstk__poitem__c&amp;action=List&amp;listView=PO_Item_Master_ID_Select"/>
+                          <value class="uiTarget" uri="sf:ui:target?object=rstk__poitem__c&amp;action=List&amp;listView=rstk__RS_PO_item_master3"/>
                         </argument>
                         <argument id="navigate">
                           <value class="value" valueClass="string">Dont</value>
                         </argument>
                         <argument id="targetDescription">
-                          <value class="value" valueClass="string">On SF Purchase Item Master PO Item Master - ID - Select list view</value>
+                          <value class="value" valueClass="string">On SF Purchase Item Master Purchase item master list view</value>
                         </argument>
                         <argument id="windowSelection">
                           <value class="value" valueClass="string">Default</value>
@@ -232,6 +246,7 @@
                         <argument id="captureAfter">
                           <value class="value" valueClass="string">false</value>
                         </argument>
+                        <argument id="sfUiTargetObjectId"/>
                       </arguments>
                       <clauses>
                         <clause name="substeps" testItemId="82">
@@ -276,6 +291,7 @@
                           </steps>
                         </clause>
                       </clauses>
+                      <generatedParameters/>
                     </apiCall>
                     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="84" title="On SF rstk__Poitem page with pageobject Rstk__ Poitem">
                       <arguments>

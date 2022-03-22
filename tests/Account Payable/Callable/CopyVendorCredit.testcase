@@ -47,19 +47,19 @@
         <argument id="webBrowser"/>
       </arguments>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="32" title="On SF Payable Session Namrata Payable Session list view">
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="32" title="On SF Payable Session Payable Sessions list view">
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">SFConnection</value>
         </argument>
         <argument id="target">
-          <value class="uiTarget" uri="sf:ui:target?object=rstkf__apinvh__c&amp;action=List&amp;listView=Namrata_Payable_Session"/>
+          <value class="uiTarget" uri="sf:ui:target?object=rstkf__apinvh__c&amp;action=List&amp;listView=rstkf__RS_Payable_Sessions"/>
         </argument>
         <argument id="navigate">
           <value class="value" valueClass="string">Always</value>
         </argument>
         <argument id="targetDescription">
-          <value class="value" valueClass="string">On SF Payable Session Namrata Payable Session list view</value>
+          <value class="value" valueClass="string">On SF Payable Session Payable Sessions list view</value>
         </argument>
         <argument id="windowSelection">
           <value class="value" valueClass="string">Default</value>

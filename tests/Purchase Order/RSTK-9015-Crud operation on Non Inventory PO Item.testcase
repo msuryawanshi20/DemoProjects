@@ -213,19 +213,19 @@
                       </clauses>
                       <generatedParameters/>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="81" title="On SF Purchase Item Master PO Item Master - ID - Select list view">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="81" title="On SF Purchase Item Master Purchase Item Master - ID list view">
                       <arguments>
                         <argument id="uiConnectionName">
                           <value class="value" valueClass="string">SFConnection</value>
                         </argument>
                         <argument id="target">
-                          <value class="uiTarget" uri="sf:ui:target?object=rstk__poitem__c&amp;action=List&amp;listView=PO_Item_Master_ID_Select"/>
+                          <value class="uiTarget" uri="sf:ui:target?object=rstk__poitem__c&amp;action=List&amp;listView=rstk__RS_PO_Item_Master_ID2"/>
                         </argument>
                         <argument id="navigate">
                           <value class="value" valueClass="string">Dont</value>
                         </argument>
                         <argument id="targetDescription">
-                          <value class="value" valueClass="string">On SF Purchase Item Master PO Item Master - ID - Select list view</value>
+                          <value class="value" valueClass="string">On SF Purchase Item Master Purchase Item Master - ID list view</value>
                         </argument>
                         <argument id="windowSelection">
                           <value class="value" valueClass="string">Default</value>

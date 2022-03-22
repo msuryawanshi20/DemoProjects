@@ -6,9 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 
-import com.provar.core.testapi.annotations.*;
+import com.provar.core.testapi.annotations.BooleanType;
+import com.provar.core.testapi.annotations.ButtonType;
+import com.provar.core.testapi.annotations.ChoiceListType;
+import com.provar.core.testapi.annotations.ChoiceListValue;
+import com.provar.core.testapi.annotations.PageRow;
+import com.provar.core.testapi.annotations.PageTable;
+import com.provar.core.testapi.annotations.SalesforcePage;
+import com.provar.core.testapi.annotations.TextType;
 
 @SalesforcePage( title="Rstk__ PO Issue"                                
                , summary=""
