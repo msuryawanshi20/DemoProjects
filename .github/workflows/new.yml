@@ -42,6 +42,7 @@ jobs:
         echo "Selected Plan Name="${{ github.event.inputs.plan }}
         echo "Selected Environment is="${{ github.event.inputs.TestEnv }}
         xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=API-Inventory" runtests
+        pkill Xvfb
         xvfb-run ant -file build.xml "-DTestEnv=${{ github.event.inputs.TestEnv }}" "-DTestPlan=Inventory Transactions" runtests
 
     - uses: actions/upload-artifact@v2
