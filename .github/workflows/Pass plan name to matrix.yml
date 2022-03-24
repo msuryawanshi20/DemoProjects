@@ -7,17 +7,12 @@ on:
         description: Please select environment
         options: 
         - AutomationOrg
-      planNames:
-       description: 'Plan Names'
-       required: true
-       default: '"Accounts Receivable","API-Inventory","API-Work Order","Engg to WO Close","Inventory Transactions","PO END to End Execution","POLoader","POSYDATA","Purchase Order","Recurring Billing","Requisition","RMA","Sales Orders","Shop Floor","SOAPI","SYDATA - Sales Order","Work Order"'
-      
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
    
   # This workflow contains a single job called "build"
-  ${{matrix.Plan}}:
+  Build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest    
     env: 
@@ -25,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        Plan: [${{ github.event.inputs.planNames }}]
+        Plan: ["Engg to WO Close","Recurring Billing","RMA","Shop Floor"]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
