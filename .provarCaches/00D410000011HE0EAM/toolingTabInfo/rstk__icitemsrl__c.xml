@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD41000000AUXEGA4" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Inventory Items by Serial Number" Name="rstk__icitemsrl__c" SobjectName="rstk__icitemsrl__c" Url="https://rstk-qa-rsf.my.salesforce.com/a1N/o"/>
-</toolingTabInfo>

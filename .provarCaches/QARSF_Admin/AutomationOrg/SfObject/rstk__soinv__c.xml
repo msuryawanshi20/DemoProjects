@@ -592,7 +592,2450 @@
     <sfObjectRelationship childName="rstkf__glfatxn__c" field="rstkf__glfatxn_soinv__c" n="rstkf__glfatxns__r" relationshipName="rstkf__glfatxns__r" s="2-" t="01I5f000000jZln"/>
   </childRelationships>
   <recordTypes>
-    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout interactionLogEnabled="true" layoutFileName="rstk__soinv__c-rstk__Sales Order Invoice Layout%2Ev2" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Sales Order Invoice Name" n="Sales Order Invoice Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Invoice Number" n="Invoice Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Transaction Type" n="Transaction Type" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_txntype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="A/R Batch Number" n="A/R Batch Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_arbatch__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Address Line 1" n="Address Line 1" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address1__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Address Line 2" n="Address Line 2" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address2__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Address Line 3" n="Address Line 3" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address3__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Approved" n="Approved" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_approved__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="Bill to Name" n="Bill to Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_name__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Cancelled" n="Cancelled" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_cancelled__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="City" n="City" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_city__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Contact Method" n="Contact Method" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_conmethod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI label="Contact Name" n="Contact Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_contact__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Country" n="Country" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_country__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI label="Credit Organization" n="Credit Organization" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_creditorg__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI label="Customer" n="Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_custno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI label="Date Approved" n="Date Approved" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_dateapproved__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI label="Date Printed" n="Date Printed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_dateprinted__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI label="Date Transferred" n="Date Transferred" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_datetransfer__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI label="Discount Amount" n="Discount Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI label="Discount Pct" n="Discount Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI label="Due Date" n="Due Date" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_duedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI label="Email" n="Email" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_email__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI label="External Comments" n="External Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_extcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI label="Fax" n="Fax" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_fax__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI label="Freight Charge" n="Freight Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI label="Freight Charge Sales Acct" n="Freight Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI label="Finance Charge Date" n="Finance Charge Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_finchgdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI label="Finance Charge Pct" n="Finance Charge Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_finchgpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI label="Invoice Total" n="Invoice Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotal__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI label="Handling Charge" n="Handling Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI label="Handling Charge Sales Acct" n="Handling Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI label="Internal Comments" n="Internal Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_intcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI label="Sales Invoice Batch" n="Sales Invoice Batch" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invbatch__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Invoice Date" n="Invoice Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Invoice Multiple Orders" n="Invoice Multiple Orders" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invmultorders__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Packaging Charge" n="Packaging Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="Packaging Charge Sales Acct" n="Packaging Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Payment Discount Date" n="Payment Discount Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_paydiscdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Payment Discount Pct" n="Payment Discount Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_paydiscpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="Phone" n="Phone" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_phone__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="Posted (in A/R)" n="Posted (in A/R)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_posted__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="Prepayment Account" n="Prepayment Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_ppyacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="Prepayment Invoice" n="Prepayment Invoice" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_ppyinv__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Print Ext Comment on Invoice" n="Print Ext Comment on Invoice" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_printcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="46">
+                      <children>
+                        <sfLI label="Printed" n="Printed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_printed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="47">
+                      <children>
+                        <sfLI label="Project Number" n="Project Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_project__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="48">
+                      <children>
+                        <sfLI label="Sales Order Number" n="Sales Order Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_order__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="49">
+                      <children>
+                        <sfLI label="Sales Tax on Freight Charge" n="Sales Tax on Freight Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxfreight__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="50">
+                      <children>
+                        <sfLI label="Sales Tax on Handling Charge" n="Sales Tax on Handling Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxhandling__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="51">
+                      <children>
+                        <sfLI label="Sales Tax on Packaging Charge" n="Sales Tax on Packaging Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxpackaging__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="52">
+                      <children>
+                        <sfLI label="Sales Year" n="Sales Year" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_year__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="53">
+                      <children>
+                        <sfLI label="State" n="State" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_state__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="54">
+                      <children>
+                        <sfLI label="Sum Freight from Lines" n="Sum Freight from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumfrt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="55">
+                      <children>
+                        <sfLI label="Sum Handling from Lines" n="Sum Handling from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumhand__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="56">
+                      <children>
+                        <sfLI label="Sum Packaging from Lines" n="Sum Packaging from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumpackage__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="57">
+                      <children>
+                        <sfLI label="Tax Amount" n="Tax Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="58">
+                      <children>
+                        <sfLI label="Total Tax Override Amount" n="Total Tax Override Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="59">
+                      <children>
+                        <sfLI label="Tax Exempt (Resale)" n="Tax Exempt (Resale)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxexempt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="60">
+                      <children>
+                        <sfLI label="Tax Location" n="Tax Location" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxloc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="61">
+                      <children>
+                        <sfLI label="Taxable Total (sum of lines)" n="Taxable Total (sum of lines)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxable__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="62">
+                      <children>
+                        <sfLI label="Terms" n="Terms" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_terms__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="63">
+                      <children>
+                        <sfLI label="Detail Total" n="Detail Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="64">
+                      <children>
+                        <sfLI label="Prepayments Applied" n="Prepayments Applied" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppya__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="65">
+                      <children>
+                        <sfLI label="Transferred" n="Transferred" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_transferred__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="66">
+                      <children>
+                        <sfLI label="Using Milestone Comm Sched" n="Using Milestone Comm Sched" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_usemilecomm__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="67">
+                      <children>
+                        <sfLI label="Using Payment Schedule" n="Using Payment Schedule" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_schedpayments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="68">
+                      <children>
+                        <sfLI label="WBS Account Master" n="WBS Account Master" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_wbs__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="69">
+                      <children>
+                        <sfLI label="Zip Code" n="Zip Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_zip__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="70">
+                      <children>
+                        <sfLI label="Trigger Options" n="Trigger Options" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__triggeroptions__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="71">
+                      <children>
+                        <sfLI label="Sales Period" n="Sales Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_period__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="72">
+                      <children>
+                        <sfLI label="Cash Received" n="Cash Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_cashreceived__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="73">
+                      <children>
+                        <sfLI label="Invoice Number (Accting Pckg)" n="Invoice Number (Accting Pckg)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_acctinvoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="74">
+                      <children>
+                        <sfLI label="Opportunity" n="Opportunity" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_opportunity__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="75">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Default Project" n="Default Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_defaultproject__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="76">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Invoice Number (Formatted)" n="Invoice Number (Formatted)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_invoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="77">
+                      <children>
+                        <sfLI label="Number of Payments" n="Number of Payments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_numberofpayments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="78">
+                      <children>
+                        <sfLI label="First Due Date" n="First Due Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_psfirstduedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="79">
+                      <children>
+                        <sfLI label="Payment Schedule Interval" n="Payment Schedule Interval" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_psinterval__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="80">
+                      <children>
+                        <sfLI label="Invoice Number" n="Invoice Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invoiceno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="81">
+                      <children>
+                        <sfLI label="External Id" n="External Id" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="82">
+                      <children>
+                        <sfLI label="Invoice is in Customer's Currency" n="Invoice is in Customer's Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_custcurrency__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="83">
+                      <children>
+                        <sfLI label="Invoice Currency Exchange Rate" n="Invoice Currency Exchange Rate" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_currexchrate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="84">
+                      <children>
+                        <sfLI label="Date Exchange Rate Initialized" n="Date Exchange Rate Initialized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_currexchratedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="85">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Detail Total - Customer Currency" n="Detail Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="86">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Discount Amount - Customer Currency" n="Discount Amount - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="87">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Charge - Customer Currency" n="Freight Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="88">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Handling Charge - Customer Currency" n="Handling Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="89">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Invoice Total - Customer Currency" n="Invoice Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotalcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="90">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Packaging Charge - Customer Currency" n="Packaging Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="91">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Prepayments Applied - Customer Currency" n="Prepayments Applied - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppyacc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="92">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Taxable Total - Customer Currency" n="Taxable Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxablecc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="93">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Tax Amount - Customer Currency" n="Tax Amount - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="94">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Tax Override Amt - Cust Currency" n="Total Tax Override Amt - Cust Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="95">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Verified Shipping Tax - Cust Currency" n="Verified Shipping Tax - Cust Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_shippingtaxcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="96">
+                      <children>
+                        <sfLI label="soinv_temp" n="soinv_temp" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_temp__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="97">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Detail Total – Home Currency" n="Detail Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="98">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Alt 1 Order Total – Home Currency" n="Alt 1 Order Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="99">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Verified Shipping Tax – Home Currency" n="Verified Shipping Tax – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_shippingtaxhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="100">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount – Home Currency" n="Freight Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="101">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Handling Amount – Home Currency" n="Handling Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="102">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Packaging Amount – Home Currency" n="Packaging Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="103">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Tax Override Amt – Home Currency" n="Total Tax Override Amt – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="104">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Tax Amount – Home Currency" n="Tax Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="105">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Taxable Total – Home Currency" n="Taxable Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxablehc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="106">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Grand Total – Home Currency" n="Grand Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotalhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="107">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Prepayments Applied – Home Currency" n="Prepayments Applied – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppyahc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="108">
+                      <children>
+                        <sfLI label="First Shipper" n="First Shipper" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_soship__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="109">
+                      <children>
+                        <sfLI label="Salesforce Account" n="Salesforce Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_account__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="110">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Discountable Amount" n="Discountable Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discountable__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="111">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Pre-AR Payment Amount" n="Pre-AR Payment Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_prearpayamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="112">
+                      <children>
+                        <sfLI label="Accounting Period" n="Accounting Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_arperiod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="113">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Number of Lines" n="Number of Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Number_of_Lines__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Sales Order Invoice Name" n="Sales Order Invoice Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Invoice Number" n="Invoice Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Transaction Type" n="Transaction Type" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_txntype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="A/R Batch Number" n="A/R Batch Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_arbatch__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Address Line 1" n="Address Line 1" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address1__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Address Line 2" n="Address Line 2" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address2__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Address Line 3" n="Address Line 3" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_address3__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Approved" n="Approved" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_approved__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="Bill to Name" n="Bill to Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_name__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Cancelled" n="Cancelled" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_cancelled__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="City" n="City" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_city__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Contact Method" n="Contact Method" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_conmethod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI label="Contact Name" n="Contact Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_contact__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Country" n="Country" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_country__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI label="Credit Organization" n="Credit Organization" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_creditorg__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI label="Customer" n="Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_custno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI label="Date Approved" n="Date Approved" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_dateapproved__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI label="Date Printed" n="Date Printed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_dateprinted__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI label="Date Transferred" n="Date Transferred" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_datetransfer__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI label="Discount Amount" n="Discount Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI label="Discount Pct" n="Discount Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI label="Due Date" n="Due Date" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_duedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI label="Email" n="Email" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_email__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI label="External Comments" n="External Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_extcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI label="Fax" n="Fax" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_fax__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI label="Freight Charge" n="Freight Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI label="Freight Charge Sales Acct" n="Freight Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI label="Finance Charge Date" n="Finance Charge Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_finchgdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI label="Finance Charge Pct" n="Finance Charge Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_finchgpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI label="Invoice Total" n="Invoice Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotal__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI label="Handling Charge" n="Handling Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI label="Handling Charge Sales Acct" n="Handling Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI label="Internal Comments" n="Internal Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_intcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI label="Sales Invoice Batch" n="Sales Invoice Batch" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invbatch__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Invoice Date" n="Invoice Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Invoice Multiple Orders" n="Invoice Multiple Orders" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invmultorders__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Packaging Charge" n="Packaging Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="Packaging Charge Sales Acct" n="Packaging Charge Sales Acct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Payment Discount Date" n="Payment Discount Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_paydiscdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Payment Discount Pct" n="Payment Discount Pct" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_paydiscpct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="Phone" n="Phone" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_phone__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="Posted (in A/R)" n="Posted (in A/R)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_posted__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="Prepayment Account" n="Prepayment Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_ppyacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="Prepayment Invoice" n="Prepayment Invoice" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_ppyinv__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Print Ext Comment on Invoice" n="Print Ext Comment on Invoice" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_printcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="46">
+                      <children>
+                        <sfLI label="Printed" n="Printed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_printed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="47">
+                      <children>
+                        <sfLI label="Project Number" n="Project Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_project__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="48">
+                      <children>
+                        <sfLI label="Sales Order Number" n="Sales Order Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_order__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="49">
+                      <children>
+                        <sfLI label="Sales Tax on Freight Charge" n="Sales Tax on Freight Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxfreight__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="50">
+                      <children>
+                        <sfLI label="Sales Tax on Handling Charge" n="Sales Tax on Handling Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxhandling__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="51">
+                      <children>
+                        <sfLI label="Sales Tax on Packaging Charge" n="Sales Tax on Packaging Charge" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxpackaging__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="52">
+                      <children>
+                        <sfLI label="Sales Year" n="Sales Year" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_year__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="53">
+                      <children>
+                        <sfLI label="State" n="State" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_state__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="54">
+                      <children>
+                        <sfLI label="Sum Freight from Lines" n="Sum Freight from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumfrt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="55">
+                      <children>
+                        <sfLI label="Sum Handling from Lines" n="Sum Handling from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumhand__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="56">
+                      <children>
+                        <sfLI label="Sum Packaging from Lines" n="Sum Packaging from Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_sumpackage__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="57">
+                      <children>
+                        <sfLI label="Tax Amount" n="Tax Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="58">
+                      <children>
+                        <sfLI label="Total Tax Override Amount" n="Total Tax Override Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="59">
+                      <children>
+                        <sfLI label="Tax Exempt (Resale)" n="Tax Exempt (Resale)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxexempt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="60">
+                      <children>
+                        <sfLI label="Tax Location" n="Tax Location" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxloc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="61">
+                      <children>
+                        <sfLI label="Taxable Total (sum of lines)" n="Taxable Total (sum of lines)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxable__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="62">
+                      <children>
+                        <sfLI label="Terms" n="Terms" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_terms__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="63">
+                      <children>
+                        <sfLI label="Detail Total" n="Detail Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="64">
+                      <children>
+                        <sfLI label="Prepayments Applied" n="Prepayments Applied" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppya__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="65">
+                      <children>
+                        <sfLI label="Transferred" n="Transferred" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_transferred__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="66">
+                      <children>
+                        <sfLI label="Using Milestone Comm Sched" n="Using Milestone Comm Sched" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_usemilecomm__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="67">
+                      <children>
+                        <sfLI label="Using Payment Schedule" n="Using Payment Schedule" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_schedpayments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="68">
+                      <children>
+                        <sfLI label="WBS Account Master" n="WBS Account Master" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_wbs__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="69">
+                      <children>
+                        <sfLI label="Zip Code" n="Zip Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_zip__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="70">
+                      <children>
+                        <sfLI label="Trigger Options" n="Trigger Options" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__triggeroptions__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="71">
+                      <children>
+                        <sfLI label="Sales Period" n="Sales Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_period__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="72">
+                      <children>
+                        <sfLI label="Cash Received" n="Cash Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_cashreceived__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="73">
+                      <children>
+                        <sfLI label="Invoice Number (Accting Pckg)" n="Invoice Number (Accting Pckg)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_acctinvoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="74">
+                      <children>
+                        <sfLI label="Opportunity" n="Opportunity" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_opportunity__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="75">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Default Project" n="Default Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_defaultproject__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="76">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Invoice Number (Formatted)" n="Invoice Number (Formatted)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_invoice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="77">
+                      <children>
+                        <sfLI label="Number of Payments" n="Number of Payments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_numberofpayments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="78">
+                      <children>
+                        <sfLI label="First Due Date" n="First Due Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_psfirstduedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="79">
+                      <children>
+                        <sfLI label="Payment Schedule Interval" n="Payment Schedule Interval" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_psinterval__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="80">
+                      <children>
+                        <sfLI label="Invoice Number" n="Invoice Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_invoiceno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="81">
+                      <children>
+                        <sfLI label="External Id" n="External Id" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="82">
+                      <children>
+                        <sfLI label="Invoice is in Customer's Currency" n="Invoice is in Customer's Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_custcurrency__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="83">
+                      <children>
+                        <sfLI label="Invoice Currency Exchange Rate" n="Invoice Currency Exchange Rate" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_currexchrate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="84">
+                      <children>
+                        <sfLI label="Date Exchange Rate Initialized" n="Date Exchange Rate Initialized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_currexchratedate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="85">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Detail Total - Customer Currency" n="Detail Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="86">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Discount Amount - Customer Currency" n="Discount Amount - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="87">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Charge - Customer Currency" n="Freight Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="88">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Handling Charge - Customer Currency" n="Handling Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="89">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Invoice Total - Customer Currency" n="Invoice Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotalcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="90">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Packaging Charge - Customer Currency" n="Packaging Charge - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="91">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Prepayments Applied - Customer Currency" n="Prepayments Applied - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppyacc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="92">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Taxable Total - Customer Currency" n="Taxable Total - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxablecc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="93">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Tax Amount - Customer Currency" n="Tax Amount - Customer Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="94">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Tax Override Amt - Cust Currency" n="Total Tax Override Amt - Cust Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramtcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="95">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Verified Shipping Tax - Cust Currency" n="Verified Shipping Tax - Cust Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_shippingtaxcc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="96">
+                      <children>
+                        <sfLI label="soinv_temp" n="soinv_temp" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_temp__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="97">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Detail Total – Home Currency" n="Detail Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="98">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Alt 1 Order Total – Home Currency" n="Alt 1 Order Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="99">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Verified Shipping Tax – Home Currency" n="Verified Shipping Tax – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_shippingtaxhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="100">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount – Home Currency" n="Freight Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_freightamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="101">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Handling Amount – Home Currency" n="Handling Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_handlingamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="102">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Packaging Amount – Home Currency" n="Packaging Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_packageamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="103">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Tax Override Amt – Home Currency" n="Total Tax Override Amt – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxovramthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="104">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Tax Amount – Home Currency" n="Tax Amount – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_taxamthc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="105">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Taxable Total – Home Currency" n="Taxable Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_tottaxablehc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="106">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Grand Total – Home Currency" n="Grand Total – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_grandtotalhc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="107">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Prepayments Applied – Home Currency" n="Prepayments Applied – Home Currency" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_totalppyahc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="108">
+                      <children>
+                        <sfLI label="First Shipper" n="First Shipper" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_soship__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="109">
+                      <children>
+                        <sfLI label="Salesforce Account" n="Salesforce Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_account__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="110">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Discountable Amount" n="Discountable Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_discountable__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="111">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Pre-AR Payment Amount" n="Pre-AR Payment Amount" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_prearpayamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="112">
+                      <children>
+                        <sfLI label="Accounting Period" n="Accounting Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__soinv_arperiod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="113">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Number of Lines" n="Number of Lines" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Number_of_Lines__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="rstk__soinvline_invoice__c" label="Sales Order Invoice Line" n="rstk__Invoice_Line__r" nameAlias="rstk__soinvline__c.rstk__soinvline_invoice__c" relationshipName="rstk__Invoice_Line__r" s="3-" t="Sales Order Invoice Line (rstk__soinvline_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soinvdist_invoice__c" label="Invoice Account Distribution Summaries" n="rstk__Invoice_Account_Distribution_Summaries__r" nameAlias="rstk__soinvdist__c.rstk__soinvdist_invoice__c" relationshipName="rstk__Invoice_Account_Distribution_Summaries__r" s="3-" t="Invoice Account Distribution Summaries (rstk__soinvdist_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Invoice Account Distribution Summary  Na"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soinvdistdet_invoice__c" label="Invoice Account Distribution Details" n="rstk__Invoice_Account_Distribution_Details__r" nameAlias="rstk__soinvdistdet__c.rstk__soinvdistdet_invoice__c" relationshipName="rstk__Invoice_Account_Distribution_Details__r" s="3-" t="Invoice Account Distribution Details (rstk__soinvdistdet_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Invoice Account Distribution Detail Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soinvsched_invoice__c" label="Invoice Payment Schedules" n="rstk__Invoice_Payment_Schedules__r" nameAlias="rstk__soinvsched__c.rstk__soinvsched_invoice__c" relationshipName="rstk__Invoice_Payment_Schedules__r" s="3-" t="Invoice Payment Schedules (rstk__soinvsched_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Invoice Payment Schedule Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soinvdistdim_invoice__c" label="Inv Acct Dimensioned Distrib. Summaries" n="rstk__Inv_Acct_Dimensioned_Distrib_Summaries__r" nameAlias="rstk__soinvdistdim__c.rstk__soinvdistdim_invoice__c" relationshipName="rstk__Inv_Acct_Dimensioned_Distrib_Summaries__r" s="3-" t="Inv Acct Dimensioned Distrib. Summaries (rstk__soinvdistdim_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Inv Acct Dimensioned Distrib. Summary Na"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soppy_invoice__c" label="Prepayment Detail" n="rstk__Prepayment_Detail__r" nameAlias="rstk__soppy__c.rstk__soppy_invoice__c" relationshipName="rstk__Prepayment_Detail__r" s="3-" t="Prepayment Detail (rstk__soppy_invoice__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Prepayment Detail Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sorma_soinv__c" label="RMA Detail" n="rstk__RMA__r" nameAlias="rstk__sorma__c.rstk__sorma_soinv__c" relationshipName="rstk__RMA__r" s="3-" t="RMA Detail (rstk__sorma_soinv__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__fsoinvh_soinv__c" label="Print Invoice Headers" n="rstk__Print_Invoice_Headers__r" nameAlias="rstk__FSOINVH__c.rstk__fsoinvh_soinv__c" relationshipName="rstk__Print_Invoice_Headers__r" s="3-" t="Print Invoice Headers (rstk__fsoinvh_soinv__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Print Invoice Header Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soinv__c" label="Custom Extensions" n="rstk__customexts__r" nameAlias="rstk__customext__c.rstk__soinv__c" relationshipName="rstk__customexts__r" s="3-" t="Custom Extensions (rstk__soinv__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="customext Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soconpbill_soinv__c" label="Contract Periodic Billings" n="rstk__soconpbills__r" nameAlias="rstk__soconpbill__c.rstk__soconpbill_soinv__c" relationshipName="rstk__soconpbills__r" s="3-" t="Contract Periodic Billings (rstk__soconpbill_soinv__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Contract Periodic Billing  Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sydata_soinv__c" label="System Transaction Objects" n="rstk__sydatas_del__r" nameAlias="rstk__sydata__c.rstk__sydata_soinv__c" relationshipName="rstk__sydatas_del__r" s="3-" t="System Transaction Objects (rstk__sydata_soinv__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons/>
+          <customTags/>
+          <quickActionNames/>
+          <consoleComponents>
+            <sfConsoleComponent index="1" location="south" n="consoleComponent01" primaryComponent="true" region="Bottom" s="" style="Stack" t="Interaction Log" targetDef="primary:south:InteractionLog" type="InteractionLog"/>
+          </consoleComponents>
+          <platformActionNames/>
+          <miniLayout n="miniLayout" s="" t="Mini Layout">
+            <fields>
+              <string>rstk__soinv_custno__c</string>
+              <string>rstk__soinv_div__c</string>
+              <string>Name</string>
+              <string>rstk__soinv_order__c</string>
+              <string>rstk__soinv_invdate__c</string>
+              <string>rstk__soinv_duedate__c</string>
+              <string>rstk__soinv_grandtotal__c</string>
+              <string>rstk__soinv_grandtotalcc__c</string>
+              <string>rstk__soinv_tottaxablehc__c</string>
+              <string>rstk__soinv_taxamtcc__c</string>
+              <string>rstk__soinv_transferred__c</string>
+            </fields>
+            <relatedLists/>
+          </miniLayout>
+        </sfLayout>
+      </children>
+    </sfRecordType>
   </recordTypes>
   <standardActions>
     <sfActionLink modes="ObjectHome rstk__soinvs__r rstk__Sales_Order_Invoices__r List rstk__Sales_Order_Invoice_Header__r rstk__Sales_Order_Invoices1__r rstk__Sales_Order_Invoices2__r rstk__Sales_Order_Invoices3__r" n="New" target="sf:ui:target?object=rstk__soinv__c&amp;page=NewSOInv"/>

@@ -496,7 +496,7 @@
     </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__departments__r rstk__divrtdepts__r rstk__RTDEPTs__r rstk__RTDEPTs1__r List rstk__Departments__r" n="New" target="sf:ui:target?object=rstk__rtdept__c&amp;page=Rtdept"/>
+    <sfActionLink modes="ObjectHome rstk__departments__r rstk__divrtdepts__r rstk__RTDEPTs__r rstk__RTDEPTs1__r rstk__Departments__r List" n="New" target="sf:ui:target?object=rstk__rtdept__c&amp;page=Rtdept"/>
     <sfActionLink modes="View rstk__departments__r rstk__divrtdepts__r rstk__RTDEPTs__r rstk__RTDEPTs1__r rstk__Departments__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__rtdept__c&amp;page=Rtdept"/>
     <sfActionLink modes="View rstk__departments__r rstk__divrtdepts__r rstk__RTDEPTs__r rstk__RTDEPTs1__r rstk__Departments__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>

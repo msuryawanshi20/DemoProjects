@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD1K0000014nUOWAY" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Foreign Exchange Gain/Loss on Invoices" Name="rstkf__apinvtxnforex__c" SobjectName="rstkf__apinvtxnforex__c" Url="https://rstk-qa-rsf.my.salesforce.com/a92/o"/>
-</toolingTabInfo>

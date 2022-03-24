@@ -217,8 +217,8 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r rstk__icdreqs3__r rstk__icdreqs2__r List" n="New" target="sf:ui:target?object=rstk__icdreq__c&amp;page=Disassembly+Derived+Component"/>
-    <sfActionLink modes="View rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r rstk__icdreqs3__r rstk__icdreqs2__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__icdreq__c&amp;page=Disassembly+Derived+Component"/>
+    <sfActionLink modes="ObjectHome rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r List rstk__icdreqs3__r rstk__icdreqs2__r" n="New" target="sf:ui:target?page=Disassembly+Derived+Component&amp;object=rstk__icdreq__c"/>
+    <sfActionLink modes="View rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r rstk__icdreqs3__r rstk__icdreqs2__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Disassembly+Derived+Component&amp;object=rstk__icdreq__c"/>
     <sfActionLink modes="View rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r rstk__icdreqs3__r rstk__icdreqs2__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink modes="View rstk__icdreqs1__r rstk__icdreqs__r rstk__Disassembly_Derived_Components__r rstk__icdreqs3__r rstk__icdreqs2__r" n="ShowMore" t="Show More"/>
@@ -229,7 +229,7 @@
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__icdreq__c&amp;page=Disassembly+Derived+Component+View"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=Disassembly+Derived+Component+View&amp;object=rstk__icdreq__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

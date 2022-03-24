@@ -392,8 +392,8 @@
     </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__poreqs__r List" n="New" target="sf:ui:target?object=rstk__poreq__c&amp;page=poreq"/>
-    <sfActionLink modes="View rstk__poreqs__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__poreq__c&amp;page=poreq"/>
+    <sfActionLink modes="ObjectHome rstk__poreqs__r List" n="New" target="sf:ui:target?page=poreq&amp;object=rstk__poreq__c"/>
+    <sfActionLink modes="View rstk__poreqs__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=poreq&amp;object=rstk__poreq__c"/>
     <sfActionLink modes="View rstk__poreqs__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink modes="View rstk__poreqs__r" n="ShowMore" t="Show More"/>
@@ -404,7 +404,7 @@
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__poreq__c&amp;page=poreqView"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=poreqView&amp;object=rstk__poreq__c"/>
     <sfActionLink buttonName="rstk__Convert_to_Purchase_Order" n="rstk__Convert_to_Purchase_Order" s="" t="Convert to Purchase Order"/>
     <sfActionLink buttonName="rstk__Edit_Inventory_Requisitions" n="rstk__Edit_Inventory_Requisitions" s="" t="Maintain Inventory Requisitions"/>
     <sfActionLink buttonName="rstk__Edit_Indirect_Requisitions" n="rstk__Edit_Indirect_Requisitions" s="" t="Maintain Indirect / Service Requisitions"/>

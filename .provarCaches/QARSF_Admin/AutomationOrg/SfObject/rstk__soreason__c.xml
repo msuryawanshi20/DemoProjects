@@ -90,8 +90,8 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__soreasons__r List rstk__rmadracctsoreasons__r" n="New" target="sf:ui:target?object=rstk__soreason__c&amp;page=Sales+Order+Reason"/>
-    <sfActionLink modes="View rstk__soreasons__r rstk__rmadracctsoreasons__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__soreason__c&amp;page=Sales+Order+Reason"/>
+    <sfActionLink modes="ObjectHome rstk__soreasons__r rstk__rmadracctsoreasons__r List" n="New" target="sf:ui:target?page=Sales+Order+Reason&amp;object=rstk__soreason__c"/>
+    <sfActionLink modes="View rstk__soreasons__r rstk__rmadracctsoreasons__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Sales+Order+Reason&amp;object=rstk__soreason__c"/>
     <sfActionLink modes="View rstk__soreasons__r rstk__rmadracctsoreasons__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink modes="View rstk__soreasons__r rstk__rmadracctsoreasons__r" n="ShowMore" t="Show More"/>
@@ -102,7 +102,7 @@
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__soreason__c&amp;page=Sales+Order+Reason+View"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=Sales+Order+Reason+View&amp;object=rstk__soreason__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

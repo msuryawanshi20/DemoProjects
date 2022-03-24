@@ -1,7 +1,0 @@
-<apex:page standardController="rstk__sobol__c" 
-            recordSetVar="orders" 
-            extensions="DOX.MergeSelectedExt">
-<apex:form > 
-    <DOX:MergeSelectedRecords records="{!allOrders}"   />  
-</apex:form>
-</apex:page>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Created by Lightning App Builder</description>
-    <flexiPage>rootstock__Inventory_Loc_Add_To_Container</flexiPage>
-    <label>Inventory Loc Add To Container</label>
-    <motif>Custom90: Scales</motif>
-</CustomTab>

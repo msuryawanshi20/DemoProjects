@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="VoucherDefinition" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Voucher Definitions" Name="standard-VoucherDefinition" SobjectName="VoucherDefinition" Url="https://rstk-qa-rsf.my.salesforce.com/2Xa/o"/>
-</toolingTabInfo>

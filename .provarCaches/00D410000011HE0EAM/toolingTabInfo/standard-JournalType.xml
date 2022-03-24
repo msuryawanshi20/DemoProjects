@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="JournalType" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Journal Types" Name="standard-JournalType" SobjectName="JournalType" Url="https://rstk-qa-rsf.my.salesforce.com/0lE/o"/>
-</toolingTabInfo>

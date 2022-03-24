@@ -79,12 +79,12 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__Disassembly_Derived_Components__r rstk__components__r List" n="New"/>
-    <sfActionLink modes="View rstk__Disassembly_Derived_Components__r rstk__components__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__Disassembly_Derived_Components__r rstk__components__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__components__r rstk__Disassembly_Derived_Components__r List" n="New"/>
+    <sfActionLink modes="View rstk__components__r rstk__Disassembly_Derived_Components__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__components__r rstk__Disassembly_Derived_Components__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__Disassembly_Derived_Components__r rstk__components__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__Disassembly_Derived_Components__r rstk__components__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__components__r rstk__Disassembly_Derived_Components__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__components__r rstk__Disassembly_Derived_Components__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Accept" s=""/>

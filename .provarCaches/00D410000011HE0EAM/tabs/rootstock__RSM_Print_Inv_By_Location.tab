@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <frameHeight>600</frameHeight>
-    <hasSidebar>false</hasSidebar>
-    <label>Print Location</label>
-    <motif>Custom37: Bridge</motif>
-    <url>/flow/rootstock/RSM_Print_Inv_By_Location</url>
-    <urlEncodingKey>UTF-8</urlEncodingKey>
-</CustomTab>

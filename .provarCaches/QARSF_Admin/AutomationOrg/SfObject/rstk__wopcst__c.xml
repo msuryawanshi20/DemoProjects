@@ -111,8 +111,8 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__wopcsts__r rstk__divwopcsts__r rstk__WO_Operation_Cost__r List" n="New" target="sf:ui:target?object=rstk__wopcst__c&amp;page=Wopcst"/>
-    <sfActionLink modes="View rstk__wopcsts__r rstk__divwopcsts__r rstk__WO_Operation_Cost__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__wopcst__c&amp;page=Wopcst"/>
+    <sfActionLink modes="ObjectHome rstk__wopcsts__r rstk__divwopcsts__r List rstk__WO_Operation_Cost__r" n="New" target="sf:ui:target?page=Wopcst&amp;object=rstk__wopcst__c"/>
+    <sfActionLink modes="View rstk__wopcsts__r rstk__divwopcsts__r rstk__WO_Operation_Cost__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Wopcst&amp;object=rstk__wopcst__c"/>
     <sfActionLink modes="View rstk__wopcsts__r rstk__divwopcsts__r rstk__WO_Operation_Cost__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink modes="View rstk__wopcsts__r rstk__divwopcsts__r rstk__WO_Operation_Cost__r" n="ShowMore" t="Show More"/>
@@ -123,7 +123,7 @@
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__wopcst__c&amp;page=WopcstView"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=WopcstView&amp;object=rstk__wopcst__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

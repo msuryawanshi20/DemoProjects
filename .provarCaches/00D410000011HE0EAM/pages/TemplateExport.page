@@ -1,1 +1,0 @@
-<apex:page controller="ExportRootFormsTemplate" showHeader="false" sidebar="false" standardStylesheets="false" contentType="text/csv#test1.csv">{!csvString}</apex:page>

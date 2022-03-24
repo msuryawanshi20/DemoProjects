@@ -150,7 +150,7 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__soamorts__r rstk__soamorts2__r rstk__soamorts3__r rstk__soamorts1__r List" n="New"/>
+    <sfActionLink modes="ObjectHome rstk__soamorts__r List rstk__soamorts2__r rstk__soamorts3__r rstk__soamorts1__r" n="New"/>
     <sfActionLink modes="View rstk__soamorts__r rstk__soamorts2__r rstk__soamorts3__r rstk__soamorts1__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__soamort__c&amp;page=soamort"/>
     <sfActionLink modes="View rstk__soamorts__r rstk__soamorts2__r rstk__soamorts3__r rstk__soamorts1__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>

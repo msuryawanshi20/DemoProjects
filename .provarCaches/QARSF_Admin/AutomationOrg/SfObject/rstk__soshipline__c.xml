@@ -180,19 +180,19 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__soprod_prod_soshipline__r rstk__pjproj_project_soshipline__r rstk__soshiplines__r List rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r rstk__pjprojwbs_wbs_soshipline__r" n="New"/>
-    <sfActionLink modes="View rstk__soprod_prod_soshipline__r rstk__pjproj_project_soshipline__r rstk__soshiplines__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r rstk__pjprojwbs_wbs_soshipline__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__soshipline__c&amp;auraComponent=RecordEdit"/>
-    <sfActionLink modes="View rstk__soprod_prod_soshipline__r rstk__pjproj_project_soshipline__r rstk__soshiplines__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r rstk__pjprojwbs_wbs_soshipline__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__soshiplines__r rstk__soprod_prod_soshipline__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__pjproj_project_soshipline__r rstk__pjprojwbs_wbs_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r List" n="New"/>
+    <sfActionLink modes="View rstk__soshiplines__r rstk__soprod_prod_soshipline__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__pjproj_project_soshipline__r rstk__pjprojwbs_wbs_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?auraComponent=RecordEdit&amp;object=rstk__soshipline__c"/>
+    <sfActionLink modes="View rstk__soshiplines__r rstk__soprod_prod_soshipline__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__pjproj_project_soshipline__r rstk__pjprojwbs_wbs_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__soprod_prod_soshipline__r rstk__pjproj_project_soshipline__r rstk__soshiplines__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r rstk__pjprojwbs_wbs_soshipline__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__soprod_prod_soshipline__r rstk__pjproj_project_soshipline__r rstk__soshiplines__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r rstk__pjprojwbs_wbs_soshipline__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__soshiplines__r rstk__soprod_prod_soshipline__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__pjproj_project_soshipline__r rstk__pjprojwbs_wbs_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__soshiplines__r rstk__soprod_prod_soshipline__r rstk__syacc_cogsacct_soshipline__r rstk__syacc_cogspendacct_soshipline__r rstk__syacc_salesacct_soshipline__r rstk__pjproj_project_soshipline__r rstk__pjprojwbs_wbs_soshipline__r rstk__syuom_iuom_soshipline__r rstk__syuom_uom_soshipline__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Shipper Lines Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__soshipline__c&amp;page=soshiplineView"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=soshiplineView&amp;object=rstk__soshipline__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

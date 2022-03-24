@@ -727,7 +727,7 @@
         <inlineHelpText>This is the Purchase Order number for this PO Cost line.</inlineHelpText>
         <label>Purchase Order</label>
         <referenceTo>rstk__pohdr__c</referenceTo>
-        <relationshipLabel>Po Costs</relationshipLabel>
+        <relationshipLabel>PO Costs</relationshipLabel>
         <relationshipName>Po_Costs</relationshipName>
         <required>false</required>
         <trackHistory>true</trackHistory>
