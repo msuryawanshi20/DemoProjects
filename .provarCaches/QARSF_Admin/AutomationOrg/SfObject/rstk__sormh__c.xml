@@ -785,17 +785,12 @@
     </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__sormhs__r List rstk__shiptoaddrsormhs__r rstk__installcustsormhs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r rstk__sormh_soinvs__r" n="New" target="sf:ui:target?object=rstk__sormh__c&amp;page=Sormh"/>
-    <sfActionLink modes="View rstk__sormhs__r rstk__shiptoaddrsormhs__r rstk__installcustsormhs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r rstk__sormh_soinvs__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__sormh__c&amp;page=Sormh"/>
-    <sfActionLink modes="View rstk__sormhs__r rstk__shiptoaddrsormhs__r rstk__installcustsormhs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r rstk__sormh_soinvs__r" n="Delete" requiresRow="true" s="3"/>
-    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__sormhs__r rstk__shiptoaddrsormhs__r rstk__installcustsormhs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r rstk__sormh_soinvs__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__sormhs__r rstk__shiptoaddrsormhs__r rstk__installcustsormhs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r rstk__sormh_soinvs__r" n="GoToList" t="Go To List"/>
-    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
-    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Return Material Authorizations Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="View rstk__shiptoaddrsormhs__r rstk__sormhs__r rstk__installcustsormhs__r rstk__sormh_soinvs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__sormh__c&amp;page=Sormh"/>
+    <sfActionLink modes="View rstk__shiptoaddrsormhs__r rstk__sormhs__r rstk__installcustsormhs__r rstk__sormh_soinvs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome List rstk__shiptoaddrsormhs__r rstk__sormhs__r rstk__installcustsormhs__r rstk__sormh_soinvs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r" n="New" target="sf:ui:target?object=rstk__sormh__c&amp;page=Sormh"/>
     <sfActionLink n="Accept" s=""/>
     <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__sormh__c&amp;page=SormhView"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
@@ -806,6 +801,7 @@
     <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
     <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
     <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
     <sfActionLink modes="View" n="email" t="Send an Email"/>
     <sfActionLink modes="View" n="Share"/>
@@ -816,6 +812,10 @@
     <sfActionLink modes="ObjectHome List" n="Import"/>
     <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
     <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View rstk__shiptoaddrsormhs__r rstk__sormhs__r rstk__installcustsormhs__r rstk__sormh_soinvs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__shiptoaddrsormhs__r rstk__sormhs__r rstk__installcustsormhs__r rstk__sormh_soinvs__r rstk__sormh_btaddrs__r rstk__installaddrsormhs__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
   </standardActions>
   <homeListColumns>
     <string>RSTK__SORMH__C.NAME</string>

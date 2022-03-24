@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" feedEnabled="true" keyPrefix="a62" label="Contract Master" labelPlural="Contract Masters" layoutable="true" metadataLabel="Contract Master" n="rstk__socontract__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Contract Master (a62)" updatable="true" urlDetail="https://automationtesting2.my.salesforce.com/{ID}" urlEdit="https://automationtesting2.my.salesforce.com/{ID}/e" urlNew="https://automationtesting2.my.salesforce.com/a62/e">
+<sfObject creatable="true" defaultCompactLayoutId="rstk__socontract__c.SYSTEM" deleteable="true" feedEnabled="true" keyPrefix="a62" label="Contract Master" labelPlural="Contract Masters" layoutable="true" metadataLabel="Contract Master" n="rstk__socontract__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Contract Master (a62)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/a62/e">
   <fields>
     <sfField createable="false" editPermission="false" length="18" n="Id" t="Contract Master ID" type="id" updateable="false"/>
     <sfField internalLabel="Owner ID" length="18" n="OwnerId" relationshipName="Owner" t="Owner" type="reference">
@@ -26,15 +26,15 @@
     <sfField createable="false" editPermission="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
     <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
     <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
-    <sfField length="100" n="rstk__externalid__c" summary="Not Applicable" t="External Id"/>
-    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__socontract_div__r.rstk__sydiv_div__c &amp; '_' &amp; rstk__socontract_contractid__c" length="1300" n="rstk__formula_extid__c" summary="Not Applicable" t="Formula External Id" updateable="false"/>
-    <sfField calculated="true" createable="false" editPermission="false" formula="LEFT(rstk__socontract_contractid__c &amp; &quot; (&quot; &amp; rstk__socontract_desc__c &amp; &quot;)&quot;, 80)" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_name__c" summary="Not Applicable" t="Name Formula" updateable="false"/>
-    <sfField calculated="true" createable="false" editPermission="false" formula="Name" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_searchindex__c" summary="Not Applicable" t="Formula Search Index" updateable="false"/>
-    <sfField length="255" n="rstk__searchindex__c" summary="Not Applicable" t="Search Index"/>
-    <sfField n="rstk__socontract_actgracedays__c" precision="3" summary="If activation does not occur during this &quot;grace period&quot; (defined in Days here), billing will begin after this number of days.  Value is initially defaulted from the Sales Order Control record for the given Sales Division but can be overridden." t="Activation Grace Period  (Days)" type="_double"/>
-    <sfField n="rstk__socontract_active__c" summary="When checked, indicates that this contract is active." t="Active" type="_boolean"/>
+    <sfField length="100" n="rstk__externalid__c" t="External Id"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__socontract_div__r.rstk__sydiv_div__c &amp; '_' &amp; rstk__socontract_contractid__c" length="1300" n="rstk__formula_extid__c" t="Formula External Id" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="LEFT(rstk__socontract_contractid__c &amp; &quot; (&quot; &amp; rstk__socontract_desc__c &amp; &quot;)&quot;, 80)" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_name__c" t="Name Formula" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="Name" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_searchindex__c" t="Formula Search Index" updateable="false"/>
+    <sfField length="255" n="rstk__searchindex__c" t="Search Index"/>
+    <sfField n="rstk__socontract_actgracedays__c" precision="3" t="Activation Grace Period  (Days)" type="_double"/>
+    <sfField n="rstk__socontract_active__c" t="Active" type="_boolean"/>
     <sfField n="rstk__socontract_adminfee__c" precision="12" scale="2" t="Admin Fee" type="_double"/>
-    <sfField length="255" n="rstk__socontract_approvalsts__c" summary="Valid values are\n\nNot Submitted\nPending Risk Approval\nPending Margin Approval\nApproved\nRejected\n\nNote:  There is no validation between 'Contract Approval Status', 'Customer Acceptance Status' &amp; 'Contract Status' - it is up to users to manage this." t="Contract Approval Status" type="picklist">
+    <sfField length="255" n="rstk__socontract_approvalsts__c" t="Contract Approval Status" type="picklist">
       <picklistEntryIds>1,2,3,4,5</picklistEntryIds>
       <picklistEntries>
         <sfPLE defaultValue="true" id="1" n="Not Submitted" s=""/>
@@ -44,29 +44,29 @@
         <sfPLE id="5" n="Rejected" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField length="255" n="rstk__socontract_billuom__c" summary="Billing frequency. Options are 'Monthly' or 'Quarterly'." t="Billing" type="picklist">
+    <sfField length="255" n="rstk__socontract_billuom__c" t="Billing" type="picklist">
       <picklistEntryIds>6,7</picklistEntryIds>
       <picklistEntries>
         <sfPLE defaultValue="true" id="6" n="Monthly" s=""/>
         <sfPLE id="7" n="Quarterly" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField length="18" n="rstk__socontract_btaddr__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_btaddr__r" summary="The Bill-To Address (defined on the Customer Master &gt; Customer Addresses) for the Sales Customer, which is the Customer on the Sales Order Header." t="Sales Customer Bill-To Address" type="reference">
+    <sfField length="18" n="rstk__socontract_btaddr__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_btaddr__r" t="Sales Customer Bill-To Address" type="reference">
       <referenceTos>
         <string>rstk__socaddr__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_cancelled__c" summary="When checked, indicates that this Contract has been cancelled and cannot be used." t="Cancelled" type="_boolean"/>
+    <sfField n="rstk__socontract_cancelled__c" t="Cancelled" type="_boolean"/>
     <sfField length="255" n="rstk__socontract_chargetype__c" t="Charge Type" type="picklist">
       <picklistEntryIds>8</picklistEntryIds>
       <picklistEntries>
         <sfPLE id="8" n="-none-" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField n="rstk__socontract_commencedate__c" summary="The actual start date based on the first activity against this Contract." t="Commencement Date" type="date"/>
-    <sfField n="rstk__socontract_conpriceonly__c" summary="When checked, uses the pricing as defined for the ‘Products for Purchase’ that have been added to the Contract, and this price cannot be overridden." t="Only Contract Product Pricing on SO" type="_boolean"/>
-    <sfField n="rstk__socontract_conprodonly__c" summary="When checked, restricts Products that can be selected when adding a SO Line where the Sales Order is associated with a this Contract. The limitation is to only be able to use Products added under the ‘Products for Purchase’ section of the Contract." t="Only Contract Products on Sales Orders" type="_boolean"/>
-    <sfField length="255" n="rstk__socontract_constatus__c" summary="Valid values are\n\nDraft\nProcessing Internal Approval\nInternally Approved\nCustomer Accepted\nActive\nCancelled\nProcessing Customer Acceptance\n\nNote that only an Active Contract can be billed, &amp; a Contract Status of Cancelled cannot be used on a SO." t="Contract Status" type="picklist">
+    <sfField n="rstk__socontract_commencedate__c" t="Commencement Date" type="date"/>
+    <sfField n="rstk__socontract_conpriceonly__c" t="Only Contract Product Pricing on SO" type="_boolean"/>
+    <sfField n="rstk__socontract_conprodonly__c" t="Only Contract Products on Sales Orders" type="_boolean"/>
+    <sfField length="255" n="rstk__socontract_constatus__c" t="Contract Status" type="picklist">
       <picklistEntryIds>9,10,11,12,13,14,15,16</picklistEntryIds>
       <picklistEntries>
         <sfPLE defaultValue="true" id="9" n="Draft" s=""/>
@@ -79,29 +79,29 @@
         <sfPLE id="16" n="Completed" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField length="30" n="rstk__socontract_contractid__c" summary="When checked , the Contract will be automatically assigned upon Save.  When unchecked, can be a user-defined  alpha-numeric unique identifier up to 30 characters in length." t="Contract ID"/>
-    <sfField n="rstk__socontract_ctrev__c" precision="4" summary="This field is incremented automatically when Contract Terms are added or changed.  Initially the Revision is set to 1 and incremented from there." t="Contract Terms Rev" type="_double"/>
-    <sfField n="rstk__socontract_cttrev__c" precision="4" summary="This field is automatically set to the Revision of the Terms Template used on this Contract, as it was at the time that the Terms Template was set on the Contract." t="Terms Template Rev" type="_double"/>
-    <sfField length="255" n="rstk__socontract_custacceptsts__c" summary="Valid values are\n\nNote Submitted\nSubmitted\nAccepted\nRejected\nRevision Requested\n\nNote:  There is no validation between 'Contract Approval Status', 'Customer Acceptance Status' &amp; 'Contract Status' - it is up to users to manage this." t="Customer Acceptance Status" type="picklist">
-      <picklistEntryIds>1,17,18,5,19</picklistEntryIds>
+    <sfField length="30" n="rstk__socontract_contractid__c" t="Contract ID"/>
+    <sfField n="rstk__socontract_ctrev__c" precision="4" t="Contract Terms Rev" type="_double"/>
+    <sfField n="rstk__socontract_cttrev__c" precision="4" t="Terms Template Rev" type="_double"/>
+    <sfField length="255" n="rstk__socontract_custacceptsts__c" t="Customer Acceptance Status" type="picklist">
+      <picklistEntryIds>17,18,19,20,21</picklistEntryIds>
       <picklistEntries>
-        <sfPLE defaultValue="true" id="1" n="Not Submitted" s=""/>
-        <sfPLE id="17" n="Submitted" s=""/>
-        <sfPLE id="18" n="Accepted" s=""/>
-        <sfPLE id="5" n="Rejected" s=""/>
-        <sfPLE id="19" n="Revision Requested" s=""/>
+        <sfPLE defaultValue="true" id="17" n="Not Submitted" s=""/>
+        <sfPLE id="18" n="Submitted" s=""/>
+        <sfPLE id="19" n="Accepted" s=""/>
+        <sfPLE id="20" n="Rejected" s=""/>
+        <sfPLE id="21" n="Revision Requested" s=""/>
       </picklistEntries>
     </sfField>
     <sfField n="rstk__socontract_dealvalue__c" precision="12" scale="2" t="Deal Value" type="_double"/>
     <sfField n="rstk__socontract_delprice__c" precision="12" scale="2" t="Delivery Price" type="_double"/>
-    <sfField n="rstk__socontract_deposit__c" precision="12" scale="2" summary="Amount Customer has deposited against this contract.  User-maintained." t="Deposit Amount" type="_double"/>
-    <sfField length="50" n="rstk__socontract_desc__c" summary="Optional user-defined description up to 50 characters in length." t="Description"/>
-    <sfField length="18" n="rstk__socontract_div__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_div__r" summary="The Sales Division associated with the Contract." t="Sales Division" type="reference">
+    <sfField n="rstk__socontract_deposit__c" precision="12" scale="2" t="Deposit Amount" type="_double"/>
+    <sfField length="50" n="rstk__socontract_desc__c" t="Description"/>
+    <sfField length="18" n="rstk__socontract_div__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_div__r" t="Sales Division" type="reference">
       <referenceTos>
         <string>rstk__sydiv__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_eststartdate__c" summary="The approximate start date as estimated when Contract was created." t="Estimated Start Date" type="date"/>
+    <sfField n="rstk__socontract_eststartdate__c" t="Estimated Start Date" type="date"/>
     <sfField n="rstk__socontract_excessbw__c" precision="16" scale="6" t="Excess Image Charge - Mono" type="_double"/>
     <sfField n="rstk__socontract_excesscol__c" precision="16" scale="6" t="Excess Image Charge - Color" type="_double"/>
     <sfField n="rstk__socontract_excessscan__c" precision="16" scale="6" t="Excess Image Charge - Scan" type="_double"/>
@@ -111,240 +111,242 @@
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_firstinstallment__c" summary="The date that the first payment installment will be billed to customer." t="First Installment Billing Date" type="date"/>
+    <sfField n="rstk__socontract_firstinstallment__c" t="First Installment Billing Date" type="date"/>
     <sfField n="rstk__socontract_fmoverpaid__c" precision="12" scale="2" t="FM Overs Paid" type="_double"/>
-    <sfField length="18" n="rstk__socontract_icustinstaddr__c" relationshipLabel="Contract Masters (Installation Customer Address)" relationshipName="rstk__socontract_icustinstaddr__r" summary="The specific address record for the Installation Customer where the &quot;device&quot; is installed." t="Installation Customer Address" type="reference">
+    <sfField length="18" n="rstk__socontract_icustinstaddr__c" relationshipLabel="Contract Masters (Installation Customer Address)" relationshipName="rstk__socontract_icustinstaddr__r" t="Installation Customer Address" type="reference">
       <referenceTos>
         <string>rstk__socaddr__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_installcust__c" relationshipLabel="Contract Masters (Hardware Installation Customer)" relationshipName="rstk__socontract_installcust__r" summary="The Installation Customer for this Sales Contract, which is the Customer where the &quot;device&quot; is installed." t="Hardware Installation Customer" type="reference">
+    <sfField length="18" n="rstk__socontract_installcust__c" relationshipLabel="Contract Masters (Hardware Installation Customer)" relationshipName="rstk__socontract_installcust__r" t="Hardware Installation Customer" type="reference">
       <referenceTos>
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_mincomvol__c" summary="Not Applicable" t="Contract Model Service Cost" type="_boolean"/>
-    <sfField n="rstk__socontract_monmincopybw__c" precision="10" summary="Not Applicable" t="Minimum Monthly - Mono" type="_double"/>
-    <sfField n="rstk__socontract_monmincopycol__c" precision="10" summary="Not Applicable" t="Minimum Monthly - Color" type="_double"/>
-    <sfField n="rstk__socontract_monmincopyscan__c" precision="10" summary="Not Applicable" t="Minimum Monthly - Scan" type="_double"/>
+    <sfField n="rstk__socontract_mincomvol__c" t="Contract Model Service Cost" type="_boolean"/>
+    <sfField n="rstk__socontract_monmincopybw__c" precision="10" t="Minimum Monthly - Mono" type="_double"/>
+    <sfField n="rstk__socontract_monmincopycol__c" precision="10" t="Minimum Monthly - Color" type="_double"/>
+    <sfField n="rstk__socontract_monmincopyscan__c" precision="10" t="Minimum Monthly - Scan" type="_double"/>
     <sfField calculated="true" createable="false" editPermission="false" formula="rstk__socontract_dealvalue__c - (rstk__socontract_totcheqback__c + rstk__socontract_totprodgives__c)" formulaTreatBlanksAs="BlankAsZero" n="rstk__socontract_netrevenue__c" precision="18" scale="2" t="Net Revenue" type="_double" updateable="false"/>
     <sfField calculated="true" createable="false" editPermission="false" formula="rstk__socontract_totalcogs__c + rstk__socontract_adminfee__c + rstk__socontract_delprice__c + rstk__socontract_otherchgs__c" formulaTreatBlanksAs="BlankAsZero" n="rstk__socontract_netxferprice__c" precision="18" scale="2" t="Net Transfer Price" type="_double" updateable="false"/>
-    <sfField n="rstk__socontract_nocust__c" summary="Indicates this contract is not customer specific.  No customer is specified, and the Contract can be referenced on the Sales Order of any customer." t="Non-Customer Specific Contract" type="_boolean"/>
-    <sfField length="18" n="rstk__socontract_opportunity__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_opportunity__r" summary="The Opportunity from which this Contract was created." t="Opportunity" type="reference">
+    <sfField n="rstk__socontract_nocust__c" t="Non-Customer Specific Contract" type="_boolean"/>
+    <sfField length="18" n="rstk__socontract_opportunity__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_opportunity__r" t="Opportunity" type="reference">
       <referenceTos>
         <string>Opportunity</string>
       </referenceTos>
     </sfField>
     <sfField n="rstk__socontract_otherchgs__c" precision="12" scale="2" t="Total Other Charges" type="_double"/>
-    <sfField n="rstk__socontract_pbillinprocess__c" summary="When checked, indicates that the Generated Recurring Billing job is running for the Contract. It is automatically set and cleared. Only one &quot;session&quot; can be run at a time for a given Sales Contract." t="Periodic Billing Process Lock" type="_boolean"/>
-    <sfField length="18" n="rstk__socontract_ppproject__c" relationshipLabel="Contract Masters (Project for Product Purchases)" relationshipName="rstk__socontract_ppproject__r" summary="A specific Project can be identified for which SO Lines will be placed. When set, all SO activity against this SO Line will be pegged to this Project." t="Project for Product Purchases" type="reference">
+    <sfField n="rstk__socontract_pbillinprocess__c" t="Periodic Billing Process Lock" type="_boolean"/>
+    <sfField length="18" n="rstk__socontract_ppproject__c" relationshipLabel="Contract Masters (Project for Product Purchases)" relationshipName="rstk__socontract_ppproject__r" t="Project for Product Purchases" type="reference">
       <referenceTos>
         <string>rstk__pjproj__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_pricecust__c" relationshipLabel="Contract Masters (Pricing Customer)" relationshipName="rstk__socontract_pricecust__r" summary="The Pricing Customer for this Sales Contract, which is the Customer that is used to look up customer-specific pricing and discounts when deriving product prices." t="Pricing Customer" type="reference">
+    <sfField length="18" n="rstk__socontract_pricecust__c" relationshipLabel="Contract Masters (Pricing Customer)" relationshipName="rstk__socontract_pricecust__r" t="Pricing Customer" type="reference">
       <referenceTos>
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="50" n="rstk__socontract_purchaseorder__c" summary="Purchase Order associated with this Contract." t="Purchase Order"/>
-    <sfField n="rstk__socontract_rateper1000__c" precision="16" scale="6" summary="User-defined rate.  Value should be entered as a percentage.  For example, 5% should be entered as 5, not .05." t="Rate per $1000" type="_double"/>
-    <sfField n="rstk__socontract_rcbadvance__c" summary="When checked, indicates that the billing is done in advance, billing the immediate next “period” as defined on the Contract." t="Recurring Billings in Advance" type="_boolean"/>
-    <sfField n="rstk__socontract_rcbfirstfull__c" summary="The Start Date of the first &quot;full period&quot; billed.  For example, a Recurring Billing may be monthly, yet the first Billing was for a partial month.  This reflects the first full-month Billing." t="First Full RB Period Start Date" type="date"/>
-    <sfField length="255" n="rstk__socontract_rcbfreq__c" summary="This defines the frequency for which billing activity will occur.  Valid values are \n\nMonthly\nQuarterly\nSemi-Annual\nAnnual\n\nThe default is 'Monthly'" t="Contract Term UOM / Billing Frequency" type="picklist">
-      <picklistEntryIds>6,7,20,21</picklistEntryIds>
+    <sfField length="50" n="rstk__socontract_purchaseorder__c" t="Purchase Order"/>
+    <sfField n="rstk__socontract_rateper1000__c" precision="16" scale="6" t="Rate per $1000" type="_double"/>
+    <sfField n="rstk__socontract_rcbadvance__c" t="Recurring Billings in Advance" type="_boolean"/>
+    <sfField n="rstk__socontract_rcbfirstfull__c" t="First Full RB Period Start Date" type="date"/>
+    <sfField length="255" n="rstk__socontract_rcbfreq__c" t="Contract Term UOM / Billing Frequency" type="picklist">
+      <picklistEntryIds>22,23,24,25</picklistEntryIds>
       <picklistEntries>
-        <sfPLE defaultValue="true" id="6" n="Monthly" s=""/>
-        <sfPLE id="7" n="Quarterly" s=""/>
-        <sfPLE id="20" n="Semi-Annual" s=""/>
-        <sfPLE id="21" n="Annual" s=""/>
+        <sfPLE defaultValue="true" id="22" n="Monthly" s=""/>
+        <sfPLE id="23" n="Quarterly" s=""/>
+        <sfPLE id="24" n="Semi-Annual" s=""/>
+        <sfPLE id="25" n="Annual" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField n="rstk__socontract_rcblastthru__c" summary="The date that the last billing run billed through." t="Last Recurring Bill Thru Date" type="date"/>
-    <sfField length="18" n="rstk__socontract_rcbproject__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_rcbproject__r" summary="A specific active Project can be identified against which all billing charges will be made.  When set, all charges will be pegged against this Project." t="Project for Recurring Billing Invoices" type="reference">
+    <sfField n="rstk__socontract_rcblastthru__c" t="Last Recurring Bill Thru Date" type="date"/>
+    <sfField length="18" n="rstk__socontract_rcbproject__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_rcbproject__r" t="Project for Recurring Billing Invoices" type="reference">
       <referenceTos>
         <string>rstk__pjproj__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_rcbstart__c" summary="The date on which billing commences." t="Recurring Billing Start Date" type="date"/>
-    <sfField n="rstk__socontract_rcbtaxbillto__c" summary="When checked, the Bill-To Address Postal Code is used in tax calculations. Only applies (and is displayed) when Avalara Tax is active for the Division." t="Use Bill-To Address for Taxation" type="_boolean"/>
-    <sfField n="rstk__socontract_rentamount__c" precision="12" scale="2" summary="User-defined rent amount." t="Rent Amount" type="_double"/>
+    <sfField n="rstk__socontract_rcbstart__c" t="Recurring Billing Start Date" type="date"/>
+    <sfField n="rstk__socontract_rcbtaxbillto__c" t="Use Bill-To Address for Taxation" type="_boolean"/>
+    <sfField n="rstk__socontract_rentamount__c" precision="12" scale="2" t="Rent Amount" type="_double"/>
     <sfField n="rstk__socontract_rentcpcbw__c" precision="16" scale="6" t="Rental CPC - Mono" type="_double"/>
-    <sfField n="rstk__socontract_rentcpccol__c" precision="16" scale="6" summary="Not Applicable" t="Rental CPC - Color" type="_double"/>
-    <sfField n="rstk__socontract_rentcpcscan__c" precision="16" scale="6" summary="Not Applicable" t="Rental CPC - Scan" type="_double"/>
-    <sfField n="rstk__socontract_residualval__c" precision="12" scale="2" summary="Not Applicable" t="Residual Value" type="_double"/>
-    <sfField n="rstk__socontract_rev__c" precision="4" summary="This field is incremented automatically when Contract &quot;details&quot; are added or changed, such as Products for Purchase, Recurring Charges or Misc Charges." t="Contract Revision Number" type="_double"/>
-    <sfField length="18" n="rstk__socontract_scustbtaddr__c" relationshipLabel="Contract Masters (Service Customer Bill-To Address)" relationshipName="rstk__socontract_scustbtaddr__r" summary="Must be a valid Bill-To Address for the 'Customer for Recurring Billings'." t="Service Customer Bill-To Address" type="reference">
+    <sfField n="rstk__socontract_rentcpccol__c" precision="16" scale="6" t="Rental CPC - Color" type="_double"/>
+    <sfField n="rstk__socontract_rentcpcscan__c" precision="16" scale="6" t="Rental CPC - Scan" type="_double"/>
+    <sfField n="rstk__socontract_residualval__c" precision="12" scale="2" t="Residual Value" type="_double"/>
+    <sfField n="rstk__socontract_rev__c" precision="4" t="Contract Revision Number" type="_double"/>
+    <sfField length="18" n="rstk__socontract_scustbtaddr__c" relationshipLabel="Contract Masters (Service Customer Bill-To Address)" relationshipName="rstk__socontract_scustbtaddr__r" t="Service Customer Bill-To Address" type="reference">
       <referenceTos>
         <string>rstk__socaddr__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_service__c" summary="When checked, indicates that Service Items will be included in Contract." t="Include Service" type="_boolean"/>
-    <sfField length="18" n="rstk__socontract_servicecust__c" relationshipLabel="Contract Masters (Customer for Recurring Billings)" relationshipName="rstk__socontract_servicecust__r" summary="This is the Customer to be billed for Recurring Charges, and must be a 'Related Customer' of the Contract Customer.  Note that it is this Customer that is used to drive address choices for 'Service Customer Bill-To Address'." t="Customer for Recurring Billings" type="reference">
+    <sfField n="rstk__socontract_service__c" t="Include Service" type="_boolean"/>
+    <sfField length="18" n="rstk__socontract_servicecust__c" relationshipLabel="Contract Masters (Customer for Recurring Billings)" relationshipName="rstk__socontract_servicecust__r" t="Customer for Recurring Billings" type="reference">
       <referenceTos>
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
     <sfField length="255" n="rstk__socontract_showmsconinv__c" t="Show Model Service Cost on Invoice" type="picklist">
-      <picklistEntryIds>22,23</picklistEntryIds>
+      <picklistEntryIds>26,27</picklistEntryIds>
       <picklistEntries>
-        <sfPLE id="22" n="Yes" s=""/>
-        <sfPLE id="23" n="No" s=""/>
+        <sfPLE id="26" n="Yes" s=""/>
+        <sfPLE id="27" n="No" s=""/>
       </picklistEntries>
     </sfField>
     <sfField length="255" n="rstk__socontract_showtcconinv__c" t="Show Total Copy Charge on Invoice" type="picklist">
-      <picklistEntryIds>22,23</picklistEntryIds>
+      <picklistEntryIds>28,29</picklistEntryIds>
       <picklistEntries>
-        <sfPLE id="22" n="Yes" s=""/>
-        <sfPLE id="23" n="No" s=""/>
+        <sfPLE id="28" n="Yes" s=""/>
+        <sfPLE id="29" n="No" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField length="18" n="rstk__socontract_soctt__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_soctt__r" summary="If Contract Terms are to be associated with a given Contract, set to an active Contract Terms Template from dropdown. When a Contract Terms Template is selected, Contract Term Clauses are added to the Contract from Contract Terms Template selected." t="Contract Terms Template" type="reference">
+    <sfField length="18" n="rstk__socontract_soctt__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_soctt__r" t="Contract Terms Template" type="reference">
       <referenceTos>
         <string>rstk__soctt__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_socust__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_socust__r" summary="The Customer for which this Contract applies.  Must be a valid active Rootstock Customer." t="Contract Customer" type="reference">
+    <sfField length="18" n="rstk__socontract_socust__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_socust__r" t="Contract Customer" type="reference">
       <referenceTos>
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_socustmsa__c" relationshipLabel="Contracts" relationshipName="rstk__socontract_socustmsa__r" summary="If Contract is to be tied to a Master Services Agreement, select any applicable Customer MSA for the Contract Customer from dropdown." t="Master Services Agreement" type="reference">
+    <sfField length="18" n="rstk__socontract_socustmsa__c" relationshipLabel="Contracts" relationshipName="rstk__socontract_socustmsa__r" t="Master Services Agreement" type="reference">
       <referenceTos>
         <string>rstk__socustmsa__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_sohdrcust__c" relationshipLabel="Contract Masters (Sales Customer)" relationshipName="rstk__socontract_sohdrcust__r" summary="This is the Customer for which Sales will be made to when using this Contract, and must be a 'Related Customer' of the Contract Customer." t="Sales Customer" type="reference">
+    <sfField length="18" n="rstk__socontract_sohdrcust__c" relationshipLabel="Contract Masters (Sales Customer)" relationshipName="rstk__socontract_sohdrcust__r" t="Sales Customer" type="reference">
       <referenceTos>
         <string>rstk__socust__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="18" n="rstk__socontract_sosla__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_sosla__r" summary="The Service Level Agreement Process associated with this contract.  Field is optional." t="SLA Process" type="reference">
+    <sfField length="18" n="rstk__socontract_sosla__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_sosla__r" t="SLA Process" type="reference">
       <referenceTos>
         <string>rstk__sosla__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_srvcostbw__c" precision="16" scale="6" summary="Not Applicable" t="Service Cost - Mono" type="_double"/>
-    <sfField n="rstk__socontract_srvcostcol__c" precision="16" scale="6" summary="Not Applicable" t="Service Cost - Color" type="_double"/>
-    <sfField n="rstk__socontract_srvcostscan__c" precision="16" scale="6" summary="Not Applicable" t="Service Cost - Scan" type="_double"/>
-    <sfField length="18" n="rstk__socontract_staddr__c" relationshipLabel="Contract Masters (Sales Customer Ship-To Address)" relationshipName="rstk__socontract_staddr__r" summary="The Ship-To Address (defined on the Customer Master &gt; Customer Addresses) for the Sales Customer, which is the Customer on the Sales Order Header." t="Sales Customer Ship-To Address" type="reference">
+    <sfField n="rstk__socontract_srvcostbw__c" precision="16" scale="6" t="Service Cost - Mono" type="_double"/>
+    <sfField n="rstk__socontract_srvcostcol__c" precision="16" scale="6" t="Service Cost - Color" type="_double"/>
+    <sfField n="rstk__socontract_srvcostscan__c" precision="16" scale="6" t="Service Cost - Scan" type="_double"/>
+    <sfField length="18" n="rstk__socontract_staddr__c" relationshipLabel="Contract Masters (Sales Customer Ship-To Address)" relationshipName="rstk__socontract_staddr__r" t="Sales Customer Ship-To Address" type="reference">
       <referenceTos>
         <string>rstk__socaddr__c</string>
       </referenceTos>
     </sfField>
-    <sfField length="255" n="rstk__socontract_status__c" summary="The current status of the Contract." t="Billing Status" type="picklist">
-      <picklistEntryIds>8,24</picklistEntryIds>
+    <sfField length="255" n="rstk__socontract_status__c" t="Billing Status" type="picklist">
+      <picklistEntryIds>30,31</picklistEntryIds>
       <picklistEntries>
-        <sfPLE id="8" n="-none-" s=""/>
-        <sfPLE id="24" n="New" s=""/>
+        <sfPLE id="30" n="-none-" s=""/>
+        <sfPLE id="31" n="New" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField length="18" n="rstk__socontract_taxloc__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_taxloc__r" summary="The Tax Location associated with the Ship-To Customer Address." t="Recurring Billing Tax Location" type="reference">
+    <sfField length="18" n="rstk__socontract_taxloc__c" relationshipLabel="Contract Masters" relationshipName="rstk__socontract_taxloc__r" t="Recurring Billing Tax Location" type="reference">
       <referenceTos>
         <string>rstk__sotax__c</string>
       </referenceTos>
     </sfField>
-    <sfField n="rstk__socontract_term__c" precision="4" summary="The number of &quot;periods&quot; in months that this Contract is in force. The default is 0, but this field must be set to a value &gt; 0 in order to save the record." t="Contract Term" type="_double"/>
-    <sfField length="255" n="rstk__socontract_termuom__c" summary="The Contract Term &quot;unit of measure&quot;.  Options are 'Months', 'Quarters' or 'Years'." t="Contract Term UOM" type="picklist">
-      <picklistEntryIds>25,26,27</picklistEntryIds>
+    <sfField n="rstk__socontract_term__c" precision="4" t="Contract Term" type="_double"/>
+    <sfField length="255" n="rstk__socontract_termuom__c" t="Contract Term UOM" type="picklist">
+      <picklistEntryIds>32,33,34</picklistEntryIds>
       <picklistEntries>
-        <sfPLE defaultValue="true" id="25" n="Month" s=""/>
-        <sfPLE id="26" n="Quarter" s=""/>
-        <sfPLE id="27" n="Year" s=""/>
+        <sfPLE defaultValue="true" id="32" n="Month" s=""/>
+        <sfPLE id="33" n="Quarter" s=""/>
+        <sfPLE id="34" n="Year" s=""/>
       </picklistEntries>
     </sfField>
     <sfField n="rstk__socontract_totalcogs__c" precision="12" scale="2" t="Total COGS" type="_double"/>
-    <sfField n="rstk__socontract_totchargebw__c" precision="16" scale="6" summary="Not Applicable" t="Total Copy Charge - Mono" type="_double"/>
-    <sfField n="rstk__socontract_totchargecol__c" precision="16" scale="6" summary="Not Applicable" t="Total Copy Charge - Color" type="_double"/>
-    <sfField n="rstk__socontract_totchargescan__c" precision="16" scale="6" summary="Not Applicable" t="Total Copy Charge - Scan" type="_double"/>
-    <sfField n="rstk__socontract_totcheqback__c" precision="12" scale="2" summary="Not Applicable" t="Total Cheque Back" type="_double"/>
-    <sfField n="rstk__socontract_totdiscount__c" precision="12" scale="2" summary="Not Applicable" t="Total Discounts" type="_double"/>
-    <sfField n="rstk__socontract_totequipsales__c" precision="12" scale="2" summary="Not Applicable" t="Total Equipment Sales" type="_double"/>
-    <sfField n="rstk__socontract_totmincopybw__c" precision="10" summary="Not Applicable" t="Total Minimum - Mono" type="_double"/>
-    <sfField n="rstk__socontract_totmincopycol__c" precision="10" summary="Not Applicable" t="Total Minimum - Color" type="_double"/>
-    <sfField n="rstk__socontract_totmincopyscan__c" precision="10" summary="Not Applicable" t="Total Minimum - Scan" type="_double"/>
+    <sfField n="rstk__socontract_totchargebw__c" precision="16" scale="6" t="Total Copy Charge - Mono" type="_double"/>
+    <sfField n="rstk__socontract_totchargecol__c" precision="16" scale="6" t="Total Copy Charge - Color" type="_double"/>
+    <sfField n="rstk__socontract_totchargescan__c" precision="16" scale="6" t="Total Copy Charge - Scan" type="_double"/>
+    <sfField n="rstk__socontract_totcheqback__c" precision="12" scale="2" t="Total Cheque Back" type="_double"/>
+    <sfField n="rstk__socontract_totdiscount__c" precision="12" scale="2" t="Total Discounts" type="_double"/>
+    <sfField n="rstk__socontract_totequipsales__c" precision="12" scale="2" t="Total Equipment Sales" type="_double"/>
+    <sfField n="rstk__socontract_totmincopybw__c" precision="10" t="Total Minimum - Mono" type="_double"/>
+    <sfField n="rstk__socontract_totmincopycol__c" precision="10" t="Total Minimum - Color" type="_double"/>
+    <sfField n="rstk__socontract_totmincopyscan__c" precision="10" t="Total Minimum - Scan" type="_double"/>
     <sfField n="rstk__socontract_totpayout__c" precision="12" scale="2" t="Total Payout" type="_double"/>
     <sfField n="rstk__socontract_totprodgives__c" precision="12" scale="2" t="Total Product Credit" type="_double"/>
     <sfField n="rstk__socontract_totrentcred__c" precision="12" scale="2" t="Total Rental Credit" type="_double"/>
-    <sfField n="rstk__socontract_totsponser__c" precision="12" scale="2" summary="Not Applicable" t="Total Sponsorship" type="_double"/>
+    <sfField n="rstk__socontract_totsponser__c" precision="12" scale="2" t="Total Sponsorship" type="_double"/>
     <sfField n="rstk__socontract_totsrvcred__c" precision="12" scale="2" t="Total Service Credit" type="_double"/>
-    <sfField length="255" n="rstk__socontract_type__c" summary="Can be used to define different types of contracts that may be used, &amp; is used to select which Contract Types desired to bill in a billing run. Current picklist values are ‘Purchase’, ‘Flexi’, ‘Value Plan’ &amp; ‘Lease’.  See page help for more detail." t="Contract Type" type="picklist">
-      <picklistEntryIds>28,29,30,31</picklistEntryIds>
+    <sfField length="255" n="rstk__socontract_type__c" t="Contract Type" type="picklist">
+      <picklistEntryIds>35,36,37,38</picklistEntryIds>
       <picklistEntries>
-        <sfPLE id="28" n="Purchase" s=""/>
-        <sfPLE id="29" n="Flexi" s=""/>
-        <sfPLE id="30" n="Value Plan" s=""/>
-        <sfPLE id="31" n="Lease" s=""/>
+        <sfPLE id="35" n="Purchase" s=""/>
+        <sfPLE id="36" n="Flexi" s=""/>
+        <sfPLE id="37" n="Value Plan" s=""/>
+        <sfPLE id="38" n="Lease" s=""/>
       </picklistEntries>
     </sfField>
     <sfField length="255" n="rstk__socontract_washup__c" t="Wash Up" type="picklist">
-      <picklistEntryIds>8</picklistEntryIds>
+      <picklistEntryIds>39</picklistEntryIds>
       <picklistEntries>
-        <sfPLE id="8" n="-none-" s=""/>
+        <sfPLE id="39" n="-none-" s=""/>
       </picklistEntries>
     </sfField>
-    <sfField n="rstk__socontract_xferprice__c" precision="12" scale="2" summary="Not Applicable" t="Transfer Price" type="_double"/>
-    <sfField length="40" n="rstk__triggeroptions__c" summary="Not Applicable" t="triggeroptions"/>
-    <sfField n="rstk__socontract_datecompleted__c" summary="This field records the date that the contract was moved to Completed status." t="Date Completed" type="date"/>
+    <sfField n="rstk__socontract_xferprice__c" precision="12" scale="2" t="Transfer Price" type="_double"/>
+    <sfField length="40" n="rstk__triggeroptions__c" t="triggeroptions"/>
+    <sfField n="rstk__socontract_datecompleted__c" t="Date Completed" type="date"/>
   </fields>
   <childRelationships>
-    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
-    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
-    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
-    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
-    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
     <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
-    <sfObjectRelationship childName="Case" field="rstk__case_socontract__c" n="rstk__cases__r" relationshipName="rstk__cases__r" s="2-" t="Case"/>
-    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
-    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
-    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
     <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
-    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
-    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
-    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
-    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
-    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
     <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
     <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
-    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
-    <sfObjectRelationship childName="Opportunity" field="rstk__rs_socontract__c" n="rstk__opportunities__r" relationshipName="rstk__opportunities__r" s="2-" t="Opportunity"/>
-    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
     <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
     <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
-    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
-    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
     <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="TaskRelation" field="RelationId" n="TaskRelations" relationshipName="TaskRelations" s="2-" t="TaskRelation"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
     <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="ActionPlan" field="TargetId" n="ActionPlans" relationshipName="ActionPlans" s="2-" t="ActionPlan"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
     <sfObjectRelationship childName="Visit" field="ContextId" n="Contexts" relationshipName="Contexts" s="2-" t="Visit"/>
-    <sfObjectRelationship childName="rstk__customext__c" field="rstk__customext_socontract3__c" n="rstk__customexts3__r" relationshipName="rstk__customexts3__r" s="2-" t="rstk__customext__c"/>
-    <sfObjectRelationship childName="rstk__customext__c" field="rstk__customext_socontract__c" n="rstk__customexts__r" relationshipName="rstk__customexts__r" s="2-" t="rstk__customext__c"/>
-    <sfObjectRelationship childName="rstk__customext__c" field="rstk__genrecbill_socontract__c" n="rstk__customextsForGenrecbill__r" relationshipName="rstk__customextsForGenrecbill__r" s="2-" t="rstk__customext__c"/>
-    <sfObjectRelationship childName="rstk__joblog__c" field="rstk__socontract__c" n="rstk__joblogs__r" relationshipName="rstk__joblogs__r" s="2-" t="rstk__joblog__c"/>
-    <sfObjectRelationship childName="rstk__pjproj__c" field="rstk__pjproj_socontract__c" n="rstk__pjprojs__r" relationshipName="rstk__pjprojs__r" s="2-" t="rstk__pjproj__c"/>
-    <sfObjectRelationship childName="rstk__soamort__c" field="rstk__soamort_socontract__c" n="rstk__soamorts__r" relationshipName="rstk__soamorts__r" s="2-" t="rstk__soamort__c"/>
-    <sfObjectRelationship childName="rstk__soapi__c" field="rstk__soapi_contract__c" n="rstk__soapis__r" relationshipName="rstk__soapis__r" s="2-" t="rstk__soapi__c"/>
-    <sfObjectRelationship childName="rstk__soconchg__c" field="rstk__soconchg_socontract__c" n="rstk__soconchgs__r" relationshipName="rstk__soconchgs__r" s="2-" t="rstk__soconchg__c"/>
-    <sfObjectRelationship childName="rstk__socondev__c" field="rstk__socondev_socontract__c" n="rstk__socondevs__r" relationshipName="rstk__socondevs__r" s="2-" t="rstk__socondev__c"/>
-    <sfObjectRelationship childName="rstk__socondev__c" field="rstk__socondev_transto__c" n="rstk__socondevs2__r" relationshipName="rstk__socondevs2__r" s="2-" t="rstk__socondev__c"/>
-    <sfObjectRelationship childName="rstk__socondeveff__c" field="rstk__socondeveff_transto__c" n="rstk__socondeveffs__r" relationshipName="rstk__socondeveffs__r" s="2-" t="rstk__socondeveff__c"/>
-    <sfObjectRelationship childName="rstk__soconpbill__c" field="rstk__soconpbill_socontract__c" n="rstk__soconpbills__r" relationshipName="rstk__soconpbills__r" s="2-" t="rstk__soconpbill__c"/>
-    <sfObjectRelationship childName="rstk__soconpp__c" field="rstk__soconpp_socontract__c" n="rstk__soconpps__r" relationshipName="rstk__soconpps__r" s="2-" t="rstk__soconpp__c"/>
-    <sfObjectRelationship childName="rstk__soconrc__c" field="rstk__soconrc_socontract__c" n="rstk__soconrcs__r" relationshipName="rstk__soconrcs__r" s="2-" t="rstk__soconrc__c"/>
-    <sfObjectRelationship childName="rstk__soconrev__c" field="rstk__soconrev_socontract__c" n="rstk__soconrevs__r" relationshipName="rstk__soconrevs__r" s="2-" t="rstk__soconrev__c"/>
-    <sfObjectRelationship childName="rstk__socontchg__c" field="rstk__socontchg_socontract__c" n="rstk__socontchgs__r" relationshipName="rstk__socontchgs__r" s="2-" t="rstk__socontchg__c"/>
-    <sfObjectRelationship childName="rstk__socontcred__c" field="rstk__socontcred_origsocontract__c" n="rstk__socontcred_origsocontracts__r" relationshipName="rstk__socontcred_origsocontracts__r" s="2-" t="rstk__socontcred__c"/>
-    <sfObjectRelationship childName="rstk__socontcred__c" field="rstk__socontcred_socontract__c" n="rstk__socontcreds__r" relationshipName="rstk__socontcreds__r" s="2-" t="rstk__socontcred__c"/>
-    <sfObjectRelationship childName="rstk__socontent__c" field="rstk__socontent_socontract__c" n="rstk__socontents__r" relationshipName="rstk__socontents__r" s="2-" t="rstk__socontent__c"/>
-    <sfObjectRelationship childName="rstk__socontoot__c" field="rstk__socontoot_socontract__c" n="rstk__socontoots__r" relationshipName="rstk__socontoots__r" s="2-" t="rstk__socontoot__c"/>
-    <sfObjectRelationship childName="rstk__socontract__Feed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="rstk__socontract__Feed"/>
-    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__socontract__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="rstk__socontract__History"/>
-    <sfObjectRelationship childName="rstk__socontract__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="rstk__socontract__Share"/>
-    <sfObjectRelationship childName="rstk__soconttc__c" field="rstk__soconttc_socontract__c" n="rstk__soconttcs__r" relationshipName="rstk__soconttcs__r" s="2-" t="rstk__soconttc__c"/>
-    <sfObjectRelationship childName="rstk__sohdr__c" field="rstk__sohdr_contract__c" n="rstk__sohdrs__r" relationshipName="rstk__sohdrs__r" s="2-" t="rstk__sohdr__c"/>
-    <sfObjectRelationship childName="rstk__soline__c" field="rstk__soline_socontract__c" n="rstk__solines__r" relationshipName="rstk__solines__r" s="2-" t="rstk__soline__c"/>
-    <sfObjectRelationship childName="rstk__sowarr__c" field="rstk__sowarr_socontract__c" n="rstk__sowarrs__r" relationshipName="rstk__sowarrs__r" s="2-" t="rstk__sowarr__c"/>
-    <sfObjectRelationship childName="rstk__sowarrhist__c" field="rstk__sowarrhist_asocontract__c" n="rstk__asocontractsowarrhists__r" relationshipName="rstk__asocontractsowarrhists__r" s="2-" t="rstk__sowarrhist__c"/>
-    <sfObjectRelationship childName="rstk__sowarrhist__c" field="rstk__sowarrhist_bsocontract__c" n="rstk__bsocontractsowarrhists__r" relationshipName="rstk__bsocontractsowarrhists__r" s="2-" t="rstk__sowarrhist__c"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
+    <sfObjectRelationship childName="rstk__socontract__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="01I5f000000jZIn.Share"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__socontract__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="01I5f000000jZIn.History"/>
+    <sfObjectRelationship childName="rstk__socontract__Feed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="01I5f000000jZIn.Feed"/>
+    <sfObjectRelationship childName="rstk__customext__c" field="rstk__genrecbill_socontract__c" n="rstk__customextsForGenrecbill__r" relationshipName="rstk__customextsForGenrecbill__r" s="2-" t="01I5f000000jZDP"/>
+    <sfObjectRelationship childName="rstk__customext__c" field="rstk__customext_socontract3__c" n="rstk__customexts3__r" relationshipName="rstk__customexts3__r" s="2-" t="01I5f000000jZDP"/>
+    <sfObjectRelationship childName="rstk__customext__c" field="rstk__customext_socontract__c" n="rstk__customexts__r" relationshipName="rstk__customexts__r" s="2-" t="01I5f000000jZDP"/>
+    <sfObjectRelationship childName="rstk__joblog__c" field="rstk__socontract__c" n="rstk__joblogs__r" relationshipName="rstk__joblogs__r" s="2-" t="01I5f000000jZFI"/>
+    <sfObjectRelationship childName="rstk__pjproj__c" field="rstk__pjproj_socontract__c" n="rstk__pjprojs__r" relationshipName="rstk__pjprojs__r" s="2-" t="01I5f000000jZFu"/>
+    <sfObjectRelationship childName="rstk__soamort__c" field="rstk__soamort_socontract__c" n="rstk__soamorts__r" relationshipName="rstk__soamorts__r" s="2-" t="01I5f000000jZHu"/>
+    <sfObjectRelationship childName="rstk__soapi__c" field="rstk__soapi_contract__c" n="rstk__soapis__r" relationshipName="rstk__soapis__r" s="2-" t="01I5f000000jZHx"/>
+    <sfObjectRelationship childName="rstk__soconchg__c" field="rstk__soconchg_socontract__c" n="rstk__soconchgs__r" relationshipName="rstk__soconchgs__r" s="2-" t="01I5f000000jZIK"/>
+    <sfObjectRelationship childName="rstk__socondev__c" field="rstk__socondev_transto__c" n="rstk__socondevs2__r" relationshipName="rstk__socondevs2__r" s="2-" t="01I5f000000jZIM"/>
+    <sfObjectRelationship childName="rstk__socondev__c" field="rstk__socondev_socontract__c" n="rstk__socondevs__r" relationshipName="rstk__socondevs__r" s="2-" t="01I5f000000jZIM"/>
+    <sfObjectRelationship childName="rstk__socondeveff__c" field="rstk__socondeveff_transto__c" n="rstk__socondeveffs__r" relationshipName="rstk__socondeveffs__r" s="2-" t="01I5f000000jZIN"/>
+    <sfObjectRelationship childName="rstk__soconpbill__c" field="rstk__soconpbill_socontract__c" n="rstk__soconpbills__r" relationshipName="rstk__soconpbills__r" s="2-" t="01I5f000000jZIU"/>
+    <sfObjectRelationship childName="rstk__soconpp__c" field="rstk__soconpp_socontract__c" n="rstk__soconpps__r" relationshipName="rstk__soconpps__r" s="2-" t="01I5f000000jZIW"/>
+    <sfObjectRelationship childName="rstk__soconrc__c" field="rstk__soconrc_socontract__c" n="rstk__soconrcs__r" relationshipName="rstk__soconrcs__r" s="2-" t="01I5f000000jZIZ"/>
+    <sfObjectRelationship childName="rstk__soconrev__c" field="rstk__soconrev_socontract__c" n="rstk__soconrevs__r" relationshipName="rstk__soconrevs__r" s="2-" t="01I5f000000jZIe"/>
+    <sfObjectRelationship childName="rstk__socontchg__c" field="rstk__socontchg_socontract__c" n="rstk__socontchgs__r" relationshipName="rstk__socontchgs__r" s="2-" t="01I5f000000jZIj"/>
+    <sfObjectRelationship childName="rstk__socontcred__c" field="rstk__socontcred_origsocontract__c" n="rstk__socontcred_origsocontracts__r" relationshipName="rstk__socontcred_origsocontracts__r" s="2-" t="01I5f000000jZIk"/>
+    <sfObjectRelationship childName="rstk__socontcred__c" field="rstk__socontcred_socontract__c" n="rstk__socontcreds__r" relationshipName="rstk__socontcreds__r" s="2-" t="01I5f000000jZIk"/>
+    <sfObjectRelationship childName="rstk__socontent__c" field="rstk__socontent_socontract__c" n="rstk__socontents__r" relationshipName="rstk__socontents__r" s="2-" t="01I5f000000jZIl"/>
+    <sfObjectRelationship childName="rstk__socontoot__c" field="rstk__socontoot_socontract__c" n="rstk__socontoots__r" relationshipName="rstk__socontoots__r" s="2-" t="01I5f000000jZIm"/>
+    <sfObjectRelationship childName="rstk__soconttc__c" field="rstk__soconttc_socontract__c" n="rstk__soconttcs__r" relationshipName="rstk__soconttcs__r" s="2-" t="01I5f000000jZIo"/>
+    <sfObjectRelationship childName="rstk__sohdr__c" field="rstk__sohdr_contract__c" n="rstk__sohdrs__r" relationshipName="rstk__sohdrs__r" s="2-" t="01I5f000000jZJE"/>
+    <sfObjectRelationship childName="rstk__soline__c" field="rstk__soline_socontract__c" n="rstk__solines__r" relationshipName="rstk__solines__r" s="2-" t="01I5f000000jZJV"/>
+    <sfObjectRelationship childName="rstk__sowarr__c" field="rstk__sowarr_socontract__c" n="rstk__sowarrs__r" relationshipName="rstk__sowarrs__r" s="2-" t="01I5f000000jZKn"/>
+    <sfObjectRelationship childName="rstk__sowarrhist__c" field="rstk__sowarrhist_asocontract__c" n="rstk__asocontractsowarrhists__r" relationshipName="rstk__asocontractsowarrhists__r" s="2-" t="01I5f000000jZKp"/>
+    <sfObjectRelationship childName="rstk__sowarrhist__c" field="rstk__sowarrhist_bsocontract__c" n="rstk__bsocontractsowarrhists__r" relationshipName="rstk__bsocontractsowarrhists__r" s="2-" t="01I5f000000jZKp"/>
+    <sfObjectRelationship childName="Case" field="rstk__case_socontract__c" n="rstk__cases__r" relationshipName="rstk__cases__r" s="2-" t="Case"/>
+    <sfObjectRelationship childName="Opportunity" field="rstk__rs_socontract__c" n="rstk__opportunities__r" relationshipName="rstk__opportunities__r" s="2-" t="Opportunity"/>
   </childRelationships>
   <recordTypes>
     <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
@@ -1133,32 +1135,28 @@
     </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r List" n="New"/>
-    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="Delete" requiresRow="true" s="3"/>
-    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="GoToList" t="Go To List"/>
-    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
-    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
-    <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
-    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink n="Tab" s="" t="Contract Masters Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
-    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
-    <sfActionLink n="Tab" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__socontract__c&amp;page=Socontract2"/>
+    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome List rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="New" target="sf:ui:target?object=rstk__socontract__c&amp;page=Socontract2"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__socontract__c&amp;page=SocontractView"/>
     <sfActionLink buttonName="rstk__Covered_Serialized_Devices_QuickEntry" n="rstk__Covered_Serialized_Devices_QuickEntry" s="" t="Covered Serialized Devices– Quick Entry"/>
     <sfActionLink buttonName="rstk__Create_Misc_Charge_for_All_Active_Devices" n="rstk__Create_Misc_Charge_for_All_Active_Devices" s="" t="Create Misc Charge for All Active Devices"/>
-    <sfActionLink buttonName="rstk__Create_Sales_Order" n="rstk__Create_Sales_Order" s="" t="Create Sales Order"/>
-    <sfActionLink buttonName="rstk__Edit_Covered_Serialized_Devices" n="rstk__Edit_Covered_Serialized_Devices" s="" t="Edit Covered Serialized Devices"/>
     <sfActionLink buttonName="rstk__Entitlements" n="rstk__Entitlements" s="" t="Entitlements"/>
+    <sfActionLink buttonName="rstk__Edit_Covered_Serialized_Devices" n="rstk__Edit_Covered_Serialized_Devices" s="" t="Edit Covered Serialized Devices"/>
+    <sfActionLink buttonName="rstk__Create_Sales_Order" n="rstk__Create_Sales_Order" s="" t="Create Sales Order"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
     <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
     <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
     <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
     <sfActionLink modes="View" n="email" t="Send an Email"/>
     <sfActionLink modes="View" n="Share"/>
@@ -1169,6 +1167,10 @@
     <sfActionLink modes="ObjectHome List" n="Import"/>
     <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
     <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__socontracts__r rstk__socontractsocust__r rstk__socontracts5__r rstk__socontracts4__r rstk__socontracts3__r rstk__socontracts2__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
   </standardActions>
   <homeListColumns>
     <string>RSTK__SOCONTRACT__C.NAME</string>
@@ -1190,7 +1192,7 @@
     <string>rstk__socontract_custacceptsts__c</string>
   </searchResultColumns>
   <compactLayoutFields>
-    <string>NAME</string>
+    <string>Name</string>
   </compactLayoutFields>
   <listViewActions/>
 </sfObject>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<retrieveStates class="list">
-  <retrieveState endUtc="1647514006744">
-    <problem message="Salesforce returned a null result for metadata read.  Type: QuickAction, Full name: 01I1K000003DYMHUA4.asp04__Payment_Using_Authorisation" remedy="RELOAD_ORG_INDEX"/>
-  </retrieveState>
-</retrieveStates>

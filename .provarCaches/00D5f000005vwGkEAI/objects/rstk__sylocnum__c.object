@@ -336,6 +336,13 @@
         <unique>false</unique>
     </fields>
     <label>Inventory Location Number</label>
+    <listViews>
+        <fullName>All_PK</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All_PK</label>
+        <language>en_US</language>
+    </listViews>
     <nameField>
         <label>Name</label>
         <trackFeedHistory>false</trackFeedHistory>

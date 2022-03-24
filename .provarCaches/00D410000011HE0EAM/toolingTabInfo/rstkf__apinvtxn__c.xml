@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD41000001AA2cGAG" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Payable Transactions" Name="rstkf__apinvtxn__c" SobjectName="rstkf__apinvtxn__c" Url="https://rstk-qa-rsf.my.salesforce.com/a91/o"/>
-</toolingTabInfo>

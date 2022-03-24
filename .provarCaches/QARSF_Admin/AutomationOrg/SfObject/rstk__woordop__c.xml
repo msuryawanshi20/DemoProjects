@@ -266,19 +266,19 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r rstk__WOORDOPs1__r List" n="New" target="sf:ui:target?object=rstk__woordop__c&amp;page=Woordop"/>
-    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r rstk__WOORDOPs1__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__woordop__c&amp;page=Woordop"/>
-    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r rstk__WOORDOPs1__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r List" n="New" target="sf:ui:target?page=Woordop&amp;object=rstk__woordop__c"/>
+    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Woordop&amp;object=rstk__woordop__c"/>
+    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r rstk__WOORDOPs1__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r rstk__WOORDOPs1__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__WOORDOPs__r rstk__divwoordops__r rstk__WO_Operations__r rstk__Work_Order_Operations__r rstk__woordops__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Work Order Operations Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__woordop__c&amp;page=WoordopView"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=WoordopView&amp;object=rstk__woordop__c"/>
     <sfActionLink buttonName="rootstock__Batch_Assign_Release" massAction="true" n="rootstock__Batch_Assign_Release" s="" t="Batch Assign/Release"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>

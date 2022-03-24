@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="LoyaltyLedger" IsAvailableInAloha="true" IsAvailableInLightning="true" Label="Loyalty Ledgers" Name="standard-LoyaltyLedger" SobjectName="LoyaltyLedger" Url="https://rstk-qa-rsf.my.salesforce.com/05w/o"/>
-</toolingTabInfo>

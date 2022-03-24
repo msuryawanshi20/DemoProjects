@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD41000000AUXlGAO" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Sales Order Shipping Container Detail" Name="rstk__socontainel__c" SobjectName="rstk__socontainel__c" Url="https://rstk-qa-rsf.my.salesforce.com/a4v/o"/>
-</toolingTabInfo>

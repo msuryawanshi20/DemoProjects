@@ -166,12 +166,12 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r List" n="New"/>
-    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r List rstk__fsoackhs__r" n="New"/>
+    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r rstk__fsoackhs__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r rstk__fsoackhs__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r rstk__fsoackhs__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__SO_Acknowledgement_Headers__r rstk__sormhfsoackh__r rstk__fsoackhs__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Accept" s=""/>

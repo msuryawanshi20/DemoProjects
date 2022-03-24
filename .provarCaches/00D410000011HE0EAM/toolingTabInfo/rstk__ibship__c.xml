@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD410000010xccGAA" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Inbound Shipment Masters" Name="rstk__ibship__c" SobjectName="rstk__ibship__c" Url="https://rstk-qa-rsf.my.salesforce.com/a0w/o"/>
-</toolingTabInfo>

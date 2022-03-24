@@ -81,7 +81,7 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__ZZ_Sobject_Links__r rstk__Self_References__r List" n="New"/>
+    <sfActionLink modes="ObjectHome rstk__ZZ_Sobject_Links__r List rstk__Self_References__r" n="New"/>
     <sfActionLink modes="View rstk__ZZ_Sobject_Links__r rstk__Self_References__r" n="Edit" requiresRow="true" s="2"/>
     <sfActionLink modes="View rstk__ZZ_Sobject_Links__r rstk__Self_References__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Created by Lightning App Builder</description>
-    <flexiPage>rootstock__PO_Receipt_Scan_PO_Header</flexiPage>
-    <label>PO Receipt - Scan PO Header</label>
-    <motif>Custom26: Flag</motif>
-</CustomTab>

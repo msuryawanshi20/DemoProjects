@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<toolingTabInfo>
-  <tabDefinition DurableId="0KD1K000001h2cUWAQ" IsAvailableInAloha="true" IsAvailableInLightning="true" IsCustom="true" Label="Customer Payment Gateway Tokens" Name="rstk__socusttoken__c" SobjectName="rstk__socusttoken__c" Url="https://rstk-qa-rsf.my.salesforce.com/aBL/o"/>
-</toolingTabInfo>

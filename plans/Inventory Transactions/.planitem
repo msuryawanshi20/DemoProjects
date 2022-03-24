@@ -11,7 +11,7 @@
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
         <namedValue name="artifactName">
-          <value class="value" valueClass="string">InvTransactions.png</value>
+          <value class="value" valueClass="string">API-Inventory.png</value>
         </namedValue>
       </settings>
     </planFeature>
@@ -26,6 +26,9 @@
         <namedValue name="includeAllFailuresInSummary">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
+        <namedValue name="includeTestCaseDetails">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
         <namedValue name="includeTestCasePathHierarchy">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
@@ -38,20 +41,8 @@
         <namedValue name="includeTestStepTime">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
-        <namedValue name="includeNoLogs">
-          <value class="value" valueClass="boolean">true</value>
-        </namedValue>
-        <namedValue name="includeBasicLogs">
-          <value class="value" valueClass="boolean">false</value>
-        </namedValue>
         <namedValue name="includeDetailLogs">
           <value class="value" valueClass="boolean">false</value>
-        </namedValue>
-        <namedValue name="includeScreenshotThumbnail">
-          <value class="value" valueClass="boolean">false</value>
-        </namedValue>
-        <namedValue name="includeFullScreenShot">
-          <value class="value" valueClass="boolean">true</value>
         </namedValue>
         <namedValue name="includeNoScreenshots">
           <value class="value" valueClass="boolean">false</value>
@@ -59,11 +50,23 @@
         <namedValue name="includeDiagnosticTrace">
           <value class="value" valueClass="boolean">false</value>
         </namedValue>
-        <namedValue name="includeTestCaseDetails">
+        <namedValue name="includeNoLogs">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeBasicLogs">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeSkippedTestSteps">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeScreenshotThumbnail">
+          <value class="value" valueClass="boolean">false</value>
+        </namedValue>
+        <namedValue name="includeFullScreenShot">
           <value class="value" valueClass="boolean">true</value>
         </namedValue>
         <namedValue name="artifactName">
-          <value class="value" valueClass="string">InventoryTransactionsReport.pdf</value>
+          <value class="value" valueClass="string">API_InventoryReport.pdf</value>
         </namedValue>
       </settings>
     </planFeature>

@@ -1,6 +1,0 @@
-<apex:page controller="rootstock.AnalyticsServiceCon" showHeader="false" sidebar="false">
-    <script>
-        const data = JSON.parse('{!JSENCODE(data)}');
-        window.parent.postMessage(data, '*');
-    </script>
-</apex:page>

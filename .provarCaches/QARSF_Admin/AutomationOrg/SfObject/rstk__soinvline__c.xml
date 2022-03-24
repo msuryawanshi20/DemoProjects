@@ -203,12 +203,12 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__soinv_sormas__r rstk__soinvlines__r rstk__Invoice_Line__r rstk__soshipline_line_soinvline__r rstk__pjprojwbs_wbs_soinvline__r List" n="New"/>
-    <sfActionLink modes="View rstk__soinv_sormas__r rstk__soinvlines__r rstk__Invoice_Line__r rstk__soshipline_line_soinvline__r rstk__pjprojwbs_wbs_soinvline__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__soinv_sormas__r rstk__soinvlines__r rstk__Invoice_Line__r rstk__soshipline_line_soinvline__r rstk__pjprojwbs_wbs_soinvline__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__soinv_sormas__r rstk__Invoice_Line__r List rstk__pjprojwbs_wbs_soinvline__r rstk__soinvlines__r rstk__soshipline_line_soinvline__r" n="New"/>
+    <sfActionLink modes="View rstk__soinv_sormas__r rstk__Invoice_Line__r rstk__pjprojwbs_wbs_soinvline__r rstk__soinvlines__r rstk__soshipline_line_soinvline__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__soinv_sormas__r rstk__Invoice_Line__r rstk__pjprojwbs_wbs_soinvline__r rstk__soinvlines__r rstk__soshipline_line_soinvline__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__soinv_sormas__r rstk__soinvlines__r rstk__Invoice_Line__r rstk__soshipline_line_soinvline__r rstk__pjprojwbs_wbs_soinvline__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__soinv_sormas__r rstk__soinvlines__r rstk__Invoice_Line__r rstk__soshipline_line_soinvline__r rstk__pjprojwbs_wbs_soinvline__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__soinv_sormas__r rstk__Invoice_Line__r rstk__pjprojwbs_wbs_soinvline__r rstk__soinvlines__r rstk__soshipline_line_soinvline__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__soinv_sormas__r rstk__Invoice_Line__r rstk__pjprojwbs_wbs_soinvline__r rstk__soinvlines__r rstk__soshipline_line_soinvline__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Sales Order Invoice Line Tab"/>

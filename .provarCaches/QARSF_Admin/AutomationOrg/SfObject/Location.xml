@@ -157,19 +157,19 @@
         <sfPLE id="117" n="Indian/Kerguelen" s="" t="(GMT+05:00) French Southern &amp; Antarctic Time (Indian/Kerguelen)"/>
         <sfPLE id="118" n="Indian/Maldives" s="" t="(GMT+05:00) Maldives Time (Indian/Maldives)"/>
         <sfPLE id="119" n="Asia/Kabul" s="" t="(GMT+04:30) Afghanistan Time (Asia/Kabul)"/>
-        <sfPLE id="120" n="Asia/Baku" s="" t="(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)"/>
-        <sfPLE id="121" n="Asia/Dubai" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Dubai)"/>
-        <sfPLE id="122" n="Asia/Muscat" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Muscat)"/>
-        <sfPLE id="123" n="Asia/Tbilisi" s="" t="(GMT+04:00) Georgia Standard Time (Asia/Tbilisi)"/>
-        <sfPLE id="124" n="Asia/Yerevan" s="" t="(GMT+04:00) Armenia Standard Time (Asia/Yerevan)"/>
-        <sfPLE id="125" n="Europe/Astrakhan" s="" t="(GMT+04:00) Samara Standard Time (Europe/Astrakhan)"/>
-        <sfPLE id="126" n="Europe/Samara" s="" t="(GMT+04:00) Samara Standard Time (Europe/Samara)"/>
-        <sfPLE id="127" n="Europe/Saratov" s="" t="(GMT+04:00) Moscow Standard Time + 1 (Europe/Saratov)"/>
-        <sfPLE id="128" n="Europe/Ulyanovsk" s="" t="(GMT+04:00) Moscow Standard Time + 1 (Europe/Ulyanovsk)"/>
-        <sfPLE id="129" n="Indian/Mahe" s="" t="(GMT+04:00) Seychelles Time (Indian/Mahe)"/>
-        <sfPLE id="130" n="Indian/Mauritius" s="" t="(GMT+04:00) Mauritius Standard Time (Indian/Mauritius)"/>
-        <sfPLE id="131" n="Indian/Reunion" s="" t="(GMT+04:00) Réunion Time (Indian/Reunion)"/>
-        <sfPLE id="132" n="Asia/Tehran" s="" t="(GMT+03:30) Iran Standard Time (Asia/Tehran)"/>
+        <sfPLE id="120" n="Asia/Tehran" s="" t="(GMT+04:30) Iran Daylight Time (Asia/Tehran)"/>
+        <sfPLE id="121" n="Asia/Baku" s="" t="(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)"/>
+        <sfPLE id="122" n="Asia/Dubai" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Dubai)"/>
+        <sfPLE id="123" n="Asia/Muscat" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Muscat)"/>
+        <sfPLE id="124" n="Asia/Tbilisi" s="" t="(GMT+04:00) Georgia Standard Time (Asia/Tbilisi)"/>
+        <sfPLE id="125" n="Asia/Yerevan" s="" t="(GMT+04:00) Armenia Standard Time (Asia/Yerevan)"/>
+        <sfPLE id="126" n="Europe/Astrakhan" s="" t="(GMT+04:00) Samara Standard Time (Europe/Astrakhan)"/>
+        <sfPLE id="127" n="Europe/Samara" s="" t="(GMT+04:00) Samara Standard Time (Europe/Samara)"/>
+        <sfPLE id="128" n="Europe/Saratov" s="" t="(GMT+04:00) Moscow Standard Time + 1 (Europe/Saratov)"/>
+        <sfPLE id="129" n="Europe/Ulyanovsk" s="" t="(GMT+04:00) Moscow Standard Time + 1 (Europe/Ulyanovsk)"/>
+        <sfPLE id="130" n="Indian/Mahe" s="" t="(GMT+04:00) Seychelles Time (Indian/Mahe)"/>
+        <sfPLE id="131" n="Indian/Mauritius" s="" t="(GMT+04:00) Mauritius Standard Time (Indian/Mauritius)"/>
+        <sfPLE id="132" n="Indian/Reunion" s="" t="(GMT+04:00) Réunion Time (Indian/Reunion)"/>
         <sfPLE id="133" n="Africa/Addis_Ababa" s="" t="(GMT+03:00) East Africa Time (Africa/Addis_Ababa)"/>
         <sfPLE id="134" n="Africa/Asmera" s="" t="(GMT+03:00) East Africa Time (Africa/Asmera)"/>
         <sfPLE id="135" n="Africa/Dar_es_Salaam" s="" t="(GMT+03:00) East Africa Time (Africa/Dar_es_Salaam)"/>

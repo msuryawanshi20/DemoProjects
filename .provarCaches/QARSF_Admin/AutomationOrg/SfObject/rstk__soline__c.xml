@@ -520,19 +520,19 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__solines__r rstk__solines2__r rootstock__sormasolines__r rstk__installaddrsolines__r List rstk__solines1__r rstk__solines3__r" n="New" target="sf:ui:target?object=rstk__soline__c&amp;auraComponent=RecordEdit"/>
-    <sfActionLink modes="View rstk__solines__r rstk__solines2__r rootstock__sormasolines__r rstk__installaddrsolines__r rstk__solines1__r rstk__solines3__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__soline__c&amp;auraComponent=RecordEdit"/>
-    <sfActionLink modes="View rstk__solines__r rstk__solines2__r rootstock__sormasolines__r rstk__installaddrsolines__r rstk__solines1__r rstk__solines3__r" n="Delete" requiresRow="true" s="3" target="sf:ui:target?object=rstk__soline__c&amp;page=solinedelete"/>
+    <sfActionLink modes="ObjectHome rstk__solines__r rootstock__sormasolines__r rstk__solines2__r rstk__solines1__r rstk__solines3__r rstk__installaddrsolines__r List rstk__oshiptoaddrsolines__r" n="New" target="sf:ui:target?auraComponent=RecordEdit&amp;object=rstk__soline__c"/>
+    <sfActionLink modes="View rstk__solines__r rootstock__sormasolines__r rstk__solines2__r rstk__solines1__r rstk__solines3__r rstk__installaddrsolines__r rstk__oshiptoaddrsolines__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?auraComponent=RecordEdit&amp;object=rstk__soline__c"/>
+    <sfActionLink modes="View rstk__solines__r rootstock__sormasolines__r rstk__solines2__r rstk__solines1__r rstk__solines3__r rstk__installaddrsolines__r rstk__oshiptoaddrsolines__r" n="Delete" requiresRow="true" s="3" target="sf:ui:target?page=solinedelete&amp;object=rstk__soline__c"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__solines__r rstk__solines2__r rootstock__sormasolines__r rstk__installaddrsolines__r rstk__solines1__r rstk__solines3__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__solines__r rstk__solines2__r rootstock__sormasolines__r rstk__installaddrsolines__r rstk__solines1__r rstk__solines3__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__solines__r rootstock__sormasolines__r rstk__solines2__r rstk__solines1__r rstk__solines3__r rstk__installaddrsolines__r rstk__oshiptoaddrsolines__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__solines__r rootstock__sormasolines__r rstk__solines2__r rstk__solines1__r rstk__solines3__r rstk__installaddrsolines__r rstk__oshiptoaddrsolines__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Sales Order Lines Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__soline__c&amp;page=soline"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=soline&amp;object=rstk__soline__c"/>
     <sfActionLink buttonName="rstk__ATP" n="rstk__ATP" s="" t="ATP"/>
     <sfActionLink buttonName="rstk__Clone" n="rstk__Clone" s="" t="Clone"/>
     <sfActionLink buttonName="rstk__Commission_Detail" n="rstk__Commission_Detail" s="" t="Commission Detail"/>

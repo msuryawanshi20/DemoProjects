@@ -1,13 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a6V" label="Sales Order Payment" labelPlural="Sales Order Payments" layoutable="true" n="rstk__sohdrpay__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Sales Order Payment (a6V)" updatable="true">
+<sfObject creatable="true" deleteable="true" keyPrefix="a6V" label="Sales Order Payment" labelPlural="Sales Order Payments" layoutable="true" metadataLabel="Sales Order Payment" n="rstk__sohdrpay__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Sales Order Payment (a6V)" updatable="true" urlDetail="https://automationtesting2.my.salesforce.com/{ID}" urlEdit="https://automationtesting2.my.salesforce.com/{ID}/e" urlNew="https://automationtesting2.my.salesforce.com/a6V/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Sales Order Payment ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField isMasterDetail="true" length="18" n="rstk__sohdrpay_sohdr__c" relationshipLabel="Sales Order Payments" relationshipName="rstk__sohdrpay_sohdr__r" required="true" summary="The Sales Order for which this payment detail represents" t="Sales Order" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__sohdr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="100" n="rstk__externalid__c" t="External Id"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__sohdrpay_sohdr__r.rstk__externalid__c &amp; rstk__sohdrpay_ordpayid__c &amp; rstk__sohdrpay_sogateway__r.rstk__sogateway_gateway__c" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_extid__c" t="formula_extid" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__sohdrpay_sohdr__r.rstk__sohdr_order__c &amp; ' (' &amp; rstk__sohdrpay_ordpayid__c &amp; ')'" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_name__c" t="formula_name" updateable="false"/>
+    <sfField n="rstk__sohdrpay_authamount__c" precision="14" scale="2" summary="The amount authorized for payment for this Sales Order as per the payment processing Service Provider (e.g., PayPal)" t="Authorization Amount" type="_double"/>
+    <sfField n="rstk__sohdrpay_authdate__c" t="Authorization Date / Time" type="datetime"/>
+    <sfField length="18" n="rstk__sohdrpay_authid__c" relationshipLabel="Sales Order Payments" relationshipName="rstk__sohdrpay_authid__r" t="Authorization User ID" type="reference">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__sohdrpay_authonly__c" t="No Payment at Shipment" type="_boolean"/>
+    <sfField n="rstk__sohdrpay_cardtype__c" precision="2" t="Card Type ID" type="_double"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF(rstk__sohdrpay_cardtype__c == 0, 'Visa',\nIF(rstk__sohdrpay_cardtype__c == 1, 'MasterCard',\nIF(rstk__sohdrpay_cardtype__c == 2, 'Discover',\nIF(rstk__sohdrpay_cardtype__c == 3, 'AmericanExpress',\nIF(rstk__sohdrpay_cardtype__c == 4, 'SwitchMaestro',\nIF(rstk__sohdrpay_cardtype__c == 5, 'UKMaestro',\nIF(rstk__sohdrpay_cardtype__c == 6, 'CarteAurore',\nIF(rstk__sohdrpay_cardtype__c == 7, 'CarteBleue',\nIF(rstk__sohdrpay_cardtype__c == 8, 'Cofinoga',\nIF(rstk__sohdrpay_cardtype__c == 9, '4etoiles',\nIF(rstk__sohdrpay_cardtype__c == 10, 'CarteAura',\nIF(rstk__sohdrpay_cardtype__c == 11, 'TarjetaAurora',\nIF(rstk__sohdrpay_cardtype__c == 12, 'JCB',\nIF(rstk__sohdrpay_cardtype__c == 13, 'Maestro', ''))))))))))))))" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__sohdrpay_cardtypefrm__c" t="Card Type" updateable="false"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="rstk__sohdrpay_error__c" summary="When an error has occurred in the Authorization or Payment process, this is the description of said error" t="Error Description" type="textarea"/>
+    <sfField length="7" n="rstk__sohdrpay_expdate__c" t="Expiration Date"/>
+    <sfField length="30" n="rstk__sohdrpay_firstname__c" t="First Name"/>
+    <sfField length="4" n="rstk__sohdrpay_lastfour__c" t="Last 4 Characters"/>
+    <sfField length="30" n="rstk__sohdrpay_lastname__c" t="Last Name"/>
+    <sfField length="50" n="rstk__sohdrpay_lastordpayid__c" summary="The Transaction ID from the payment processing Service Provider for the last transaction done against this prepayment" t="Last Order Payment Transaction ID"/>
+    <sfField length="50" n="rstk__sohdrpay_ordpayid__c" summary="The Transaction ID from the payment processing Service Provider (e.g., PayPal) for either an authorization or a payment" t="Order Payment Transaction ID"/>
+    <sfField length="50" n="rstk__sohdrpay_ordpayid_idx__c" summary="This field carries an indexed version of the Order Payment Transaction ID" t="Order Payment Transaction ID - Indexed"/>
+    <sfField n="rstk__sohdrpay_payamount__c" precision="18" scale="2" summary="The amount prepaid for this Sales Order using the payment processing Service Provider (e.g., PayPal)" t="Payment Amount" type="_double"/>
+    <sfField n="rstk__sohdrpay_paydate__c" t="Payment Date / Time" type="datetime"/>
+    <sfField length="18" n="rstk__sohdrpay_payid__c" relationshipLabel="Sales Order Payments (Payment User ID)" relationshipName="rstk__sohdrpay_payid__r" t="Payment User ID" type="reference">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__sohdrpay_revdate__c" summary="The date on which the payment was reversed, if applicable" t="Z_OBSOLETE" type="date"/>
+    <sfField n="rstk__sohdrpay_revdatet__c" t="Reversal Date / Time" type="datetime"/>
+    <sfField n="rstk__sohdrpay_reversed__c" summary="When checked, indicates that this payment was reversed" t="Payment Was Reversed" type="_boolean"/>
+    <sfField length="18" n="rstk__sohdrpay_revid__c" relationshipLabel="Sales Order Payments (Payment Reversal User ID)" relationshipName="rstk__sohdrpay_revid__r" t="Payment Reversal User ID" type="reference">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="50" n="rstk__sohdrpay_revtxnid__c" summary="The Transaction ID from the payment processing Service Provider for Payment Reversal" t="Payment Reversal Transaction ID"/>
+    <sfField length="18" n="rstk__sohdrpay_socusttoken__c" relationshipLabel="Sales Order Payments" relationshipName="rstk__sohdrpay_socusttoken__r" t="Customer Payment Gateway Token" type="reference">
+      <referenceTos>
+        <string>rstk__socusttoken__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__sohdrpay_sogateway__c" relationshipLabel="Sales Order Payments" relationshipName="rstk__sohdrpay_sogateway__r" t="Payment Gateway" type="reference">
+      <referenceTos>
+        <string>rstk__sogateway__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__sohdrpay_soppy__c" relationshipLabel="Sales Order Payments" relationshipName="rstk__sohdrpay_soppy__r" t="Pre-Payment Detail" type="reference">
+      <referenceTos>
+        <string>rstk__soppy__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__sohdrpay_status__c" restrictedPicklist="true" summary="Status from processing an Authorization or Payment made through the payment processing Service Provider (e.g., PayPal).  Values can be\n\nAuthorization Failed\nAuthorization Completed\nPayment Failed\nPayment Completed\nReversal Failed\nReversal Completed" t="Payment Status" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6,7</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Authorization Failed" s=""/>
+        <sfPLE id="2" n="Authorization Completed" s=""/>
+        <sfPLE id="3" n="Payment Failed" s=""/>
+        <sfPLE id="4" n="Payment Completed" s=""/>
+        <sfPLE id="5" n="Reversal Failed" s=""/>
+        <sfPLE id="6" n="Reversal Completed" s=""/>
+        <sfPLE id="7" n="Authorization Cancelled" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="rstk__triggeroptions__c" t="triggeroptions"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="Visit" field="ContextId" n="Contexts" relationshipName="Contexts" s="2-" t="Visit"/>
+    <sfObjectRelationship childName="rstk__sogateaud__c" field="rstk__sogateaud_sohdrpay__c" n="rstk__sogateauds__r" relationshipName="rstk__sogateauds__r" s="2-" t="rstk__sogateaud__c"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__sohdrpay__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="rstk__sohdrpay__History"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r" n="New"/>
-    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r rstk__sohdrpays__r List" n="New"/>
+    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r rstk__sohdrpays__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r rstk__sohdrpays__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r rstk__sohdrpays__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__sohdrpayauth__r rstk__sohdrpaypay__r rstk__sohdrpayrev__r rstk__sohdrpays__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink n="Tab" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
   </standardActions>
+  <homeListColumns>
+    <string>RSTK__SOHDRPAY__C.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>RSTK__SOHDRPAY__C.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>RSTK__SOHDRPAY__C.NAME</string>
+    <string>rstk__sohdrpay_sohdr__c</string>
+    <string>rstk__sohdrpay_sogateway__c</string>
+    <string>rstk__sohdrpay_status__c</string>
+    <string>rstk__sohdrpay_payamount__c</string>
+    <string>rstk__sohdrpay_paydate__c</string>
+    <string>rstk__sohdrpay_payid__c</string>
+    <string>rstk__sohdrpay_cardtype__c</string>
+    <string>rstk__sohdrpay_cardtypefrm__c</string>
+    <string>rstk__sohdrpay_lastname__c</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>NAME</string>
+  </compactLayoutFields>
+  <listViewActions/>
 </sfObject>

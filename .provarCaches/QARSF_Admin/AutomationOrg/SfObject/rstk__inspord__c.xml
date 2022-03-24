@@ -1079,19 +1079,19 @@
     </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__inspords__r rstk__inspord__r List rstk__inspord1__r rstk__inspord3__r rstk__inspord2__r" n="New" target="sf:ui:target?object=rstk__inspord__c&amp;page=createInspectionOrder"/>
-    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r rstk__inspord1__r rstk__inspord3__r rstk__inspord2__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__inspord__c&amp;page=inspord"/>
-    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r rstk__inspord1__r rstk__inspord3__r rstk__inspord2__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__inspords__r rstk__inspord__r List" n="New" target="sf:ui:target?page=createInspectionOrder&amp;object=rstk__inspord__c"/>
+    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=inspord&amp;object=rstk__inspord__c"/>
+    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r rstk__inspord1__r rstk__inspord3__r rstk__inspord2__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r rstk__inspord1__r rstk__inspord3__r rstk__inspord2__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__inspords__r rstk__inspord__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Inspection Orders Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__inspord__c&amp;page=inspordview"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=inspordview&amp;object=rstk__inspord__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
