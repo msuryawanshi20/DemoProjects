@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__taclockon__c/home" n="rootstock__rstk__taclockon__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9R/o" s="" seqNum="0" t="Clock Into Job Transaction">
+  <children>
+    <sfObjectReference n="rstk__taclockon__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__convertreq_ui__c/home" n="rootstock__rstk__convertreq_ui__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a0Z/o" s="" seqNum="0" t="Convert Req to POs">
+  <children>
+    <sfObjectReference n="rstk__convertreq_ui__c" s=""/>
+  </children>
+</sfTab>

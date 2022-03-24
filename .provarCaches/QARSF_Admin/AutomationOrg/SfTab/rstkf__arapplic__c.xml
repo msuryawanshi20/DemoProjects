@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__arapplic__c/home" n="rstkf__arapplic__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAj/o" s="" seqNum="0" t="Receivable Application Transactions">
+  <children>
+    <sfObjectReference n="rstkf__arapplic__c" s=""/>
+  </children>
+</sfTab>

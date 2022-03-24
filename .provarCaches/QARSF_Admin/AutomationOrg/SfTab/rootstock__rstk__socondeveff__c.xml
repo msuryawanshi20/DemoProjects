@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__socondeveff__c/home" n="rootstock__rstk__socondeveff__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5c/o" s="" seqNum="0" t="Contract Covered Devices – History">
+  <children>
+    <sfObjectReference n="rstk__socondeveff__c" s=""/>
+  </children>
+</sfTab>

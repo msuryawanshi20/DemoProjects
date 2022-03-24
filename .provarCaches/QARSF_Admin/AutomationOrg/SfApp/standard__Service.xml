@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f0000021LZgAAM" durableId="06m5f0000021LZgAAM" n="Service" packageName="standard" s="" seqNum="4">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="standard-UserProfile" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/userprofile/UserProfilePage" s="" seqNum="2" t="Profile"/>
+    <sfTab n="standard-CollaborationGroup" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/groups/GroupListPage" s="" seqNum="3" t="Groups"/>
+    <sfTab n="standard-File" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/files/FileTabPage" s="" seqNum="4" t="Files"/>
+    <sfTab n="standard-Account" pageUrl="https://automationtesting2.my.salesforce.com/001/o" s="" seqNum="5" t="Accounts">
+      <children>
+        <sfObjectReference n="Account" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Contact" pageUrl="https://automationtesting2.my.salesforce.com/003/o" s="" seqNum="6" t="Contacts">
+      <children>
+        <sfObjectReference n="Contact" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Case" pageUrl="https://automationtesting2.my.salesforce.com/500/o" s="" seqNum="7" t="Cases">
+      <children>
+        <sfObjectReference n="Case" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Solution" pageUrl="https://automationtesting2.my.salesforce.com/501/o" s="" seqNum="8" t="Solutions">
+      <children>
+        <sfObjectReference n="Solution" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="9" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Dashboard" pageUrl="https://automationtesting2.my.salesforce.com/01Z/o" s="" seqNum="10" t="Dashboards">
+      <children>
+        <sfObjectReference n="Dashboard" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

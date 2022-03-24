@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/Product2/home" n="standard-Product2" pageUrl="/01t/o" s="" seqNum="0" t="Products">
+  <children>
+    <sfObjectReference n="Product2" s=""/>
+  </children>
+</sfTab>

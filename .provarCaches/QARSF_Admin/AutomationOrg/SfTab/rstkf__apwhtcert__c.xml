@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__apwhtcert__c/home" n="rstkf__apwhtcert__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAb/o" s="" seqNum="0" t="Withholding Tax Certificate">
+  <children>
+    <sfObjectReference n="rstkf__apwhtcert__c" s=""/>
+  </children>
+</sfTab>

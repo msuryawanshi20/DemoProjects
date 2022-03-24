@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__GLTXNDIM_Consolidation" n="rstkf__GLTXNDIM_Consolidation" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtxS&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="GL Transaction Dimension Consolidation">
+  <children>
+    <sfPage n="gltxndimconsolidate" namespacePrefix="rstkf" pageName="gltxndimconsolidate" s=""/>
+  </children>
+</sfTab>

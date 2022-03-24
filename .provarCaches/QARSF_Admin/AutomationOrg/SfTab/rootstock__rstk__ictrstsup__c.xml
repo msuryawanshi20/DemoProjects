@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__ictrstsup__c/home" n="rootstock__rstk__ictrstsup__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a2N/o" s="" seqNum="0" t="Inter-Site Supply">
+  <children>
+    <sfObjectReference n="rstk__ictrstsup__c" s=""/>
+  </children>
+</sfTab>

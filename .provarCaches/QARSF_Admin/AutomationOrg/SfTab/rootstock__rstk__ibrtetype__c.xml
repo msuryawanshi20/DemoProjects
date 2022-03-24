@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__ibrtetype__c/home" n="rootstock__rstk__ibrtetype__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a1B/o" s="" seqNum="0" t="Inbound Shipment Route Types">
+  <children>
+    <sfObjectReference n="rstk__ibrtetype__c" s=""/>
+  </children>
+</sfTab>

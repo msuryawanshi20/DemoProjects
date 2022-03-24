@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sopctq__c/home" n="rootstock__rstk__sopctq__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a7I/o" s="" seqNum="0" t="Customer Products Price by Date and Qty">
+  <children>
+    <sfObjectReference n="rstk__sopctq__c" s=""/>
+  </children>
+</sfTab>

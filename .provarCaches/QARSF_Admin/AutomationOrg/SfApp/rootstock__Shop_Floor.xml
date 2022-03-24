@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R45AAAS" durableId="06m5f000000R45AAAS" lightningApp="true" n="Shop_Floor" packageName="rootstock" s="" seqNum="31" t="Shop Floor">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Clock_Into_Job_Transaction_Record_Page_Default" sfObjectName="rstk__taclockon__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Clock_Off_Job_Transaction_Record_page_Default" sfObjectName="rstk__taclockoff__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Independent_Operation_Materials_Record_Page_Default" sfObjectName="rstk__rtindoperitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Independent_Operation_Record_Page_Default" sfObjectName="rstk__rtindoper__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Independent_Operation_Tasks_Record_Page_Default" sfObjectName="rstk__rtindopertask__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Labor_Pay_Type_Record_Page_Default" sfObjectName="rstk__tapaytype__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Manufacturing_Department_Record_Page_Default" sfObjectName="rstk__rtdept__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Manufacturing_Labor_Grades_Record_Page_Default" sfObjectName="rstk__rtlabgrd__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Manufacturing_Machine_Master_Record_Page_Default" sfObjectName="rstk__rtmach__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Manufacturing_Processes_Record_page_Default" sfObjectName="rstk__rtproc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Routing_Master_Record_Page_Default" sfObjectName="rstk__rtrouthdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Routing_Operation_Record_Page_Default" sfObjectName="rstk__rtroutoper__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Work_Center_Group_Detail_Record_Page_Default" sfObjectName="rstk__rtwcgwc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Work_Center_Group_Record_Page_Default" sfObjectName="rstk__rtwcgroup__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

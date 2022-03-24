@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R44dAAC" durableId="06m5f000000R44dAAC" lightningApp="true" n="Fixed_Assets" packageName="rstkf" s="" seqNum="21" t="Fixed Assets">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rstkf__Fixed_Asset_Transacations" sfObjectName="rstkf__glfatxn__c"/>
+    <SfFlexiPageAssignment flexipageName="rstkf__Fixed_Assets1" sfObjectName="standard-home"/>
+    <SfFlexiPageAssignment flexipageName="rstkf__MT_POLINE" sfObjectName="rstk__poline__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

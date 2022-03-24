@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__Perform_Financial_Report_Data_Roll_Up" n="rstkf__Perform_Financial_Report_Data_Roll_Up" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptxb&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Perform Financial Report Data Roll-Up">
+  <children>
+    <sfPage n="Statementbuilder" namespacePrefix="rstkf" pageName="Statementbuilder" s=""/>
+  </children>
+</sfTab>

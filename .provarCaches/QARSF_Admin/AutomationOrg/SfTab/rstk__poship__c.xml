@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__poship__c/home" n="rstk__poship__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtvD&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Inbound Shipment Master SupReq">
+  <children>
+    <sfObjectReference n="rstk__poship__c" s=""/>
+  </children>
+</sfTab>

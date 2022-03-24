@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfListView n="rstk__RS_PO_Receipt_Transactions_PO" s="List View" sfListId="00B5f00000BTu0bEAD" t="PO Receipt Transactions_PO">
+  <actions>
+    <string>rstk__AP_Match</string>
+    <string>rstk__Test</string>
+  </actions>
+  <columns>
+    <sfListColumn boundToField="Name" boundToObject="rstk__porcptap__c" fieldNameOrPath="Name" metadataColName="NAME" n="Name" s="" sortable="true"/>
+    <sfListColumn boundToField="LastModifiedDate" boundToObject="rstk__porcptap__c" fieldNameOrPath="LastModifiedDate" metadataColName="LAST_UPDATE" n="Last Modified Date" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_qtycomp__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_qtycomp__c" metadataColName="rstk__porcptap_qtycomp__c" n="Quantity Complete" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_qtyrtv__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_qtyrtv__c" metadataColName="rstk__porcptap_qtyrtv__c" n="Quantity RTV" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_amtcomp__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_amtcomp__c" metadataColName="rstk__porcptap_amtcomp__c" n="Amount Complete" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_div__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_div__r_Name" metadataColName="rstk__porcptap_div__c" n="Division" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_poline__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_poline__r_Name" metadataColName="rstk__porcptap_poline__c" n="PO Line" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_apbatchno__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_apbatchno__c" metadataColName="rstk__porcptap_apbatchno__c" n="AP Batch Number" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_apcomments__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_apcomments__c" metadataColName="rstk__porcptap_apcomments__c" n="AP Comments" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_apduedate__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_apduedate__c" metadataColName="rstk__porcptap_apduedate__c" n="AP Due Date" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_amtinv__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_amtinv__c" metadataColName="rstk__porcptap_amtinv__c" n="AP Invoice Amount" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_qtyapinv__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_qtyapinv__c" metadataColName="rstk__porcptap_qtyapinv__c" n="AP Quantity" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__porcptap_upriceapinv__c" boundToObject="rstk__porcptap__c" fieldNameOrPath="rstk__porcptap_upriceapinv__c" metadataColName="rstk__porcptap_upriceapinv__c" n="AP Unit Price" s="" sortable="true"/>
+  </columns>
+</sfListView>

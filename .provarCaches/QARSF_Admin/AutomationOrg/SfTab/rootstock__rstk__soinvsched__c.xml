@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soinvsched__c/home" n="rootstock__rstk__soinvsched__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6g/o" s="" seqNum="0" t="Invoice Payment Schedules">
+  <children>
+    <sfObjectReference n="rstk__soinvsched__c" s=""/>
+  </children>
+</sfTab>

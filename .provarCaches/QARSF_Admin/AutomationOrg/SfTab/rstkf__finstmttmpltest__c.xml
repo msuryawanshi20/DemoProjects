@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__finstmttmpltest__c/home" n="rstkf__finstmttmpltest__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBD/o" s="" seqNum="0" t="Test Report Templates for Completeness">
+  <children>
+    <sfObjectReference n="rstkf__finstmttmpltest__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__pebom__c/home" n="rstk__pebom__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a2x/o" s="" seqNum="0" t="Engineering BOM Masters">
+  <children>
+    <sfObjectReference n="rstk__pebom__c" s=""/>
+  </children>
+</sfTab>

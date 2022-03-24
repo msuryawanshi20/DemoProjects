@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glbankstmtdist__c/home" n="rstkf__glbankstmtdist__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBW/o" s="" seqNum="0" t="Statement GL Distribution">
+  <children>
+    <sfObjectReference n="rstkf__glbankstmtdist__c" s=""/>
+  </children>
+</sfTab>

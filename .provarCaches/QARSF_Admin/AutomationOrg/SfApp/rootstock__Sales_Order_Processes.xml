@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R458AAC" durableId="06m5f000000R458AAC" lightningApp="true" n="Sales_Order_Processes" packageName="rootstock" s="" seqNum="23" t="Sales Order Processes">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Bill_of_Lading_Container_Detail_Record_Page_Default" sfObjectName="rstk__sobolc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Bill_of_Lading_Record_Page_Default" sfObjectName="rstk__sobol__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Bill_of_Lading_Shipper_Detail_Record_Page_Default" sfObjectName="rstk__sobols__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Device_Association_History_Record_Page_Default" sfObjectName="rstk__sowarrhist__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inv_Line_Account_Distribution_Record_Page_Default" sfObjectName="rstk__soinvlinedist__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Invoice_Account_Distribution_Detail_Default" sfObjectName="rstk__soinvdistdet__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Invoice_Account_Distribution_Summary_Default" sfObjectName="rstk__soinvdist__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Invoice_Line_Salesperson_Record_Page_Default" sfObjectName="rstk__soisales__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Packing_Slip_Header_Record_Page_Default" sfObjectName="rstk__sopack__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Packing_Slip_Line_Record_Page_Default" sfObjectName="rstk__sopackline__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Prepayment_Applied_Record_Page_Default" sfObjectName="rstk__soppya__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Prepayment_Detail_Record_Page_Default" sfObjectName="rstk__soppy__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__RMA_Address_Override_Record_Page_Default" sfObjectName="rstk__sormaaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__RMA_Detail_Record_Page_Default" sfObjectName="rstk__sorma__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Return_Material_Authorization_Record_Page_Default" sfObjectName="rstk__sormh__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Header_Extension_Record_Page_Default" sfObjectName="rstk__sohdrextn__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Header_Record_Page_Default" sfObjectName="rstk__sohdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Invoice_Batch_Record_Page_Default" sfObjectName="rstk__soibatch__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Invoice_Header_Record_Page_Default" sfObjectName="rstk__soinv__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Invoice_Line_Record_Page_Default" sfObjectName="rstk__soinvline__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Line_Amortization_Audit_Record_Page_Default" sfObjectName="rstk__soamortaud__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Line_Amortization_Schedule_Record_Page_Default" sfObjectName="rstk__soamort__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Line_Amortization_Txns_Record_Page_Default" sfObjectName="rstk__soamorttxn__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Line_Extension_Record_Page_Default" sfObjectName="rstk__solineextn__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Line_Record_Page_Default" sfObjectName="rstk__soline__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Override_Address_Default" sfObjectName="rstk__soaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Package_Record_Page_Default" sfObjectName="rstk__sopackage__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Shipping_Container_Detail_Record_Page_Default" sfObjectName="rstk__socontainel__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Shipping_Container_Header_Record_Page_Default" sfObjectName="rstk__socontainer__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Order_Shipping_Container_Serial_Record_Page_Default" sfObjectName="rstk__socontainser__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sales_Orders_Home" sfObjectName="standard-home"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Shipped_Item_Transaction_Detail_Record_Page_Default" sfObjectName="rstk__sowarrdtl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Shipped_Item_Warranty_Record_Page_Default" sfObjectName="rstk__sowarr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Shipper_Header_Record_Page_Default" sfObjectName="rstk__soship__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Shipper_Line_Record_Page_Default" sfObjectName="rstk__soshipline__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

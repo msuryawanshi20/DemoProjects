@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="rootstock__LUI_PO_Line_Components" s="" t="PO Line Components" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+  <regions>
+    <SfFlexiPageRegion n="main" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="rootstock__PageHelp" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">pageKey</key>
+              <value valueClass="string">poline__c</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+        <SfFlexiPageComponentInstance n="flowruntime__interview" s="1" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">flowLayout</key>
+              <value valueClass="string">oneColumn</value>
+            </entry>
+            <entry>
+              <key valueClass="string">flowName</key>
+              <value valueClass="string">rootstock__PO_Line_Components</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+        <SfFlexiPageComponentInstance n="flexipage:filterListCard" s="2" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">hideActionBar</key>
+              <value valueClass="string">false</value>
+            </entry>
+            <entry>
+              <key valueClass="string">entityName</key>
+              <value valueClass="string">rstk__podmd__c</value>
+            </entry>
+            <entry>
+              <key valueClass="string">filterName</key>
+              <value valueClass="string">rootstock__All_PO_Component_Demands</value>
+            </entry>
+            <entry>
+              <key valueClass="string">pageSize</key>
+              <value valueClass="string">20</value>
+            </entry>
+            <entry>
+              <key valueClass="string">enableInlineEdit</key>
+              <value valueClass="string">false</value>
+            </entry>
+            <entry>
+              <key valueClass="string">hideSearchBar</key>
+              <value valueClass="string">false</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+  </regions>
+  <facets/>
+</SfFlexiPage>

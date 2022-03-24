@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sowarr__c/home" n="rstk__sowarr__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a82/o" s="" seqNum="0" t="Shipped Item Warranty">
+  <children>
+    <sfObjectReference n="rstk__sowarr__c" s=""/>
+  </children>
+</sfTab>

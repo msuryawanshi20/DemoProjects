@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rootstock__Custom_UI_Rule__c/home" n="rootstock__Custom_UI_Rule__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/aA5/o" s="" seqNum="0" t="Custom UI Rules">
+  <children>
+    <sfObjectReference n="rootstock__Custom_UI_Rule__c" s=""/>
+  </children>
+</sfTab>

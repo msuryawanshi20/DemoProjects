@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icmrprsch__c/home" n="rstk__icmrprsch__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a21/o" s="" seqNum="0" t="MRP Action Messages">
+  <children>
+    <sfObjectReference n="rstk__icmrprsch__c" s=""/>
+  </children>
+</sfTab>

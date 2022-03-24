@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/WorkBadge/home" n="standard-WorkBadge" pageUrl="/0W2/o" s="" seqNum="0" t="Badges Received">
+  <children>
+    <sfObjectReference n="WorkBadge" s=""/>
+  </children>
+</sfTab>

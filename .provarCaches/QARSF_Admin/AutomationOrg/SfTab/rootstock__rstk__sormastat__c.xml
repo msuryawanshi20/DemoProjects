@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sormastat__c/home" n="rootstock__rstk__sormastat__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a7j/o" s="" seqNum="0" t="SO RMA Status">
+  <children>
+    <sfObjectReference n="rstk__sormastat__c" s=""/>
+  </children>
+</sfTab>

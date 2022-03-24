@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="rootstock__Credit_Release_Record_Page_Default" s="" t="Credit Release Record Page (Default)" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+  <regions>
+    <SfFlexiPageRegion n="main" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="rootstock__salesOrderCreditRelease" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+  </regions>
+  <facets/>
+</SfFlexiPage>

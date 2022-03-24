@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__SO_Fulfillment_Pre_Selection" n="rstk__SO_Fulfillment_Pre_Selection" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu6&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="SO Fulfillment Pre-Selection">
+  <children>
+    <sfPage n="SOPreSelection" namespacePrefix="rstk" pageName="SOPreSelection" s=""/>
+  </children>
+</sfTab>

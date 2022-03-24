@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/Pricebook2/home" n="standard-Pricebook2" pageUrl="/01s/o" s="" seqNum="0" t="Price Books">
+  <children>
+    <sfObjectReference n="Pricebook2" s=""/>
+  </children>
+</sfTab>

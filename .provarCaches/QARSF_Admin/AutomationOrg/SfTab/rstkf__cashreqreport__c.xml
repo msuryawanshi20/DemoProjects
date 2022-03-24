@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__cashreqreport__c/home" n="rstkf__cashreqreport__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aB7/o" s="" seqNum="0" t="Cash Requirements Report">
+  <children>
+    <sfObjectReference n="rstkf__cashreqreport__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__paysessvend__c/home" n="rstkf__paysessvend__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aCP/o" s="" seqNum="0" t="Payment Selection Session Vendors">
+  <children>
+    <sfObjectReference n="rstkf__paysessvend__c" s=""/>
+  </children>
+</sfTab>

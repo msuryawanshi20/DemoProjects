@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zQAAS" durableId="06m5f000000R3zQAAS" n="Sales_Orders" packageName="rstk" s="" seqNum="18" t="Sales Orders">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sohdr__c" pageUrl="https://automationtesting2.my.salesforce.com/a6T/o" s="" seqNum="1" t="Sales Order Header">
+      <children>
+        <sfObjectReference n="rstk__sohdr__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__SO_Fulfillment" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu5&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="2" t="SO Fulfillment">
+      <children>
+        <sfPage n="SalesOrderWorkBench" namespacePrefix="rstk" pageName="SalesOrderWorkBench" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__soline__c" pageUrl="https://automationtesting2.my.salesforce.com/a6k/o" s="" seqNum="3" t="Sales Order Lines">
+      <children>
+        <sfObjectReference n="rstk__soline__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__soprod__c" pageUrl="https://automationtesting2.my.salesforce.com/a7S/o" s="" seqNum="4" t="Rootstock Product Master">
+      <children>
+        <sfObjectReference n="rstk__soprod__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__soship__c" pageUrl="https://automationtesting2.my.salesforce.com/a7p/o" s="" seqNum="5" t="Shipper Headers">
+      <children>
+        <sfObjectReference n="rstk__soship__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Configurator" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttD&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="6" t="Configurator">
+      <children>
+        <sfPage n="Confsess2" namespacePrefix="rstk" pageName="Confsess2" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__socust__c" pageUrl="https://automationtesting2.my.salesforce.com/a6B/o" s="" seqNum="7" t="Customer Master">
+      <children>
+        <sfObjectReference n="rstk__socust__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__socontract__c" pageUrl="https://automationtesting2.my.salesforce.com/a62/o" s="" seqNum="8" t="Contract Masters">
+      <children>
+        <sfObjectReference n="rstk__socontract__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sormh__c" pageUrl="https://automationtesting2.my.salesforce.com/a7k/o" s="" seqNum="9" t="Return Material Authorizations">
+      <children>
+        <sfObjectReference n="rstk__sormh__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Manufacturing" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttc&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="10" t="Manufacturing">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="11" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

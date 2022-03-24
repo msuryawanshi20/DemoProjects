@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sobol__c/home" n="rootstock__rstk__sobol__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5F/o" s="" seqNum="0" t="Bills of Lading">
+  <children>
+    <sfObjectReference n="rstk__sobol__c" s=""/>
+  </children>
+</sfTab>

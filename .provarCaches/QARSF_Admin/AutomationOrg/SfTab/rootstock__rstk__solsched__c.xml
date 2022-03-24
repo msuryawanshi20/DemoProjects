@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__solsched__c/home" n="rootstock__rstk__solsched__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6s/o" s="" seqNum="0" t="Sales Order Line Fulfillment Schedule">
+  <children>
+    <sfObjectReference n="rstk__solsched__c" s=""/>
+  </children>
+</sfTab>

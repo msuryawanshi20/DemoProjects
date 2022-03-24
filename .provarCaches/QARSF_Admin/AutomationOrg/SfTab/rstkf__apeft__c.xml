@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__apeft__c/home" n="rstkf__apeft__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAJ/o" s="" seqNum="0" t="Accounts Payable EFT">
+  <children>
+    <sfObjectReference n="rstkf__apeft__c" s=""/>
+  </children>
+</sfTab>

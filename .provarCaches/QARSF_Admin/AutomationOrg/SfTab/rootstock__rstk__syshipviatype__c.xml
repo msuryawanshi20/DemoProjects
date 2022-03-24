@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__syshipviatype__c/home" n="rootstock__rstk__syshipviatype__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a99/o" s="" seqNum="0" t="Shipping Methods">
+  <children>
+    <sfObjectReference n="rstk__syshipviatype__c" s=""/>
+  </children>
+</sfTab>

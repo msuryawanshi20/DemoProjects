@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="rootstock__Mobile_Count" s="" t="Mobile Count" template="flexipage:appHomeTemplateThreeColumns" type="AppPage">
+  <regions>
+    <SfFlexiPageRegion n="region1" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="flowruntime__interview" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">flowLayout</key>
+              <value valueClass="string">oneColumn</value>
+            </entry>
+            <entry>
+              <key valueClass="string">flowArguments</key>
+              <value valueClass="string">[]</value>
+            </entry>
+            <entry>
+              <key valueClass="string">flowName</key>
+              <value valueClass="string">rootstock__Count_Location_String</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="region2" s="" t="" type="Region"/>
+    <SfFlexiPageRegion n="region3" s="" t="" type="Region"/>
+  </regions>
+  <facets/>
+</SfFlexiPage>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zOAAS" durableId="06m5f000000R3zOAAS" n="RootScan" packageName="rstk" s="" seqNum="16">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__rscansetupinst" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtvG&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="1" t="RootScan Setup Instructions">
+      <children>
+        <sfPage n="rscansetupinst" namespacePrefix="rstk" pageName="rscansetupinst" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__mobidevice__c" pageUrl="https://automationtesting2.my.salesforce.com/a2g/o" s="" seqNum="2" t="Mobile Devices">
+      <children>
+        <sfObjectReference n="rstk__mobidevice__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__usrmobiprofile__c" pageUrl="https://automationtesting2.my.salesforce.com/a9c/o" s="" seqNum="3" t="User Mobile Profiles">
+      <children>
+        <sfObjectReference n="rstk__usrmobiprofile__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sylabeltemplate__c" pageUrl="https://automationtesting2.my.salesforce.com/a8n/o" s="" seqNum="4" t="Mobile Label Templates">
+      <children>
+        <sfObjectReference n="rstk__sylabeltemplate__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Rootstock_Site_Map" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu4&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="5" t="Rootstock Site Map">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Rootstock_Menu_Bar" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu2&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="6" t="Rootstock Menu Bar">
+      <children>
+        <sfPage n="menubar" namespacePrefix="rstk" pageName="menubar" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

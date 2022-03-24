@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zLAAS" durableId="06m5f000000R454AAC" n="Mfg_Engineering" packageName="rstk" s="" seqNum="14" t="Mfg Engineering">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__pebom__c" pageUrl="https://automationtesting2.my.salesforce.com/a2x/o" s="" seqNum="1" t="Engineering BOM Masters">
+      <children>
+        <sfObjectReference n="rstk__pebom__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__BOM_Query" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptt6&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="2" t="BOM Query">
+      <children>
+        <sfPage n="Pebomqry" namespacePrefix="rstk" pageName="Pebomqry" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Mass_Add" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttd&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="3" t="Mass Add">
+      <children>
+        <sfPage n="BOMMassAdd" namespacePrefix="rstk" pageName="BOMMassAdd" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__BOM_Copy" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptt5&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="4" t="BOM Copy">
+      <children>
+        <sfPage n="BOMCopy" namespacePrefix="rstk" pageName="BOMCopy" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Indented_BOM" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttQ&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="5" t="Indented BOM">
+      <children>
+        <sfPage n="IndentedBOM2" namespacePrefix="rstk" pageName="IndentedBOM2" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__pecoi__c" pageUrl="https://automationtesting2.my.salesforce.com/a31/o" s="" seqNum="6" t="ECO Master Detail">
+      <children>
+        <sfObjectReference n="rstk__pecoi__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__pecoh__c" pageUrl="https://automationtesting2.my.salesforce.com/a30/o" s="" seqNum="7" t="ECO Master Header">
+      <children>
+        <sfObjectReference n="rstk__pecoh__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Mass_Replace" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttf&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="8" t="Mass Replace">
+      <children>
+        <sfPage n="PebomReplace" namespacePrefix="rstk" pageName="PebomReplace" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__peitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a34/o" s="" seqNum="9" t="Engineering Item Master">
+      <children>
+        <sfObjectReference n="rstk__peitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__peitemrev__c" pageUrl="https://automationtesting2.my.salesforce.com/a37/o" s="" seqNum="10" t="Engineering Item Revisions">
+      <children>
+        <sfObjectReference n="rstk__peitemrev__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Manufacturing" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttc&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="11" t="Manufacturing">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="12" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

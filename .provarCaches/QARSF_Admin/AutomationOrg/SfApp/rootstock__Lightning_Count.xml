@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R452AAC" durableId="06m5f000000R452AAC" lightningApp="true" n="Lightning_Count" packageName="rootstock" s="" seqNum="24" t="Lightning Count">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_By_Location_Count" sfObjectName="rstk__iclocitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Item_Master_Count" sfObjectName="rstk__icitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Location_Count" sfObjectName="rstk__sylocid__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Location_Number_Record_Page" sfObjectName="rstk__sylocnum__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Lightning_Count_Home" sfObjectName="standard-home"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

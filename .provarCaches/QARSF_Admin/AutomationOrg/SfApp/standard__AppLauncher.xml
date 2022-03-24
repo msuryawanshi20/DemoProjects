@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f0000021LZkAAM" durableId="06m5f0000021LZkAAM" n="AppLauncher" packageName="standard" s="" seqNum="8" t="App Launcher">
+  <children>
+    <sfTab n="standard-AppLauncher" pageUrl="https://automationtesting2.my.salesforce.com/app/mgmt/applauncher/appLauncher.apexp" s="" seqNum="0" t="App Launcher">
+      <children>
+        <sfPage n="app/mgmt/applauncher/appLauncher.apexp" pageName="app/mgmt/applauncher/appLauncher.apexp" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Quote" pageUrl="https://automationtesting2.my.salesforce.com/0Q0/o" s="" seqNum="1" t="Quotes">
+      <children>
+        <sfObjectReference n="Quote" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

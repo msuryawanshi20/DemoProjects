@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glhistrate__c/home" n="rstkf__glhistrate__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBx/o" s="" seqNum="0" t="GL Historical Rates">
+  <children>
+    <sfObjectReference n="rstkf__glhistrate__c" s=""/>
+  </children>
+</sfTab>

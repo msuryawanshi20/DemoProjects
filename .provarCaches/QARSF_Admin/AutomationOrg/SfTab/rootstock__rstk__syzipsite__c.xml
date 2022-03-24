@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__syzipsite__c/home" n="rootstock__rstk__syzipsite__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9P/o" s="" seqNum="0" t="Inventory Sites by Postal Codes">
+  <children>
+    <sfObjectReference n="rstk__syzipsite__c" s=""/>
+  </children>
+</sfTab>

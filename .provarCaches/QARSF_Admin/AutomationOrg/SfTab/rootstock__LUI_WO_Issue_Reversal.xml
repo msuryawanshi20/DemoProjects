@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rootstock__LUI_WO_Issue_Reversal" n="rootstock__LUI_WO_Issue_Reversal" namespacePrefix="rootstock" pageUrl="rootstock__LUI_WO_Issue_Reversal" s="" seqNum="0" t="WO Issue Reversal">
+  <children>
+    <SfFlexiPage n="rootstock__LUI_WO_Issue_Reversal" s="" t="WO Issue Reversal" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+      <regions>
+        <SfFlexiPageRegion n="main" s="" t="" type="Region">
+          <children>
+            <SfFlexiPageComponentInstance n="flowruntime__interview" s="0" t="">
+              <properties>
+                <entry>
+                  <key valueClass="string">flowLayout</key>
+                  <value valueClass="string">oneColumn</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowArguments</key>
+                  <value valueClass="string">[]</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowName</key>
+                  <value valueClass="string">rootstock__WO_Issue_Reversal</value>
+                </entry>
+              </properties>
+            </SfFlexiPageComponentInstance>
+          </children>
+        </SfFlexiPageRegion>
+      </regions>
+      <facets/>
+    </SfFlexiPage>
+  </children>
+</sfTab>

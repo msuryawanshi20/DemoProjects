@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__wctrdsptch__c/home" n="rootstock__rstk__wctrdsptch__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9e/o" s="" seqNum="0" t="Work Center Dispatch Lists">
+  <children>
+    <sfObjectReference n="rstk__wctrdsptch__c" s=""/>
+  </children>
+</sfTab>

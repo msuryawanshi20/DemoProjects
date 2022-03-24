@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zHAAS" durableId="06m5f000000R3zHAAS" lightningApp="true" n="Freight_and_Landed_Costs" packageName="rstk" s="" seqNum="46" t="Freight and Landed Costs">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Cost_Transaction" sfObjectName="rstk__sytxncst__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Division_Master" sfObjectName="rstk__sydiv__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Inventory_By_Location" sfObjectName="rstk__iclocitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Inventory_Item_Cost_Quantity" sfObjectName="rstk__icitemcst__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Inventory_Item_Master" sfObjectName="rstk__icitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Inventory_by_Item_Project" sfObjectName="rstk__icitemproj__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Item_Standard_Cost" sfObjectName="rstk__icitemstd__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Item_Vendor_Master" sfObjectName="rstk__poitemvend__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Purchase_Item_Master" sfObjectName="rstk__poitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__FLC_Purchase_Order_Header" sfObjectName="rstk__pohdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Freight_Landed_Cost_Vendor_Bill_of_Lading" sfObjectName="rstk__pobolhdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Freight_and_Landed_Costs_Home" sfObjectName="standard-home"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Landed_Cost_BOL_Charge" sfObjectName="rstk__pobolcharge__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Landed_Cost_BOL_Item" sfObjectName="rstk__pobolitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Landed_Cost_BOL_Item_Charge" sfObjectName="rstk__pobolitemcharge__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Landed_Cost_Master" sfObjectName="rstk__sylanded__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__POLINE" sfObjectName="rstk__poline__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__SYDATA_Page_Layout_Default" sfObjectName="rstk__sydata__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

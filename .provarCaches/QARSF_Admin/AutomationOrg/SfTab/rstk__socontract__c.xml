@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__socontract__c/home" n="rstk__socontract__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a62/o" s="" seqNum="0" t="Contract Masters">
+  <children>
+    <sfObjectReference n="rstk__socontract__c" s=""/>
+  </children>
+</sfTab>

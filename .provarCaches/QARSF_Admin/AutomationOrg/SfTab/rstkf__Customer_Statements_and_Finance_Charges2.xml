@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__Customer_Statements_and_Finance_Charges2" n="rstkf__Customer_Statements_and_Finance_Charges2" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtxP&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Customer Statements and Finance Charges">
+  <children>
+    <sfPage n="arstatandfincharges" namespacePrefix="rstkf" pageName="arstatandfincharges" s=""/>
+  </children>
+</sfTab>

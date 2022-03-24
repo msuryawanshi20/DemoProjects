@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glproctxn__c/home" n="rstkf__glproctxn__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aC6/o" s="" seqNum="0" t="GL Transaction Groups">
+  <children>
+    <sfObjectReference n="rstkf__glproctxn__c" s=""/>
+  </children>
+</sfTab>

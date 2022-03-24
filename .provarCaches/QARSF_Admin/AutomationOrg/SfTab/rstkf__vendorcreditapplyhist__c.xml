@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__vendorcreditapplyhist__c/home" n="rstkf__vendorcreditapplyhist__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aCr/o" s="" seqNum="0" t="Vendor Credit Application Historys">
+  <children>
+    <sfObjectReference n="rstkf__vendorcreditapplyhist__c" s=""/>
+  </children>
+</sfTab>

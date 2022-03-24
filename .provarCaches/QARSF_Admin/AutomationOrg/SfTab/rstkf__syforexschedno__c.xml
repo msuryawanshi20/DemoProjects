@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__syforexschedno__c/home" n="rstkf__syforexschedno__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aCi/o" s="" seqNum="0" t="Foreign Exchange Rate Schedules">
+  <children>
+    <sfObjectReference n="rstkf__syforexschedno__c" s=""/>
+  </children>
+</sfTab>

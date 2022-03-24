@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/standard-LiveAgentSupervisor" n="standard-LiveAgentSupervisor" pageUrl="/liveagent/supervisor.apexp" s="" seqNum="0" t="Live Agent Supervisor">
+  <children>
+    <sfPage n="liveagent/supervisor.apexp" pageName="liveagent/supervisor.apexp" s=""/>
+  </children>
+</sfTab>

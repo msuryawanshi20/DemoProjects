@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rootstock__Shop_Floor_Time_Entry" n="rootstock__Shop_Floor_Time_Entry" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/rstk/ShopFloorTimeEntryTransactions.cmp" s="" seqNum="0" t="Shop Floor Time Entry">
+  <children>
+    <sfAuraComponent n="ShopFloorTimeEntryTransactions" namespacePrefix="rstk" s=""/>
+  </children>
+</sfTab>

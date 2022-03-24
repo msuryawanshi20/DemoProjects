@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__WO_Issue_Reversal" n="rstk__WO_Issue_Reversal" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtuI&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="WO Issue Reversal">
+  <children>
+    <sfPage n="Woissuer" namespacePrefix="rstk" pageName="Woissuer" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>

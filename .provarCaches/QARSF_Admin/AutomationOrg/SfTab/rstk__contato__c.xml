@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__contato__c/home" n="rstk__contato__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a0X/o" s="" seqNum="0" t="Container Transaction Objects">
+  <children>
+    <sfObjectReference n="rstk__contato__c" s=""/>
+  </children>
+</sfTab>

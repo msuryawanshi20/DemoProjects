@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soconpbdev__c/home" n="rootstock__rstk__soconpbdev__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5h/o" s="" seqNum="0" t="Contract Periodic Billing Device Summary">
+  <children>
+    <sfObjectReference n="rstk__soconpbdev__c" s=""/>
+  </children>
+</sfTab>

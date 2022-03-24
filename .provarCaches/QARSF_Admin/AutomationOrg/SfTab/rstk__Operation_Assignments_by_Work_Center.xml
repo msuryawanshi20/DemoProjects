@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Operation_Assignments_by_Work_Center" n="rstk__Operation_Assignments_by_Work_Center" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttk&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Operation Assignments by Work Center">
+  <children>
+    <sfPage n="WCOperAssignment" namespacePrefix="rstk" pageName="WCOperAssignment" s=""/>
+  </children>
+</sfTab>

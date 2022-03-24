@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__LPN_Work_Order_Issue_by_Container" n="rstk__LPN_Work_Order_Issue_by_Container" namespacePrefix="rstk" pageUrl="rstk__LPN_Work_Order_Issue_by_Container" s="" seqNum="0" t="Work Order Issue by Container">
+  <children>
+    <SfFlexiPage n="rstk__LPN_Work_Order_Issue_by_Container" s="" t="Work Order Issue by Container" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+      <regions>
+        <SfFlexiPageRegion n="main" s="" t="" type="Region">
+          <children>
+            <SfFlexiPageComponentInstance n="flowruntime__interview" s="0" t="">
+              <properties>
+                <entry>
+                  <key valueClass="string">flowLayout</key>
+                  <value valueClass="string">oneColumn</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowArguments</key>
+                  <value valueClass="string">[]</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowName</key>
+                  <value valueClass="string">rstk__LPN_WO_Issue</value>
+                </entry>
+              </properties>
+            </SfFlexiPageComponentInstance>
+          </children>
+        </SfFlexiPageRegion>
+      </regions>
+      <facets/>
+    </SfFlexiPage>
+  </children>
+</sfTab>

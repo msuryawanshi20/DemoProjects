@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rootstock__User_Time_Entry" n="rootstock__User_Time_Entry" namespacePrefix="rootstock" pageUrl="rootstock__User_Time_Entry" s="" seqNum="0" t="User Time Entry">
+  <children>
+    <SfFlexiPage n="rootstock__User_Time_Entry" s="" t="User Time Entry" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+      <regions>
+        <SfFlexiPageRegion n="main" s="" t="" type="Region">
+          <children>
+            <SfFlexiPageComponentInstance n="rootstock__userTimeEntry" s="0" t=""/>
+          </children>
+        </SfFlexiPageRegion>
+      </regions>
+      <facets/>
+    </SfFlexiPage>
+  </children>
+</sfTab>

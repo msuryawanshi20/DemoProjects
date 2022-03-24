@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__pecor__c/home" n="rootstock__rstk__pecor__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a32/o" s="" seqNum="0" t="ECO Reason Codes">
+  <children>
+    <sfObjectReference n="rstk__pecor__c" s=""/>
+  </children>
+</sfTab>

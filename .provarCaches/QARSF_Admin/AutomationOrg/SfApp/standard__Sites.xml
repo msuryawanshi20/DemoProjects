@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f0000021LZtAAM" durableId="06m5f0000021LZtAAM" n="Sites" packageName="standard" s="" seqNum="10" t="Site.com">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="standard-Sites" pageUrl="https://automationtesting2.my.salesforce.com/udd/Site/siteDashboard.apexp" s="" seqNum="2" t="Site.com">
+      <children>
+        <sfPage n="udd/Site/siteDashboard.apexp" pageName="udd/Site/siteDashboard.apexp" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

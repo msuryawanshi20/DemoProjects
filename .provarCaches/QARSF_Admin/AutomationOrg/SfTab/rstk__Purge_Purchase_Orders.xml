@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Purge_Purchase_Orders" n="rstk__Purge_Purchase_Orders" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttv&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Purge Purchase Orders">
+  <children>
+    <sfPage n="popurge" namespacePrefix="rstk" pageName="popurge" s=""/>
+  </children>
+</sfTab>

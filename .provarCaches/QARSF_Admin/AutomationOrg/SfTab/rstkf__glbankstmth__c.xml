@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glbankstmth__c/home" n="rstkf__glbankstmth__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBX/o" s="" seqNum="0" t="Statement Header">
+  <children>
+    <sfObjectReference n="rstkf__glbankstmth__c" s=""/>
+  </children>
+</sfTab>

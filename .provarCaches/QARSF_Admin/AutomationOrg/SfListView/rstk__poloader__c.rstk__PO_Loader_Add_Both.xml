@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfListView n="rstk__PO_Loader_Add_Both" s="List View" sfListId="00B5f00000BTu0REAT" t="PO Loader - Add Both">
+  <actions/>
+  <columns>
+    <sfListColumn boundToField="Name" boundToObject="rstk__poloader__c" fieldNameOrPath="Name" metadataColName="NAME" n="Name" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_div__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_div__r_Name" metadataColName="rstk__poloader_div__c" n="Division" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_process__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_process__c" metadataColName="rstk__poloader_process__c" n="Processing Indicator" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_mode__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_mode__c" metadataColName="rstk__poloader_mode__c" n="API Mode" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_poitem__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_poitem__r_Name" metadataColName="rstk__poloader_poitem__c" n="Item" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_carrier__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_carrier__r_Name" metadataColName="rstk__poloader_carrier__c" n="Carrier" s="" sortable="true"/>
+    <sfListColumn boundToField="LastModifiedDate" boundToObject="rstk__poloader__c" fieldNameOrPath="LastModifiedDate" metadataColName="LAST_UPDATE" n="Last Modified Date" s="" sortable="true"/>
+    <sfListColumn boundToField="CreatedDate" boundToObject="rstk__poloader__c" fieldNameOrPath="CreatedDate" metadataColName="CREATED_DATE" n="Created Date" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_pohdr__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_pohdr__r_Name" metadataColName="rstk__poloader_pohdr__c" n="Purchase Order" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_poline__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_poline__r_Name" metadataColName="rstk__poloader_poline__c" n="Purchase Order Line" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_qtyreq__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_qtyreq__c" metadataColName="rstk__poloader_qtyreq__c" n="Qty Req" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_unitprice__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_unitprice__c" metadataColName="rstk__poloader_unitprice__c" n="Unit Price" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_async__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_async__c" metadataColName="rstk__poloader_async__c" n="Asynchronous Processing" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__poloader_message__c" boundToObject="rstk__poloader__c" fieldNameOrPath="rstk__poloader_message__c" metadataColName="rstk__poloader_message__c" n="Error Message" s="" sortable="true"/>
+    <sfListColumn boundToField="CreatedById" boundToObject="rstk__poloader__c" fieldNameOrPath="CreatedById" metadataColName="CREATEDBY_USER" n="Created By" s="" sortable="true"/>
+  </columns>
+</sfListView>

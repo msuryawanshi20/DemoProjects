@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sogateaud__c/home" n="rootstock__rstk__sogateaud__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6R/o" s="" seqNum="0" t="Payment Gateway Audits">
+  <children>
+    <sfObjectReference n="rstk__sogateaud__c" s=""/>
+  </children>
+</sfTab>

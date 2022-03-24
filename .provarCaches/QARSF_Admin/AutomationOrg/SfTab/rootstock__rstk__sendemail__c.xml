@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sendemail__c/home" n="rootstock__rstk__sendemail__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a4z/o" s="" seqNum="0" t="Sender Email by Project and Templates">
+  <children>
+    <sfObjectReference n="rstk__sendemail__c" s=""/>
+  </children>
+</sfTab>

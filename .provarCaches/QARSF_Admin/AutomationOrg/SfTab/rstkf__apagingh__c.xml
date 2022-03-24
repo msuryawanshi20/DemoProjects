@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__apagingh__c/home" n="rstkf__apagingh__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAC/o" s="" seqNum="0" t="AP Aging Drill Down Headers">
+  <children>
+    <sfObjectReference n="rstkf__apagingh__c" s=""/>
+  </children>
+</sfTab>

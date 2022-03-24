@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glperiod__c/home" n="rstkf__glperiod__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aC5/o" s="" seqNum="0" t="GL Fiscal Period">
+  <children>
+    <sfObjectReference n="rstkf__glperiod__c" s=""/>
+  </children>
+</sfTab>

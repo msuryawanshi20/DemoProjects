@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__pjstatus__c/home" n="rootstock__rstk__pjstatus__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a3E/o" s="" seqNum="0" t="Project Status">
+  <children>
+    <sfObjectReference n="rstk__pjstatus__c" s=""/>
+  </children>
+</sfTab>

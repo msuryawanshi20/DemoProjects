@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/standard-KnowledgePublishing" n="standard-KnowledgePublishing" pageUrl="/knowledge/publishing/knowledgePublishingHome.apexp" s="" seqNum="0" t="Article Management">
+  <children>
+    <sfPage n="knowledge/publishing/knowledgePublishingHome.apexp" pageName="knowledge/publishing/knowledgePublishingHome.apexp" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>

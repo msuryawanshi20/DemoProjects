@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__gldiv__c/home" n="rstkf__gldiv__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBd/o" s="" seqNum="0" t="Financial Divisions">
+  <children>
+    <sfObjectReference n="rstkf__gldiv__c" s=""/>
+  </children>
+</sfTab>

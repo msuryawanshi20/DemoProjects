@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__rtrouthdr__c/home" n="rootstock__rstk__rtrouthdr__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a4r/o" s="" seqNum="0" t="Routing Masters">
+  <children>
+    <sfObjectReference n="rstk__rtrouthdr__c" s=""/>
+  </children>
+</sfTab>

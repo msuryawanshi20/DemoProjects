@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zIAAS" durableId="06m5f000000R3zIAAS" n="Inventory" packageName="rstk" s="" seqNum="12">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Location_Adjust" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttY&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="1" t="Location Adjust">
+      <children>
+        <sfPage n="Stocklocadj2" namespacePrefix="rstk" pageName="Stocklocadj2" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Location_Add" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttX&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="2" t="Location Add">
+      <children>
+        <sfPage n="Stocklocadd" namespacePrefix="rstk" pageName="Stocklocadd" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Location_to_Location" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttZ&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="3" t="Location to Location">
+      <children>
+        <sfPage n="Stocklocmove" namespacePrefix="rstk" pageName="Stocklocmove" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Project_to_Project" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptts&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="4" t="Project to Project">
+      <children>
+        <sfPage n="Stocklocprojmove" namespacePrefix="rstk" pageName="Stocklocprojmove" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Division_to_Division" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttL&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="5" t="Division to Division">
+      <children>
+        <sfPage n="Stocklocdivsitemove" namespacePrefix="rstk" pageName="Stocklocdivsitemove" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sytxncst__c" pageUrl="https://automationtesting2.my.salesforce.com/a9G/o" s="" seqNum="6" t="Rootstock Cost Transaction">
+      <children>
+        <sfObjectReference n="rstk__sytxncst__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__iclocitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a1x/o" s="" seqNum="7" t="Inventory Items by Location">
+      <children>
+        <sfObjectReference n="rstk__iclocitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitemlot__c" pageUrl="https://automationtesting2.my.salesforce.com/a1b/o" s="" seqNum="8" t="Inventory By Lot Number">
+      <children>
+        <sfObjectReference n="rstk__icitemlot__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitemsrl__c" pageUrl="https://automationtesting2.my.salesforce.com/a1h/o" s="" seqNum="9" t="Inventory Items by Serial Number">
+      <children>
+        <sfObjectReference n="rstk__icitemsrl__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitemproj__c" pageUrl="https://automationtesting2.my.salesforce.com/a1d/o" s="" seqNum="10" t="Inventory Items by Project">
+      <children>
+        <sfObjectReference n="rstk__icitemproj__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Manufacturing" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttc&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="11" t="Manufacturing">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="12" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

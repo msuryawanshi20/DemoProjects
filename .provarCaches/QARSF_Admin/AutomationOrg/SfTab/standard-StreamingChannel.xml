@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/StreamingChannel/home" n="standard-StreamingChannel" pageUrl="/0M6/o" s="" seqNum="0" t="Streaming Channels">
+  <children>
+    <sfObjectReference n="StreamingChannel" s=""/>
+  </children>
+</sfTab>

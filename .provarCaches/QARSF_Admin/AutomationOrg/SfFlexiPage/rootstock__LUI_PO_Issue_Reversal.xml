@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="rootstock__LUI_PO_Issue_Reversal" s="" t="PO Issue Reversal" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+  <regions>
+    <SfFlexiPageRegion n="main" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="rootstock__PageHelp" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">pageKey</key>
+              <value valueClass="string">poissuer</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+        <SfFlexiPageComponentInstance n="flowruntime__interview" s="1" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">flowLayout</key>
+              <value valueClass="string">oneColumn</value>
+            </entry>
+            <entry>
+              <key valueClass="string">flowArguments</key>
+              <value valueClass="string">[]</value>
+            </entry>
+            <entry>
+              <key valueClass="string">flowName</key>
+              <value valueClass="string">rootstock__PO_Issue_Reversal</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+  </regions>
+  <facets/>
+</SfFlexiPage>

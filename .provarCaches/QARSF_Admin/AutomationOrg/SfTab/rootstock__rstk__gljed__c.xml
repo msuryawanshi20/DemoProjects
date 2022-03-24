@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__gljed__c/home" n="rootstock__rstk__gljed__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a11/o" s="" seqNum="0" t="General Journal Details">
+  <children>
+    <sfObjectReference n="rstk__gljed__c" s=""/>
+  </children>
+</sfTab>

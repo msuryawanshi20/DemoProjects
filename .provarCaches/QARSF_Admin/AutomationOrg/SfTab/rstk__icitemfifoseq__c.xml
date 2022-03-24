@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icitemfifoseq__c/home" n="rstk__icitemfifoseq__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a1a/o" s="" seqNum="0" t="FIFO Cost Record">
+  <children>
+    <sfObjectReference n="rstk__icitemfifoseq__c" s=""/>
+  </children>
+</sfTab>

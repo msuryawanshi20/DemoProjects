@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R456AAC" durableId="06m5f000000R456AAC" lightningApp="true" n="Purchasing" packageName="rootstock" s="" seqNum="36">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Container_Contents_Default_Layout" sfObjectName="rstk__ibshipcontdtl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Container_Record_Page_Default" sfObjectName="rstk__ibshipcont__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Container_Type_Record_Page_Default" sfObjectName="rstk__ibconttype__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Master_Record_Page_Default" sfObjectName="rstk__ibship__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Route_Master_Record_Page_Default" sfObjectName="rstk__ibroute__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Route_Steps_Record_Page_Default" sfObjectName="rstk__ibroutestep__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Route_Type_Record_Page_Default" sfObjectName="rstk__ibrtetype__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inbound_Shipment_Step_Record_Page_Default" sfObjectName="rstk__ibshipstep__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Item_Vendor_Approver_Manufacturers_Record_Page_Default" sfObjectName="rstk__povendmfr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Item_Vendor_Master_Record_Page_Default" sfObjectName="rstk__poitemvend__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__ODC_Code_Maintenance_Record_Page_Default" sfObjectName="rstk__syodc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_AP_Control_Record_Page_Default" sfObjectName="rstk__syapcntl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Commodity_Code_Detail_Record_Page_Default" sfObjectName="rstk__poagc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Commodity_Code_Quantity_Record_Page_Default" sfObjectName="rstk__poagcq__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Item_Detail_Record_Page_Default" sfObjectName="rstk__poagp__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Item_Price_by_Date_Record_Page_Default" sfObjectName="rstk__poagpd__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Item_Price_by_Date_and_Qty_Record_Page_Default" sfObjectName="rstk__poagpdq__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Agreement_Order_Qty_Pricing_Record_Page_Default" sfObjectName="rstk__poagpq__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Component_Demand_Record_Page_Default" sfObjectName="rstk__podmd__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Control_Record_Record_Page_Default" sfObjectName="rstk__pocntl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Header_Address_Record_Page_Default" sfObjectName="rstk__pohdraddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Header_Revision_Record_Page_Default" sfObjectName="rstk__pohdrrev__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Line_Address_Record_Page_Default" sfObjectName="rstk__polineaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Line_Approved_Manufacturer_Record_Page_Default" sfObjectName="rstk__polinemfr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Line_Revision_Record_Page_Default" sfObjectName="rstk__polinerev__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__PO_Receipt_Transaction_Record_Page_Default" sfObjectName="rstk__porcptap__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Payable_Batch_Header_Record_Page_Default" sfObjectName="rstk__ttaphdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchase_Agreement_Record_Page_Default" sfObjectName="rstk__poagh__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchase_Item_Master_Record_Page_Default" sfObjectName="rstk__poitem__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchase_Order_Header_Record_Page_Default" sfObjectName="rstk__pohdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchase_Order_Line_Record_Page_Default" sfObjectName="rstk__poline__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchasing_Home" sfObjectName="standard-home"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Vendor_Address_Record_Page_Default" sfObjectName="rstk__povendpoaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Vendor_Class_Record_Page_Default" sfObjectName="rstk__povclass__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Vendor_Contact_Record_Page_Default" sfObjectName="rstk__pocontact__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Vendor_Master_Record_Page_Default" sfObjectName="rstk__povend__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

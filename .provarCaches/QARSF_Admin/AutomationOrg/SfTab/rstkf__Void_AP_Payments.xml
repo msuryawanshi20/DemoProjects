@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__Void_AP_Payments" n="rstkf__Void_AP_Payments" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptxq&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Void AP Payments">
+  <children>
+    <sfPage n="VoidAPPayments" namespacePrefix="rstkf" pageName="VoidAPPayments" s=""/>
+  </children>
+</sfTab>

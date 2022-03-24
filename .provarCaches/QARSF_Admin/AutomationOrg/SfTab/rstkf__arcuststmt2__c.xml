@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__arcuststmt2__c/home" n="rstkf__arcuststmt2__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAq/o" s="" seqNum="0" t="AR Statements Session Customers">
+  <children>
+    <sfObjectReference n="rstkf__arcuststmt2__c" s=""/>
+  </children>
+</sfTab>

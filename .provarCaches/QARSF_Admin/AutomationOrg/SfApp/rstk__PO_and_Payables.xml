@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zMAAS" durableId="06m5f000000R3zMAAS" n="PO_and_Payables" packageName="rstk" s="" seqNum="15" t="PO and Payables">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__pohdr__c" pageUrl="https://automationtesting2.my.salesforce.com/a3w/o" s="" seqNum="1" t="Purchase Order Header">
+      <children>
+        <sfObjectReference n="rstk__pohdr__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__PO_AP_Match" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttl&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="2" t="PO AP Match">
+      <children>
+        <sfPage n="POAPMatch" namespacePrefix="rstk" pageName="POAPMatch" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__PO_Receipt" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptto&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="3" t="PO Receipt">
+      <children>
+        <sfPage n="POReceipt" namespacePrefix="rstk" pageName="POReceipt" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__povend__c" pageUrl="https://automationtesting2.my.salesforce.com/a4X/o" s="" seqNum="4" t="Vendor Master">
+      <children>
+        <sfObjectReference n="rstk__povend__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitemvend__c" pageUrl="https://automationtesting2.my.salesforce.com/a43/o" s="" seqNum="5" t="Vendor Item Masters">
+      <children>
+        <sfObjectReference n="rstk__poitemvend__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a41/o" s="" seqNum="6" t="Purchase Item Master">
+      <children>
+        <sfObjectReference n="rstk__poitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitemcst__c" pageUrl="https://automationtesting2.my.salesforce.com/a42/o" s="" seqNum="7" t="Purchase Item Cost">
+      <children>
+        <sfObjectReference n="rstk__poitemcst__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Manufacturing" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttc&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="8" t="Manufacturing">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="9" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__syscrap__c/home" n="rootstock__rstk__syscrap__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a98/o" s="" seqNum="0" t="Scrap Reason Codes">
+  <children>
+    <sfObjectReference n="rstk__syscrap__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfListView n="rstk__All" s="List View" sfListId="00B5f00000BTtz6EAD" t="All">
+  <actions/>
+  <columns>
+    <sfListColumn boundToField="Name" boundToObject="rstk__poagh__c" fieldNameOrPath="Name" metadataColName="NAME" n="Name" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__externalid__c" boundToObject="rstk__poagh__c" fieldNameOrPath="rstk__externalid__c" metadataColName="rstk__externalid__c" n="External Id" s="" sortable="true"/>
+  </columns>
+</sfListView>

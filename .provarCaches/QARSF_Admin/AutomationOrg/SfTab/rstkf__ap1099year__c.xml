@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__ap1099year__c/home" n="rstkf__ap1099year__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAA/o" s="" seqNum="0" t="AP 1099 Tax Year">
+  <children>
+    <sfObjectReference n="rstkf__ap1099year__c" s=""/>
+  </children>
+</sfTab>

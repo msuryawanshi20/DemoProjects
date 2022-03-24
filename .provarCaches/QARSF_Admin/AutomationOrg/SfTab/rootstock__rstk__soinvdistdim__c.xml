@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soinvdistdim__c/home" n="rootstock__rstk__soinvdistdim__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6b/o" s="" seqNum="0" t="Inv Acct Dimensioned Distrib. Summaries">
+  <children>
+    <sfObjectReference n="rstk__soinvdistdim__c" s=""/>
+  </children>
+</sfTab>

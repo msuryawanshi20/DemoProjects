@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Generate_Recurring_Billing" n="rstk__Generate_Recurring_Billing" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttP&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Generate Recurring Billing">
+  <children>
+    <sfPage n="GenerateRecurringBillingExecution" namespacePrefix="rstk" pageName="GenerateRecurringBillingExecution" s=""/>
+  </children>
+</sfTab>

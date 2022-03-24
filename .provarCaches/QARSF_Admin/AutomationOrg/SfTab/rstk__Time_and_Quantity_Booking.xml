@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Time_and_Quantity_Booking" n="rstk__Time_and_Quantity_Booking" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtuE&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Time and Quantity Booking">
+  <children>
+    <sfPage n="LaborClockInOut" namespacePrefix="rstk" pageName="LaborClockInOut" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>

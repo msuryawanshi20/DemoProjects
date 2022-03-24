@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sozone__c/home" n="rootstock__rstk__sozone__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a88/o" s="" seqNum="0" t="Shipping Zones">
+  <children>
+    <sfObjectReference n="rstk__sozone__c" s=""/>
+  </children>
+</sfTab>

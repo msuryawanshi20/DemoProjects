@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Open_PO_Lines_with_Bar_Code" n="rstk__Open_PO_Lines_with_Bar_Code" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttj&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Open PO Lines with Bar Code">
+  <children>
+    <sfPage n="OpenPOBarcode" namespacePrefix="rstk" pageName="OpenPOBarcode" s=""/>
+  </children>
+</sfTab>

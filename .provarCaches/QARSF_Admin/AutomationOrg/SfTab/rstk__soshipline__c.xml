@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soshipline__c/home" n="rstk__soshipline__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a7s/o" s="" seqNum="0" t="Shipper Lines">
+  <children>
+    <sfObjectReference n="rstk__soshipline__c" s=""/>
+  </children>
+</sfTab>

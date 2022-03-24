@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R455AAC" durableId="06m5f000000R455AAC" lightningApp="true" n="Project_Control" packageName="rootstock" s="" seqNum="27" t="Project Control">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Budget_Cost_Record_Page_Default" sfObjectName="rstk__pjprojcst__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Budget_Labor_Detail_Page" sfObjectName="rstk__pjwbslab__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Budget_Material_Detail_Page" sfObjectName="rstk__pjwbsmtl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Budget_ODC_Detail_Page" sfObjectName="rstk__pjwbsodc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Charge_Code_Budget_Cost_Record_Page_Default" sfObjectName="rstk__pjprojwbscst__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Charge_Code_Record_Page_Default" sfObjectName="rstk__pjprojwbs__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Master_Record_Page_Default" sfObjectName="rstk__pjproj__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Project_Status_Record_Page_Default" sfObjectName="rstk__pjstatus__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sender_Email_by_Project_and_Template_Record_Page_Default" sfObjectName="rstk__sendemail__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Work_Order_Record_Page_Default" sfObjectName="rstk__wocst__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

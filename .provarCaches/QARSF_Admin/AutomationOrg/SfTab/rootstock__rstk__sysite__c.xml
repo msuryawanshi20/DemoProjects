@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sysite__c/home" n="rootstock__rstk__sysite__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9A/o" s="" seqNum="0" t="Site Masters">
+  <children>
+    <sfObjectReference n="rstk__sysite__c" s=""/>
+  </children>
+</sfTab>

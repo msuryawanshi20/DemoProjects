@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icitemsrlhist__c/home" n="rootstock__rstk__icitemsrlhist__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a1j/o" s="" seqNum="0" t="Item Serial Change History">
+  <children>
+    <sfObjectReference n="rstk__icitemsrlhist__c" s=""/>
+  </children>
+</sfTab>

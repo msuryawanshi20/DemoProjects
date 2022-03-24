@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__syusersched__c/home" n="rstkf__syusersched__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aCj/o" s="" seqNum="0" t="User Defined Depreciation Schedules">
+  <children>
+    <sfObjectReference n="rstkf__syusersched__c" s=""/>
+  </children>
+</sfTab>

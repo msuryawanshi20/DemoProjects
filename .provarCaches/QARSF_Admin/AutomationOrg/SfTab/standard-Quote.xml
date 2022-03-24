@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/Quote/home" n="standard-Quote" pageUrl="/0Q0/o" s="" seqNum="0" t="Quotes">
+  <children>
+    <sfObjectReference n="Quote" s=""/>
+  </children>
+</sfTab>

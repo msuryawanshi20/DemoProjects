@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfListView n="rstk__All" s="List View" sfListId="00B5f00000BTu11" t="All">
+  <actions/>
+  <columns>
+    <sfListColumn boundToField="Name" boundToObject="rstk__povclass__c" fieldNameOrPath="Name" n="Vendor Class Name" s="" sortable="true"/>
+    <sfListColumn boundToField="Id" boundToObject="rstk__povclass__c" fieldNameOrPath="Id" hidden="true" n="Vendor Class ID" s=""/>
+    <sfListColumn boundToField="CreatedDate" boundToObject="rstk__povclass__c" fieldNameOrPath="CreatedDate" hidden="true" n="Created Date" s=""/>
+    <sfListColumn boundToField="LastModifiedDate" boundToObject="rstk__povclass__c" fieldNameOrPath="LastModifiedDate" hidden="true" n="Last Modified Date" s=""/>
+    <sfListColumn boundToField="SystemModstamp" boundToObject="rstk__povclass__c" fieldNameOrPath="SystemModstamp" hidden="true" n="System Modstamp" s=""/>
+  </columns>
+</sfListView>

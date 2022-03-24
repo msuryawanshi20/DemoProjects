@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icfcstdmd__c/home" n="rstk__icfcstdmd__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a1T/o" s="" seqNum="0" t="Forecast Demand">
+  <children>
+    <sfObjectReference n="rstk__icfcstdmd__c" s=""/>
+  </children>
+</sfTab>

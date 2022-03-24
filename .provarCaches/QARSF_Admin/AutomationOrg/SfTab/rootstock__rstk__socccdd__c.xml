@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__socccdd__c/home" n="rootstock__rstk__socccdd__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5Q/o" s="" seqNum="0" t="Custom Prod Group Disc by Quantities">
+  <children>
+    <sfObjectReference n="rstk__socccdd__c" s=""/>
+  </children>
+</sfTab>

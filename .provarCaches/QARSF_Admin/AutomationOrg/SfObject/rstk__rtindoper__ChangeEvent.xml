@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject label="Change Event: Independent Operation" labelPlural="Change Event: Independent Operation" n="rstk__rtindoper__ChangeEvent" retrieveable="true" s="" t="Change Event: Independent Operation">
+  <fields>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="Id" t="Change Event: Independent Operation ID" type="id" updateable="false"/>
+    <sfField createable="false" filterable="false" length="1000" n="ReplayId" t="Replay ID" updateable="false"/>
+    <sfField createable="false" filterable="false" n="ChangeEventHeader" required="true" t="Change Event Header" type="complexvalue" updateable="false"/>
+    <sfField createable="false" filterable="false" internalLabel="Owner ID" length="18" n="OwnerId" t="Change Event: Independent Operation Owner" type="reference" updateable="false">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" filterable="false" length="80" n="Name" t="Change Event: Independent Operation Name" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="CreatedById" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="LastModifiedById" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="100" n="rstk__externalid__c" readPermission="false" summary="This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages." t="External ID" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__formula_extid__c" readPermission="false" summary="This is an internal system field used to define the externalID of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages." t="Formula External Id" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__formula_name__c" readPermission="false" summary="Internal formula for constructing the associated name field, which is an internal system field, not currently displayed on any Rootstock User pages." t="Formula Name" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__formula_searchindex__c" readPermission="false" summary="This is an internal system field used to define the searchindex of a record, which is also an internal system field. Neither is currently displayed on any Rootstock User pages." t="Formula Search Index" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_altprice1__c" precision="12" readPermission="false" scale="2" summary="Price used as an alternate price that will display in the Product Configurator when this Independent Operation is selected as part of a configuration." t="Alt 1 Labor Price per Hour" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_altprice2__c" precision="12" readPermission="false" scale="2" summary="Price used as a second alternate price that will display in the Product Configurator when this Independent Operation is selected as part of a configuration." t="Alt 2 Labor Price per Hour" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_assignto__c" readPermission="false" summary="This is the employee that this operation is assigned to." t="Employee Assigned To" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_cost__c" precision="18" readPermission="false" scale="6" summary="This is a calculated field representing the estimated Per/Hour cost that it will take to perform this operation using the labor grade rate for each run type multipled by their respecive hours (Setup Hours, Run Hours and Machine Hours) as defined." t="Budgeting Cost per Hour" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="50" n="rstk__rtindoper_desc__c" readPermission="false" summary="This is a user-defined description of this Independent Operation." t="Description" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_div__c" readPermission="false" summary="The Division to which this record is associated with." t="Division" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_hours__c" precision="18" readPermission="false" scale="6" summary="This is a calculated field representing the estimate of hours it will take to perform this operation, and is the sum of Setup Hours, Run Hours and Machine Hours defined." t="Estimated Hours" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="20" n="rstk__rtindoper_id__c" readPermission="false" summary="This is a user-defined unique identified for this specific Independent Operation." t="Independent Operation ID" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_insptempl__c" readPermission="false" summary="The Inspection Order Template to be used when generating Inspection Orders." t="Inspection Order Template" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__insptempl__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_labbackflush__c" readPermission="false" summary="When checked, any labor to be backflushed will be done at completion of this operation." t="Backflush Labor at Qty Complete" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_labbfclock__c" readPermission="false" summary="Select the Mfg User to be stamped on the backflush labor transaction." t="Labor Backflush Txn User" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_machhr__c" precision="16" readPermission="false" scale="6" summary="This defines the estimated machine hours required to perfom this operation." t="Machine Hours" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_machpricehr__c" precision="12" readPermission="false" scale="2" summary="This is the Per Hour sales price that will be charged to the customer for performing an operation that uses this machine." t="Machine Price per Hour" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="255" n="rstk__rtindoper_machtype__c" readPermission="false" summary="This field denotes whether there is machine time for this operation and whether the standard will be based on a per piece basis or for an entire batch regardless of the number of pieces. Valid values are 'None, 'Per Batch' or 'Per Piece'." t="Machine Time Type" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="None" s=""/>
+        <sfPLE id="2" n="Per Batch" s=""/>
+        <sfPLE id="3" n="Per Piece" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_price__c" precision="8" readPermission="false" scale="2" summary="This is the Per Hour sales price that will be charged to the customer for performing this operation." t="Price per Hour" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_rtmach__c" readPermission="false" summary="This is the Machine Number of the machine that is expected to be used on this operation.  The values displayed are pre-defined using the Mfg Machine Master program under the Shop Floor menu." t="Machine Number" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__rtmach__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_rtproc__c" readPermission="false" summary="This is the Process Number of the pre-defined process that defines the work to be done for this operation." t="Process ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__rtproc__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_rtwctr__c" readPermission="false" summary="This is the Work Center in which this operation will be performed." t="Work Center" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__rtwctr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_runhours__c" precision="16" readPermission="false" scale="6" summary="This defines the estimated run hours required to perfom this operation." t="Run Hours" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_runlabgrd__c" readPermission="false" summary="This is the Labor Grade of the Mfg User that is expected to perform the work required (run time) for this operation.  The values displayed are pre-defined using the Mfg Labor Grades program under the Shop Floor menu." t="Run Labor Grade" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__rtlabgrd__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="255" n="rstk__rtindoper_runtype__c" readPermission="false" summary="This field denotes whether there is run time for this operation and whether the standard will be based on a per piece basis or for an entire batch regardless of the number of pieces. Valid values are 'None, 'Per Batch' or 'Per Piece'." t="Run Time Type" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="None" s=""/>
+        <sfPLE id="2" n="Per Batch" s=""/>
+        <sfPLE id="3" n="Per Piece" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_sethours__c" precision="16" readPermission="false" scale="6" summary="This defines the estimated setup hours required to perfom this operation." t="Setup Hours" type="_double" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_setlabgrd__c" readPermission="false" summary="This is the Labor Grade of the Mfg User that is expected to perfom the setup for this operation.  The values displayed are pre-defined using the Mfg Labor Grades program under the Shop Floor menu." t="Setup Labor Grade" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__rtlabgrd__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="255" n="rstk__rtindoper_setuptype__c" readPermission="false" summary="This field denotes whether there is setup for this operation and whether the standard will be based on a per piece basis or for an entire batch regardless of the number of pieces. Valid values are 'None, 'Per Batch' or 'Per Piece'." t="Setup Time Type" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="None" s=""/>
+        <sfPLE id="2" n="Per Batch" s=""/>
+        <sfPLE id="3" n="Per Piece" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" length="18" n="rstk__rtindoper_site__c" readPermission="false" summary="The Inventory Site where this operation is performed.  Inventory Site needs to be consistent with the Department associated with the Work Center specified on this Operation record." t="Inventory Site" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__sysite__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" filterable="false" n="rstk__rtindoper_subflag__c" readPermission="false" summary="When checked, this indicates that this operation is to be performed by an outside Vendor." t="Outside Operation" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="255" n="rstk__searchindex__c" readPermission="false" summary="This is an internal system field not currently displayed on any Rootstock User pages" t="Search Index" updateable="false"/>
+    <sfField createable="false" editPermission="false" filterable="false" length="40" n="rstk__triggeroptions__c" readPermission="false" summary="This is an internal system field which is not currently displayed on any Rootstock User pages." t="triggeroptions" updateable="false"/>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="ObjectHome List" n="New"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>

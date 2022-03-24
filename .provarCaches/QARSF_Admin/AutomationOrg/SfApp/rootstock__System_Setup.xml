@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R45CAAS" durableId="06m5f000000R45CAAS" lightningApp="true" n="System_Setup" packageName="rootstock" s="" seqNum="37" t="System Setup">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Company_Master_Record_Page_Default" sfObjectName="rstk__sycmp__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Cost_Accounting_Control_Record_Page_Default" sfObjectName="rstk__csacctcntl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Cost_Acct_User_Control_Record_Page_Default" sfObjectName="rstk__csusracctcntl__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Currency_Master_Alternate_Exchange_Rat_Record_Page_Default" sfObjectName="rstk__sycurralt__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Currency_Master_Record_Page_Default" sfObjectName="rstk__sycurr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Dimension_Source_Override_Record_Page_Default" sfObjectName="rstk__sydimovr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Dimension_Value_Master_Record_Page_Default" sfObjectName="rstk__sydim__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Division_Address_Record_Page_Default" sfObjectName="rstk__sydivaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Division_Master_Record_Page_Default" sfObjectName="rstk__sydiv__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Commodity_Account_Record_Page_Default" sfObjectName="rstk__iccomcodacc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Commodity_Code_Record_Page_Default" sfObjectName="rstk__iccomcod__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Location_ID_Record_Page_Default" sfObjectName="rstk__sylocid__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Manufacturing_User_Record_Page_Default" sfObjectName="rstk__syusr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Order_No_Record_Page" sfObjectName="rstk__syordnumassign__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Organizational_Department_Record_Page_Default" sfObjectName="rstk__syorg__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Scrap_Reason_Code_Record_Page_Default" sfObjectName="rstk__syscrap__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Site_Master_Record_Page_Default" sfObjectName="rstk__sysite__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__State_Province_Record_Page_Default" sfObjectName="rstk__systate__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Sub_Ledger_Account_Record_Page_Default" sfObjectName="rstk__syacc__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__System_Defaults_Record_Page_Default" sfObjectName="rstk__sydefault__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Terms_Code_Record_Page_Default" sfObjectName="rstk__syterms__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__UOM_Conversion_Factors" sfObjectName="rstk__syumcf__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Unit_Of_Measure_Record_Page_Default" sfObjectName="rstk__syuom__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__VAT_Class_Record_Page_Default" sfObjectName="rstk__syvatclass__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

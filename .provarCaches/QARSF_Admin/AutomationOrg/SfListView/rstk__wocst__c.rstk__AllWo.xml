@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfListView n="rstk__AllWo" s="List View" sfListId="00B5f00000BTu7MEAT" t="All WO">
+  <actions/>
+  <columns>
+    <sfListColumn boundToField="Name" boundToObject="rstk__wocst__c" fieldNameOrPath="Name" metadataColName="NAME" n="Name" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_div__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_div__r_Name" metadataColName="rstk__wocst_div__c" n="Division" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_ordno__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_ordno__c" metadataColName="rstk__wocst_ordno__c" n="Order Number" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_refurbind__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_refurbind__c" metadataColName="rstk__wocst_refurbind__c" n="Refurb" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_reworkind__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_reworkind__c" metadataColName="rstk__wocst_reworkind__c" n="Rework" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_disassmind__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_disassmind__c" metadataColName="rstk__wocst_disassmind__c" n="Disassembly" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_closed__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_closed__c" metadataColName="rstk__wocst_closed__c" n="WO Closed" s="" sortable="true"/>
+    <sfListColumn boundToField="LastModifiedDate" boundToObject="rstk__wocst__c" fieldNameOrPath="LastModifiedDate" metadataColName="LAST_UPDATE" n="Last Modified Date" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_item__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_item__r_Name" metadataColName="rstk__wocst_item__c" n="Item Number" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_site__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_site__r_Name" metadataColName="rstk__wocst_site__c" n="Site" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_ordsts_pl__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_ordsts_pl__c" metadataColName="rstk__wocst_ordsts_pl__c" n="Status" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_qtyreq__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_qtyreq__c" metadataColName="rstk__wocst_qtyreq__c" n="Qty Required" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_qtyacc__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_qtyacc__c" metadataColName="rstk__wocst_qtyacc__c" n="Qty Accepted" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_duedte__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_duedte__c" metadataColName="rstk__wocst_duedte__c" n="Due Date" s="" sortable="true"/>
+    <sfListColumn boundToField="rstk__wocst_effdte__c" boundToObject="rstk__wocst__c" fieldNameOrPath="rstk__wocst_effdte__c" metadataColName="rstk__wocst_effdte__c" n="Effective Date" s="" sortable="true"/>
+  </columns>
+</sfListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R450AAC" durableId="06m5f000000R450AAC" lightningApp="true" n="ForecastingMRP" packageName="rootstock" s="" seqNum="50" t="Forecasting-MRP">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Division_Address_Record_Page_Default" sfObjectName="rstk__sydivaddr__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Division_Master_Record_Page_Default" sfObjectName="rstk__sydiv__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Forecast_Demand_Record_Page_Default" sfObjectName="rstk__icfcstdmd__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__MRPPLANNOTES_Record_Page_Default" sfObjectName="rstk__mrpplannotes__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__MRP_Action_Messages_Record_Page_Default" sfObjectName="rstk__icmrprsch__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__MRP_Record_Page_Default" sfObjectName="rstk__mrplaunch__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Mrp_Schedule_Record_Page_Default" sfObjectName="rstk__mrpsch__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icconclass__c/home" n="rstk__icconclass__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a1K/o" s="" seqNum="0" t="Inventory Container Classes">
+  <children>
+    <sfObjectReference n="rstk__icconclass__c" s=""/>
+  </children>
+</sfTab>

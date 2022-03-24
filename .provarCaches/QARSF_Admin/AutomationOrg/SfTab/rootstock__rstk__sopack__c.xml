@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sopack__c/home" n="rootstock__rstk__sopack__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a72/o" s="" seqNum="0" t="Packing Slip Header">
+  <children>
+    <sfObjectReference n="rstk__sopack__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__confcomp__c/home" n="rootstock__rstk__confcomp__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a0K/o" s="" seqNum="0" t="Configuration Selection Components">
+  <children>
+    <sfObjectReference n="rstk__confcomp__c" s=""/>
+  </children>
+</sfTab>

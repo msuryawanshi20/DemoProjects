@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soctt__c/home" n="rootstock__rstk__soctt__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a68/o" s="" seqNum="0" t="Contract Terms Templates">
+  <children>
+    <sfObjectReference n="rstk__soctt__c" s=""/>
+  </children>
+</sfTab>

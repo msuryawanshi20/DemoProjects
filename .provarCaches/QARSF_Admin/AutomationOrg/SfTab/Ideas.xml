@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/Ideas" n="Ideas" pageUrl="/ideas/ideaList.apexp" s="" seqNum="0">
+  <children>
+    <sfPage n="ideas/ideaList.apexp" pageName="ideas/ideaList.apexp" s=""/>
+  </children>
+</sfTab>

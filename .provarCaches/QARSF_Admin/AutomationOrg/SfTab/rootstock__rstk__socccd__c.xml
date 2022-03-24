@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__socccd__c/home" n="rootstock__rstk__socccd__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5P/o" s="" seqNum="0" t="Customer Product Group Discounts">
+  <children>
+    <sfObjectReference n="rstk__socccd__c" s=""/>
+  </children>
+</sfTab>

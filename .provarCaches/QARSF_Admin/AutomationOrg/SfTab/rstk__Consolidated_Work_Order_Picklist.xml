@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__Consolidated_Work_Order_Picklist" n="rstk__Consolidated_Work_Order_Picklist" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PttE&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Consolidated Work Order Picklist">
+  <children>
+    <sfPage n="WorkOrders" namespacePrefix="rstk" pageName="WorkOrders" s=""/>
+  </children>
+</sfTab>

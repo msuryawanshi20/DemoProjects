@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R457AAC" durableId="06m5f000000R457AAC" lightningApp="true" n="Requisitions" packageName="rootstock" s="" seqNum="33">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rootstock__Indirect_Requisition_Record_Page_Default" sfObjectName="rstk__syreqind__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Inventory_Requisitions_Record_Page_Default" sfObjectName="rstk__icreq__c"/>
+    <SfFlexiPageAssignment flexipageName="rootstock__Purchase_Requisition_Record_Page_Default" sfObjectName="rstk__poreq__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

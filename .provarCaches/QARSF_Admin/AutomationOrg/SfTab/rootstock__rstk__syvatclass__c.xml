@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__syvatclass__c/home" n="rootstock__rstk__syvatclass__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9N/o" s="" seqNum="0" t="VAT Classes">
+  <children>
+    <sfObjectReference n="rstk__syvatclass__c" s=""/>
+  </children>
+</sfTab>

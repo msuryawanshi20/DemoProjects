@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sormh__c/home" n="rstk__sormh__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a7k/o" s="" seqNum="0" t="Return Material Authorizations">
+  <children>
+    <sfObjectReference n="rstk__sormh__c" s=""/>
+  </children>
+</sfTab>

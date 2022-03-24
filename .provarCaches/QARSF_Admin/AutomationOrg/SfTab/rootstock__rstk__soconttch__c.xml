@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soconttch__c/home" n="rootstock__rstk__soconttch__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a64/o" s="" seqNum="0" t="Contract Terms Clause Change History">
+  <children>
+    <sfObjectReference n="rstk__soconttch__c" s=""/>
+  </children>
+</sfTab>

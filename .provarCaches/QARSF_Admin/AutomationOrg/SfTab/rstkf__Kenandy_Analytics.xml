@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__Kenandy_Analytics" n="rstkf__Kenandy_Analytics" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/rstkf/AnalyticsHome.cmp" s="" seqNum="0" t="Kenandy Analytics">
+  <children>
+    <sfAuraComponent n="AnalyticsHome" namespacePrefix="rstkf" s=""/>
+  </children>
+</sfTab>

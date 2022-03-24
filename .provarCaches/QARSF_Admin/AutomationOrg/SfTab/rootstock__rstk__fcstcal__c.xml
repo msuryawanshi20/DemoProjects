@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__fcstcal__c/home" n="rootstock__rstk__fcstcal__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a0m/o" s="" seqNum="0" t="Forecast Calendar">
+  <children>
+    <sfObjectReference n="rstk__fcstcal__c" s=""/>
+  </children>
+</sfTab>

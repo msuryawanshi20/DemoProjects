@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__gltxnplrate__c/home" n="rstkf__gltxnplrate__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aCF/o" s="" seqNum="0" t="Stands for GLTXN P &amp; L Rates">
+  <children>
+    <sfObjectReference n="rstkf__gltxnplrate__c" s=""/>
+  </children>
+</sfTab>

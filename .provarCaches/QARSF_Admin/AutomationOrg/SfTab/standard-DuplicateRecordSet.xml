@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/DuplicateRecordSet/home" n="standard-DuplicateRecordSet" pageUrl="/0GK/o" s="" seqNum="0" t="Duplicate Record Sets">
+  <children>
+    <sfObjectReference n="DuplicateRecordSet" s=""/>
+  </children>
+</sfTab>

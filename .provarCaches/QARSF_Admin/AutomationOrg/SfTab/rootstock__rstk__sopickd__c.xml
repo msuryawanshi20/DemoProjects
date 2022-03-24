@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sopickd__c/home" n="rootstock__rstk__sopickd__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a7N/o" s="" seqNum="0" t="Pick List Detail">
+  <children>
+    <sfObjectReference n="rstk__sopickd__c" s=""/>
+  </children>
+</sfTab>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zRAAS" durableId="06m5f000000R45DAAS" n="Work_Orders" packageName="rstk" s="" seqNum="19" t="Work Orders">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="rstk__MobilePicklist" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptth&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="2" t="MobilePicklist">
+      <children>
+        <sfPage n="mobilePickList" namespacePrefix="rstk" pageName="mobilePickList" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__soagh__c" pageUrl="https://automationtesting2.my.salesforce.com/a52/o" s="" seqNum="3" t="Customer Agreements">
+      <children>
+        <sfObjectReference n="rstk__soagh__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sytimetxn__c" pageUrl="https://automationtesting2.my.salesforce.com/a9E/o" s="" seqNum="4" t="Time Transactions">
+      <children>
+        <sfObjectReference n="rstk__sytimetxn__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Rootstock_Mobile" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu3&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="5" t="Rootstock Mobile">
+      <children>
+        <sfPage n="mobileMenu" namespacePrefix="rstk" pageName="mobileMenu" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__iclicplate__c" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptui&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="6" t="Inventory License Plates"/>
+    <sfTab n="rstk__Requisition_Workbench" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttz&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="7" t="Requisition Workbench">
+      <children>
+        <sfPage n="ReqsToPOs" namespacePrefix="rstk" pageName="ReqsToPOs" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__socontract__c" pageUrl="https://automationtesting2.my.salesforce.com/a62/o" s="" seqNum="8" t="Contract Masters">
+      <children>
+        <sfObjectReference n="rstk__socontract__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Rootstock_Menu" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu1&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="9" t="Rootstock Menu">
+      <children>
+        <sfPage n="rootstock" namespacePrefix="rstk" pageName="rootstock" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__confsess__c" pageUrl="https://automationtesting2.my.salesforce.com/a0W/o" s="" seqNum="10" t="Configuration Sessions">
+      <children>
+        <sfObjectReference n="rstk__confsess__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Rootstock" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptu0&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="11" t="Rootstock"/>
+    <sfTab n="rstk__ictransreq__c" pageUrl="https://automationtesting2.my.salesforce.com/a2G/o" s="" seqNum="12" t="Planned Location Transfers">
+      <children>
+        <sfObjectReference n="rstk__ictransreq__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__sowarr__c" pageUrl="https://automationtesting2.my.salesforce.com/a82/o" s="" seqNum="13" t="Shipped Item Warranty">
+      <children>
+        <sfObjectReference n="rstk__sowarr__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poship__c" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtvD&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="14" t="Inbound Shipment Master SupReq"/>
+    <sfTab n="rstk__ibship__c" pageUrl="https://automationtesting2.my.salesforce.com/a1C/o" s="" seqNum="15" t="Inbound Shipment Masters">
+      <children>
+        <sfObjectReference n="rstk__ibship__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__WO_Issue" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtuH&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="16" t="WO Issue">
+      <children>
+        <sfPage n="Woissue" namespacePrefix="rstk" pageName="Woissue" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

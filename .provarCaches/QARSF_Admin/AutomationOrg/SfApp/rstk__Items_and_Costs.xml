@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zJAAS" durableId="06m5f000000R3zJAAS" n="Items_and_Costs" packageName="rstk" s="" seqNum="13" t="Items and Costs">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a1X/o" s="" seqNum="1" t="Inventory Item Master">
+      <children>
+        <sfObjectReference n="rstk__icitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitemstd__c" pageUrl="https://automationtesting2.my.salesforce.com/a1m/o" s="" seqNum="2" t="Inventory Item Standard Costs">
+      <children>
+        <sfObjectReference n="rstk__icitemstd__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a41/o" s="" seqNum="3" t="Purchase Item Master">
+      <children>
+        <sfObjectReference n="rstk__poitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitemcst__c" pageUrl="https://automationtesting2.my.salesforce.com/a42/o" s="" seqNum="4" t="Purchase Item Cost">
+      <children>
+        <sfObjectReference n="rstk__poitemcst__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__poitemvend__c" pageUrl="https://automationtesting2.my.salesforce.com/a43/o" s="" seqNum="5" t="Vendor Item Masters">
+      <children>
+        <sfObjectReference n="rstk__poitemvend__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__peitem__c" pageUrl="https://automationtesting2.my.salesforce.com/a34/o" s="" seqNum="6" t="Engineering Item Master">
+      <children>
+        <sfObjectReference n="rstk__peitem__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__peitemrev__c" pageUrl="https://automationtesting2.my.salesforce.com/a37/o" s="" seqNum="7" t="Engineering Item Revisions">
+      <children>
+        <sfObjectReference n="rstk__peitemrev__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__icitemcst__c" pageUrl="https://automationtesting2.my.salesforce.com/a1Z/o" s="" seqNum="8" t="Inventory Items Average Cost Quantity">
+      <children>
+        <sfObjectReference n="rstk__icitemcst__c" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="rstk__Manufacturing" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttc&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1qb3lNaTR3TVRoYSwwNlNpaFpEcmFXbkg2NUdJVWlHRWh3LFlXWmtNR0po" s="" seqNum="9" t="Manufacturing">
+      <children>
+        <sfPage n="Manufacturing" namespacePrefix="rstk" pageName="Manufacturing" s="">
+          <children/>
+        </sfPage>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="10" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

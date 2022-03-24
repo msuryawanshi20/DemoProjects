@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__apapplicforex__c/home" n="rstkf__apapplicforex__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAE/o" s="" seqNum="0" t="Foreign Exchange Gain/Loss on Apps">
+  <children>
+    <sfObjectReference n="rstkf__apapplicforex__c" s=""/>
+  </children>
+</sfTab>

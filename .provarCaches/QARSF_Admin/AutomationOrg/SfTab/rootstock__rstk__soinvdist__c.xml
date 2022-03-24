@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soinvdist__c/home" n="rootstock__rstk__soinvdist__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6Z/o" s="" seqNum="0" t="Invoice Account Distribution Summaries">
+  <children>
+    <sfObjectReference n="rstk__soinvdist__c" s=""/>
+  </children>
+</sfTab>

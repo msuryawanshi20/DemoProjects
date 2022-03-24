@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f0000021LZjAAM" durableId="06m5f0000021LZjAAM" n="Community" packageName="standard" s="" seqNum="7">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="standard-Contact" pageUrl="https://automationtesting2.my.salesforce.com/003/o" s="" seqNum="2" t="Contacts">
+      <children>
+        <sfObjectReference n="Contact" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Account" pageUrl="https://automationtesting2.my.salesforce.com/001/o" s="" seqNum="3" t="Accounts">
+      <children>
+        <sfObjectReference n="Account" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Idea" pageUrl="https://automationtesting2.my.salesforce.com/ideas/ideaList.apexp" s="" seqNum="4" t="Ideas">
+      <children>
+        <sfPage n="ideas/ideaList.apexp" pageName="ideas/ideaList.apexp" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-report" pageUrl="https://automationtesting2.my.salesforce.com/00O/o" s="" seqNum="5" t="Reports">
+      <children>
+        <sfObjectReference n="Report" s=""/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Dashboard" pageUrl="https://automationtesting2.my.salesforce.com/01Z/o" s="" seqNum="6" t="Dashboards">
+      <children>
+        <sfObjectReference n="Dashboard" s=""/>
+      </children>
+    </sfTab>
+  </children>
+</sfApp>

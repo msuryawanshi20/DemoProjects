@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soconrcdist__c/home" n="rootstock__rstk__soconrcdist__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5p/o" s="" seqNum="0" t="Contract Recurring Charges Account Dists">
+  <children>
+    <sfObjectReference n="rstk__soconrcdist__c" s=""/>
+  </children>
+</sfTab>

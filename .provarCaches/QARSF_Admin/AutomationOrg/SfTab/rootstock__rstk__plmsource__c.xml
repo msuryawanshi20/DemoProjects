@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__plmsource__c/home" n="rootstock__rstk__plmsource__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a3P/o" s="" seqNum="0" t="PLM Import Source Relations Staging">
+  <children>
+    <sfObjectReference n="rstk__plmsource__c" s=""/>
+  </children>
+</sfTab>

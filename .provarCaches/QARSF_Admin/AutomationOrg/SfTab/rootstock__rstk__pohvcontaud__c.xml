@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__pohvcontaud__c/home" n="rootstock__rstk__pohvcontaud__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a40/o" s="" seqNum="0" t="High Value Container Audit">
+  <children>
+    <sfObjectReference n="rstk__pohvcontaud__c" s=""/>
+  </children>
+</sfTab>

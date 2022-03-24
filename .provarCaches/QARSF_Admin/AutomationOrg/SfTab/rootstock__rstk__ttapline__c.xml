@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__ttapline__c/home" n="rootstock__rstk__ttapline__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a9W/o" s="" seqNum="0" t="Invoice Lines">
+  <children>
+    <sfObjectReference n="rstk__ttapline__c" s=""/>
+  </children>
+</sfTab>

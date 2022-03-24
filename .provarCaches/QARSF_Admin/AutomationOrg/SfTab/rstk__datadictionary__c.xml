@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__datadictionary__c/home" n="rstk__datadictionary__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a0h/o" s="" seqNum="0" t="Data Dictionary">
+  <children>
+    <sfObjectReference n="rstk__datadictionary__c" s=""/>
+  </children>
+</sfTab>

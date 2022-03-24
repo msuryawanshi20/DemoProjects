@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__icitemstd__c/home" n="rstk__icitemstd__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a1m/o" s="" seqNum="0" t="Inventory Item Standard Costs">
+  <children>
+    <sfObjectReference n="rstk__icitemstd__c" s=""/>
+  </children>
+</sfTab>

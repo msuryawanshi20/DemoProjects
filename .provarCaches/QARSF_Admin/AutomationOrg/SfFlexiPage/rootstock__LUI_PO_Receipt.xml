@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="rootstock__LUI_PO_Receipt" s="" t="PO Receipt" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+  <regions>
+    <SfFlexiPageRegion n="main" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="rootstock__PageHelp" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">pageKey</key>
+              <value valueClass="string">poreceipt</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+        <SfFlexiPageComponentInstance n="rootstock__purchaseOrderReceipt" s="1" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+  </regions>
+  <facets/>
+</SfFlexiPage>

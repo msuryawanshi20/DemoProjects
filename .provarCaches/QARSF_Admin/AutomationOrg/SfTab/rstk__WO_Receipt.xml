@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__WO_Receipt" n="rstk__WO_Receipt" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000PtuK&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="WO Receipt">
+  <children>
+    <sfPage n="Woreceipt" namespacePrefix="rstk" pageName="Woreceipt" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>

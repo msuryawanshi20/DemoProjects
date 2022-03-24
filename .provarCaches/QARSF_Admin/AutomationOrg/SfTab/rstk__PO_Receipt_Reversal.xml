@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstk__PO_Receipt_Reversal" n="rstk__PO_Receipt_Reversal" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Pttp&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="PO Receipt Reversal">
+  <children>
+    <sfPage n="Poreceiptr" namespacePrefix="rstk" pageName="Poreceiptr" s="">
+      <children/>
+    </sfPage>
+  </children>
+</sfTab>

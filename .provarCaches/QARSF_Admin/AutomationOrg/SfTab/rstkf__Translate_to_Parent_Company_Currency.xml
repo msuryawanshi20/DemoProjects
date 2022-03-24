@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rstkf__Translate_to_Parent_Company_Currency" n="rstkf__Translate_to_Parent_Company_Currency" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/servlet/servlet.Integration?lid=01r5f000000Ptxn&amp;ic=1&amp;linkToken=VmpFPSxNakF5TWkwd01TMHdPVlF4TWpveE1Ub3lPQzR5TnpSYSxRT3Z6c25hYkMyZ3NZNUJUZGNpdVBpLFlXWmtNR0po" s="" seqNum="0" t="Translate to Parent Company Currency">
+  <children>
+    <sfPage n="TranslateToParentCompCurr" namespacePrefix="rstkf" pageName="TranslateToParentCompCurr" s=""/>
+  </children>
+</sfTab>

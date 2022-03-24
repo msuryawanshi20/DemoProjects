@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f0000021LZiAAM" durableId="06m5f0000021LZiAAM" n="Chatter" packageName="standard" s="" seqNum="6" t="Salesforce Chatter">
+  <children>
+    <sfTab n="standard-home" pageUrl="https://automationtesting2.my.salesforce.com/home/home.jsp" s="" seqNum="0" t="Home">
+      <children>
+        <sfHome n="standard-home" s="" t="Home"/>
+      </children>
+    </sfTab>
+    <sfTab n="standard-Chatter" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/ui/ChatterPage" s="" seqNum="1" t="Chatter"/>
+    <sfTab n="standard-UserProfile" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/userprofile/UserProfilePage" s="" seqNum="2" t="Profile"/>
+    <sfTab n="standard-OtherUserProfile" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/people/PeopleListPage" s="" seqNum="3" t="People"/>
+    <sfTab n="standard-CollaborationGroup" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/groups/GroupListPage" s="" seqNum="4" t="Groups"/>
+    <sfTab n="standard-File" pageUrl="https://automationtesting2.my.salesforce.com/_ui/core/chatter/files/FileTabPage" s="" seqNum="5" t="Files"/>
+  </children>
+</sfApp>

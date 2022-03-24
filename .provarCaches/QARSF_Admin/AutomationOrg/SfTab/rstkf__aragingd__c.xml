@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__aragingd__c/home" n="rstkf__aragingd__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAh/o" s="" seqNum="0" t="AR Aging Drill Down Details">
+  <children>
+    <sfObjectReference n="rstkf__aragingd__c" s=""/>
+  </children>
+</sfTab>

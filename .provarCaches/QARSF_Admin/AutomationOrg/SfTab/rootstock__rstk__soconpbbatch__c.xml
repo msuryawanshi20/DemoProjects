@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__soconpbbatch__c/home" n="rootstock__rstk__soconpbbatch__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a5f/o" s="" seqNum="0" t="Billing Run Batch Header">
+  <children>
+    <sfObjectReference n="rstk__soconpbbatch__c" s=""/>
+  </children>
+</sfTab>

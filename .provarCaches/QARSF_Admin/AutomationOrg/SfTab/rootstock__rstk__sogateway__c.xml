@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sogateway__c/home" n="rootstock__rstk__sogateway__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a6S/o" s="" seqNum="0" t="Sales Order Payment Gateways">
+  <children>
+    <sfObjectReference n="rstk__sogateway__c" s=""/>
+  </children>
+</sfTab>

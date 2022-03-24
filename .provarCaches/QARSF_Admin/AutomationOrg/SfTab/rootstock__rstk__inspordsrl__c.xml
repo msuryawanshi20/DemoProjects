@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__inspordsrl__c/home" n="rootstock__rstk__inspordsrl__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a2S/o" s="" seqNum="0" t="Inspection Order Serial Details">
+  <children>
+    <sfObjectReference n="rstk__inspordsrl__c" s=""/>
+  </children>
+</sfTab>

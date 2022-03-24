@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__ictag__c/home" n="rootstock__rstk__ictag__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a2F/o" s="" seqNum="0" t="Tags">
+  <children>
+    <sfObjectReference n="rstk__ictag__c" s=""/>
+  </children>
+</sfTab>

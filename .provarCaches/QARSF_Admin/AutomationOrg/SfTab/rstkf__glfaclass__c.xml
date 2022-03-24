@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__glfaclass__c/home" n="rstkf__glfaclass__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aBf/o" s="" seqNum="0" t="Fixed Asset Classes">
+  <children>
+    <sfObjectReference n="rstkf__glfaclass__c" s=""/>
+  </children>
+</sfTab>

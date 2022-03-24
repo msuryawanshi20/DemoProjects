@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstkf__apwhtretvend__c/home" n="rstkf__apwhtretvend__c" namespacePrefix="rstkf" pageUrl="https://automationtesting2.my.salesforce.com/aAe/o" s="" seqNum="0" t="WHT Return Vendor Summary">
+  <children>
+    <sfObjectReference n="rstkf__apwhtretvend__c" s=""/>
+  </children>
+</sfTab>

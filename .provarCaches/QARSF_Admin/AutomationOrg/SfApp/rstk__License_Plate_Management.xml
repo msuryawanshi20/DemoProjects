@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfApp appId="02u5f000000R3zKAAS" durableId="06m5f000000R3zKAAS" lightningApp="true" n="License_Plate_Management" packageName="rstk" s="" seqNum="48" t="License Plate Management">
+  <appDefaultFlexiAssignments>
+    <SfFlexiPageAssignment flexipageName="rstk__Inventory_Container_Class_License_Plate" sfObjectName="rstk__icconclass__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Inventory_Container_License_Plate" sfObjectName="rstk__iccontainer__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__License_Plate_Management_Home" sfObjectName="standard-home"/>
+    <SfFlexiPageAssignment flexipageName="rstk__PO_Line_License_Plate" sfObjectName="rstk__poline__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Purchase_Order_Header_License_Plate" sfObjectName="rstk__pohdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Sales_Order_Header_License_Plate" sfObjectName="rstk__sohdr__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Sales_Order_Line_License_Plate" sfObjectName="rstk__soline__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Sales_Order_Shipping_Container_Header_License_Plate" sfObjectName="rstk__socontainer__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Shipper_Header_License_Plate" sfObjectName="rstk__soship__c"/>
+    <SfFlexiPageAssignment flexipageName="rstk__Work_Order_License_Plate" sfObjectName="rstk__wocst__c"/>
+  </appDefaultFlexiAssignments>
+</sfApp>

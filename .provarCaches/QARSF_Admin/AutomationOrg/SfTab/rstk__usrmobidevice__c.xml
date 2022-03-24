@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__usrmobidevice__c/home" n="rstk__usrmobidevice__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a9b/o" s="" seqNum="0" t="User Mobile Devices">
+  <children>
+    <sfObjectReference n="rstk__usrmobidevice__c" s=""/>
+  </children>
+</sfTab>

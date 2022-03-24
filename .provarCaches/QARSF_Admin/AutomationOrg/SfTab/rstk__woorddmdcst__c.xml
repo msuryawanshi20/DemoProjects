@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__woorddmdcst__c/home" n="rstk__woorddmdcst__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a9l/o" s="" seqNum="0" t="Work Order Component Detail">
+  <children>
+    <sfObjectReference n="rstk__woorddmdcst__c" s=""/>
+  </children>
+</sfTab>

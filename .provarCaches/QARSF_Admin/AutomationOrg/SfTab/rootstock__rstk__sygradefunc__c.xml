@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__sygradefunc__c/home" n="rootstock__rstk__sygradefunc__c" namespacePrefix="rootstock" pageUrl="https://automationtesting2.my.salesforce.com/a8i/o" s="" seqNum="0" t="Grade Level Functionalities">
+  <children>
+    <sfObjectReference n="rstk__sygradefunc__c" s=""/>
+  </children>
+</sfTab>

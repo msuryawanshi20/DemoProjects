@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/n/rootstock__LUI_SO_Line_Amortization_Process" n="rootstock__LUI_SO_Line_Amortization_Process" namespacePrefix="rootstock" pageUrl="rootstock__LUI_SO_Line_Amortization_Process" s="" seqNum="0" t="SO Line Amortization Process">
+  <children>
+    <SfFlexiPage n="rootstock__LUI_SO_Line_Amortization_Process" s="" t="SO Line Amortization Process" template="flexipage:defaultAppHomeTemplate" type="AppPage">
+      <regions>
+        <SfFlexiPageRegion n="main" s="" t="" type="Region">
+          <children>
+            <SfFlexiPageComponentInstance n="flowruntime__interview" s="0" t="">
+              <properties>
+                <entry>
+                  <key valueClass="string">flowLayout</key>
+                  <value valueClass="string">oneColumn</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowArguments</key>
+                  <value valueClass="string">[{"label":"actionName","dataType":"String","supportsRecordId":false,"value":"SOLineAmortizationProcess"}]</value>
+                </entry>
+                <entry>
+                  <key valueClass="string">flowName</key>
+                  <value valueClass="string">rootstock__SOLineAmortizationProcess</value>
+                </entry>
+              </properties>
+            </SfFlexiPageComponentInstance>
+          </children>
+        </SfFlexiPageRegion>
+      </regions>
+      <facets/>
+    </SfFlexiPage>
+  </children>
+</sfTab>

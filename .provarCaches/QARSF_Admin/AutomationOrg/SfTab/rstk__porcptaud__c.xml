@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfTab lightningPageUrl="/one/one.app#/sObject/rstk__porcptaud__c/home" n="rstk__porcptaud__c" namespacePrefix="rstk" pageUrl="https://automationtesting2.my.salesforce.com/a4F/o" s="" seqNum="0" t="PO Receipt Audit">
+  <children>
+    <sfObjectReference n="rstk__porcptaud__c" s=""/>
+  </children>
+</sfTab>
