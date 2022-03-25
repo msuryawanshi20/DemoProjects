@@ -572,15 +572,1004 @@
     <sfObjectRelationship childName="rstk__sytxncst__c" field="rstk__sytxncst_sorma__c" n="rstk__sytxncsts__r" relationshipName="rstk__sytxncsts__r" s="2-" t="01I5f000000jZM2"/>
   </childRelationships>
   <recordTypes>
-    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout interactionLogEnabled="true" layoutFileName="rstk__sorma__c-rstk__Return Material Authorization Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="triggeroptions" n="triggeroptions" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__triggeroptions__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="RMA Number" n="RMA Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_rmano__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Action" n="Action" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_action__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Closed" n="Closed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_closed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Condition Received" n="Condition Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_condition__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Credit Authorized" n="Credit Authorized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_creditauth__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Customer" n="Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_custno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="Customer Ship To Address" n="Customer Ship To Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_socaddr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Date Issued" n="Date Issued" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_date__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="External Comments" n="External Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_extcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Internal Comment" n="Internal Comment" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_intcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI label="Inventory Division" n="Inventory Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_invdiv__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Advance Replacement" n="Advance Replacement" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_preshipok__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI label="Override Address Line 1" n="Override Address Line 1" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address1__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI label="Override Address Line 2" n="Override Address Line 2" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address2__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI label="Override Address Line 3" n="Override Address Line 3" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address3__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI label="Override City" n="Override City" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_city__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI label="Override Contact Method" n="Override Contact Method" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_conmethod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI label="Override Country" n="Override Country" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_country__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI label="Override Email" n="Override Email" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_email__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI label="Override Fax" n="Override Fax" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_fax__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI label="Override Phone" n="Override Phone" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_phone__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI label="Override Ship to Name" n="Override Ship to Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_name__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI label="Override State" n="Override State" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_state__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI label="Override Zip Code" n="Override Zip Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_zip__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI label="Product" n="Product" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_soprod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI label="Project" n="Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_project__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI label="Qty Authorized" n="Qty Authorized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyauth__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI label="Qty Received" n="Qty Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyrec__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI label="Qty Shipped" n="Qty Shipped" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyship__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI label="Reason for Return" n="Reason for Return" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_reason__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI label="Released" n="Released" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_released__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI label="Sales Order Line" n="Sales Order Line" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_soline__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Ship To Address Override" n="Ship To Address Override" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_ovrshipto__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Shipping Costs" n="Shipping Costs" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_shipcost__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Do RMA Receipt at Zero Cost" n="Do RMA Receipt at Zero Cost" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_zerormarcpt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="RMA Receipt Debit Account" n="RMA Receipt Debit Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_dracct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Installation Address" n="Installation Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_installaddr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Installation Customer" n="Installation Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_installcust__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="Override Price for Replacement Sales Ord" n="Override Price for Replacement Sales Ord" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnprice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="Replacement Product" n="Replacement Product" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnprod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="Return Only (No Replacement)" n="Return Only (No Replacement)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnonly__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="Inspection Order" n="Inspection Order" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_inspord__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Inspection Order Template" n="Inspection Order Template" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_insptempl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="triggeroptions" n="triggeroptions" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__triggeroptions__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="RMA Number" n="RMA Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_rmano__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Action" n="Action" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_action__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Closed" n="Closed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_closed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Condition Received" n="Condition Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_condition__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Credit Authorized" n="Credit Authorized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_creditauth__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Customer" n="Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_custno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="Customer Ship To Address" n="Customer Ship To Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_socaddr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Date Issued" n="Date Issued" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_date__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="External Comments" n="External Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_extcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Internal Comment" n="Internal Comment" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_intcomment__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI label="Inventory Division" n="Inventory Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_invdiv__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Advance Replacement" n="Advance Replacement" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_preshipok__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI label="Override Address Line 1" n="Override Address Line 1" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address1__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI label="Override Address Line 2" n="Override Address Line 2" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address2__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI label="Override Address Line 3" n="Override Address Line 3" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_address3__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI label="Override City" n="Override City" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_city__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI label="Override Contact Method" n="Override Contact Method" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_conmethod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI label="Override Country" n="Override Country" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_country__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI label="Override Email" n="Override Email" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_email__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI label="Override Fax" n="Override Fax" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_fax__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI label="Override Phone" n="Override Phone" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_phone__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI label="Override Ship to Name" n="Override Ship to Name" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_name__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI label="Override State" n="Override State" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_state__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI label="Override Zip Code" n="Override Zip Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_zip__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI label="Product" n="Product" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_soprod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI label="Project" n="Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_project__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI label="Qty Authorized" n="Qty Authorized" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyauth__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI label="Qty Received" n="Qty Received" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyrec__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI label="Qty Shipped" n="Qty Shipped" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_qtyship__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI label="Reason for Return" n="Reason for Return" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_reason__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI label="Released" n="Released" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_released__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI label="Sales Order Line" n="Sales Order Line" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_soline__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Ship To Address Override" n="Ship To Address Override" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_ovrshipto__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Shipping Costs" n="Shipping Costs" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_shipcost__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Do RMA Receipt at Zero Cost" n="Do RMA Receipt at Zero Cost" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_zerormarcpt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="RMA Receipt Debit Account" n="RMA Receipt Debit Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_dracct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Installation Address" n="Installation Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_installaddr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Installation Customer" n="Installation Customer" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_installcust__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="Override Price for Replacement Sales Ord" n="Override Price for Replacement Sales Ord" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnprice__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="Replacement Product" n="Replacement Product" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnprod__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="Return Only (No Replacement)" n="Return Only (No Replacement)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_returnonly__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="Inspection Order" n="Inspection Order" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_inspord__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Inspection Order Template" n="Inspection Order Template" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__sorma_insptempl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="rstk__sormadmd_sorma__c" label="RMA Demand" n="rstk__RMA_Demand__r" nameAlias="rstk__sormadmd__c.rstk__sormadmd_sorma__c" relationshipName="rstk__RMA_Demand__r" s="3-" t="RMA Demand (rstk__sormadmd_sorma__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons>
+            <string>Submit</string>
+          </excludeButtons>
+          <customTags/>
+          <quickActionNames/>
+          <consoleComponents>
+            <sfConsoleComponent index="1" location="south" n="consoleComponent01" primaryComponent="true" region="Bottom" s="" style="Stack" t="Interaction Log" targetDef="primary:south:InteractionLog" type="InteractionLog"/>
+          </consoleComponents>
+          <platformActionNames/>
+        </sfLayout>
+      </children>
+    </sfRecordType>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r List rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r" n="New" target="sf:ui:target?object=rstk__sorma__c&amp;page=sorma"/>
-    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__sorma__c&amp;page=sorma"/>
-    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r List rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r rstk__oshiptoaddrsormas__r" n="New" target="sf:ui:target?object=rstk__sorma__c&amp;page=sorma"/>
+    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r rstk__oshiptoaddrsormas__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__sorma__c&amp;page=sorma"/>
+    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r rstk__oshiptoaddrsormas__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r rstk__oshiptoaddrsormas__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__shipsitesormas__r rstk__sormas__r rstk__Return_Material_Authorization__r rstk__Return_Material_Authorization1__r rstk__RMA_Header__r rstk__insplocidsormsa__r rstk__invlocidsormas__r rstk__scraplocidsormas__r rstk__RMA__r rstk__installcustsormas__r rstk__dracctsormas__r rstk__installaddrsormas__r rstk__oshiptoaddrsormas__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="RMA Detail Tab"/>

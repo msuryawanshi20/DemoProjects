@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.provar.core.testapi.annotations.BooleanType;
 import com.provar.core.testapi.annotations.ButtonType;
@@ -21,19 +19,10 @@ import com.provar.core.testapi.annotations.SalesforcePage;
 import com.provar.core.testapi.annotations.TestLogger;
 import com.provar.core.testapi.annotations.TextType;
 
-
-@SalesforcePage( title="Rstk__ Woreceipt"                                
-               , summary=""
-               , page="Woreceipt"
-               , namespacePrefix="rstk"
-               , object="rstk__worcpt__c"
-               , connection="QARSF_Admin"
-     )             
+@SalesforcePage(title = "Rstk__ Woreceipt", summary = "", page = "Woreceipt", namespacePrefix = "rstk", object = "rstk__worcpt__c", connection = "QARSF_Admin")
 public class rstk__Woreceipt {
 
 	public WebDriver driver;
-
-	WebDriverWait wait = new WebDriverWait(driver, 30);
 
 	public rstk__Woreceipt(WebDriver driver) {
 		this.driver = driver;
@@ -42,7 +31,7 @@ public class rstk__Woreceipt {
 	@PageWaitAfter.BackgroundActivity(timeoutSeconds = 60)
 	@PageWait.Field(timeoutSeconds = 10)
 	@BooleanType()
-	@FindBy(xpath = "//label[normalize-space(.)='Sort by Item Number']/ancestor::th/following-sibling::td//input")
+	@FindBy(xpath = "//label[normalize-space(.)='Sort by Item Number']/parent::th/following-sibling::td//input")
 	public WebElement sortByItemNumber;
 
 	@ChoiceListType()
@@ -112,26 +101,28 @@ public class rstk__Woreceipt {
 	@TestLogger
 	public Logger testLogger;
 
+
 	public void selectWorkOrder(String WorkOrder) throws InterruptedException {
 		Thread.sleep(2000);
 		String elementLocator = "//label[normalize-space(.)='Work Order']/ancestor::th/following-sibling::td//option";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(elementLocator)));
+		// wait.until(ExpectedConditions.elementToBeClickable(By.xpath(elementLocator)));
+
 		List<WebElement> workOrderList = driver.findElements(By.xpath(elementLocator));
 		for (int i = 0; i < workOrderList.size(); i++) {
+			testLogger.info("Picklist value:: " + workOrderList.get(i).getText());
+
 			if (workOrderList.get(i).getText().contains(WorkOrder)) {
 				workOrderList.get(i).click();
-				Thread.sleep(2000);
-
 			}
 		}
+		Thread.sleep(2000);
+
 	}
 
 	public void selectSerialNumber(Integer NumberOfSerialTobeSelected) throws InterruptedException {
 
 		Thread.sleep(2000);
 
-		List<WebElement> ele = driver.findElements(By.xpath("//select[contains(@id,'serials')]/option"));
-		testLogger.info("Size" + ele.size());
 		Select listbox = new Select(driver.findElement(By.xpath("//select[contains(@id,'serials')]")));
 		listbox.deselectAll();
 

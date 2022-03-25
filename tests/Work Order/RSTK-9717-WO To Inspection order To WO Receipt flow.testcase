@@ -2001,7 +2001,7 @@
                               </arguments>
                               <expectedExceptions/>
                             </apiCall>
-                            <caseCall testCaseId="a718b342-10d9-4d38-a41a-fab077c133e3" testCasePath="tests/Work Order/Callable/WO Receipt.testcase" testItemId="34">
+                            <caseCall testCaseId="1dcbe833-4609-4208-8c13-39f0c47664af" testCasePath="tests/Work Order/Callable/WO Receipt.testcase" testItemId="34">
                               <arguments>
                                 <argument id="reuseConnectionName">
                                   <value class="value" valueClass="string">SFConnection</value>
