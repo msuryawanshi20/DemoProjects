@@ -348,8 +348,8 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r List rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="New" target="sf:ui:target?page=Iccomcod&amp;object=rstk__iccomcod__c"/>
-    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Iccomcod&amp;object=rstk__iccomcod__c"/>
+    <sfActionLink modes="ObjectHome rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r List rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="New" target="sf:ui:target?object=rstk__iccomcod__c&amp;page=Iccomcod"/>
+    <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__iccomcod__c&amp;page=Iccomcod"/>
     <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink modes="View rstk__ICCOMCODs__r rstk__diviccomcods__r rstk__Inventory_Commodity_Codes__r rstk__ICCOMCODs2__r rstk__ICCOMCODs1__r rstk__Inv_Commodity_Codes__r rstk__Inv_Commodity_Codes1__r rstk__wmslocidiccomcods__r" n="ShowMore" t="Show More"/>
@@ -360,7 +360,7 @@
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=IccomcodView&amp;object=rstk__iccomcod__c"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__iccomcod__c&amp;page=IccomcodView"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

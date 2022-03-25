@@ -181,41 +181,41 @@
         <sfPLE id="141" n="Asia/Aden" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Aden)"/>
         <sfPLE id="142" n="Asia/Baghdad" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Baghdad)"/>
         <sfPLE id="143" n="Asia/Bahrain" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Bahrain)"/>
-        <sfPLE id="144" n="Asia/Kuwait" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Kuwait)"/>
-        <sfPLE id="145" n="Asia/Qatar" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Qatar)"/>
-        <sfPLE id="146" n="Asia/Riyadh" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Riyadh)"/>
-        <sfPLE id="147" n="Europe/Istanbul" s="" t="(GMT+03:00) Eastern European Standard Time (Europe/Istanbul)"/>
-        <sfPLE id="148" n="Europe/Kirov" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Kirov)"/>
-        <sfPLE id="149" n="Europe/Minsk" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Minsk)"/>
-        <sfPLE id="150" n="Europe/Moscow" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Moscow)"/>
-        <sfPLE id="151" n="Europe/Simferopol" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Simferopol)"/>
-        <sfPLE id="152" n="Europe/Volgograd" s="" t="(GMT+03:00) Volgograd Standard Time (Europe/Volgograd)"/>
-        <sfPLE id="153" n="Indian/Antananarivo" s="" t="(GMT+03:00) East Africa Time (Indian/Antananarivo)"/>
-        <sfPLE id="154" n="Indian/Comoro" s="" t="(GMT+03:00) East Africa Time (Indian/Comoro)"/>
-        <sfPLE id="155" n="Indian/Mayotte" s="" t="(GMT+03:00) East Africa Time (Indian/Mayotte)"/>
-        <sfPLE id="156" n="Africa/Blantyre" s="" t="(GMT+02:00) Central Africa Time (Africa/Blantyre)"/>
-        <sfPLE id="157" n="Africa/Bujumbura" s="" t="(GMT+02:00) Central Africa Time (Africa/Bujumbura)"/>
-        <sfPLE id="158" n="Africa/Cairo" s="" t="(GMT+02:00) Eastern European Standard Time (Africa/Cairo)"/>
-        <sfPLE id="159" n="Africa/Gaborone" s="" t="(GMT+02:00) Central Africa Time (Africa/Gaborone)"/>
-        <sfPLE id="160" n="Africa/Harare" s="" t="(GMT+02:00) Central Africa Time (Africa/Harare)"/>
-        <sfPLE id="161" n="Africa/Johannesburg" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)"/>
-        <sfPLE id="162" n="Africa/Juba" s="" t="(GMT+02:00) Central Africa Time (Africa/Juba)"/>
-        <sfPLE id="163" n="Africa/Khartoum" s="" t="(GMT+02:00) Central Africa Time (Africa/Khartoum)"/>
-        <sfPLE id="164" n="Africa/Kigali" s="" t="(GMT+02:00) Central Africa Time (Africa/Kigali)"/>
-        <sfPLE id="165" n="Africa/Lubumbashi" s="" t="(GMT+02:00) Central Africa Time (Africa/Lubumbashi)"/>
-        <sfPLE id="166" n="Africa/Lusaka" s="" t="(GMT+02:00) Central Africa Time (Africa/Lusaka)"/>
-        <sfPLE id="167" n="Africa/Maputo" s="" t="(GMT+02:00) Central Africa Time (Africa/Maputo)"/>
-        <sfPLE id="168" n="Africa/Maseru" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Maseru)"/>
-        <sfPLE id="169" n="Africa/Mbabane" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Mbabane)"/>
-        <sfPLE id="170" n="Africa/Tripoli" s="" t="(GMT+02:00) Eastern European Standard Time (Africa/Tripoli)"/>
-        <sfPLE id="171" n="Africa/Windhoek" s="" t="(GMT+02:00) Central Africa Time (Africa/Windhoek)"/>
-        <sfPLE id="172" n="Asia/Amman" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Amman)"/>
-        <sfPLE id="173" n="Asia/Beirut" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Beirut)"/>
-        <sfPLE id="174" n="Asia/Damascus" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Damascus)"/>
-        <sfPLE id="175" n="Asia/Famagusta" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Famagusta)"/>
-        <sfPLE id="176" n="Asia/Gaza" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Gaza)"/>
-        <sfPLE id="177" n="Asia/Hebron" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Hebron)"/>
-        <sfPLE id="178" n="Asia/Jerusalem" s="" t="(GMT+02:00) Israel Standard Time (Asia/Jerusalem)"/>
+        <sfPLE id="144" n="Asia/Damascus" s="" t="(GMT+03:00) Eastern European Summer Time (Asia/Damascus)"/>
+        <sfPLE id="145" n="Asia/Jerusalem" s="" t="(GMT+03:00) Israel Daylight Time (Asia/Jerusalem)"/>
+        <sfPLE id="146" n="Asia/Kuwait" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Kuwait)"/>
+        <sfPLE id="147" n="Asia/Qatar" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Qatar)"/>
+        <sfPLE id="148" n="Asia/Riyadh" s="" t="(GMT+03:00) Arabian Standard Time (Asia/Riyadh)"/>
+        <sfPLE id="149" n="Europe/Istanbul" s="" t="(GMT+03:00) Eastern European Standard Time (Europe/Istanbul)"/>
+        <sfPLE id="150" n="Europe/Kirov" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Kirov)"/>
+        <sfPLE id="151" n="Europe/Minsk" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Minsk)"/>
+        <sfPLE id="152" n="Europe/Moscow" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Moscow)"/>
+        <sfPLE id="153" n="Europe/Simferopol" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Simferopol)"/>
+        <sfPLE id="154" n="Europe/Volgograd" s="" t="(GMT+03:00) Volgograd Standard Time (Europe/Volgograd)"/>
+        <sfPLE id="155" n="Indian/Antananarivo" s="" t="(GMT+03:00) East Africa Time (Indian/Antananarivo)"/>
+        <sfPLE id="156" n="Indian/Comoro" s="" t="(GMT+03:00) East Africa Time (Indian/Comoro)"/>
+        <sfPLE id="157" n="Indian/Mayotte" s="" t="(GMT+03:00) East Africa Time (Indian/Mayotte)"/>
+        <sfPLE id="158" n="Africa/Blantyre" s="" t="(GMT+02:00) Central Africa Time (Africa/Blantyre)"/>
+        <sfPLE id="159" n="Africa/Bujumbura" s="" t="(GMT+02:00) Central Africa Time (Africa/Bujumbura)"/>
+        <sfPLE id="160" n="Africa/Cairo" s="" t="(GMT+02:00) Eastern European Standard Time (Africa/Cairo)"/>
+        <sfPLE id="161" n="Africa/Gaborone" s="" t="(GMT+02:00) Central Africa Time (Africa/Gaborone)"/>
+        <sfPLE id="162" n="Africa/Harare" s="" t="(GMT+02:00) Central Africa Time (Africa/Harare)"/>
+        <sfPLE id="163" n="Africa/Johannesburg" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)"/>
+        <sfPLE id="164" n="Africa/Juba" s="" t="(GMT+02:00) Central Africa Time (Africa/Juba)"/>
+        <sfPLE id="165" n="Africa/Khartoum" s="" t="(GMT+02:00) Central Africa Time (Africa/Khartoum)"/>
+        <sfPLE id="166" n="Africa/Kigali" s="" t="(GMT+02:00) Central Africa Time (Africa/Kigali)"/>
+        <sfPLE id="167" n="Africa/Lubumbashi" s="" t="(GMT+02:00) Central Africa Time (Africa/Lubumbashi)"/>
+        <sfPLE id="168" n="Africa/Lusaka" s="" t="(GMT+02:00) Central Africa Time (Africa/Lusaka)"/>
+        <sfPLE id="169" n="Africa/Maputo" s="" t="(GMT+02:00) Central Africa Time (Africa/Maputo)"/>
+        <sfPLE id="170" n="Africa/Maseru" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Maseru)"/>
+        <sfPLE id="171" n="Africa/Mbabane" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Mbabane)"/>
+        <sfPLE id="172" n="Africa/Tripoli" s="" t="(GMT+02:00) Eastern European Standard Time (Africa/Tripoli)"/>
+        <sfPLE id="173" n="Africa/Windhoek" s="" t="(GMT+02:00) Central Africa Time (Africa/Windhoek)"/>
+        <sfPLE id="174" n="Asia/Amman" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Amman)"/>
+        <sfPLE id="175" n="Asia/Beirut" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Beirut)"/>
+        <sfPLE id="176" n="Asia/Famagusta" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Famagusta)"/>
+        <sfPLE id="177" n="Asia/Gaza" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Gaza)"/>
+        <sfPLE id="178" n="Asia/Hebron" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Hebron)"/>
         <sfPLE id="179" n="Asia/Nicosia" s="" t="(GMT+02:00) Eastern European Standard Time (Asia/Nicosia)"/>
         <sfPLE id="180" n="Europe/Athens" s="" t="(GMT+02:00) Eastern European Standard Time (Europe/Athens)"/>
         <sfPLE id="181" n="Europe/Bucharest" s="" t="(GMT+02:00) Eastern European Standard Time (Europe/Bucharest)"/>

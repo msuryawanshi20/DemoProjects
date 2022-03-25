@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a41" label="Purchase Item Master" labelPlural="Purchase Item Master" layoutable="true" n="rstk__poitem__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Purchase Item Master (a41)" updatable="true">
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__POITEMs__r rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs1__r rstk__PO_Item_Master__r rstk__subdmdlocidpoitems__r" n="New"/>
-    <sfActionLink modes="View rstk__POITEMs__r rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs1__r rstk__PO_Item_Master__r rstk__subdmdlocidpoitems__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__POITEMs__r rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs1__r rstk__PO_Item_Master__r rstk__subdmdlocidpoitems__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs__r rstk__POITEMs1__r rstk__subdmdlocidpoitems__r" n="New"/>
+    <sfActionLink modes="View rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs__r rstk__POITEMs1__r rstk__subdmdlocidpoitems__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs__r rstk__POITEMs1__r rstk__subdmdlocidpoitems__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__POITEMs__r rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs1__r rstk__PO_Item_Master__r rstk__subdmdlocidpoitems__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__POITEMs__r rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs1__r rstk__PO_Item_Master__r rstk__subdmdlocidpoitems__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs__r rstk__POITEMs1__r rstk__subdmdlocidpoitems__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__subdmdsitepoitems__r rstk__divpoitems__r rstk__poitems__r rstk__POITEMs__r rstk__POITEMs1__r rstk__subdmdlocidpoitems__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
   </standardActions>

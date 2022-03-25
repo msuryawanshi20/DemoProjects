@@ -70,7 +70,7 @@
     <sfField n="rstk__wocst_batchschallwd__c" t="Batch Scheduling Allowed" type="_boolean"/>
     <sfField n="rstk__wocst_bypassfiniteloadind__c" t="Bypass Finite Loading" type="_boolean"/>
     <sfField n="rstk__wocst_closed__c" t="WO Closed" type="_boolean"/>
-    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__wocst_finvarohdfrng_calc__c +\nrstk__wocst_finvarlab_calc__c +\nrstk__wocst_finvarohdlab_calc__c +\nrstk__wocst_finvarohdmach_calc__c +\nrstk__wocst_finvarmtl_calc__c +\nrstk__wocst_finvarohdmtl_calc__c +\nrstk__wocst_finvarsublab_calc__c +\nrstk__wocst_finvarsubmtl_calc__c +\nrstk__wocst_finvarfrght_calc__c +\nrstk__wocst_finvarothlnd_calc__c" n="rstk__wocst_closvar_total__c" precision="18" scale="2" t="Final Var, Total" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__wocst_finvarohdfrng_calc__c +rstk__wocst_finvarlab_calc__c +rstk__wocst_finvarohdlab_calc__c +rstk__wocst_finvarohdmach_calc__c +rstk__wocst_finvarmtl_calc__c +rstk__wocst_finvarohdmtl_calc__c +rstk__wocst_finvarsublab_calc__c +rstk__wocst_finvarsubmtl_calc__c +rstk__wocst_finvarfrght_calc__c +rstk__wocst_finvarothlnd_calc__c" n="rstk__wocst_closvar_total__c" precision="18" scale="2" t="Final Var, Total" type="_double" updateable="false"/>
     <sfField n="rstk__wocst_closvarfrght__c" precision="16" scale="6" t="Close Variance, Freight" type="_double"/>
     <sfField n="rstk__wocst_closvarlab__c" precision="16" scale="6" t="Close Variance, Labor" type="_double"/>
     <sfField n="rstk__wocst_closvarmtl__c" precision="16" scale="6" t="Close Variance, Material" type="_double"/>
@@ -2271,14 +2271,19 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
+    <sfActionLink modes="ObjectHome rstk__WOCSTs__r rstk__Work_Orders__r rstk__divwocsts__r rstk__WO_Workbench2__r rstk__WO_Workbench__r List rstk__wocsts__r" n="New" target="sf:ui:target?object=rstk__wocst__c&amp;auraComponent=RecordEdit"/>
+    <sfActionLink modes="View rstk__WOCSTs__r rstk__Work_Orders__r rstk__divwocsts__r rstk__WO_Workbench2__r rstk__WO_Workbench__r rstk__wocsts__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__wocst__c&amp;auraComponent=RecordEdit"/>
+    <sfActionLink modes="View rstk__WOCSTs__r rstk__Work_Orders__r rstk__divwocsts__r rstk__WO_Workbench2__r rstk__WO_Workbench__r rstk__wocsts__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View rstk__WOCSTs__r rstk__Work_Orders__r rstk__divwocsts__r rstk__WO_Workbench2__r rstk__WO_Workbench__r rstk__wocsts__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__WOCSTs__r rstk__Work_Orders__r rstk__divwocsts__r rstk__WO_Workbench2__r rstk__WO_Workbench__r rstk__wocsts__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Work Orders Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
-    <sfActionLink modes="View rstk__wocsts__r rstk__divwocsts__r rstk__WOCSTs__r rstk__WO_Workbench__r rstk__Work_Orders__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?auraComponent=RecordEdit&amp;object=rstk__wocst__c"/>
-    <sfActionLink modes="View rstk__wocsts__r rstk__divwocsts__r rstk__WOCSTs__r rstk__WO_Workbench__r rstk__Work_Orders__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
-    <sfActionLink modes="ObjectHome List rstk__wocsts__r rstk__divwocsts__r rstk__WOCSTs__r rstk__WO_Workbench__r rstk__Work_Orders__r" n="New" target="sf:ui:target?auraComponent=RecordEdit&amp;object=rstk__wocst__c"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=WocstView&amp;object=rstk__wocst__c"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__wocst__c&amp;page=WocstView"/>
     <sfActionLink buttonName="rstk__Extract_Operations" n="rstk__Extract_Operations" s="" t="Extract Operations"/>
     <sfActionLink buttonName="rootstock__FirmList" massAction="true" n="rootstock__FirmList" s="" t="Firm"/>
     <sfActionLink buttonName="rstk__New_Disassembly_WO" massAction="true" n="rstk__New_Disassembly_WO" s="" t="New Disassembly Work Order"/>
@@ -2292,7 +2297,6 @@
     <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
     <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
     <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
-    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
     <sfActionLink modes="View" n="email" t="Send an Email"/>
     <sfActionLink modes="View" n="Share"/>
@@ -2303,10 +2307,6 @@
     <sfActionLink modes="ObjectHome List" n="Import"/>
     <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
     <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
-    <sfActionLink modes="View rstk__wocsts__r rstk__divwocsts__r rstk__WOCSTs__r rstk__WO_Workbench__r rstk__Work_Orders__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__wocsts__r rstk__divwocsts__r rstk__WOCSTs__r rstk__WO_Workbench__r rstk__Work_Orders__r" n="GoToList" t="Go To List"/>
-    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
-    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
   </standardActions>
   <homeListColumns>
     <string>RSTK__WOCST__C.NAME</string>

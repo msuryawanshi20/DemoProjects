@@ -134,7 +134,453 @@
     <sfObjectRelationship childName="rstk__woorddmdcst__c" field="rstk__woorddmdcst_itemrev__c" n="rstk__WO_Component_Details__r" relationshipName="rstk__WO_Component_Details__r" s="2-" t="01I5f000000jZMY"/>
   </childRelationships>
   <recordTypes>
-    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping"/>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout interactionLogEnabled="true" layoutFileName="rstk__peitemrev__c-rstk__Eng Item Revision Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="External Id" n="External Id" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="emptySpace" s="" seqNum="0" t="Web Layout Field" type="EmptySpace"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Item Number" n="Item Number" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_item__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Start Date" n="Start Date" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_effdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Revision No" n="Revision No" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_rev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Revision Status" n="Revision Status" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_revsts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Description" n="Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_descr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Formula Ident" n="Formula Ident" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_ident__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Inventory Revision Engineering Item" n="Inventory Revision Engineering Item" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_invpeitem__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Source for Initial BOM" n="Source for Initial BOM" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_bomsource__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="External Id" n="External Id" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Division" n="Division" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_div__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="emptySpace" s="" seqNum="0" t="Web Layout Field" type="EmptySpace"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Item Number" n="Item Number" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_item__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Start Date" n="Start Date" required="true" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_effdate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Revision No" n="Revision No" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_rev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Revision Status" n="Revision Status" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_revsts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Description" n="Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_descr__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Formula Ident" n="Formula Ident" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_ident__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Inventory Revision Engineering Item" n="Inventory Revision Engineering Item" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_invpeitem__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Source for Initial BOM" n="Source for Initial BOM" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__peitemrev_bomsource__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="WhatId" label="Open Activities" n="OpenActivities" nameAlias="RelatedActivityList" relationshipName="OpenActivities" s="3-" t="Open Activities (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="TASK.STATUS" s="" seq="4" t="Status"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="TASK.PRIORITY" s="" seq="5" t="Priority"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="6" t="Assigned To"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhatId" label="Activity History" n="ActivityHistories" nameAlias="RelatedHistoryList" relationshipName="ActivityHistories" s="3-" t="Activity History (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="OpenActivity.WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="4" t="Assigned To"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="TASK.LAST_UPDATE" s="" seq="5" t="Last Modified Date/Time"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icixr_itemrev__c" label="Requirements" n="rstk__Requirements__r" nameAlias="rstk__icixr__c.rstk__icixr_itemrev__c" relationshipName="rstk__Requirements__r" s="3-" t="Requirements (rstk__icixr_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Requirement Link"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__mrpbom_rev__c" label="MRPBOMs" n="rstk__MRPBOMs__r" nameAlias="rstk__mrpbom__c.rstk__mrpbom_rev__c" relationshipName="rstk__MRPBOMs__r" s="3-" t="MRPBOMs (rstk__mrpbom_rev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="MRPBOM Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__ictrstsup_itemrev__c" label="Inter-Site Supply" n="rstk__Inter_Site_Supply__r" nameAlias="rstk__ictrstsup__c.rstk__ictrstsup_itemrev__c" relationshipName="rstk__Inter_Site_Supply__r" s="3-" t="Inter-Site Supply (rstk__ictrstsup_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="ICTRSTSUP Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__ictrstdmd_itemrev__c" label="Inter-Site Demand" n="rstk__Inter_Site_Demand__r" nameAlias="rstk__ictrstdmd__c.rstk__ictrstdmd_itemrev__c" relationshipName="rstk__Inter_Site_Demand__r" s="3-" t="Inter-Site Demand (rstk__ictrstdmd_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="ICTRSTDMD Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wocst_itemrev__c" label="Work Orders" n="rstk__WO_Workbench__r" nameAlias="rstk__wocst__c.rstk__wocst_itemrev__c" relationshipName="rstk__WO_Workbench__r" s="3-" t="Work Orders (rstk__wocst_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__podmdcst_itemrev__c" label="PO Component Cost" n="rstk__PO_Component_Cost__r" nameAlias="rstk__podmdcst__c.rstk__podmdcst_itemrev__c" relationshipName="rstk__PO_Component_Cost__r" s="3-" t="PO Component Cost (rstk__podmdcst_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="PODMDCST Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soorddmd_itemrev__c" label="Sales Order Demand" n="rstk__SO_Demand__r" nameAlias="rstk__soorddmd__c.rstk__soorddmd_itemrev__c" relationshipName="rstk__SO_Demand__r" s="3-" t="Sales Order Demand (rstk__soorddmd_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="SOORDDMD Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woorddmdcst_itemrev__c" label="Work Order Component Detail" n="rstk__WO_Component_Details__r" nameAlias="rstk__woorddmdcst__c.rstk__woorddmdcst_itemrev__c" relationshipName="rstk__WO_Component_Details__r" s="3-" t="Work Order Component Detail (rstk__woorddmdcst_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__podmd_itemrev__c" label="PO Component Demand" n="rstk__PO_Component__r" nameAlias="rstk__podmd__c.rstk__podmd_itemrev__c" relationshipName="rstk__PO_Component__r" s="3-" t="PO Component Demand (rstk__podmd_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="PODMD Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__soorddmdcst_itemrev__c" label="Sales Order Demand Cost" n="rstk__SO_Demand_Cost__r" nameAlias="rstk__soorddmdcst__c.rstk__soorddmdcst_itemrev__c" relationshipName="rstk__SO_Demand_Cost__r" s="3-" t="Sales Order Demand Cost (rstk__soorddmdcst_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="SOORDDMDCST Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__poline_effrev__c" label="PO Line" n="rstk__POLINEs1__r" nameAlias="rstk__poline__c.rstk__poline_effrev__c" relationshipName="rstk__POLINEs1__r" s="3-" t="PO Line (rstk__poline_effrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icreq_effrev__c" label="Inventory Requisitions (Effective Rev)" n="rstk__PO_Requisitions2__r" nameAlias="rstk__icreq__c.rstk__icreq_effrev__c" relationshipName="rstk__PO_Requisitions2__r" s="3-" t="Inventory Requisitions (Effective Rev) (rstk__icreq_effrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__poprintline_effrev__c" label="PO Print Lines" n="rstk__POPRINTLINEs1__r" nameAlias="rstk__poprintline__c.rstk__poprintline_effrev__c" relationshipName="rstk__POPRINTLINEs1__r" s="3-" t="PO Print Lines (rstk__poprintline_effrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="POPRINTLINE Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__ibom_addrev__c" label="ZZ-Indented BOMs (Phase-in Rev)" n="rstk__ZZ_Indented_BOMs2__r" nameAlias="rstk__indentedbom__c.rstk__ibom_addrev__c" relationshipName="rstk__ZZ_Indented_BOMs2__r" s="3-" t="ZZ-Indented BOMs (Phase-in Rev) (rstk__ibom_addrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="ZZ-Indented BOM Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__ibom_delrev__c" label="ZZ-Indented BOMs (Phase-out Rev)" n="rstk__ZZ_Indented_BOMs3__r" nameAlias="rstk__indentedbom__c.rstk__ibom_delrev__c" relationshipName="rstk__ZZ_Indented_BOMs3__r" s="3-" t="ZZ-Indented BOMs (Phase-out Rev) (rstk__ibom_delrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="ZZ-Indented BOM Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sytxncst_itemrev__c" label="Rootstock Cost Transaction" n="rstk__Cost_Transaction4__r" nameAlias="rstk__sytxncst__c.rstk__sytxncst_itemrev__c" relationshipName="rstk__Cost_Transaction4__r" s="3-" t="Rootstock Cost Transaction (rstk__sytxncst_itemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sytxncst_locitemrev__c" label="Rootstock Cost Transaction" n="rstk__Cost_Transaction__r" nameAlias="rstk__sytxncst__c.rstk__sytxncst_locitemrev__c" relationshipName="rstk__Cost_Transaction__r" s="3-" t="Rootstock Cost Transaction (rstk__sytxncst_locitemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sytxncst_orddmditemrev__c" label="Rootstock Cost Transaction" n="rstk__Cost_Transaction1__r" nameAlias="rstk__sytxncst__c.rstk__sytxncst_orddmditemrev__c" relationshipName="rstk__Cost_Transaction1__r" s="3-" t="Rootstock Cost Transaction (rstk__sytxncst_orddmditemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__sytxncst_ordsupitemrev__c" label="Rootstock Cost Transaction" n="rstk__Cost_Transaction5__r" nameAlias="rstk__sytxncst__c.rstk__sytxncst_ordsupitemrev__c" relationshipName="rstk__Cost_Transaction5__r" s="3-" t="Rootstock Cost Transaction (rstk__sytxncst_ordsupitemrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wocst_effrev__c" label="Work Orders" n="rstk__WO_Workbench2__r" nameAlias="rstk__wocst__c.rstk__wocst_effrev__c" relationshipName="rstk__WO_Workbench2__r" s="3-" t="Work Orders (rstk__wocst_effrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__addrev__c" label="ZZ - Bom Mass Adds" n="rstk__Bom_Mass_Adds__r" nameAlias="rstk__bommassadd__c.rstk__addrev__c" relationshipName="rstk__Bom_Mass_Adds__r" s="3-" t="ZZ - Bom Mass Adds (rstk__addrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="BOM Mass Add Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__delrev__c" label="ZZ Bom Mass Add Lines" n="rstk__ZZ_Bom_Mass_Add_Lines__r" nameAlias="rstk__bommassaddline__c.rstk__delrev__c" relationshipName="rstk__ZZ_Bom_Mass_Add_Lines__r" s="3-" t="ZZ Bom Mass Add Lines (rstk__delrev__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="ZZ Bom Mass Add Line Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons/>
+          <customTags/>
+          <quickActionNames/>
+          <consoleComponents>
+            <sfConsoleComponent index="1" location="south" n="consoleComponent01" primaryComponent="true" region="Bottom" s="" style="Stack" t="Interaction Log" targetDef="primary:south:InteractionLog" type="InteractionLog"/>
+          </consoleComponents>
+          <platformActionNames/>
+        </sfLayout>
+      </children>
+    </sfRecordType>
   </recordTypes>
   <standardActions>
     <sfActionLink modes="ObjectHome rstk__invpeitemrevs__r rstk__PEITEMREVs__r List rstk__peitemrevbs__r" n="New" target="sf:ui:target?object=rstk__peitemrev__c&amp;page=Peitemrev"/>

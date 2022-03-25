@@ -134,19 +134,19 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__WO_Operation_WIP__r rstk__wopwips__r rstk__divwopwips__r List" n="New" target="sf:ui:target?page=Wopwip&amp;object=rstk__wopwip__c"/>
-    <sfActionLink modes="View rstk__WO_Operation_WIP__r rstk__wopwips__r rstk__divwopwips__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Wopwip&amp;object=rstk__wopwip__c"/>
-    <sfActionLink modes="View rstk__WO_Operation_WIP__r rstk__wopwips__r rstk__divwopwips__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__wopwips__r rstk__divwopwips__r rstk__WO_Operation_WIP__r List rstk__WO_Operation_WIP_del__r" n="New" target="sf:ui:target?object=rstk__wopwip__c&amp;page=Wopwip"/>
+    <sfActionLink modes="View rstk__wopwips__r rstk__divwopwips__r rstk__WO_Operation_WIP__r rstk__WO_Operation_WIP_del__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__wopwip__c&amp;page=Wopwip"/>
+    <sfActionLink modes="View rstk__wopwips__r rstk__divwopwips__r rstk__WO_Operation_WIP__r rstk__WO_Operation_WIP_del__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__WO_Operation_WIP__r rstk__wopwips__r rstk__divwopwips__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__WO_Operation_WIP__r rstk__wopwips__r rstk__divwopwips__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__wopwips__r rstk__divwopwips__r rstk__WO_Operation_WIP__r rstk__WO_Operation_WIP_del__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__wopwips__r rstk__divwopwips__r rstk__WO_Operation_WIP__r rstk__WO_Operation_WIP_del__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="WO Operations WIP Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=WopwipView&amp;object=rstk__wopwip__c"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__wopwip__c&amp;page=WopwipView"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
