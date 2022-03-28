@@ -1,13 +1,204 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a3Y" label="Z_OBSOLETE" labelPlural="PO Agreement Header" layoutable="true" n="rstk__poagrhdr__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Z_OBSOLETE (a3Y)" updatable="true">
+<sfObject creatable="true" deleteable="true" keyPrefix="a3Y" label="Z_OBSOLETE" labelPlural="PO Agreement Header" layoutable="true" metadataLabel="Z_OBSOLETE" n="rstk__poagrhdr__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Z_OBSOLETE (a3Y)" updatable="true" urlDetail="https://automationtesting2.my.salesforce.com/{ID}" urlEdit="https://automationtesting2.my.salesforce.com/{ID}/e" urlNew="https://automationtesting2.my.salesforce.com/a3Y/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Z_OBSOLETE ID" type="id" updateable="false"/>
+    <sfField internalLabel="Owner ID" length="18" n="OwnerId" relationshipName="Owner" t="Owner" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true" t="POAGRHDR Name"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="100" n="rstk__externalid__c" summary="This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages." t="External Id"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__poagrhdr_div__r.rstk__sydiv_div__c &amp; '_' &amp;  rstk__poagrhdr_agreeno__c" length="1300" n="rstk__formula_extid__c" summary="This is an internal system field used to define the external ID of a record, which is also an internal system field. Neither is currently displayed on any Rootstock User pages." t="Formula External Id" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__poagrhdr_agreeno__c + ' - (' +  rstk__poagrhdr_vendno__r.Name + ')'" length="1300" n="rstk__formula_name__c" summary="Internal formula for constructing the associated name field, which is an internal system field, not currently displayed on any Rootstock User pages." t="Formula Name" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__poagrhdr_limit__c - rstk__poagrhdr_pototamt__c" n="rstk__formula_remainingamt__c" precision="18" scale="6" summary="PO Agreement Dollars Remaining" t="Dollars Remaining" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__poagrhdr_div__r.rstk__sydiv_div__c + ' ' +  rstk__poagrhdr_orgid__r.rstk__syorg_orgid__c + ' ' +  rstk__poagrhdr_pohdr__r.rstk__pohdr_ordno__c + ' ' +  rstk__poagrhdr_buyusrno__r.rstk__syusr_employee__c + ' ' + rstk__poagrhdr_vendno__r.rstk__povend_vendno__c" length="1300" n="rstk__formula_searchindex__c" summary="This is an internal system field used to define the searchindex of a record, which is also an internal system field. Neither is currently displayed on any Rootstock User pages." t="Formula Search Index" updateable="false"/>
+    <sfField length="16" n="rstk__poagrhdr_agreeno__c" summary="This is the Agreement Number that is used internally, and may be different than the Vendor's Agreement Number.  It can be a system-generated number of can be set manually, requiring an alpha-character prefix." t="Agreement Number"/>
+    <sfField length="16" n="rstk__poagrhdr_agreenocustom__c" summary="PO Agreement Number" t="Custom Agreement Number"/>
+    <sfField length="1" n="rstk__poagrhdr_agrsts__c" summary="This represents the current status of the PO Agreement.  Values are Planned (pending), Firmed (active) or Closed." t="Status"/>
+    <sfField length="18" n="rstk__poagrhdr_apprvid1__c" relationshipName="rstk__poagrhdr_apprvid1__r" summary="User-input field used to drive the required PO Approvals needed when a PO is associated with this Agreement." t="Approver Level 1" type="reference">
+      <referenceTos>
+        <string>rstk__syapprv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__poagrhdr_apprvid2__c" relationshipName="rstk__poagrhdr_apprvid2__r" summary="User-input field used to drive the required PO Approvals needed when a PO is associated with this Agreement." t="Approver Level 2" type="reference">
+      <referenceTos>
+        <string>rstk__syapprv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__poagrhdr_apprvid3__c" relationshipName="rstk__poagrhdr_apprvid3__r" summary="User-input field used to drive the required PO Approvals needed when a PO is associated with this Agreement." t="Approver Level 3" type="reference">
+      <referenceTos>
+        <string>rstk__syapprv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__poagrhdr_autoassignedagreeno__c" precision="18" summary="This is the automatically assigned Agreement Number" t="Auto-assigned Agree No" type="_double"/>
+    <sfField n="rstk__poagrhdr_blanketagrind__c" summary="When checked, this indicates that all goods and services provided by the Agreement Vendor are covered by the one agreement. There can only be one Blanket Agreement for a given Vendor." t="Blanket Agreement" type="_boolean"/>
+    <sfField length="18" n="rstk__poagrhdr_buyusrno__c" relationshipName="rstk__poagrhdr_buyusrno__r" summary="This is the Buyer that is specifically responsible for this Agreement. This defaults to the Buyer responsible for the given Vendor but can be overwritten." t="Responsible Buyer" type="reference">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="rstk__poagrhdr_descr__c" summary="This is the description for this particular agreement. It is not required but is recommended to be used to describe the nature of the Agreement (limited to 50 characters)." t="Description" type="textarea"/>
+    <sfField length="18" n="rstk__poagrhdr_div__c" relationshipName="rstk__poagrhdr_div__r" summary="Identifies the specific Division that this record is associated with. Div is the core organizational unit, which is typically the plant where the manufacturing is performed, as well as the receipt of purchased material, and fulfillment of sales orders." t="Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__poagrhdr_exchangerate__c" precision="16" scale="6" summary="This is the exchange rate at the time the Vendor and Buyer negotiated the agreement for which the amounts and prices established are based on." t="Exchange Rate" type="_double"/>
+    <sfField length="3" n="rstk__poagrhdr_homecurr__c" summary="This denotes the Currency of the Rootstock Company (as opposed to the Vendor's currency)." t="Home Currency"/>
+    <sfField n="rstk__poagrhdr_indmtlind__c" summary="When the checkbox is checked, it indicates that the Agreement can be used for Indirect Material. Field is disabled for Blanket Agreemenst (that cover all types of material) or when the Vendor record does not have the Indirect Material checkbox checked." t="Indirect Material" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_limit__c" precision="16" scale="6" summary="This is the dollar limit of the Agreement in the Home Currency." t="Agreement Amount Limit" type="_double"/>
+    <sfField n="rstk__poagrhdr_limitvcurr__c" precision="16" scale="6" summary="This is the dollar limit of the Agreement in the Vendor's currency.  If the total PO amounts are greater than this limit, then the Approvers will need to Approve the revisions of all purchase orders." t="Agreement Amount Limit (Vendor Currency)" type="_double"/>
+    <sfField length="3" n="rstk__poagrhdr_maintcurr__c" summary="This is the maintenance currency for this Agreement" t="Maintenance Currency"/>
+    <sfField length="18" n="rstk__poagrhdr_orgid__c" relationshipName="rstk__poagrhdr_orgid__r" summary="Denotes the Group used to determine approvals required." t="Group" type="reference">
+      <referenceTos>
+        <string>rstk__syorg__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__poagrhdr_outsideopsind__c" summary="When the checkbox is checked, it indicates that the Agreement can be used for Outside Operations. Field is disabled for Blanket Agreemenst (that cover all types of material) or when the Vendor record does not have the Direct Material checkbox checked." t="Outside Operations" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_ovrlv2apprvind__c" summary="When checkbox is checked, the Purchase Order Level 2 Approvers are not required to approve any POs associated with this agreement." t="Approval Override (Level 2)" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_ovrlvl1apprvind__c" summary="When checkbox is checked, the Purchase Order Level 1 Approvers are not required to approve any POs associated with this agreement." t="Approval Override (Level 1)" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_poamtapprv__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that have been approved. Value is in the Home currency." t="Total Amount Approved" type="_double"/>
+    <sfField n="rstk__poagrhdr_poamtapprvvcurr__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that have been approved.  Value is in the Vendor's currency." t="Total Amount Approved (Vendor Currency)" type="_double"/>
+    <sfField n="rstk__poagrhdr_poamtunapprv__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that have yet to be approved. Value is in the Vendor's currency." t="Pending Amount" type="_double"/>
+    <sfField n="rstk__poagrhdr_poamtunapprvvcurr__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that have yet to be approved. Value is in the Vendor's currency." t="Pending Amount (Vendor Currency)" type="_double"/>
+    <sfField length="18" n="rstk__poagrhdr_pohdr__c" relationshipLabel="PO Agreement Header" relationshipName="rstk__poagrhdr_pohdr__r" summary="This is the Purchase Order Number for this Agreement" t="Purchase Order" type="reference">
+      <referenceTos>
+        <string>rstk__pohdr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__poagrhdr_pototamt__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that are either unapproved or approved. Value is in the Home currency." t="Total PO Amount" type="_double"/>
+    <sfField n="rstk__poagrhdr_pototamtvcurr__c" precision="16" scale="6" summary="This is the total amount on POs associated with this Agreement that are either unapproved or approved. Value is in the Vendor's currency." t="Total PO Amount (Vendor Currency)" type="_double"/>
+    <sfField n="rstk__poagrhdr_purdirmtlind__c" summary="When the checkbox is checked, it indicates that the Agreement can be used for Direct Material. Field is disabled for Blanket Agreemenst (that cover all types of material) or when the Vendor record does not have the Direct Material checkbox checked." t="Direct Items" type="_boolean"/>
+    <sfField length="18" n="rstk__poagrhdr_requestorg__c" relationshipName="rstk__poagrhdr_requestorg__r" summary="This is the Requesting Organization for this Agreement" t="Requesting Organization" type="reference">
+      <referenceTos>
+        <string>rstk__syorg__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__poagrhdr_serviceind__c" summary="When the checkbox is checked, it indicates that the Agreement can be used for Service Items. Field is disabled for Blanket Agreemenst (that cover all types of material) or when the Vendor record does not have the Service checkbox checked." t="Services" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_subdirmtlind__c" summary="When the checkbox is checked, it indicates that the Agreement can be used for Subcontract Items. Field is disabled for Blanket Agreemenst (that cover all types of material) or when the Vendor record does not have the Direct Material checkbox checked." t="Subcontact Items" type="_boolean"/>
+    <sfField n="rstk__poagrhdr_temp_select__c" summary="PO Agreement UI Temporary field" t="Temp Select" type="_boolean"/>
+    <sfField length="50" n="rstk__poagrhdr_vendagrno__c" summary="Denotes the Vendor's Agreement Number, which may be different that the internal Agreement Number." t="Vendor’s Agreement Number"/>
+    <sfField length="3" n="rstk__poagrhdr_vendcurr__c" summary="This is the Vendor's currency and is set from the Vendor record." t="Vendor Currency"/>
+    <sfField length="18" n="rstk__poagrhdr_vendno__c" relationshipName="rstk__poagrhdr_vendno__r" summary="This denotes the Vendor Number associated with the Agreement's Vendor." t="Vendor" type="reference">
+      <referenceTos>
+        <string>rstk__povend__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__searchindex__c" summary="This is an internal system field not currently displayed on any Rootstock User pages" t="Search Index"/>
+    <sfField length="40" n="rstk__triggeroptions__c" summary="This is an internal system field which is not currently displayed on any Rootstock User pages." t="triggeroptions"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="Visit" field="ContextId" n="Contexts" relationshipName="Contexts" s="2-" t="Visit"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__poagrhdr__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="rstk__poagrhdr__History"/>
+    <sfObjectRelationship childName="rstk__poagrhdr__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="rstk__poagrhdr__Share"/>
+    <sfObjectRelationship childName="rstk__poagrlne__c" field="rstk__poagrlne_agreeno__c" n="rstk__POAGRLNEs__r" relationshipName="rstk__POAGRLNEs__r" s="2-" t="rstk__poagrlne__c"/>
+    <sfObjectRelationship childName="rstk__pohdr__c" field="rstk__pohdr_agreeno__c" n="rstk__POHDRs__r" relationshipName="rstk__POHDRs__r" s="2-" t="rstk__pohdr__c"/>
+    <sfObjectRelationship childName="rstk__poloader__c" field="rstk__poloader_agreeno__c" n="rstk__PO_Loaders__r" relationshipName="rstk__PO_Loaders__r" s="2-" t="rstk__poloader__c"/>
+    <sfObjectRelationship childName="rstk__poprinthdr__c" field="rstk__poprinthdr_agreeno__c" n="rstk__POPRINTHDRs__r" relationshipName="rstk__POPRINTHDRs__r" s="2-" t="rstk__poprinthdr__c"/>
+    <sfObjectRelationship childName="rstkf__vendorcreditapplyhist__c" field="rstkf__vendorcreditapplyhist_invoicedragreement__c" n="rstkf__vendorcreditapplyhists__r" relationshipName="rstkf__vendorcreditapplyhists__r" s="2-" t="rstkf__vendorcreditapplyhist__c"/>
+    <sfObjectRelationship childName="rstkf__vendorcreditapplyhist__c" field="rstkf__vendorcreditapplyhist_vendorcragreement__c" n="rstkf__vendorcreditapplyhists01__r" relationshipName="rstkf__vendorcreditapplyhists01__r" s="2-" t="rstkf__vendorcreditapplyhist__c"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r" n="New"/>
-    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r List rstk__PO_Agreements__r rstk__PO_Agreements1__r rstk__PO_Agreements2__r" n="New"/>
+    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r rstk__PO_Agreements__r rstk__PO_Agreements1__r rstk__PO_Agreements2__r" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r rstk__PO_Agreements__r rstk__PO_Agreements1__r rstk__PO_Agreements2__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r rstk__PO_Agreements__r rstk__PO_Agreements1__r rstk__PO_Agreements2__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__divpoagrhdrs__r rstk__POAGRHDRs__r rstk__POAGRHDRs1__r rstk__PO_Agreements__r rstk__PO_Agreements1__r rstk__PO_Agreements2__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink n="Tab" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
   </standardActions>
+  <homeListColumns>
+    <string>RSTK__POAGRHDR__C.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>RSTK__POAGRHDR__C.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>RSTK__POAGRHDR__C.NAME</string>
+    <string>rstk__poagrhdr_div__c</string>
+    <string>rstk__poagrhdr_vendno__c</string>
+    <string>rstk__poagrhdr_agreeno__c</string>
+    <string>rstk__poagrhdr_poamtapprv__c</string>
+    <string>rstk__poagrhdr_pototamt__c</string>
+    <string>rstk__formula_remainingamt__c</string>
+    <string>rstk__poagrhdr_agrsts__c</string>
+    <string>rstk__poagrhdr_buyusrno__c</string>
+    <string>LAST_UPDATE</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>NAME</string>
+  </compactLayoutFields>
+  <listViewActions/>
 </sfObject>

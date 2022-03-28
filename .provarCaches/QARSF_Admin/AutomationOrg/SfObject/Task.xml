@@ -477,6 +477,13 @@
         <string>rstkf__vendorcrapp__c</string>
         <string>rstkf__vendorcreditapplyhist__c</string>
       </referenceTos>
+      <relatedListTranslationLabels/>
+      <otherRelatedListTranslationLabels>
+        <entry>
+          <key valueClass="string">Task.WhatId</key>
+          <value valueClass="string">Related To</value>
+        </entry>
+      </otherRelatedListTranslationLabels>
     </sfField>
     <sfField length="255" n="Subject" nameField="true" type="combobox">
       <picklistEntryIds>1,2,3,4,5</picklistEntryIds>

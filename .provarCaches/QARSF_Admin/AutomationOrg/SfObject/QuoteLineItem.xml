@@ -1,13 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0QL" label="Quote Line Item" labelPlural="Quote Line Items" layoutable="true" n="QuoteLineItem" queryable="true" readPermission="false" retrieveable="true" s="" t="Quote Line Item (0QL)" updatable="true">
+<sfObject creatable="true" defaultCompactLayoutId="QuoteLineItem.SYSTEM" deleteable="true" keyPrefix="0QL" label="Quote Line Item" labelPlural="Quote Line Items" layoutable="true" metadataLabel="Quote Line Item" n="QuoteLineItem" queryable="true" retrieveable="true" s="" t="Quote Line Item (0QL)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/0QL/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Quote Line Item ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField autoNumberField="true" createable="false" editPermission="false" length="255" n="LineNumber" nameField="true" t="Line Item Number" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField isMasterDetail="true" length="18" n="QuoteId" relationshipName="Quote" required="true" t="Quote Name" type="reference" updateable="false">
+      <referenceTos>
+        <string>Quote</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="PricebookEntryId" relationshipName="PricebookEntry" required="true" t="Price Book Entry" type="reference" updateable="false">
+      <referenceTos>
+        <string>PricebookEntry</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="OpportunityLineItemId" relationshipName="OpportunityLineItem" t="Opportunity Line Item" type="reference" updateable="false">
+      <referenceTos>
+        <string>OpportunityLineItem</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="Quantity" precision="12" required="true" scale="2" type="_double"/>
+    <sfField n="UnitPrice" precision="18" required="true" scale="2" t="Sales Price" type="currency"/>
+    <sfField n="Discount" precision="5" scale="2" type="percent"/>
+    <sfField length="255" n="Description" t="Line Item Description"/>
+    <sfField n="ServiceDate" t="Date" type="date"/>
+    <sfField length="18" n="Product2Id" relationshipName="Product2" required="true" t="Product" type="reference" updateable="false">
+      <referenceTos>
+        <string>Product2</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" digits="9" n="SortOrder" t="Sort Order" type="_int" updateable="false"/>
+    <sfField createable="false" n="ListPrice" precision="18" scale="2" t="List Price" type="currency" updateable="false"/>
+    <sfField createable="false" n="Subtotal" precision="18" scale="2" type="currency" updateable="false"/>
+    <sfField createable="false" n="TotalPrice" precision="18" scale="2" t="Total Price" type="currency" updateable="false"/>
+    <sfField length="255" n="ProductCode" notVisibleToMetadataUser="true" t="Product Code"/>
+    <sfField length="18" n="rstk__Quoteline_assignedto__c" relationshipLabel="Quote Line Items" relationshipName="rstk__Quoteline_assignedto__r" t="Assigned User" type="reference">
+      <referenceTos>
+        <string>rstk__syusr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__Quoteline_labseq__c" precision="10" t="Labor Sequence Number" type="_double"/>
+    <sfField length="255" n="rstk__Quoteline_rstype__c" t="Rootstock Entity Type" type="picklist">
+      <picklistEntryIds>1,2</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="1" n="Labor" s=""/>
+        <sfPLE id="2" n="Material" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="20" n="rstk__Quoteline_sfprodid__c" t="SF Product ID"/>
+    <sfField length="80" n="rstk__Quoteline_sfprodname__c" t="SF Product Name"/>
+    <sfField length="18" n="rstk__quoteline_iccomcod__c" relationshipLabel="Quote Line Items" relationshipName="rstk__quoteline_iccomcod__r" t="Inventory Commodity Code" type="reference">
+      <referenceTos>
+        <string>rstk__iccomcod__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="6" n="rstk__quoteline_pricesrce__c" t="Price Source"/>
+    <sfField n="rstk__quoteline_rsprice__c" t="Priced From Rootstock" type="_boolean"/>
+    <sfField length="18" n="rstk__quoteline_socomm__c" relationshipLabel="Quote Line Items" relationshipName="rstk__quoteline_socomm__r" t="Product Group" type="reference">
+      <referenceTos>
+        <string>rstk__socomm__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="rstk__triggeroptions__c" t="triggeroptions"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedOrderItemList" childName="OrderItem" field="QuoteLineItemId" n="OrderItems" relationshipName="OrderItems" s="2-" t="OrderItem"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__assignedtoQuotelines__r rstk__quotelines__r" n="New"/>
-    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r" n="Edit" requiresRow="true" s="2"/>
-    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__assignedtoQuotelines__r rstk__quotelines__r QuoteLineItems List" n="New"/>
+    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r QuoteLineItems" n="Edit" requiresRow="true"/>
+    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r QuoteLineItems" n="Delete" requiresRow="true"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r QuoteLineItems" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__assignedtoQuotelines__r rstk__quotelines__r QuoteLineItems" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink lightningActionName="MultiAdd" lightningLabel="Add Products" modes="QuoteLineItems" n="AddQuoteLine" t="Add Line Item"/>
+    <sfActionLink n="MultiAdd" s="" t="Add Products"/>
+    <sfActionLink n="MultiEdit" s="" t="Edit Products"/>
+    <sfActionLink n="EditAllQuoteLine" s="" t="Edit All"/>
+    <sfActionLink n="SortQuoteLines" s="" t="Sort"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List QuoteLineItems" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink lightningActionName="MultiAdd" lightningLabel="Add Products" modes="QuoteLineItems" n="addProd" t="Select Product"/>
+    <sfActionLink modes="" n="addProd2" t="Add Product"/>
+    <sfActionLink lightningActionName="MultiEdit" lightningLabel="Edit Products" modes="QuoteLineItems" n="editQuoteLines" t="Edit All"/>
   </standardActions>
+  <homeListColumns>
+    <string>QUOTELINEITEM.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>QUOTELINEITEM.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>QUOTELINEITEM.NAME</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Product2Id</string>
+    <string>UnitPrice</string>
+    <string>Quantity</string>
+    <string>TotalPrice</string>
+  </compactLayoutFields>
 </sfObject>

@@ -412,12 +412,12 @@
     <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
   </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r List rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r" n="New" target="sf:ui:target?object=rstk__socust__c&amp;page=socust"/>
-    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__socust__c&amp;page=socust"/>
-    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="ObjectHome rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r List rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r rstk__Customer_Master__r" n="New" target="sf:ui:target?object=rstk__socust__c&amp;page=socust"/>
+    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r rstk__Customer_Master__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__socust__c&amp;page=socust"/>
+    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r rstk__Customer_Master__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
-    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r" n="ShowMore" t="Show More"/>
-    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r rstk__Customer_Master__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstk__sf_account_socusts__r rstk__Customer_Masters1__r rstk__Customer_Masters__r rstk__socusts__r rstk__fsocusts__r rstk__relsocusts__r rstk__dfltexportsocusts__r rstk__Customer_Master__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
     <sfActionLink n="Tab" s="" t="Customer Master Tab"/>

@@ -66,6 +66,7 @@
     <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
     <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
     <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
     <sfObjectRelationship childName="rstk__sycarrier__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="01I5f000000jZL9.Share"/>
     <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__sycarrier__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="01I5f000000jZL9.History"/>
     <sfObjectRelationship childName="rstk__customext__c" field="rstk__carrier__c" n="rstk__customexts__r" relationshipName="rstk__customexts__r" s="2-" t="01I5f000000jZDP"/>
@@ -109,12 +110,12 @@
   <standardActions>
     <sfActionLink n="Tab" s="" t="Carrier Codes Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
-    <sfActionLink modes="View" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstk__sycarrier__c&amp;page=sycarrier"/>
+    <sfActionLink modes="View" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=sycarrier&amp;object=rstk__sycarrier__c"/>
     <sfActionLink modes="View" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
-    <sfActionLink modes="ObjectHome List" n="New" target="sf:ui:target?object=rstk__sycarrier__c&amp;page=sycarrier"/>
+    <sfActionLink modes="ObjectHome List" n="New" target="sf:ui:target?page=sycarrier&amp;object=rstk__sycarrier__c"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstk__sycarrier__c&amp;page=SycarrierView"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=SycarrierView&amp;object=rstk__sycarrier__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>

@@ -120,23 +120,636 @@
     <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
     <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
     <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
     <sfObjectRelationship childName="rstkf__apinvh__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="01I5f000000jZkT.Share"/>
     <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstkf__apinvh__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="01I5f000000jZkT.History"/>
     <sfObjectRelationship childName="rstkf__apinvtxn__c" field="rstkf__apinvtxn_apinvh__c" n="rstkf__apinvtxns__r" relationshipName="rstkf__apinvtxns__r" s="2-" t="01I5f000000jZkW"/>
     <sfObjectRelationship childName="rstkf__appayh__c" field="rstkf__appayh_apinvh_qp__c" n="rstkf__appayhs__r" relationshipName="rstkf__appayhs__r" s="2-" t="01I5f000000jZkb"/>
   </childRelationships>
   <recordTypes>
-    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout layoutFileName="rstkf__apinvh__c-rstkf__Payables Batch Header Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Company" n="Company" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_cmpno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Session Number" n="Session Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_batchno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="AP Invoice Session Type" n="AP Invoice Session Type" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_batchtype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Comments" n="Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_comments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Default Freight Account" n="Default Freight Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dfltfrghtacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Default Tax Account" n="Default Tax Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dflttaxacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Default Terms Discount Taken Account" n="Default Terms Discount Taken Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dflttrmdisctknacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Period" n="Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_period__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="PO Generated Session" n="PO Generated Session" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_pobatchind__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_status__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="Terms Discount Session" n="Terms Discount Session" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_termdiscsession__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Quickpayment" n="Quickpayment" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_quickpayment_ui__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Type Formula" n="Type Formula" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__formula_batchtype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Fiscal Year" n="Fiscal Year" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_year__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Number of Transactions" n="Number of Transactions" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_numbtxns__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Zero Hash DR/CR Totals" n="Zero Hash DR/CR Totals" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_zerosumdebitscreditshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount (Home Currency)" n="Freight Amount (Home Currency)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_frghthomeamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Z_OBSOLETE" n="Z_OBSOLETE" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_taxhomeamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="AP Account Total Credits" n="AP Account Total Credits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_apcreditshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="AP Account Total Debits" n="AP Account Total Debits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_apdebitshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Credits" n="Total Credits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_otheracctcreditsthome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Debits" n="Total Debits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_otheracctdebitsthome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="formula_batchno" n="formula_batchno" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__formula_batchno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount (Home Currency)" n="Freight Amount (Home Currency)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_frghthomeamtnet__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Company" n="Company" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_cmpno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Session Number" n="Session Number" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_batchno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="AP Invoice Session Type" n="AP Invoice Session Type" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_batchtype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Comments" n="Comments" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_comments__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Default Freight Account" n="Default Freight Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dfltfrghtacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Default Tax Account" n="Default Tax Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dflttaxacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Default Terms Discount Taken Account" n="Default Terms Discount Taken Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_dflttrmdisctknacct__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI label="Period" n="Period" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_period__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI label="PO Generated Session" n="PO Generated Session" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_pobatchind__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_status__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI label="Terms Discount Session" n="Terms Discount Session" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_termdiscsession__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI label="Quickpayment" n="Quickpayment" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_quickpayment_ui__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Type Formula" n="Type Formula" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__formula_batchtype__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI label="Fiscal Year" n="Fiscal Year" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_year__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Number of Transactions" n="Number of Transactions" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_numbtxns__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Zero Hash DR/CR Totals" n="Zero Hash DR/CR Totals" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_zerosumdebitscreditshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount (Home Currency)" n="Freight Amount (Home Currency)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_frghthomeamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Z_OBSOLETE" n="Z_OBSOLETE" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_taxhomeamt__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="AP Account Total Credits" n="AP Account Total Credits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_apcreditshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="AP Account Total Debits" n="AP Account Total Debits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_apdebitshome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Credits" n="Total Credits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_otheracctcreditsthome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Total Debits" n="Total Debits" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_otheracctdebitsthome__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="formula_batchno" n="formula_batchno" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__formula_batchno__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Freight Amount (Home Currency)" n="Freight Amount (Home Currency)" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstkf__apinvh_frghthomeamtnet__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="WhatId" label="Open Activities" n="OpenActivities" nameAlias="RelatedActivityList" relationshipName="OpenActivities" s="3-" t="Open Activities (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="TASK.STATUS" s="" seq="4" t="Status"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="TASK.PRIORITY" s="" seq="5" t="Priority"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="6" t="Assigned To"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhatId" label="Activity History" n="ActivityHistories" nameAlias="RelatedHistoryList" relationshipName="ActivityHistories" s="3-" t="Activity History (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="OpenActivity.WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="4" t="Assigned To"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="TASK.LAST_UPDATE" s="" seq="5" t="Last Modified Date/Time"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstkf__apinvtxn_apinvh__c" label="Payable Transactions" n="rstkf__apinvtxns__r" nameAlias="rstkf__apinvtxn__c.rstkf__apinvtxn_apinvh__c" relationshipName="rstkf__apinvtxns__r" s="3-" t="Payable Transactions (rstkf__apinvtxn_apinvh__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstkf__appayh_apinvh_qp__c" label="Payments Session Headers" n="rstkf__appayhs__r" nameAlias="rstkf__appayh__c.rstkf__appayh_apinvh_qp__c" relationshipName="rstkf__appayhs__r" s="3-" t="Payments Session Headers (rstkf__appayh_apinvh_qp__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons/>
+          <customTags/>
+          <quickActionNames/>
+          <consoleComponents/>
+          <platformActionNames/>
+          <miniLayout n="miniLayout" s="" t="Mini Layout">
+            <fields>
+              <string>Name</string>
+              <string>rstkf__apinvh_cmpno__c</string>
+              <string>rstkf__apinvh_batchtype__c</string>
+              <string>rstkf__apinvh_status__c</string>
+              <string>rstkf__apinvh_year__c</string>
+              <string>rstkf__apinvh_period__c</string>
+              <string>rstkf__apinvh_numbtxns__c</string>
+            </fields>
+            <relatedLists/>
+          </miniLayout>
+        </sfLayout>
+      </children>
+    </sfRecordType>
   </recordTypes>
   <standardActions>
     <sfActionLink n="Tab" s="" t="Payable Sessions Tab"/>
     <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
-    <sfActionLink modes="View" n="Edit" requiresRow="true" s="2" target="sf:ui:target?object=rstkf__apinvh__c&amp;page=Payables+Batch+Header"/>
-    <sfActionLink modes="View" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink modes="View rstkf__apinvhs__r rstkf__apinvhs1__r rstkf__apinvhs2__r" n="Edit" requiresRow="true" s="2" target="sf:ui:target?page=Payables+Batch+Header&amp;object=rstkf__apinvh__c"/>
+    <sfActionLink modes="View rstkf__apinvhs__r rstkf__apinvhs1__r rstkf__apinvhs2__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink modes="View" n="Clone" requiresRow="true"/>
-    <sfActionLink modes="ObjectHome List" n="New" target="sf:ui:target?object=rstkf__apinvh__c&amp;page=Payables+Batch+Header"/>
+    <sfActionLink modes="ObjectHome List rstkf__apinvhs__r rstkf__apinvhs1__r rstkf__apinvhs2__r" n="New" target="sf:ui:target?page=Payables+Batch+Header&amp;object=rstkf__apinvh__c"/>
     <sfActionLink n="Accept" s=""/>
-    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?object=rstkf__apinvh__c&amp;page=Payables+Batch+Header"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true" target="sf:ui:target?page=Payables+Batch+Header&amp;object=rstkf__apinvh__c"/>
     <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
     <sfActionLink modes="View Remove" n="Remove"/>
     <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
@@ -145,7 +758,7 @@
     <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
     <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
     <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
-    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
     <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
     <sfActionLink modes="View" n="email" t="Send an Email"/>
     <sfActionLink modes="View" n="Share"/>
@@ -156,6 +769,10 @@
     <sfActionLink modes="ObjectHome List" n="Import"/>
     <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
     <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="View rstkf__apinvhs__r rstkf__apinvhs1__r rstkf__apinvhs2__r" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View rstkf__apinvhs__r rstkf__apinvhs1__r rstkf__apinvhs2__r" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
   </standardActions>
   <homeListColumns>
     <string>RSTKF__APINVH__C.NAME</string>

@@ -1,7 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a3t" label="PO Cost" labelPlural="PO Costs" layoutable="true" n="rstk__pocst__c" queryable="true" readPermission="false" retrieveable="true" s="" t="PO Cost (a3t)" updatable="true">
+<sfObject creatable="true" deleteable="true" keyPrefix="a3t" label="PO Cost" labelPlural="PO Costs" layoutable="true" metadataLabel="PO Cost" n="rstk__pocst__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="PO Cost (a3t)" updatable="true" urlDetail="https://automationtesting2.my.salesforce.com/{ID}" urlEdit="https://automationtesting2.my.salesforce.com/{ID}/e" urlNew="https://automationtesting2.my.salesforce.com/a3t/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="PO Cost ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField isMasterDetail="true" length="18" n="rstk__pocst_poline__c" relationshipLabel="Po Costs" relationshipName="rstk__pocst_poline__r" required="true" summary="This is the PO Line Number" t="PO Line" type="reference" updateable="false">
+      <referenceTos>
+        <string>rstk__poline__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="100" n="rstk__externalid__c" summary="This is an internal system field defined by the formula_extid field.  Neither the formula_extid, nor the externalid field itself, is currently displayed on any Rootstock User pages." t="External Id"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__pocst_poline__r.rstk__externalid__c" length="1300" n="rstk__formula_extid__c" summary="This is the formula for determining the External ID of this record, which is not used or shown on any Rootstock pages" t="Formula External Id" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="Name" length="1300" n="rstk__formula_searchindex__c" summary="This is an internal system field used to define the searchindex of a record. which is also an internal system field. Neither is currently displayed on any Rootstock User pages." t="Formula Search Index" updateable="false"/>
+    <sfField n="rstk__pocst_closvarfrght__c" precision="16" scale="6" summary="This is the Freight closed variance amount" t="pocst_closvarfrght" type="_double"/>
+    <sfField n="rstk__pocst_closvarlab__c" precision="16" scale="6" summary="Close Variance Labor" t="Close Variance, Labor" type="_double"/>
+    <sfField n="rstk__pocst_closvarmtl__c" precision="16" scale="6" summary="This the Total Variance for Subcontracted Material on this PO Line" t="Close Variance, Material" type="_double"/>
+    <sfField n="rstk__pocst_closvarohdfrng__c" precision="16" scale="6" summary="Close Variance Fringe Overhead" t="Close Variance, Fringe Ohd" type="_double"/>
+    <sfField n="rstk__pocst_closvarohdlab__c" precision="16" scale="6" summary="Close Variance Labor Overhead" t="Close Variance, Labor Ohd" type="_double"/>
+    <sfField n="rstk__pocst_closvarohdmach__c" precision="16" scale="6" summary="This the Total Variance for Machine Overhead  on this PO Line" t="Close Variance, Machine Ohd" type="_double"/>
+    <sfField n="rstk__pocst_closvarohdmtl__c" precision="16" scale="6" summary="This the Total Variance for Material Overhead on this PO Line" t="Close Variance, Material Ohd" type="_double"/>
+    <sfField n="rstk__pocst_closvarothlnd__c" precision="16" scale="6" summary="This is the Close Variance for Other Indirect Charges" t="pocst_closvarothlnd" type="_double"/>
+    <sfField n="rstk__pocst_closvarsublab__c" precision="16" scale="6" summary="Close Variance Subcontract Labor" t="Close Variance, Subcontract Labor" type="_double"/>
+    <sfField n="rstk__pocst_closvarsubmtl__c" precision="16" scale="6" summary="This the Total Variance for Subcontracted Material on this PO Line" t="Close Variance, Subcontract Material" type="_double"/>
+    <sfField length="18" n="rstk__pocst_div__c" relationshipLabel="Po Costs" relationshipName="rstk__pocst_div__r" summary="This is the Division associated with" t="Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__pocst_dmddolchgoutfrght__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Freight" t="pocst_dmddolchgoutfrght" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutlab__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Outside Labor" t="Component Deductions, Labor" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutmtl__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Outside Material" t="Component Deductions, Material" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutohdfrng__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Overhead Fringe" t="Component Deductions, Fringe Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutohdlab__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Overhead Labor" t="Component Deductions, Labor Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutohdmach__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Overhead Machine" t="Component Deductions, Machine Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutohdmtl__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Overhead Material" t="Component Deductions, Material Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutothlnd__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Other Indirect Costs" t="pocst_dmddolchgoutothlnd" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutsublab__c" precision="16" scale="6" summary="This is the Demand Amount charged out for Subcontracted Labor" t="Component Deductions, Subcontract Labor" type="_double"/>
+    <sfField n="rstk__pocst_dmddolchgoutsubmtl__c" precision="16" scale="6" summary="PO Component Demand Charged Out Subcontract Material" t="Component Deductions, Subcontract Mtl" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstfrght__c" precision="16" scale="6" summary="This is the total extended cost of Freight for  this PO Line Item" t="pocst_dmdtotcstfrght" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstlab__c" precision="16" scale="6" summary="This is the total extended cost of Labor for this PO Line" t="Component Cost, Labor" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstmtl__c" precision="16" scale="6" summary="This is the total extended cost of  Material for this PO Line" t="Component Cost, Material" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstohdfrng__c" precision="16" scale="6" summary="This is the total extended cost of Overhead Fringe for this PO Line" t="Component Cost, Fringe Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstohdlab__c" precision="16" scale="6" summary="This is the total extended cost of Overhead Labor for this PO Line" t="Component Cost, Labor Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstohdmach__c" precision="16" scale="6" summary="This is the total extended cost of Overhead Machine for this PO Line" t="Component Cost, Machine Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstohdmtl__c" precision="16" scale="6" summary="This is the total extended cost of Overhead Material for this PO Line" t="Component Cost, Material Ohd" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstothlnd__c" precision="16" scale="6" summary="PO Component Demand Total Other Landed Cost" t="pocst_dmdtotcstothlnd" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstsublab__c" precision="16" scale="6" summary="This is the total extended cost of Subcontracted Labor for this PO Line" t="Component Cost, Subcontract Labor" type="_double"/>
+    <sfField n="rstk__pocst_dmdtotcstsubmtl__c" precision="16" scale="6" summary="This is the total extended cost of Subcontracted Material for this PO Line" t="Component Cost, Subcontract Material" type="_double"/>
+    <sfField n="rstk__pocst_dmdvarcstfrght__c" precision="16" scale="6" summary="PO Demand Freight Cost Variance" t="pocst_dmdvarcstfrght" type="_double"/>
+    <sfField n="rstk__pocst_dmdvarcstothlnd__c" precision="16" scale="6" summary="PO Demand Other Landed Cost Variance" t="pocst_dmdvarcstothlnd" type="_double"/>
+    <sfField n="rstk__pocst_lne__c" precision="11" summary="This is the PO Line Number" t="Line Number" type="_double"/>
+    <sfField length="18" n="rstk__pocst_ordno__c" relationshipLabel="PO Costs" relationshipName="rstk__pocst_ordno__r" summary="This is the Purchase Order number for this PO Cost line." t="Purchase Order" type="reference">
+      <referenceTos>
+        <string>rstk__pohdr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__pocst_povaracct__c" relationshipLabel="Po Costs (PPV Account (Obsolete))" relationshipName="rstk__pocst_povaracct__r" summary="This is the PO Variance account" t="PPV Account" type="reference">
+      <referenceTos>
+        <string>rstk__syacc__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__pocst_site__c" relationshipLabel="Po Costs" relationshipName="rstk__pocst_site__r" summary="This  is the Site associated with this PO Cost Line" t="Site" type="reference">
+      <referenceTos>
+        <string>rstk__sysite__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__pocst_subvaracct__c" relationshipLabel="Po Costs (Sub WIP Variance Account (Obsolete))" relationshipName="rstk__pocst_subvaracct__r" summary="This is the Subledger Account that subcontract WIP variances will be debited to upon PO Close (if any)." t="Sub WIP Variance Account" type="reference">
+      <referenceTos>
+        <string>rstk__syacc__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__pocst_subwipacct__c" relationshipLabel="Po Costs (Sub WIP Account (Obsolete))" relationshipName="rstk__pocst_subwipacct__r" summary="Subcontract WIP Account that PO Component issue costs will be debited to." t="Sub WIP Account" type="reference">
+      <referenceTos>
+        <string>rstk__syacc__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__pocst_supdolchgoutfrght__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Freight Costs" t="supdolchgoutfrght" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutlab__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for  Labor cost" t="Order Deductions, Labor" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutmtl__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Material cost" t="Order Deductions, Material" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutohdfrng__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Overhead Fringe cost" t="Order Deductions, Fringe Ohd" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutohdlab__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Overhead Labor cost" t="Order Deductions, Labor Ohd" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutohdmach__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Overhead Machine cost" t="Order Deductions, Machine Ohd" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutohdmtl__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Overhead Material cost" t="Order Deductions, Material Ohd" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutothlnd__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Other Indirect Costs" t="supdolchgoutothlnd" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutsublab__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Subcontracted Labor" t="Order Deductions, Subcontract Labor" type="_double"/>
+    <sfField n="rstk__pocst_supdolchgoutsubmtl__c" precision="16" scale="6" summary="This is the Supply  Amount charged out for Subcontracted Material" t="Order Deductions, Subcontract Material" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstfrght__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Freight Cost" t="pocst_suptotcstfrght" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstlab__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Labor cost" t="Order Cost, Labor" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstmtl__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Material Cost" t="Order Cost, Material" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstohdfrng__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Overhead Fringe Cost" t="Z_OBSOLETE" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstohdlab__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Overhead Labor Cost" t="Z_OBSOLETE" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstohdmach__c" precision="16" scale="6" summary="PO Supply Total Overhead Machine Cost" t="Z_OBSOLETE" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstohdmtl__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Overhead Material Cost" t="Order Cost, Material Ohd" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstothlnd__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Other Indirect Costs" t="pocst_suptotcstothlnd" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstsublab__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Subcontracted Labor Cost" t="Order Cost, Subcontract Labor" type="_double"/>
+    <sfField n="rstk__pocst_suptotcstsubmtl__c" precision="16" scale="6" summary="This is the Extended Supply  Amount charged out for  Subcontracted Material Cost" t="Order Cost, Subcontract Material" type="_double"/>
+    <sfField length="50" n="rstk__pocst_tempid__c" summary="PO Cost UI Temporary field" t="temp id"/>
+    <sfField length="255" n="rstk__searchindex__c" summary="This is an internal system field not currently displayed on any Rootstock User pages" t="Search Index"/>
+    <sfField length="40" n="rstk__triggeroptions__c" summary="This is an internal system field which is not currently displayed on any Rootstock User pages." t="triggeroptions"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="Visit" field="ContextId" n="Contexts" relationshipName="Contexts" s="2-" t="Visit"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="rstk__pocst__History" field="ParentId" n="Histories" relationshipName="Histories" s="2-" t="rstk__pocst__History"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__Po_Costs__r rstk__divpocsts__r rstk__pocsts__r rstk__Po_Costs1_del__r rstk__Po_Costs2__r rstk__Po_Costs3__r" n="New"/>
+    <sfActionLink modes="ObjectHome rstk__Po_Costs__r rstk__divpocsts__r rstk__pocsts__r rstk__Po_Costs1_del__r rstk__Po_Costs2__r rstk__Po_Costs3__r List" n="New"/>
     <sfActionLink modes="View rstk__Po_Costs__r rstk__divpocsts__r rstk__pocsts__r rstk__Po_Costs1_del__r rstk__Po_Costs2__r rstk__Po_Costs3__r" n="Edit" requiresRow="true" s="2"/>
     <sfActionLink modes="View rstk__Po_Costs__r rstk__divpocsts__r rstk__pocsts__r rstk__Po_Costs1_del__r rstk__Po_Costs2__r rstk__Po_Costs3__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
@@ -9,5 +156,50 @@
     <sfActionLink modes="View rstk__Po_Costs__r rstk__divpocsts__r rstk__pocsts__r rstk__Po_Costs1_del__r rstk__Po_Costs2__r rstk__Po_Costs3__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink n="Tab" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
   </standardActions>
+  <homeListColumns>
+    <string>RSTK__POCST__C.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>RSTK__POCST__C.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>RSTK__POCST__C.NAME</string>
+    <string>rstk__pocst_lne__c</string>
+    <string>rstk__pocst_closvarohdlab__c</string>
+    <string>rstk__pocst_closvarohdmach__c</string>
+    <string>rstk__pocst_closvarmtl__c</string>
+    <string>rstk__pocst_dmdtotcstsublab__c</string>
+    <string>rstk__pocst_dmdtotcstsubmtl__c</string>
+    <string>rstk__pocst_supdolchgoutlab__c</string>
+    <string>rstk__pocst_supdolchgoutmtl__c</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>NAME</string>
+  </compactLayoutFields>
+  <listViewActions/>
 </sfObject>

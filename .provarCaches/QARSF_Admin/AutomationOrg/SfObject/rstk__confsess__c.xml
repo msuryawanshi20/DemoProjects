@@ -1,7 +1,476 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="a0W" label="Configuration Session" labelPlural="Configuration Sessions" layoutable="true" n="rstk__confsess__c" queryable="true" readPermission="false" retrieveable="true" s="" t="Configuration Session (a0W)" updatable="true">
+<sfObject creatable="true" deleteable="true" keyPrefix="a0W" label="Configuration Session" labelPlural="Configuration Sessions" layoutable="true" metadataLabel="Configuration Session" n="rstk__confsess__c" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Configuration Session (a0W)" updatable="true" urlDetail="https://automationtesting2.my.salesforce.com/{ID}" urlEdit="https://automationtesting2.my.salesforce.com/{ID}/e" urlNew="https://automationtesting2.my.salesforce.com/a0W/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Configuration Session ID" type="id" updateable="false"/>
+    <sfField internalLabel="Owner ID" length="18" n="OwnerId" relationshipName="Owner" t="Owner" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="80" n="Name" nameField="true"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="18" n="rstk__confsess_account__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_account__r" summary="The Salesforce Account that corresponds with the Configuration Session Customer.  This is only set when the Configuration Session is launched from a Salesforce Opportunity." t="Salesforce Account" type="reference">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="100" n="rstk__confsess_comment__c" summary="Optional free-form comments up to 100 alpha-numeric characters." t="Comments"/>
+    <sfField length="18" n="rstk__confsess_confsess__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_confsess__r" summary="This field holds a link back to a prior Configuration Session which can be used as the source in making default selections in the current session." t="Previous Configuration Session" type="reference">
+      <referenceTos>
+        <string>rstk__confsess__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__confsess_currexchrate__c" precision="17" scale="6" summary="Not Applicable" t="Configuration Currency Exchange Rate" type="_double"/>
+    <sfField n="rstk__confsess_currexchratedate__c" summary="Not Applicable" t="Date Exchange Rate Initialized" type="date"/>
+    <sfField n="rstk__confsess_custcurrency__c" summary="Not Applicable" t="Show Customer Currency Values" type="_boolean"/>
+    <sfField length="30" n="rstk__confsess_custpo__c" summary="Not Applicable" t="Customer PO Number"/>
+    <sfField n="rstk__confsess_dateout__c" summary="Not Applicable" t="Session Export Date" type="date"/>
+    <sfField length="50" n="rstk__confsess_desc__c" summary="User-defined Session Description, up to 50 characters in length" t="Session Description"/>
+    <sfField length="255" n="rstk__confsess_discmethod__c" restrictedPicklist="true" summary="When a SO Line Discount is to be applied from this Config Session, set the application method to be used.  Options are\n\n-Add Discount to Each Line\n\n-Create Order Line for Discount \n(uses 'Configuration Discount Line Product' from the Config Product)" t="Discount Application Method" type="picklist">
+      <picklistEntryIds>1,2</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="1" n="Add Discount to Each Line" s=""/>
+        <sfPLE id="2" n="Create Order Line for Discount" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="rstk__confsess_discpct__c" precision="7" scale="4" summary="When a 'Discount Application Method' is being used, this is the discount percent that will be applied" t="Discount Percentage" type="_double"/>
+    <sfField length="18" n="rstk__confsess_div__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_div__r" summary="The Sales Division under which this Configuration Session is being done." t="Sales Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__confsess_duedate__c" summary="The date used to set the Due Date on the RS Quote or SO Line when the Configuration Session is exported to a RS Quote or Sales Order." t="Due Date" type="date"/>
+    <sfField n="rstk__confsess_expicitemsrl__c" summary="When checked, rather than exporting to a SO Line, session is exported to Inventory By Serial Number Features record (a &quot;detail&quot; record of the Inventory By Serial Number record)" t="Export Features to Serialized Item" type="_boolean"/>
+    <sfField length="18" n="rstk__confsess_exportcust__c" relationshipLabel="Configuration Sessions (Session Export Customer)" relationshipName="rstk__confsess_exportcust__r" summary="Not Applicable" t="Session Export Customer" type="reference">
+      <referenceTos>
+        <string>rstk__socust__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_icitem__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_icitem__r" summary="Not Applicable" t="Manufactured Item" type="reference">
+      <referenceTos>
+        <string>rstk__icitem__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_icitemsrl__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_icitemsrl__r" t="Inventory By Serial Number" type="reference">
+      <referenceTos>
+        <string>rstk__icitemsrl__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_instaddr__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_instaddr__r" summary="The Installation Address that will be used on the Sales Order resulting from this Configuration Session.  Defaults to the Installation Customer's Default Installation Address, but can be overridden." t="Installation Address" type="reference">
+      <referenceTos>
+        <string>rstk__socaddr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_installcust__c" relationshipLabel="Configuration Sessions (Installation Customer)" relationshipName="rstk__confsess_installcust__r" summary="The Installation Customer that will be used on the Sales Order resulting from this Configuration Session.  Defaults to the session Customer, but can be overridden with any valid &quot;Related Customer&quot; associated with the session Customer." t="Installation Customer" type="reference">
+      <referenceTos>
+        <string>rstk__socust__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_invdiv__c" relationshipLabel="Configuration Sessions (Inventory Division)" relationshipName="rstk__confsess_invdiv__r" summary="The Inventory Division from which this Product is to ship" t="Inventory Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_invsite__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_invsite__r" summary="The Inventory Site within the Inventory Division specified from which this Product is to ship" t="Inventory Site" type="reference">
+      <referenceTos>
+        <string>rstk__sysite__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__confsess_isocountry__c" restrictedPicklist="true" t="ISO Country Codes" type="picklist">
+      <picklistEntryIds>3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="3" n="AD" s=""/>
+        <sfPLE id="4" n="AE" s=""/>
+        <sfPLE id="5" n="AF" s=""/>
+        <sfPLE id="6" n="AG" s=""/>
+        <sfPLE id="7" n="AI" s=""/>
+        <sfPLE id="8" n="AL" s=""/>
+        <sfPLE id="9" n="AM" s=""/>
+        <sfPLE id="10" n="AN" s=""/>
+        <sfPLE id="11" n="AO" s=""/>
+        <sfPLE id="12" n="AQ" s=""/>
+        <sfPLE id="13" n="AR" s=""/>
+        <sfPLE id="14" n="AS" s=""/>
+        <sfPLE id="15" n="AT" s=""/>
+        <sfPLE id="16" n="AU" s=""/>
+        <sfPLE id="17" n="AW" s=""/>
+        <sfPLE id="18" n="AX" s=""/>
+        <sfPLE id="19" n="AZ" s=""/>
+        <sfPLE id="20" n="BA" s=""/>
+        <sfPLE id="21" n="BB" s=""/>
+        <sfPLE id="22" n="BD" s=""/>
+        <sfPLE id="23" n="BE" s=""/>
+        <sfPLE id="24" n="BF" s=""/>
+        <sfPLE id="25" n="BG" s=""/>
+        <sfPLE id="26" n="BH" s=""/>
+        <sfPLE id="27" n="BI" s=""/>
+        <sfPLE id="28" n="BJ" s=""/>
+        <sfPLE id="29" n="BL" s=""/>
+        <sfPLE id="30" n="BM" s=""/>
+        <sfPLE id="31" n="BN" s=""/>
+        <sfPLE id="32" n="BO" s=""/>
+        <sfPLE id="33" n="BR" s=""/>
+        <sfPLE id="34" n="BS" s=""/>
+        <sfPLE id="35" n="BT" s=""/>
+        <sfPLE id="36" n="BV" s=""/>
+        <sfPLE id="37" n="BW" s=""/>
+        <sfPLE id="38" n="BY" s=""/>
+        <sfPLE id="39" n="BZ" s=""/>
+        <sfPLE id="40" n="CA" s=""/>
+        <sfPLE id="41" n="CC" s=""/>
+        <sfPLE id="42" n="CD" s=""/>
+        <sfPLE id="43" n="CF" s=""/>
+        <sfPLE id="44" n="CG" s=""/>
+        <sfPLE id="45" n="CH" s=""/>
+        <sfPLE id="46" n="CI" s=""/>
+        <sfPLE id="47" n="CK" s=""/>
+        <sfPLE id="48" n="CL" s=""/>
+        <sfPLE id="49" n="CM" s=""/>
+        <sfPLE id="50" n="CN" s=""/>
+        <sfPLE id="51" n="CO" s=""/>
+        <sfPLE id="52" n="CR" s=""/>
+        <sfPLE id="53" n="CU" s=""/>
+        <sfPLE id="54" n="CV" s=""/>
+        <sfPLE id="55" n="CX" s=""/>
+        <sfPLE id="56" n="CY" s=""/>
+        <sfPLE id="57" n="CZ" s=""/>
+        <sfPLE id="58" n="DE" s=""/>
+        <sfPLE id="59" n="DJ" s=""/>
+        <sfPLE id="60" n="DK" s=""/>
+        <sfPLE id="61" n="DM" s=""/>
+        <sfPLE id="62" n="DO" s=""/>
+        <sfPLE id="63" n="DZ" s=""/>
+        <sfPLE id="64" n="EC" s=""/>
+        <sfPLE id="65" n="EE" s=""/>
+        <sfPLE id="66" n="EG" s=""/>
+        <sfPLE id="67" n="EH" s=""/>
+        <sfPLE id="68" n="ER" s=""/>
+        <sfPLE id="69" n="ES" s=""/>
+        <sfPLE id="70" n="ET" s=""/>
+        <sfPLE id="71" n="FI" s=""/>
+        <sfPLE id="72" n="FJ" s=""/>
+        <sfPLE id="73" n="FK" s=""/>
+        <sfPLE id="74" n="FM" s=""/>
+        <sfPLE id="75" n="FO" s=""/>
+        <sfPLE id="76" n="FR" s=""/>
+        <sfPLE id="77" n="GA" s=""/>
+        <sfPLE id="78" n="GB" s=""/>
+        <sfPLE id="79" n="GD" s=""/>
+        <sfPLE id="80" n="GE" s=""/>
+        <sfPLE id="81" n="GF" s=""/>
+        <sfPLE id="82" n="GG" s=""/>
+        <sfPLE id="83" n="GH" s=""/>
+        <sfPLE id="84" n="GI" s=""/>
+        <sfPLE id="85" n="GL" s=""/>
+        <sfPLE id="86" n="GM" s=""/>
+        <sfPLE id="87" n="GN" s=""/>
+        <sfPLE id="88" n="GP" s=""/>
+        <sfPLE id="89" n="GQ" s=""/>
+        <sfPLE id="90" n="GR" s=""/>
+        <sfPLE id="91" n="GS" s=""/>
+        <sfPLE id="92" n="GT" s=""/>
+        <sfPLE id="93" n="GU" s=""/>
+        <sfPLE id="94" n="GW" s=""/>
+        <sfPLE id="95" n="GY" s=""/>
+        <sfPLE id="96" n="HK" s=""/>
+        <sfPLE id="97" n="HM" s=""/>
+        <sfPLE id="98" n="HN" s=""/>
+        <sfPLE id="99" n="HR" s=""/>
+        <sfPLE id="100" n="HT" s=""/>
+        <sfPLE id="101" n="HU" s=""/>
+        <sfPLE id="102" n="ID" s=""/>
+        <sfPLE id="103" n="IE" s=""/>
+        <sfPLE id="104" n="IL" s=""/>
+        <sfPLE id="105" n="IM" s=""/>
+        <sfPLE id="106" n="IN" s=""/>
+        <sfPLE id="107" n="IO" s=""/>
+        <sfPLE id="108" n="IQ" s=""/>
+        <sfPLE id="109" n="IR" s=""/>
+        <sfPLE id="110" n="IS" s=""/>
+        <sfPLE id="111" n="IT" s=""/>
+        <sfPLE id="112" n="JE" s=""/>
+        <sfPLE id="113" n="JM" s=""/>
+        <sfPLE id="114" n="JO" s=""/>
+        <sfPLE id="115" n="JP" s=""/>
+        <sfPLE id="116" n="KE" s=""/>
+        <sfPLE id="117" n="KG" s=""/>
+        <sfPLE id="118" n="KH" s=""/>
+        <sfPLE id="119" n="KI" s=""/>
+        <sfPLE id="120" n="KM" s=""/>
+        <sfPLE id="121" n="KN" s=""/>
+        <sfPLE id="122" n="KP" s=""/>
+        <sfPLE id="123" n="KR" s=""/>
+        <sfPLE id="124" n="KW" s=""/>
+        <sfPLE id="125" n="KY" s=""/>
+        <sfPLE id="126" n="KZ" s=""/>
+        <sfPLE id="127" n="LA" s=""/>
+        <sfPLE id="128" n="LB" s=""/>
+        <sfPLE id="129" n="LC" s=""/>
+        <sfPLE id="130" n="LI" s=""/>
+        <sfPLE id="131" n="LK" s=""/>
+        <sfPLE id="132" n="LR" s=""/>
+        <sfPLE id="133" n="LS" s=""/>
+        <sfPLE id="134" n="LT" s=""/>
+        <sfPLE id="135" n="LU" s=""/>
+        <sfPLE id="136" n="LV" s=""/>
+        <sfPLE id="137" n="LY" s=""/>
+        <sfPLE id="138" n="MA" s=""/>
+        <sfPLE id="139" n="MC" s=""/>
+        <sfPLE id="140" n="MD" s=""/>
+        <sfPLE id="141" n="ME" s=""/>
+        <sfPLE id="142" n="MF" s=""/>
+        <sfPLE id="143" n="MG" s=""/>
+        <sfPLE id="144" n="MH" s=""/>
+        <sfPLE id="145" n="MK" s=""/>
+        <sfPLE id="146" n="ML" s=""/>
+        <sfPLE id="147" n="MM" s=""/>
+        <sfPLE id="148" n="MN" s=""/>
+        <sfPLE id="149" n="MO" s=""/>
+        <sfPLE id="150" n="MP" s=""/>
+        <sfPLE id="151" n="MQ" s=""/>
+        <sfPLE id="152" n="MR" s=""/>
+        <sfPLE id="153" n="MS" s=""/>
+        <sfPLE id="154" n="MT" s=""/>
+        <sfPLE id="155" n="MU" s=""/>
+        <sfPLE id="156" n="MV" s=""/>
+        <sfPLE id="157" n="MW" s=""/>
+        <sfPLE id="158" n="MX" s=""/>
+        <sfPLE id="159" n="MY" s=""/>
+        <sfPLE id="160" n="MZ" s=""/>
+        <sfPLE id="161" n="NA" s=""/>
+        <sfPLE id="162" n="NC" s=""/>
+        <sfPLE id="163" n="NE" s=""/>
+        <sfPLE id="164" n="NF" s=""/>
+        <sfPLE id="165" n="NG" s=""/>
+        <sfPLE id="166" n="NI" s=""/>
+        <sfPLE id="167" n="NL" s=""/>
+        <sfPLE id="168" n="NO" s=""/>
+        <sfPLE id="169" n="NP" s=""/>
+        <sfPLE id="170" n="NR" s=""/>
+        <sfPLE id="171" n="NU" s=""/>
+        <sfPLE id="172" n="NZ" s=""/>
+        <sfPLE id="173" n="OM" s=""/>
+        <sfPLE id="174" n="PA" s=""/>
+        <sfPLE id="175" n="PE" s=""/>
+        <sfPLE id="176" n="PF" s=""/>
+        <sfPLE id="177" n="PG" s=""/>
+        <sfPLE id="178" n="PH" s=""/>
+        <sfPLE id="179" n="PK" s=""/>
+        <sfPLE id="180" n="PL" s=""/>
+        <sfPLE id="181" n="PM" s=""/>
+        <sfPLE id="182" n="PN" s=""/>
+        <sfPLE id="183" n="PR" s=""/>
+        <sfPLE id="184" n="PS" s=""/>
+        <sfPLE id="185" n="PT" s=""/>
+        <sfPLE id="186" n="PW" s=""/>
+        <sfPLE id="187" n="PY" s=""/>
+        <sfPLE id="188" n="QA" s=""/>
+        <sfPLE id="189" n="RE" s=""/>
+        <sfPLE id="190" n="RO" s=""/>
+        <sfPLE id="191" n="RS" s=""/>
+        <sfPLE id="192" n="RU" s=""/>
+        <sfPLE id="193" n="RW" s=""/>
+        <sfPLE id="194" n="SA" s=""/>
+        <sfPLE id="195" n="SB" s=""/>
+        <sfPLE id="196" n="SC" s=""/>
+        <sfPLE id="197" n="SD" s=""/>
+        <sfPLE id="198" n="SE" s=""/>
+        <sfPLE id="199" n="SG" s=""/>
+        <sfPLE id="200" n="SH" s=""/>
+        <sfPLE id="201" n="SI" s=""/>
+        <sfPLE id="202" n="SJ" s=""/>
+        <sfPLE id="203" n="SK" s=""/>
+        <sfPLE id="204" n="SL" s=""/>
+        <sfPLE id="205" n="SM" s=""/>
+        <sfPLE id="206" n="SN" s=""/>
+        <sfPLE id="207" n="SO" s=""/>
+        <sfPLE id="208" n="SR" s=""/>
+        <sfPLE id="209" n="SS" s=""/>
+        <sfPLE id="210" n="ST" s=""/>
+        <sfPLE id="211" n="SV" s=""/>
+        <sfPLE id="212" n="SY" s=""/>
+        <sfPLE id="213" n="SZ" s=""/>
+        <sfPLE id="214" n="TC" s=""/>
+        <sfPLE id="215" n="TD" s=""/>
+        <sfPLE id="216" n="TF" s=""/>
+        <sfPLE id="217" n="TG" s=""/>
+        <sfPLE id="218" n="TH" s=""/>
+        <sfPLE id="219" n="TJ" s=""/>
+        <sfPLE id="220" n="TK" s=""/>
+        <sfPLE id="221" n="TL" s=""/>
+        <sfPLE id="222" n="TM" s=""/>
+        <sfPLE id="223" n="TN" s=""/>
+        <sfPLE id="224" n="TO" s=""/>
+        <sfPLE id="225" n="TR" s=""/>
+        <sfPLE id="226" n="TT" s=""/>
+        <sfPLE id="227" n="TV" s=""/>
+        <sfPLE id="228" n="TW" s=""/>
+        <sfPLE id="229" n="TZ" s=""/>
+        <sfPLE id="230" n="UA" s=""/>
+        <sfPLE id="231" n="UG" s=""/>
+        <sfPLE id="232" n="UM" s=""/>
+        <sfPLE id="233" n="US" s=""/>
+        <sfPLE id="234" n="UY" s=""/>
+        <sfPLE id="235" n="UZ" s=""/>
+        <sfPLE id="236" n="VA" s=""/>
+        <sfPLE id="237" n="VC" s=""/>
+        <sfPLE id="238" n="VE" s=""/>
+        <sfPLE id="239" n="VG" s=""/>
+        <sfPLE id="240" n="VI" s=""/>
+        <sfPLE id="241" n="VN" s=""/>
+        <sfPLE id="242" n="VU" s=""/>
+        <sfPLE id="243" n="WF" s=""/>
+        <sfPLE id="244" n="WS" s=""/>
+        <sfPLE id="245" n="YE" s=""/>
+        <sfPLE id="246" n="YT" s=""/>
+        <sfPLE id="247" n="ZA" s=""/>
+        <sfPLE id="248" n="ZM" s=""/>
+        <sfPLE id="249" n="ZW" s=""/>
+        <sfPLE id="250" n="BQ" s=""/>
+        <sfPLE id="251" n="CW" s=""/>
+        <sfPLE id="252" n="SX" s=""/>
+        <sfPLE id="253" n="XI" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="rstk__confsess_lastpriceddate__c" summary="Not Applicable" t="Date of Last Price Update" type="date"/>
+    <sfField length="18" n="rstk__confsess_opportunity__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_opportunity__r" summary="When the Configuration Session is launched from a Salesforce Opportunity, this reflects the value of said Opportunity." t="Salesforce Opportunity" type="reference">
+      <referenceTos>
+        <string>Opportunity</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__confsess_output__c" t="Session Export Type" type="picklist">
+      <picklistEntryIds>254,255,256,257,258,259</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="254" n="Sales Order Line" s=""/>
+        <sfPLE id="255" n="Estimate" s=""/>
+        <sfPLE id="256" n="Contract" s=""/>
+        <sfPLE id="257" n="Manufactured Item" s=""/>
+        <sfPLE id="258" n="Job Set" s=""/>
+        <sfPLE id="259" n="Item-Serial Features" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c , rstk__confsess_price1__c ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price1__c , rstk__confsess_price1__c * rstk__confsess_currexchrate__c))" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_price1cc__c" precision="18" scale="2" summary="Not Applicable" t="Alternate Price 1 - Customer Currency" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c  ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price1__c , rstk__confsess_price1__c/ rstk__confsess_currexchrate__c), rstk__confsess_price1__c)" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_price1hc__c" precision="18" scale="2" summary="Not Applicable" t="Alternate Price 1 – Home Currency" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c , rstk__confsess_price2__c ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price2__c , rstk__confsess_price2__c * rstk__confsess_currexchrate__c))" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_price2cc__c" precision="18" scale="2" summary="Not Applicable" t="Alternate Price 2 - Customer Currency" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c  ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price2__c, rstk__confsess_price2__c/ rstk__confsess_currexchrate__c), rstk__confsess_price2__c)" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_price2hc__c" precision="18" scale="2" summary="Not Applicable" t="Alternate Price 2 – Home Currency" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c , rstk__confsess_price__c ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price__c , rstk__confsess_price__c * rstk__confsess_currexchrate__c))" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_pricecc__c" precision="18" scale="2" summary="Not Applicable" t="Price - Customer Currency" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="IF( rstk__confsess_custcurrency__c  ,  IF( ISNULL(rstk__confsess_currexchrate__c) || rstk__confsess_currexchrate__c = 0 , rstk__confsess_price__c , rstk__confsess_price__c / rstk__confsess_currexchrate__c), rstk__confsess_price__c)" formulaTreatBlanksAs="BlankAsZero" n="rstk__confsess_pricehc__c" precision="18" scale="2" summary="Not Applicable" t="Price – Home Currency" type="_double" updateable="false"/>
+    <sfField n="rstk__confsess_sessionid__c" precision="16" summary="The Session ID is written to the RS Quote Line or SO Line once the session is exported to an RS Quote or Sales Order, when not using 'Auto Set Sales Order Number' on 'SO Control' record for the given Division." t="Session ID" type="_double"/>
+    <sfField length="18" n="rstk__confsess_socust__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_socust__r" summary="The Customer for which this Configuration Session is being processed for." t="Customer" type="reference">
+      <referenceTos>
+        <string>rstk__socust__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_sohdr__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_sohdr__r" summary="The RS Quote or SO from which this Configuration Session was initiated" t="Sales Order" type="reference">
+      <referenceTos>
+        <string>rstk__sohdr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_soline__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_soline__r" summary="Not Applicable" t="Sales Order Line" type="reference">
+      <referenceTos>
+        <string>rstk__soline__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_sopbk__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_sopbk__r" summary="When a Price Book is selected, all pricing will come from the given Price Book chosen only (and will not use any other pricing/discounting mechanisms)" t="Price Book" type="reference">
+      <referenceTos>
+        <string>rstk__sopbk__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_soprod__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_soprod__r" summary="The &quot;configurable&quot; product to be configured in this session." t="Configuration Product" type="reference">
+      <referenceTos>
+        <string>rstk__soprod__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__confsess_staddr__c" relationshipLabel="Configuration Sessions (Ship To Address)" relationshipName="rstk__confsess_staddr__r" summary="The Ship To Address that will be used on the Sales Order resulting from this Configuration Session.  Defaults to the session Customer's Default Ship To Address, but can be overridden." t="Ship To Address" type="reference">
+      <referenceTos>
+        <string>rstk__socaddr__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="100" n="rstk__confsess_staddress1__c" summary="The Ship-To Address that the shipment is planned for.  This is typically the Street Address." t="Ship-To Address 1"/>
+    <sfField length="100" n="rstk__confsess_staddress2__c" summary="The Ship-To Address &quot;extension&quot; (if you will) that the shipment is planned for.  This is typically the Suite or Unit number." t="Ship-To Address 2"/>
+    <sfField length="100" n="rstk__confsess_staddress3__c" summary="The Ship-To Address &quot;additional extension&quot; (if you will) that the shipment is planned for." t="Ship-To Address 3"/>
+    <sfField length="255" n="rstk__confsess_status__c" summary="User-defined picklist values.  There is no Rootstock logic associated with this field." t="Status" type="picklist">
+      <picklistEntryIds>260</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="260" n="New" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="rstk__confsess_stcity__c" summary="The Ship-To City that the shipment is planned for." t="Ship-To City"/>
+    <sfField length="80" n="rstk__confsess_stcontact__c" summary="The Ship-To Contact associated with the Ship-To address defined." t="Ship-To Contact"/>
+    <sfField length="40" n="rstk__confsess_stcountry__c" summary="The Ship-To Country that the shipment is planned for." t="Ship-To Country"/>
+    <sfField length="80" n="rstk__confsess_stname__c" summary="The Ship-To Name for the Ship-To address." t="Ship-To Name"/>
+    <sfField length="20" n="rstk__confsess_ststate__c" summary="The Ship-To State or Province that the shipment is planned for." t="Ship-To State"/>
+    <sfField length="30" n="rstk__confsess_stzip__c" summary="The Ship-To Postal Code for the Ship-To address defined." t="Ship-To Postal Code"/>
+    <sfField length="18" n="rstk__confsess_taxloc__c" relationshipLabel="Configuration Sessions" relationshipName="rstk__confsess_taxloc__r" summary="The Tax Location defined for the Ship-To address defined." t="Tax Location" type="reference">
+      <referenceTos>
+        <string>rstk__sotax__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField n="rstk__confsess_useconfig__c" summary="When checked, when the Configurable Product is of a Product Type = Stock, the Product will be treated as if the Product Type = Configured.  Note: 'Configurable Product' must be checked on the Product Master in order to be selectable." t="Configured This Time" type="_boolean"/>
+    <sfField length="100" n="rstk__externalid__c" summary="Not Applicable" t="External Id"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="rstk__confsess_div__r.rstk__sydiv_div__c + '_' + TEXT(rstk__confsess_sessionid__c)" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_extid__c" summary="Not Applicable" t="Formula External Id" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="TEXT(rstk__confsess_sessionid__c) + ' ' +  rstk__confsess_soprod__r.Name" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_name__c" summary="Not Applicable" t="Name Formula" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" formula="Name" formulaTreatBlanksAs="BlankAsZero" length="1300" n="rstk__formula_searchindex__c" summary="Not Applicable" t="Formula Search Index" updateable="false"/>
+    <sfField length="255" n="rstk__searchindex__c" summary="Not Applicable" t="Search Index"/>
+    <sfField length="40" n="rstk__triggeroptions__c" summary="Not Applicable" t="triggeroptions"/>
+    <sfField calculated="true" createable="false" editPermission="false" n="rstk__confsess_cost__c" precision="18" scale="6" summarizedField="rstk__confdsel__c.rstk__confdsel_cost__c" summary="Not Applicable" summaryForeignKey="rstk__confdsel__c.rstk__confdsel_confsess__c" summaryOperation="sum" t="Cost" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" n="rstk__confsess_price1__c" precision="18" scale="6" summarizedField="rstk__confdsel__c.rstk__confdsel_price1__c" summary="This reflects the result of rolling up &quot;Alternate Price&quot; 1 prices for components selected in this Configuration Session. Note: The field label may differ from the standard &quot;Alternate Price&quot; label if overridden on SO Control record for the given Division." summaryForeignKey="rstk__confdsel__c.rstk__confdsel_confsess__c" summaryOperation="sum" t="Alternate Price 1" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" n="rstk__confsess_price2__c" precision="18" scale="6" summarizedField="rstk__confdsel__c.rstk__confdsel_price2__c" summary="This reflects the result of rolling up &quot;Alternate Price&quot; 2 prices for components selected in this Configuration Session. Note: The field label may differ from the standard &quot;Alternate Price&quot; label if overridden on SO Control record for the given Division." summaryForeignKey="rstk__confdsel__c.rstk__confdsel_confsess__c" summaryOperation="sum" t="Alternate Price 2" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" n="rstk__confsess_price__c" precision="18" scale="6" summarizedField="rstk__confdsel__c.rstk__confdsel_price__c" summary="The &quot;standard&quot; price of this Configuration session, either derived from the roll-up of Component prices, or as set on the Rootstock Product Master (depending on your pricing methodology)." summaryForeignKey="rstk__confdsel__c.rstk__confdsel_confsess__c" summaryOperation="sum" t="Price" type="_double" updateable="false"/>
+    <sfField calculated="true" createable="false" editPermission="false" n="rstk__confsess_totdepcompprice__c" precision="18" scale="6" summarizedField="rstk__confdsel__c.rstk__confdsel_totdepcompprice__c" summary="Sum of Prices from Session Components that are not set to 'Output to Individual Line' (only applicable to Components Type 'Product') and are not the result of Adjusting Selections." summaryForeignKey="rstk__confdsel__c.rstk__confdsel_confsess__c" summaryOperation="sum" t="Total Price of Dependent Components" type="_double" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="AdvAcctForecastFactAdj" field="AdvAcctForecastFactId" n="AdvAcctForecastFactAdjustments" relationshipName="AdvAcctForecastFactAdjustments" s="2-" t="AdvAcctForecastFactAdj"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhatId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="DocumentChecklistItem" field="ParentRecordId" n="DocumentChecklistItemPR" relationshipName="DocumentChecklistItemPR" s="2-" t="DocumentChecklistItem"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="ProcessException" field="AttachedToId" n="ProcessExceptions" relationshipName="ProcessExceptions" s="2-" t="ProcessException"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="Visit" field="ContextId" n="Contexts" relationshipName="Contexts" s="2-" t="Visit"/>
+    <sfObjectRelationship childName="rstk__confdcomp__c" field="rstk__confdcomp_confsess__c" n="rstk__confdcomps__r" relationshipName="rstk__confdcomps__r" s="2-" t="rstk__confdcomp__c"/>
+    <sfObjectRelationship childName="rstk__confdgroup__c" field="rstk__confdgroup_confsess__c" n="rstk__confdgroups__r" relationshipName="rstk__confdgroups__r" s="2-" t="rstk__confdgroup__c"/>
+    <sfObjectRelationship childName="rstk__confdsel__c" field="rstk__confdsel_confsess__c" n="rstk__confdsels__r" relationshipName="rstk__confdsels__r" s="2-" t="rstk__confdsel__c"/>
+    <sfObjectRelationship childName="rstk__confsess__Share" field="ParentId" n="Shares" relationshipName="Shares" s="2-" t="rstk__confsess__Share"/>
+    <sfObjectRelationship childName="rstk__confsess__c" field="rstk__confsess_confsess__c" n="rstk__confsesss__r" relationshipName="rstk__confsesss__r" s="2-" t="rstk__confsess__c"/>
+    <sfObjectRelationship childName="rstk__sohdr__c" field="rstk__sohdr_confsess__c" n="rstk__sohdrs__r" relationshipName="rstk__sohdrs__r" s="2-" t="rstk__sohdr__c"/>
+    <sfObjectRelationship childName="rstk__soline__c" field="rstk__soline_confsess__c" n="rstk__solines__r" relationshipName="rstk__solines__r" s="2-" t="rstk__soline__c"/>
+    <sfObjectRelationship childName="rstk__sydata__c" field="rstk__sydata_confsess__c" n="rstk__sydatas__r" relationshipName="rstk__sydatas__r" s="2-" t="rstk__sydata__c"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__confsesss__r rstk__invsiteconfsesss__r rstk__invdivconfsesss__r rstk__confsesss_exportcust__r rstk__install_confsesss__r rstk__shipto_confsesss__r" n="New"/>
+    <sfActionLink modes="ObjectHome rstk__confsesss__r rstk__invsiteconfsesss__r rstk__invdivconfsesss__r rstk__confsesss_exportcust__r rstk__install_confsesss__r rstk__shipto_confsesss__r List" n="New"/>
     <sfActionLink modes="View rstk__confsesss__r rstk__invsiteconfsesss__r rstk__invdivconfsesss__r rstk__confsesss_exportcust__r rstk__install_confsesss__r rstk__shipto_confsesss__r" n="Edit" requiresRow="true" s="2"/>
     <sfActionLink modes="View rstk__confsesss__r rstk__invsiteconfsesss__r rstk__invdivconfsesss__r rstk__confsesss_exportcust__r rstk__install_confsesss__r rstk__shipto_confsesss__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
@@ -9,5 +478,45 @@
     <sfActionLink modes="View rstk__confsesss__r rstk__invsiteconfsesss__r rstk__invdivconfsesss__r rstk__confsesss_exportcust__r rstk__install_confsesss__r rstk__shipto_confsesss__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Accept" s=""/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink n="Tab" s=""/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
   </standardActions>
+  <homeListColumns>
+    <string>RSTK__CONFSESS__C.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>RSTK__CONFSESS__C.NAME</string>
+    <string>rstk__confsess_sessionid__c</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>RSTK__CONFSESS__C.NAME</string>
+    <string>rstk__confsess_socust__c</string>
+    <string>rstk__confsess_soprod__c</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>NAME</string>
+  </compactLayoutFields>
+  <listViewActions/>
 </sfObject>

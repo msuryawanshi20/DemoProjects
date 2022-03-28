@@ -1,7 +1,167 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="01t" label="Product" labelPlural="Products" layoutable="true" n="Product2" queryable="true" readPermission="false" retrieveable="true" s="" t="Product (01t)" updatable="true">
+<sfObject creatable="true" defaultCompactLayoutId="Product2.SYSTEM" deleteable="true" keyPrefix="01t" label="Product" labelPlural="Products" layoutable="true" metadataLabel="Product" n="Product2" queryable="true" retrieveable="true" s="" searchLayoutable="true" standardLabel="Product" t="Product (01t)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/01t/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Product ID" type="id" updateable="false"/>
+    <sfField length="255" n="Name" nameField="true" required="true" t="Product Name"/>
+    <sfField length="255" n="ProductCode" t="Product Code"/>
+    <sfField extraTypeInfo="plaintextarea" length="4000" n="Description" t="Product Description" type="textarea"/>
+    <sfField editPermission="false" n="IsActive" t="Active" type="_boolean"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField length="255" n="Family" standardPickListName="Product2Family" t="Product Family" type="picklist">
+      <picklistEntryIds>1</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="None" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="18" n="ExternalDataSourceId" t="External Data Source" type="reference">
+      <referenceTos>
+        <string>ExternalDataSource</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="ExternalId" t="External ID"/>
+    <sfField length="1000" n="DisplayUrl" t="Display URL" type="url"/>
+    <sfField length="255" n="QuantityUnitOfMeasure" standardPickListName="Product2.QuantityUnitOfMeasure" t="Quantity Unit Of Measure" type="picklist">
+      <picklistEntryIds>2</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="2" n="Each" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" internal="true" n="IsArchived" t="Archived" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="180" n="StockKeepingUnit" t="Product SKU"/>
+    <sfField length="18" n="rstk__Product_configsoprod__c" relationshipLabel="Products" relationshipName="rstk__Product_configsoprod__r" t="Z_Obsolete" type="reference">
+      <referenceTos>
+        <string>rstk__soprod__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__Product_entity_type__c" restrictedPicklist="true" t="Rootstock Entity Type" type="picklist">
+      <picklistEntryIds>3,4,5</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="3" n="Inventory Item" s=""/>
+        <sfPLE id="4" n="BOM Parent Item" s=""/>
+        <sfPLE id="5" n="Independent Operation" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="rstk__Product_fromsf__c" t="Product_fromsf" type="_boolean"/>
+    <sfField length="18" n="rstk__Product_icitem__c" relationshipLabel="Products" relationshipName="rstk__Product_icitem__r" t="Inventory Item" type="reference">
+      <referenceTos>
+        <string>rstk__icitem__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__Product_invdiv__c" relationshipLabel="Products (Inventory Division)" relationshipName="rstk__Product_invdiv__r" t="Inventory Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__Product_peitem__c" relationshipLabel="Products" relationshipName="rstk__Product_peitem__r" t="BOM Parent Item" type="reference">
+      <referenceTos>
+        <string>rstk__peitem__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="100" n="rstk__Product_peitemdesc__c" t="Rootstock Mfg Item Description"/>
+    <sfField n="rstk__Product_reficitem__c" t="Z_Obsolete" type="_boolean"/>
+    <sfField n="rstk__Product_refrtindoper__c" t="Z_Obsolete" type="_boolean"/>
+    <sfField n="rstk__Product_refsoprod__c" t="Z_Obsolete" type="_boolean"/>
+    <sfField n="rstk__Product_rs_addprod__c" t="Add to Rootstock Product Catalog" type="_boolean"/>
+    <sfField length="18" n="rstk__Product_rs_comcod__c" relationshipLabel="Products" relationshipName="rstk__Product_rs_comcod__r" t="Product Group" type="reference">
+      <referenceTos>
+        <string>rstk__socomm__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__Product_rs_div__c" relationshipLabel="Products" relationshipName="rstk__Product_rs_div__r" t="Sales Division" type="reference">
+      <referenceTos>
+        <string>rstk__sydiv__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="rstk__Product_rs_prodtype__c" t="Product Type" type="picklist">
+      <picklistEntryIds>6,7,8,9,10,11</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="6" n="Stock" s=""/>
+        <sfPLE id="7" n="Configured" s=""/>
+        <sfPLE id="8" n="Kit" s=""/>
+        <sfPLE id="9" n="Service" s=""/>
+        <sfPLE id="10" n="Miscellaneous" s=""/>
+        <sfPLE id="11" n="Recurring" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="50" n="rstk__Product_rs_product__c" t="Rootstock Product"/>
+    <sfField length="18" n="rstk__Product_rs_slsuom__c" relationshipLabel="Products" relationshipName="rstk__Product_rs_slsuom__r" t="Sales UOM" type="reference">
+      <referenceTos>
+        <string>rstk__syuom__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="rstk__Product_rtindoper__c" relationshipLabel="Products" relationshipName="rstk__Product_rtindoper__r" t="Independent Operation" type="reference">
+      <referenceTos>
+        <string>rstk__rtindoper__c</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="20" n="rstk__altextid__c" t="altextid"/>
+    <sfField length="40" n="rstk__triggeroptions__c" t="triggeroptions"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedPricebookEntryList" childName="PricebookEntry" field="Product2Id" n="PricebookEntries" relationshipName="PricebookEntries" s="2-" t="PricebookEntry"/>
+    <sfObjectRelationship alias="RelatedAssetList" childName="Asset" field="Product2Id" n="Assets" relationshipName="Assets" s="2-" t="Asset"/>
+    <sfObjectRelationship alias="RelatedCaseList" childName="Case" field="ProductId" n="Cases" relationshipName="Cases" s="2-" t="Case"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="Task" field="WhatId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="Event" field="WhatId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="TaskRelation" field="RelationId" n="TaskRelations" relationshipName="TaskRelations" s="2-" t="TaskRelation"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhatId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhatId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship alias="RelatedContentNoteList" childName="AttachedContentNote" field="LinkedEntityId" n="AttachedContentNotes" relationshipName="AttachedContentNotes" s="2-" t="AttachedContentNote"/>
+    <sfObjectRelationship childName="EmailMessage" field="RelatedToId" n="Emails" relationshipName="Emails" s="2-" t="EmailMessage"/>
+    <sfObjectRelationship childName="WorkOrderLineItem" field="Product2Id" n="WorkOrderLineItems" relationshipName="WorkOrderLineItems" s="2-" t="WorkOrderLineItem"/>
+    <sfObjectRelationship childName="ProductItem" field="Product2Id" n="ProductItems" relationshipName="ProductItems" s="2-" t="ProductItem"/>
+    <sfObjectRelationship childName="ProductRequired" field="Product2Id" n="ProductsRequired" relationshipName="ProductsRequired" s="2-" t="ProductRequired"/>
+    <sfObjectRelationship alias="RelatedContractLineItemList" childName="ContractLineItem" field="Product2Id" n="ContractLineItems" relationshipName="ContractLineItems" s="2-" t="ContractLineItem"/>
+    <sfObjectRelationship childName="ProductTransfer" field="Product2Id" n="ProductTransfers" relationshipName="ProductTransfers" s="2-" t="ProductTransfer"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="ProductConsumptionSchedule" field="ProductId" n="ProductConsumptionSchedules" relationshipName="ProductConsumptionSchedules" s="2-" t="ProductConsumptionSchedule"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="AssessmentTaskContentDocument" field="ContentContextId" n="ContentDocumentContext" relationshipName="ContentDocumentContext" s="2-" t="AssessmentTaskContentDocument"/>
+    <sfObjectRelationship childName="ProductFulfillmentLocation" field="ProductId" n="ProductFulfillmentLocations" relationshipName="ProductFulfillmentLocations" s="2-" t="ProductFulfillmentLocation"/>
+    <sfObjectRelationship childName="ShipmentItem" field="Product2Id" n="ShipmentItems" relationshipName="ShipmentItems" s="2-" t="ShipmentItem"/>
+    <sfObjectRelationship childName="AdvAccountForecastFact" field="ProductId" n="AdvAcctForecastFacts" relationshipName="AdvAcctForecastFacts" s="2-" t="AdvAccountForecastFact"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="Product2History" field="Product2Id" n="Histories" relationshipName="Histories" s="2-" t="Product2History"/>
+    <sfObjectRelationship childName="Product2Feed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="Product2Feed"/>
+    <sfObjectRelationship childName="rstk__gljed__c" field="rstk__gljed_sfproduct__c" n="rstk__gljeds__r" relationshipName="rstk__gljeds__r" s="2-" t="01I5f000000jZDl"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_freightprod__c" n="rstk__Sales_Order_Controls__r" relationshipName="rstk__Sales_Order_Controls__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_handlingprod__c" n="rstk__Sales_Order_Controls2__r" relationshipName="rstk__Sales_Order_Controls2__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_packageprod__c" n="rstk__Sales_Order_Controls1__r" relationshipName="rstk__Sales_Order_Controls1__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_prepayprod__c" n="rstk__Sales_Order_Controls3__r" relationshipName="rstk__Sales_Order_Controls3__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_taxprod__c" n="rstk__taxsocntls__r" relationshipName="rstk__taxsocntls__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__socntl__c" field="rstk__socntl_clearingprod__c" n="rstk__Sales_Order_Controls4__r" relationshipName="rstk__Sales_Order_Controls4__r" s="2-" t="01I5f000000jZIH"/>
+    <sfObjectRelationship childName="rstk__soprod__c" field="rstk__soprod_sf_product__c" n="rstk__sf_product_soprods__r" relationshipName="rstk__sf_product_soprods__r" s="2-" t="01I5f000000jZKD"/>
+    <sfObjectRelationship childName="Quote" field="rstk__Quote_csoproduct__c" n="rstk__csoproductQuotes__r" relationshipName="rstk__csoproductQuotes__r" s="2-" t="Quote"/>
+    <sfObjectRelationship alias="RelatedStandardPriceList" childName="PricebookEntry" field="Product2Id" n="RelatedStandardPriceList" relationshipName="RelatedStandardPriceList" s="2-" t="Standard Price"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
   <standardActions>
-    <sfActionLink modes="ObjectHome rstk__Products__r rstk__icitemProducts__r rstk__configsoprodProducts__r" n="New"/>
+    <sfActionLink modes="ObjectHome rstk__Products__r rstk__icitemProducts__r rstk__configsoprodProducts__r List" n="New"/>
     <sfActionLink modes="View rstk__Products__r rstk__icitemProducts__r rstk__configsoprodProducts__r" n="Edit" requiresRow="true" s="2"/>
     <sfActionLink modes="View rstk__Products__r rstk__icitemProducts__r rstk__configsoprodProducts__r" n="Delete" requiresRow="true" s="3"/>
     <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
@@ -9,5 +169,58 @@
     <sfActionLink modes="View rstk__Products__r rstk__icitemProducts__r rstk__configsoprodProducts__r" n="GoToList" t="Go To List"/>
     <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
     <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Tab" s="" t="Products Tab"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink n="Add" s=""/>
+    <sfActionLink n="CreateNewProduct" s="" t="New"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink n="MassAddProductsToCategory" s="" t="Add to Category"/>
+    <sfActionLink buttonName="rstk__assc_rsproduct" n="rstk__assc_rsproduct" s="" t="Associated Rootstock Entity"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink n="addStandardPrice" t="Add Standard Price"/>
   </standardActions>
+  <homeListColumns>
+    <string>PRODUCT2.NAME</string>
+    <string>PRODUCT2.CUSTOMER_PRODUCT_ID</string>
+    <string>PRODUCT2.DESCRIPTION</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>PRODUCT2.NAME</string>
+    <string>PRODUCT2.CUSTOMER_PRODUCT_ID</string>
+    <string>PRODUCT2.DESCRIPTION</string>
+    <string>PRODUCT2.FAMILY</string>
+  </lookupColumns>
+  <weblinks>
+    <sfWeblink displayType="link" linkType="url" n="L_assc_rsproduct" s="" t="Associated Rootstock Entity" url="{!URLFOR('/apex/rstk__AssocRSProduct', null, [pid=Product2.Id])}"/>
+  </weblinks>
+  <searchResultColumns>
+    <string>PRODUCT2.NAME</string>
+    <string>PRODUCT2.CUSTOMER_PRODUCT_ID</string>
+    <string>PRODUCT2.DESCRIPTION</string>
+    <string>PRODUCT2.FAMILY</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Name</string>
+    <string>ProductCode</string>
+    <string>Family</string>
+  </compactLayoutFields>
+  <listViewActions/>
 </sfObject>
