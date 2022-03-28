@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        Plan: ["Engg to WO Close","Recurring Billing","RMA","Shop Floor"]
+        Plan: ["API-Work Order","Engg to WO Close","Inventory Transactions","Recurring Billing","RMA","Shop Floor","Work Order"]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
