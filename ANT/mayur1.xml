@@ -27,7 +27,7 @@
 				pluginOutputlevel="SEVERE"
 				stopTestRunOnError="false"
 		>
-			<fileset dir="../plans/API-Inventory"></fileset>
+			<fileset dir="../plans/Inventory Transactions"></fileset>
 			<fileset dir="../plans/API-Work Order"></fileset>
 			<fileset dir="../plans/Engg to WO Close"></fileset>
 			<fileset dir="../plans/Inventory Transactions"></fileset>
