@@ -45,8 +45,16 @@
 				<planFeature name="PDF" type="OUTPUT" enabled="true"/>
 				<planFeature name="PIECHART" type="OUTPUT" enabled="true"/>
 				<planFeature name="EMAIL" type="NOTIFICATION" enabled="true"/>
-
+			
 		</Run-Test-Case>
+		<Test-Cycle-Report provarHome="${provar.home}"
+				projectPath="${testproject.home}"
+	        	testCyclePath="${testcycle.path}"
+				reportPath="${testcycle.path}/TestCycleReport.pdf"
+				failBuildIfFailures="true"
+				invokeTestRunMonitor="true"
+				>
+		</Test-Cycle-Report>
 
 	</target>
 </project>
