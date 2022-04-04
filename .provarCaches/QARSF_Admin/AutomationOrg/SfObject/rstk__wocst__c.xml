@@ -443,7 +443,1830 @@
   </childRelationships>
   <recordTypes>
     <sfRecordType available="false" defaultRecordType="false" fromToolingApi="true" fullName="Disassembly" layoutsLoaded="false" n="Disassembly" namespacePrefix="rootstock" recordTypeId="0125f000000i1aSAAQ" s="3-"/>
-    <sfRecordType available="false" defaultRecordType="false" fromToolingApi="true" fullName="Labor" layoutsLoaded="false" n="Labor" namespacePrefix="rootstock" recordTypeId="0125f000000h74UAAQ" s="3-"/>
+    <sfRecordType available="false" defaultRecordType="false" fromToolingApi="true" fullName="Labor" n="Labor" namespacePrefix="rootstock" recordTypeId="0125f000000h74UAAQ" s="3-">
+      <children>
+        <sfLayout interactionLogEnabled="true" layoutFileName="rstk__wocst__c-rstk__WO Workbench Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Item Revision" n="Item Revision" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_itemrev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordsts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Issue All Status" n="Issue All Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_issue_all_sts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Effectivity Option" n="Effectivity Option" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_effind_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordsts__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Effective Revision" n="Effective Revision" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_effrev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Temporary ID" n="Temporary ID" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__tempid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Mtl" n="Order Cost, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Lab" n="Order Cost, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Mtl" n="Order Cost, Ohd Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Lab" n="Order Cost, Ohd Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Fringe" n="Order Cost, Ohd Fringe" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Mach" n="Order Cost, Ohd Mach" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Sub Mtl" n="Order Cost, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Sub Lab" n="Order Cost, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Total" n="Order Cost, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcost_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mtl" n="Order Dedn, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Lab" n="Order Dedn, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mtl Ohd" n="Order Dedn, Mtl Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Lab Ohd" n="Order Dedn, Lab Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Fringe" n="Order Dedn, Fringe" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mach Ohd" n="Order Dedn, Mach Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Sub Mtl" n="Order Dedn, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Sub Lab" n="Order Dedn, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Total" n="Order Dedn, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordded_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mtl" n="Order Var, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Lab" n="Order Var, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mtl Ohd" n="Order Var, Mtl Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Lab Ohd" n="Order Var, Lab Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Fringe Ohd" n="Order Var, Fringe Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mach Ohd" n="Order Var, Mach Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Sub Mtl" n="Order Var, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Sub Lab" n="Order Var, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Total" n="Order Var, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvar_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Select" n="Select" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__temp_select__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Message" n="Message" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__temp_msg__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Lot Expiration Date" n="Lot Expiration Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_lotexpiredate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="Dimension Values" n="Dimension Values" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dimvals__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Comp Cost, Freight" n="Comp Cost, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmdtotcstfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Comp Cost, Other Indirect" n="Comp Cost, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmdtotcstothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="suptotcstfrght" n="suptotcstfrght" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_suptotcstfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="suptotcstothlnd" n="suptotcstothlnd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_suptotcstothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="supdolchgoutfrght" n="supdolchgoutfrght" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_supdolchgoutfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="supdolchgoutothlnd" n="supdolchgoutothlnd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_supdolchgoutothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Close Variance, Freight" n="Close Variance, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvarfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="46">
+                      <children>
+                        <sfLI label="Close Variance, Other Indirect" n="Close Variance, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvarothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="47">
+                      <children>
+                        <sfLI label="Comp Deductions, Freight" n="Comp Deductions, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmddolchgoutfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="48">
+                      <children>
+                        <sfLI label="Comp Deductions, Other Indirect" n="Comp Deductions, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmddolchgoutothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="49">
+                      <children>
+                        <sfLI label="Z_OBSOLETE" n="Z_OBSOLETE" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_numbdmds__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="50">
+                      <children>
+                        <sfLI label="Sales Order Line" n="Sales Order Line" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_soline__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="51">
+                      <children>
+                        <sfLI label="externalid" n="externalid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="52">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Fringe Ohd" n="Final Var Fringe Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="53">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Labor" n="Final Var Labor" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="54">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Labor Ohd" n="Final Var Labor Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="55">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Machine Ohd" n="Final Var Machine Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="56">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Material" n="Final Var Material" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="57">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Material Ohd" n="Final Var Material Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="58">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Subcontract Labor" n="Final Var Subcontract Labor" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="59">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Subcontract Material" n="Final Var Subcontract Material" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="60">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var, Total" n="Final Var, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvar_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="61">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Formula Project" n="Formula Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_defaultproject__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="62">
+                      <children>
+                        <sfLI label="Organizational Department" n="Organizational Department" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orgid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="63">
+                      <children>
+                        <sfLI label="Priority" n="Priority" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_priority__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="64">
+                      <children>
+                        <sfLI label="Priority Setting User Control" n="Priority Setting User Control" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_priorityind_usrcntl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="65">
+                      <children>
+                        <sfLI label="Batch Scheduling Allowed" n="Batch Scheduling Allowed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_batchschallwd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="66">
+                      <children>
+                        <sfLI label="Bypass Finite Loading" n="Bypass Finite Loading" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_bypassfiniteloadind__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="67">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="formula_orgid" n="formula_orgid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_orgid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="68">
+                      <children>
+                        <sfLI label="altextid" n="altextid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__altextid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="69">
+                      <children>
+                        <sfLI label="WO Closed" n="WO Closed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="70">
+                      <children>
+                        <sfLI label="Alt Operation Code" n="Alt Operation Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_altcode__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="71">
+                      <children>
+                        <sfLI label="Target Site" n="Target Site" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_targetsite__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="72">
+                      <children>
+                        <sfLI label="Fully Allocated" n="Fully Allocated" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_fullyalloc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="73">
+                      <children>
+                        <sfLI label="Reference Project" n="Reference Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ref_proj__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="74">
+                      <children>
+                        <sfLI label="Project Charge Code" n="Project Charge Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_pjprojwbs__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Name" n="Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Owner" n="Owner" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Item Revision" n="Item Revision" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_itemrev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordsts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Issue All Status" n="Issue All Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_issue_all_sts_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Effectivity Option" n="Effectivity Option" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_effind_pl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Status" n="Status" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordsts__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Effective Revision" n="Effective Revision" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_effrev__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Temporary ID" n="Temporary ID" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__tempid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="8">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Mtl" n="Order Cost, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="9">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Lab" n="Order Cost, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="10">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Mtl" n="Order Cost, Ohd Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="11">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Lab" n="Order Cost, Ohd Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="12">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Fringe" n="Order Cost, Ohd Fringe" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="13">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Ohd Mach" n="Order Cost, Ohd Mach" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="14">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Sub Mtl" n="Order Cost, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="15">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Sub Lab" n="Order Cost, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcostsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="16">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Cost, Total" n="Order Cost, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordcost_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="17">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mtl" n="Order Dedn, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="18">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Lab" n="Order Dedn, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="19">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mtl Ohd" n="Order Dedn, Mtl Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="20">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Lab Ohd" n="Order Dedn, Lab Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="21">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Fringe" n="Order Dedn, Fringe" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="22">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Mach Ohd" n="Order Dedn, Mach Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="23">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Sub Mtl" n="Order Dedn, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="24">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Sub Lab" n="Order Dedn, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orddedsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="25">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Dedn, Total" n="Order Dedn, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordded_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="26">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mtl" n="Order Var, Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="27">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Lab" n="Order Var, Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="28">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mtl Ohd" n="Order Var, Mtl Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="29">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Lab Ohd" n="Order Var, Lab Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="30">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Fringe Ohd" n="Order Var, Fringe Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="31">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Mach Ohd" n="Order Var, Mach Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="32">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Sub Mtl" n="Order Var, Sub Mtl" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="33">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Sub Lab" n="Order Var, Sub Lab" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvarsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="34">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Order Var, Total" n="Order Var, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ordvar_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="35">
+                      <children>
+                        <sfLI label="Select" n="Select" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__temp_select__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="36">
+                      <children>
+                        <sfLI label="Message" n="Message" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__temp_msg__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="37">
+                      <children>
+                        <sfLI label="Lot Expiration Date" n="Lot Expiration Date" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_lotexpiredate__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="38">
+                      <children>
+                        <sfLI label="Dimension Values" n="Dimension Values" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dimvals__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="39">
+                      <children>
+                        <sfLI label="Comp Cost, Freight" n="Comp Cost, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmdtotcstfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="40">
+                      <children>
+                        <sfLI label="Comp Cost, Other Indirect" n="Comp Cost, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmdtotcstothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="41">
+                      <children>
+                        <sfLI label="suptotcstfrght" n="suptotcstfrght" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_suptotcstfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="42">
+                      <children>
+                        <sfLI label="suptotcstothlnd" n="suptotcstothlnd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_suptotcstothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="43">
+                      <children>
+                        <sfLI label="supdolchgoutfrght" n="supdolchgoutfrght" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_supdolchgoutfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="44">
+                      <children>
+                        <sfLI label="supdolchgoutothlnd" n="supdolchgoutothlnd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_supdolchgoutothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="45">
+                      <children>
+                        <sfLI label="Close Variance, Freight" n="Close Variance, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvarfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="46">
+                      <children>
+                        <sfLI label="Close Variance, Other Indirect" n="Close Variance, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvarothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="47">
+                      <children>
+                        <sfLI label="Comp Deductions, Freight" n="Comp Deductions, Freight" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmddolchgoutfrght__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="48">
+                      <children>
+                        <sfLI label="Comp Deductions, Other Indirect" n="Comp Deductions, Other Indirect" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_dmddolchgoutothlnd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="49">
+                      <children>
+                        <sfLI label="Z_OBSOLETE" n="Z_OBSOLETE" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_numbdmds__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="50">
+                      <children>
+                        <sfLI label="Sales Order Line" n="Sales Order Line" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_soline__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="51">
+                      <children>
+                        <sfLI label="externalid" n="externalid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__externalid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="52">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Fringe Ohd" n="Final Var Fringe Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdfrng_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="53">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Labor" n="Final Var Labor" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="54">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Labor Ohd" n="Final Var Labor Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdlab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="55">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Machine Ohd" n="Final Var Machine Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdmach_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="56">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Material" n="Final Var Material" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="57">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Material Ohd" n="Final Var Material Ohd" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarohdmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="58">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Subcontract Labor" n="Final Var Subcontract Labor" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarsublab_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="59">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var Subcontract Material" n="Final Var Subcontract Material" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_finvarsubmtl_calc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="60">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Final Var, Total" n="Final Var, Total" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closvar_total__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="61">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Formula Project" n="Formula Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_defaultproject__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="62">
+                      <children>
+                        <sfLI label="Organizational Department" n="Organizational Department" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_orgid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="63">
+                      <children>
+                        <sfLI label="Priority" n="Priority" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_priority__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="64">
+                      <children>
+                        <sfLI label="Priority Setting User Control" n="Priority Setting User Control" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_priorityind_usrcntl__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="65">
+                      <children>
+                        <sfLI label="Batch Scheduling Allowed" n="Batch Scheduling Allowed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_batchschallwd__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="66">
+                      <children>
+                        <sfLI label="Bypass Finite Loading" n="Bypass Finite Loading" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_bypassfiniteloadind__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="67">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="formula_orgid" n="formula_orgid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__formula_orgid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="68">
+                      <children>
+                        <sfLI label="altextid" n="altextid" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__altextid__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="69">
+                      <children>
+                        <sfLI label="WO Closed" n="WO Closed" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_closed__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="70">
+                      <children>
+                        <sfLI label="Alt Operation Code" n="Alt Operation Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_altcode__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="71">
+                      <children>
+                        <sfLI label="Target Site" n="Target Site" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_targetsite__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="72">
+                      <children>
+                        <sfLI label="Fully Allocated" n="Fully Allocated" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_fullyalloc__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="73">
+                      <children>
+                        <sfLI label="Reference Project" n="Reference Project" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_ref_proj__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="74">
+                      <children>
+                        <sfLI label="Project Charge Code" n="Project Charge Code" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="rstk__wocst_pjprojwbs__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="" n="" s="" seqNum="1" t="Web Layout Item"/>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="rstk__icdreq_wocst__c" label="Disassembly Derived Components" n="rstk__Disassembly_Derived_Components__r" nameAlias="rstk__icdreq__c.rstk__icdreq_wocst__c" relationshipName="rstk__Disassembly_Derived_Components__r" s="3-" t="Disassembly Derived Components (rstk__icdreq_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icitemsrlhist_wocst__c" label="Item Serial Change Historys" n="rstk__icitemsrlhists__r" nameAlias="rstk__icitemsrlhist__c.rstk__icitemsrlhist_wocst__c" relationshipName="rstk__icitemsrlhists__r" s="3-" t="Item Serial Change Historys (rstk__icitemsrlhist_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__lwocst_wocst__c" label="Labor Orders" n="rstk__labororders__r" nameAlias="rstk__lwocst__c.rstk__lwocst_wocst__c" relationshipName="rstk__labororders__r" s="3-" t="Labor Orders (rstk__lwocst_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icixr_wocst__c" label="Requirements" n="rstk__icixrs__r" nameAlias="rstk__icixr__c.rstk__icixr_wocst__c" relationshipName="rstk__icixrs__r" s="3-" t="Requirements (rstk__icixr_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Requirement Link"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopschdate_ordno__c" label="WO Operation Schedule Dates" n="rstk__WO_Operation_Schedule_Dates__r" nameAlias="rstk__wopschdate__c.rstk__wopschdate_ordno__c" relationshipName="rstk__WO_Operation_Schedule_Dates__r" s="3-" t="WO Operation Schedule Dates (rstk__wopschdate_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wocst__c" label="ZZ_Integritylogs" n="rstk__Integrity_Log__r" nameAlias="rstk__integritylog__c.rstk__wocst__c" relationshipName="rstk__Integrity_Log__r" s="3-" t="ZZ_Integritylogs (rstk__wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woorddmd_ordno__c" label="Components" n="rstk__WOORDDMDs__r" nameAlias="rstk__woorddmd__c.rstk__woorddmd_ordno__c" relationshipName="rstk__WOORDDMDs__r" s="3-" t="Components (rstk__woorddmd_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+                <sfRelatedListColumn alias="rstk__woorddmd_qtyreq__c" n="rstk__woorddmd_qtyreq__c" s="" seq="1" t="Qty Req"/>
+                <sfRelatedListColumn alias="rstk__woorddmd_qtyalloc__c" n="rstk__woorddmd_qtyalloc__c" s="" seq="2" t="Qty Allocated"/>
+                <sfRelatedListColumn alias="rstk__woorddmd_qtyiss__c" n="rstk__woorddmd_qtyiss__c" s="" seq="3" t="Qty Issued"/>
+                <sfRelatedListColumn alias="rstk__formula_qtyshort__c" n="rstk__formula_qtyshort__c" s="" seq="4" t="Qty Outstanding"/>
+                <sfRelatedListColumn alias="rstk__formula_wocharges__c" n="rstk__formula_wocharges__c" s="" seq="5" t="WO Charges"/>
+                <sfRelatedListColumn alias="rstk__woorddmd_lne__c" n="rstk__woorddmd_lne__c" s="" seq="6" t="Line No"/>
+              </children>
+              <customActions/>
+              <excludeButtons>
+                <string>New</string>
+              </excludeButtons>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woorddmdcst_ordno__c" label="Work Order Component Detail" n="rstk__woorddmdcsts__r" nameAlias="rstk__woorddmdcst__c.rstk__woorddmdcst_ordno__c" relationshipName="rstk__woorddmdcsts__r" s="3-" t="Work Order Component Detail (rstk__woorddmdcst_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_compitem__c" n="rstk__woorddmdcst_compitem__c" s="" seq="1" t="Component Item"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_qtyiss__c" n="rstk__woorddmdcst_qtyiss__c" s="" seq="2" t="Qty Issued"/>
+                <sfRelatedListColumn alias="rstk__formula_unitcost__c" n="rstk__formula_unitcost__c" s="" seq="3" t="Unit Cost"/>
+                <sfRelatedListColumn alias="rstk__formula_totalcost__c" n="rstk__formula_totalcost__c" s="" seq="4" t="Total Cost"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_proj__c" n="rstk__woorddmdcst_proj__c" s="" seq="5" t="Project"/>
+                <sfRelatedListColumn alias="CreatedById" n="CREATEDBY_USER" s="" seq="6" t="Created By"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_lotno__c" n="rstk__woorddmdcst_lotno__c" s="" seq="7" t="Lot Number"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_srlno__c" n="rstk__woorddmdcst_srlno__c" s="" seq="8" t="Serial Number"/>
+                <sfRelatedListColumn alias="rstk__woorddmdcst_comments__c" n="rstk__woorddmdcst_comments__c" s="" seq="9" t="Comments"/>
+              </children>
+              <customActions/>
+              <excludeButtons>
+                <string>New</string>
+              </excludeButtons>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhatId" label="Open Activities" n="OpenActivities" nameAlias="RelatedActivityList" relationshipName="OpenActivities" s="3-" t="Open Activities (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="TASK.STATUS" s="" seq="4" t="Status"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="TASK.PRIORITY" s="" seq="5" t="Priority"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="6" t="Assigned To"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhatId" label="Activity History" n="ActivityHistories" nameAlias="RelatedHistoryList" relationshipName="ActivityHistories" s="3-" t="Activity History (WhatId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="OpenActivity.WhoId" n="TASK.WHO_NAME" s="" seq="1" t="Name"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="4" t="Assigned To"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="TASK.LAST_UPDATE" s="" seq="5" t="Last Modified Date/Time"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopsch_ordno__c" label="WO Operation Schedule" n="rstk__WO_Operation_Schedule__r" nameAlias="rstk__wopsch__c.rstk__wopsch_ordno__c" relationshipName="rstk__WO_Operation_Schedule__r" s="3-" t="WO Operation Schedule (rstk__wopsch_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woordopact_ordno__c" label="WO Operation Actual" n="rstk__woordopacts__r" nameAlias="rstk__woordopact__c.rstk__woordopact_ordno__c" relationshipName="rstk__woordopacts__r" s="3-" t="WO Operation Actual (rstk__woordopact_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopcst_ordno__c" label="WO Operation Cost" n="rstk__wopcsts__r" nameAlias="rstk__wopcst__c.rstk__wopcst_ordno__c" relationshipName="rstk__wopcsts__r" s="3-" t="WO Operation Cost (rstk__wopcst_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopwip_ordno__c" label="WO Operation WIP" n="rstk__WO_Operation_WIP__r" nameAlias="rstk__wopwip__c.rstk__wopwip_ordno__c" relationshipName="rstk__WO_Operation_WIP__r" s="3-" t="WO Operation WIP (rstk__wopwip_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woploc_ordno__c" label="WO Operation Location" n="rstk__woplocs__r" nameAlias="rstk__woploc__c.rstk__woploc_ordno__c" relationshipName="rstk__woplocs__r" s="3-" t="WO Operation Location (rstk__woploc_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopscrp_ordno__c" label="WO Operation Scrap" n="rstk__WO_Operation_Scrap__r" nameAlias="rstk__wopscrp__c.rstk__wopscrp_ordno__c" relationshipName="rstk__WO_Operation_Scrap__r" s="3-" t="WO Operation Scrap (rstk__wopscrp_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="WOPSCRP Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wodmddismprnt_ordno__c" label="WO Demand Disassembly Print" n="rstk__WO_Demand_Disassembly_Print__r" nameAlias="rstk__wodmddismprnt__c.rstk__wodmddismprnt_ordno__c" relationshipName="rstk__WO_Demand_Disassembly_Print__r" s="3-" t="WO Demand Disassembly Print (rstk__wodmddismprnt_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="WODMDDISMPRNT Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woiss_hdrordno__c" label="ZZ-WO Issue (hdrordno)" n="rstk__ZZ_WO_Issue__r" nameAlias="rstk__woiss__c.rstk__woiss_hdrordno__c" relationshipName="rstk__ZZ_WO_Issue__r" s="3-" t="ZZ-WO Issue (hdrordno) (rstk__woiss_hdrordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Component"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__worcpt_hdrordno__c" label="ZZ-WO Receipt (Work Order)" n="rstk__ZZ_WO_Receipt__r" nameAlias="rstk__worcpt__c.rstk__worcpt_hdrordno__c" relationshipName="rstk__ZZ_WO_Receipt__r" s="3-" t="ZZ-WO Receipt (Work Order) (rstk__worcpt_hdrordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__worcpt_wocst__c" label="ZZ-WO Receipt (worcpt_wocst)" n="rstk__ZZ_WO_Receipt1__r" nameAlias="rstk__worcpt__c.rstk__worcpt_wocst__c" relationshipName="rstk__ZZ_WO_Receipt1__r" s="3-" t="ZZ-WO Receipt (worcpt_wocst) (rstk__worcpt_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woordsrlcomp_ordno__c" label="Component Serial" n="rstk__WO_Serial_Components__r" nameAlias="rstk__woordsrlcomp__c.rstk__woordsrlcomp_ordno__c" relationshipName="rstk__WO_Serial_Components__r" s="3-" t="Component Serial (rstk__woordsrlcomp_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopschday_ordno__c" label="Obsolete" n="rstk__WO_Operation_Schedule_Days__r" nameAlias="rstk__wopschday__c.rstk__wopschday_ordno__c" relationshipName="rstk__WO_Operation_Schedule_Days__r" s="3-" t="Obsolete (rstk__wopschday_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icdmdpickloc_wocst__c" label="Pick Lists" n="rstk__icdmdpicklocs__r" nameAlias="rstk__icdmdpickloc__c.rstk__icdmdpickloc_wocst__c" relationshipName="rstk__icdmdpicklocs__r" s="3-" t="Pick Lists (rstk__icdmdpickloc_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_compitem__c" n="rstk__icdmdpickloc_compitem__c" s="" seq="1" t="Component Item"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_descr__c" n="rstk__icdmdpickloc_descr__c" s="" seq="2" t="Description"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_totqtypickreqd__c" n="rstk__icdmdpickloc_totqtypickreqd__c" s="" seq="3" t="Pick Qty"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_dtereqd__c" n="rstk__icdmdpickloc_dtereqd__c" s="" seq="4" t="Date Required"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_locid__c" n="rstk__icdmdpickloc_locid__c" s="" seq="5" t="Loc ID"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_locnum__c" n="rstk__icdmdpickloc_locnum__c" s="" seq="6" t="Loc No"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_locqty__c" n="rstk__icdmdpickloc_locqty__c" s="" seq="7" t="Loc Qty"/>
+                <sfRelatedListColumn alias="rstk__icdmdpickloc_locsec__c" n="rstk__icdmdpickloc_locsec__c" s="" seq="8" t="Lot/Serial No"/>
+                <sfRelatedListColumn alias="toLabel(rstk__icdmdpickloc_backflushpol__c)" n="rstk__icdmdpickloc_backflushpol__c" s="" seq="9" t="Backflush Ind"/>
+              </children>
+              <customActions/>
+              <excludeButtons>
+                <string>New</string>
+              </excludeButtons>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__woordopmach_ordno__c" label="WO Operation Machines" n="rstk__WO_Operation_Machines__r" nameAlias="rstk__woordopmach__c.rstk__woordopmach_ordno__c" relationshipName="rstk__WO_Operation_Machines__r" s="3-" t="WO Operation Machines (rstk__woordopmach_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopship_ordno__c" label="WO Outside OP Shipments" n="rstk__WO_Outside_OP_Shipments__r" nameAlias="rstk__wopship__c.rstk__wopship_ordno__c" relationshipName="rstk__WO_Outside_OP_Shipments__r" s="3-" t="WO Outside OP Shipments (rstk__wopship_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__wopshiprcvd_ordno__c" label="WO Outside OP Returns" n="rstk__WO_Outside_OP_Returns__r" nameAlias="rstk__wopshiprcvd__c.rstk__wopshiprcvd_ordno__c" relationshipName="rstk__WO_Outside_OP_Returns__r" s="3-" t="WO Outside OP Returns (rstk__wopshiprcvd_ordno__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="rstk__icclockdtl_wocst__c" label="Employee Clock Txn Details" n="rstk__icclockdtls__r" nameAlias="rstk__icclockdtl__c.rstk__icclockdtl_wocst__c" relationshipName="rstk__icclockdtls__r" s="3-" t="Employee Clock Txn Details (rstk__icclockdtl_wocst__c)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="NAME" s="" seq="0" t="Name"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons/>
+          <customTags/>
+          <quickActionNames/>
+          <consoleComponents>
+            <sfConsoleComponent index="1" location="south" n="consoleComponent01" primaryComponent="true" region="Bottom" s="" style="Stack" t="Interaction Log" targetDef="primary:south:InteractionLog" type="InteractionLog"/>
+          </consoleComponents>
+          <platformActionNames/>
+          <miniLayout n="miniLayout" s="" t="Mini Layout">
+            <fields>
+              <string>Name</string>
+              <string>rstk__wocst_ordsts_pl__c</string>
+            </fields>
+            <relatedLists/>
+          </miniLayout>
+        </sfLayout>
+      </children>
+    </sfRecordType>
     <sfRecordType available="false" defaultRecordType="false" fromToolingApi="true" fullName="Regular" n="Regular" namespacePrefix="rootstock" recordTypeId="0125f000000h74VAAQ" s="3-">
       <children>
         <sfLayout interactionLogEnabled="true" layoutFileName="rstk__wocst__c-rstk__WO Workbench Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
