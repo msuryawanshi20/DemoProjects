@@ -24,7 +24,10 @@
     <environment name="QARSF">
       <summary>QARSF</summary>
     </environment>
-    <environment name="LogOnAs-QARSF">
+    <environment name="DEVQAFF_LUI">
+      <summary/>
+    </environment>
+    <environment name="DEVQAFF">
       <summary/>
     </environment>
   </environments>
@@ -34,7 +37,6 @@
         <constraints>
           <valueConstraint name="minLength">0</valueConstraint>
           <valueConstraint name="maxLength">9999</valueConstraint>
-          <valueConstraint name="regex"/>
         </constraints>
       </valueType>
       <summary/>
@@ -48,12 +50,33 @@
   <connectionClasses>
     <connectionClass name="sf">
       <connections>
-        <connection id="462c15b0-e1f9-486b-969e-7dea55e2f298" name="QARSF_Admin">
+        <connection id="9d2f70ad-289c-4fc3-8be5-d6959877335e" name="QARSF_Admin">
           <summary/>
           <connectionUrls>
             <connectionUrl secureStorageNodeId="ef72e2ba-6de7-4486-a8a0-6f805967f325" url="sf:environment=PRERELEASE;apiLoginUrl=https://rstk-qa-rsf.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D410000011HE0EAM/0051K000008fKKFQA2;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
             <connectionUrl envName="AutomationOrg" secureStorageNodeId="13cdf313-dacc-4856-b305-3125005e6f7e" url="sf:environment=PRERELEASE;apiLoginUrl=https://automationtesting2.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5f000005vwGkEAI/0055f000008Hn0WAAS;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
             <connectionUrl envName="QARSF" secureStorageNodeId="aaa10583-3a39-4898-b18d-5372e4466cf6" url="sf:environment=PRERELEASE;apiLoginUrl=https://rstk-qa-rsf.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D410000011HE0EAM/0054100000707DDAAY;clientId={clientId};clientSecret={clientSecret};authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+            <connectionUrl envName="LUI-PM" secureStorageNodeId="c18fb513-ae63-4d98-92ac-591ef45d8708" url="sf:user=automation@rootstock.com.lui;password={password};securityToken={securityToken};environment=OTHER"/>
+            <connectionUrl envName="DEVQAFF_LUI" secureStorageNodeId="e80731bf-e4d8-4890-9b7c-90b2d753374d" url="sf:environment=PRERELEASE;apiLoginUrl=https://rstk-dev-qa-ff.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00Dd0000000fRHIEA2/0056T000008ZV22QAG;clientId={clientId};clientSecret={clientSecret};lightningMode=true;authenticationType=OAUTH;callbackUrl={callbackUrl};accessToken={accessToken};refreshToken={refreshToken}"/>
+            <connectionUrl envName="DEVQAFF" secureStorageNodeId="b1f9ece9-3af9-4ca1-82ec-32437d7b6d92" url="sf:user=achoudhary@rootstock.com.dev-qa-ff;password={password};securityToken={securityToken};environment=PRERELEASE"/>
+            <connectionUrl envName="PDE5" secureStorageNodeId="03d6ef83-22bf-4b92-a0ea-0ee396e23e2f" url="sf:user=msuryawanshi@rootstock.com.pde5;password={password};securityToken={securityToken};environment=PROD_DEV;nsPrefixOverride=-rstk"/>
+          </connectionUrls>
+        </connection>
+        <connection id="15e203b2-9ef5-45fb-af9e-6c551184ef32" name="QARSF_Admin_1">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="sf:user=msuryawanshi@rootstock.com.qarsf;environment=PROD_DEV;logonAsConnection=QARSF_Admin_Test;lightningMode=true"/>
+            <connectionUrl envName="AutomationOrg" url="sf:user=msuryawanshi@rootstock.com.automation;environment=PROD_DEV;logonAsConnection=QARSF_Admin_Test"/>
+            <connectionUrl envName="QARSF" url="sf:user=msuryawanshi@rootstock.com.qarsf;environment=PROD_DEV;logonAsConnection=QARSF_Admin_Test;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection name="Arena">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="22a3d9fe-1d92-4d5f-874a-eed15dd1091a" url="se:user=swood@rootstock.com;password={password};baseUrl=https://app.bom.com/"/>
           </connectionUrls>
         </connection>
       </connections>
@@ -76,6 +99,7 @@
       <summary>Fixed 1920x1080</summary>
     </browserConfiguration>
   </browserConfigurations>
+  <antPath>ANT</antPath>
   <testCyclePath>TestCycle</testCyclePath>
   <browserApplications>
     <browserApplication connectionTypes="sf" name="Salesforce1">
